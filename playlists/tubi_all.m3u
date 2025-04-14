@@ -1,6 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
-# Generated on 2025-04-13T03:22:57.684009
+# Generated on 2025-04-14T02:01:09.134483
 #EXTINF:-1 tvg-id="400000096" tvg-logo="https://canvas-lb.tubitv.com/opts/EwZ67HuPQsqw_g==/f96dfd36-d049-4c63-ae07-410f192f18b6/CHgQeDoFMS4xLjZAAQ==" group-title="True Crime",A&E Crime 360
 https://live-manifest.production-public.tubi.io/live/8cba5c00-34f4-45da-a73a-1e3d813a0cfb/playlist.m3u8
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/Xzzw_op-3BJ_Ew==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjZAAQ==" group-title="National News",ABC News Live
@@ -187,6 +187,8 @@ https://live-manifest.production-public.tubi.io/live/257c5c20-bd7d-4a2f-84b4-090
 https://live-manifest.production-public.tubi.io/live/f0c8870f-8b81-4017-a2f3-4f83a062079e/playlist.m3u8
 #EXTINF:-1 tvg-id="687447" tvg-logo="https://canvas-lb.tubitv.com/opts/_z7SwVVHaz6v9g==/a6ee923c-4dc0-4d93-81a2-31bf11be3a7e/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KATC News Acadiana
 https://live-manifest.production-public.tubi.io/live/f6651730-2dfa-491a-9f7a-a5900950eab9/playlist.m3u8
+#EXTINF:-1 tvg-id="687460" tvg-logo="https://canvas-lb.tubitv.com/opts/C_kC6htlbiMQwA==/7aa28d6a-6a4b-4ad3-aff7-4c1e4bfc895d/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KRTV Great Falls
+https://live-manifest.production-public.tubi.io/live/8f59c2e6-cc44-4e1e-bd85-57fe8770257a/playlist.m3u8
 #EXTINF:-1 tvg-id="555127" tvg-logo="https://canvas-lb.tubitv.com/opts/115LjBv7EqTLdA==/f71c682e-37f8-4719-aa89-546d1c4c8bfe/CHgQeDoFMS4xLjZAAQ==" group-title="National News",LiveNOW from FOX
 https://live-manifest.production-public.tubi.io/live/0e36bf49-52c7-4a9f-a732-9a7e2b011a9a/playlist.m3u8
 #EXTINF:-1 tvg-id="400000067" tvg-logo="https://canvas-lb.tubitv.com/opts/GmtBToqtn8AmaA==/e4f84ab2-4935-4063-ad29-cc852b91e3b7/CHgQeDoFMS4xLjZAAQ==" group-title="True Crime",Living with Evil
@@ -343,7 +345,7 @@ https://live-manifest.production-public.tubi.io/live/16141f5c-4bef-47ab-9f35-17f
 https://live-manifest.production-public.tubi.io/live/eb4ef15b-b69e-4b49-988f-c1c66a8e64d0/playlist.m3u8
 #EXTINF:-1 tvg-id="400000093" tvg-logo="https://canvas-lb.tubitv.com/opts/YnNDuixBnH_Owg==/0aa317c5-3f1c-4949-9e48-3f257c8293c4/CHgQeDoFMS4xLjZAAQ==" group-title="True Crime",World's Most Evil Killers
 https://live-manifest.production-public.tubi.io/live/b81250ad-f476-4a4b-a824-731dbd24b993/playlist.m3u8
-#EXTINF:-1 tvg-id="687454" tvg-logo="https://canvas-lb.tubitv.com/opts/Wp3T-VkuqvDXWQ==/358061d0-f749-48e4-9beb-d919ffc57fac/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",WTXL Tallahassee
-https://live-manifest.production-public.tubi.io/live/30553933-8583-4d36-bfbe-86628cd5dabc/playlist.m3u8
+#EXTINF:-1 tvg-id="603914" tvg-logo="https://canvas-lb.tubitv.com/opts/BYzkUedcUv18NQ==/ae1962c4-e4ca-4d39-a640-0ce16a095932/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",WYFF Very S. Carolina 4
+https://live-manifest.production-public.tubi.io/live/fe48fe84-3c67-48eb-a38f-9278635d342d/playlist.m3u8
 #EXTINF:-1 tvg-id="702892" tvg-logo="https://canvas-lb.tubitv.com/opts/Dr1uV5c7P9sd0A==/075f8826-fdc1-4007-aed3-abe290b90ff7/CHgQeDoFMS4xLjZAAQ==" group-title="Science & Nature",Xplore
 https://live-manifest.production-public.tubi.io/live/959d05b5-9ced-455b-be91-ffa0ba802e71/playlist.m3u8
