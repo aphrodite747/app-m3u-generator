@@ -23,7 +23,7 @@ https://jmp2.uk/str-6521.m3u8
 https://jmp2.uk/str-5740.m3u8
 #EXTINF:-1 channel-id="5293" tvg-id="5293" tvg-chno="460" tvg-name="Adventure Sports TV" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/02/09/1707439856kv40RRNDV4-632x395-Esv4IcOe.png" group-title="Sports Live",Adventure Sports TV
 https://jmp2.uk/str-5293.m3u8
-#EXTINF:-1 channel-id="6701" tvg-id="6701" tvg-chno="211" tvg-name="Al-Jazeera" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/04/11/1744404738LJowkImvU8-632x395-eRbsgJ82.jpeg" group-title="News Live",Al-Jazeera
+#EXTINF:-1 channel-id="6701" tvg-id="6701" tvg-chno="211" tvg-name="Al Jazeera" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/04/11/1744404738LJowkImvU8-632x395-eRbsgJ82.jpeg" group-title="News Live",Al Jazeera
 https://jmp2.uk/str-6701.m3u8
 #EXTINF:-1 channel-id="5721" tvg-id="5721" tvg-chno="305" tvg-name="Automotions" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/04/08/1712609473hjETuhYlFl-632x395-VgAXiSlR.jpeg" group-title="Sports Live",Automotions
 https://jmp2.uk/str-5721.m3u8
@@ -57,6 +57,8 @@ https://jmp2.uk/str-5294.m3u8
 https://jmp2.uk/str-5273.m3u8
 #EXTINF:-1 channel-id="6408" tvg-id="6408" tvg-chno="157" tvg-name="Dark Matters TV" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/06/04/1717533002w8nxppqXt4-632x395-exd1sEYV.jpeg" group-title="Entertainment Live",Dark Matters TV
 https://jmp2.uk/str-6408.m3u8
+#EXTINF:-1 channel-id="6759" tvg-id="6759" tvg-chno="208" tvg-name="DeFiance Media" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/04/14/1744668853BzyLhlhJ8v-632x395-2n3XZXY2.png" group-title="News Live",DeFiance Media
+https://jmp2.uk/str-6759.m3u8
 #EXTINF:-1 channel-id="5739" tvg-id="5739" tvg-chno="625" tvg-name="Docu Vision" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/04/08/1712613230W2oYDwibh5-632x395-ZWwPJEUN.png" group-title="Entertainment Live",Docu Vision
 https://jmp2.uk/str-5739.m3u8
 #EXTINF:-1 channel-id="5407" tvg-id="5407" tvg-chno="480" tvg-name="Drone TV" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/02/23/170871539370SyzUanQG-632x395-Cklwrb0M.jpeg" group-title="Sports Live",Drone TV
