@@ -1,8 +1,6 @@
 #EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/all.xml.gz"
 #EXTINF:-1 channel-id="62ba60f059624e000781c436-us" tvg-id="62ba60f059624e000781c436" tvg-chno="160" tvg-name="00s Replay" tvg-logo="https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png" group-title="United States",00s Replay
 https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8
-#EXTINF:-1 channel-id="62d556fe2888ce000764b3fa-gb" tvg-id="62d556fe2888ce000764b3fa" tvg-chno="603" tvg-name="16 & Pregnant" tvg-logo="https://images.pluto.tv/channels/62d556fe2888ce000764b3fa/colorLogoPNG.png" group-title="United Kingdom",16 & Pregnant
-https://jmp2.uk/plu-62d556fe2888ce000764b3fa.m3u8
 #EXTINF:-1 channel-id="60940a07d88ba90007b9cb71-it" tvg-id="60940a07d88ba90007b9cb71" tvg-chno="515" tvg-name="16 Anni e Incinta" tvg-logo="https://images.pluto.tv/channels/60940a07d88ba90007b9cb71/colorLogoPNG.png" group-title="Italy",16 Anni e Incinta
 https://jmp2.uk/plu-60940a07d88ba90007b9cb71.m3u8
 #EXTINF:-1 channel-id="6720bc6cdaad7f000872a6e2-dk" tvg-id="6720bc6cdaad7f000872a6e2" tvg-chno="1" tvg-name="2900 Happiness" tvg-logo="https://images.pluto.tv/channels/6720bc6cdaad7f000872a6e2/colorLogoPNG.png" group-title="Denmark",2900 Happiness
@@ -859,20 +857,20 @@ https://jmp2.uk/plu-64e501eec630a900088ed0f8.m3u8
 https://jmp2.uk/plu-5f68f53eb1e5800007390bf8.m3u8
 #EXTINF:-1 channel-id="5dcc42446750e200093b15e2-us" tvg-id="5dcc42446750e200093b15e2" tvg-chno="2150" tvg-name="CMT Pluto TV" tvg-logo="https://images.pluto.tv/channels/5dcc42446750e200093b15e2/colorLogoPNG.png" group-title="United States",CMT Pluto TV
 https://jmp2.uk/plu-5dcc42446750e200093b15e2.m3u8
-#EXTINF:-1 channel-id="66dff9d46ad04d0008fda4de-gb" tvg-id="66dff9d46ad04d0008fda4de" tvg-chno="844" tvg-name="CNN Fast" tvg-logo="https://images.pluto.tv/channels/66dff9d46ad04d0008fda4de/colorLogoPNG.png" group-title="United Kingdom",CNN Fast
-https://jmp2.uk/plu-66dff9d46ad04d0008fda4de.m3u8
-#EXTINF:-1 channel-id="66c45c0de7f5e80008b82005-es" tvg-id="66c45c0de7f5e80008b82005" tvg-chno="602" tvg-name="CNN Fast" tvg-logo="https://images.pluto.tv/channels/66c45c0de7f5e80008b82005/colorLogoPNG.png" group-title="Spain",CNN Fast
-https://jmp2.uk/plu-66c45c0de7f5e80008b82005.m3u8
-#EXTINF:-1 channel-id="66c45c274f25dd00092739ee-ca" tvg-id="66c45c274f25dd00092739ee" tvg-chno="545" tvg-name="CNN Fast" tvg-logo="https://images.pluto.tv/channels/66c45c274f25dd00092739ee/colorLogoPNG.png" group-title="Canada",CNN Fast
-https://jmp2.uk/plu-66c45c274f25dd00092739ee.m3u8
-#EXTINF:-1 channel-id="66337e365a402e00087eccaf-de" tvg-id="66337e365a402e00087eccaf" tvg-chno="344" tvg-name="CNN Fast" tvg-logo="https://images.pluto.tv/channels/66337e365a402e00087eccaf/colorLogoPNG.png" group-title="Germany",CNN Fast
-https://jmp2.uk/plu-66337e365a402e00087eccaf.m3u8
-#EXTINF:-1 channel-id="66c45b36a72e7b0008a2b291-fr" tvg-id="66c45b36a72e7b0008a2b291" tvg-chno="1600" tvg-name="CNN Fast" tvg-logo="https://images.pluto.tv/channels/66c45b36a72e7b0008a2b291/colorLogoPNG.png" group-title="France",CNN Fast
-https://jmp2.uk/plu-66c45b36a72e7b0008a2b291.m3u8
-#EXTINF:-1 channel-id="66c45ba803e3b20008d8c294-it" tvg-id="66c45ba803e3b20008d8c294" tvg-chno="910" tvg-name="CNN Fast" tvg-logo="https://images.pluto.tv/channels/66c45ba803e3b20008d8c294/colorLogoPNG.png" group-title="Italy",CNN Fast
-https://jmp2.uk/plu-66c45ba803e3b20008d8c294.m3u8
 #EXTINF:-1 channel-id="5421f71da6af422839419cb3-us" tvg-id="5421f71da6af422839419cb3" tvg-chno="2533" tvg-name="CNN HEADLINES" tvg-logo="https://images.pluto.tv/channels/5421f71da6af422839419cb3/colorLogoPNG.png" group-title="United States",CNN HEADLINES
 https://jmp2.uk/plu-5421f71da6af422839419cb3.m3u8
+#EXTINF:-1 channel-id="66dff9d46ad04d0008fda4de-gb" tvg-id="66dff9d46ad04d0008fda4de" tvg-chno="844" tvg-name="CNN Headlines" tvg-logo="https://images.pluto.tv/channels/66dff9d46ad04d0008fda4de/colorLogoPNG-1745400180739.png" group-title="United Kingdom",CNN Headlines
+https://jmp2.uk/plu-66dff9d46ad04d0008fda4de.m3u8
+#EXTINF:-1 channel-id="66c45c0de7f5e80008b82005-es" tvg-id="66c45c0de7f5e80008b82005" tvg-chno="602" tvg-name="CNN Headlines" tvg-logo="https://images.pluto.tv/channels/66c45c0de7f5e80008b82005/colorLogoPNG-1745400083401.png" group-title="Spain",CNN Headlines
+https://jmp2.uk/plu-66c45c0de7f5e80008b82005.m3u8
+#EXTINF:-1 channel-id="66c45c274f25dd00092739ee-ca" tvg-id="66c45c274f25dd00092739ee" tvg-chno="545" tvg-name="CNN Headlines" tvg-logo="https://images.pluto.tv/channels/66c45c274f25dd00092739ee/colorLogoPNG_1745400015230.png" group-title="Canada",CNN Headlines
+https://jmp2.uk/plu-66c45c274f25dd00092739ee.m3u8
+#EXTINF:-1 channel-id="66337e365a402e00087eccaf-de" tvg-id="66337e365a402e00087eccaf" tvg-chno="344" tvg-name="CNN Headlines" tvg-logo="https://images.pluto.tv/channels/66337e365a402e00087eccaf/colorLogoPNG_1745399868663.png" group-title="Germany",CNN Headlines
+https://jmp2.uk/plu-66337e365a402e00087eccaf.m3u8
+#EXTINF:-1 channel-id="66c45b36a72e7b0008a2b291-fr" tvg-id="66c45b36a72e7b0008a2b291" tvg-chno="1600" tvg-name="CNN Headlines" tvg-logo="https://images.pluto.tv/channels/66c45b36a72e7b0008a2b291/colorLogoPNG-1745400336448.png" group-title="France",CNN Headlines
+https://jmp2.uk/plu-66c45b36a72e7b0008a2b291.m3u8
+#EXTINF:-1 channel-id="66c45ba803e3b20008d8c294-it" tvg-id="66c45ba803e3b20008d8c294" tvg-chno="910" tvg-name="CNN Headlines" tvg-logo="https://images.pluto.tv/channels/66c45ba803e3b20008d8c294/colorLogoPNG-1745400265560.png" group-title="Italy",CNN Headlines
+https://jmp2.uk/plu-66c45ba803e3b20008d8c294.m3u8
 #EXTINF:-1 channel-id="66e0b4536ad04d0008fff4b2-us" tvg-id="66e0b4536ad04d0008fff4b2" tvg-chno="3097" tvg-name="CNN Originals" tvg-logo="https://images.pluto.tv/channels/66e0b4536ad04d0008fff4b2/colorLogoPNG.png" group-title="United States",CNN Originals
 https://jmp2.uk/plu-66e0b4536ad04d0008fff4b2.m3u8
 #EXTINF:-1 channel-id="673248f9030a2c0008033af8-us" tvg-id="673248f9030a2c0008033af8" tvg-chno="4525" tvg-name="CNN XPRESS" tvg-logo="https://images.pluto.tv/channels/673248f9030a2c0008033af8/colorLogoPNG.png" group-title="United States",CNN XPRESS
@@ -1277,6 +1275,8 @@ https://jmp2.uk/plu-664fd48894d5580008e45e7c.m3u8
 https://jmp2.uk/plu-5b329e0a7b9d8872aeb49ceb.m3u8
 #EXTINF:-1 channel-id="67a23b899a300a00086f3371-no" tvg-id="67a23b899a300a00086f3371" tvg-chno="2" tvg-name="Dominance FC TV" tvg-logo="https://images.pluto.tv/channels/67a23b899a300a00086f3371/colorLogoPNG.png" group-title="Norway",Dominance FC TV
 https://jmp2.uk/plu-67a23b899a300a00086f3371.m3u8
+#EXTINF:-1 channel-id="67a23bb777796f00080edaec-se" tvg-id="67a23bb777796f00080edaec" tvg-chno="1" tvg-name="Dominance FC TV" tvg-logo="https://images.pluto.tv/channels/67a23bb777796f00080edaec/colorLogoPNG.png" group-title="Sweden",Dominance FC TV
+https://jmp2.uk/plu-67a23bb777796f00080edaec.m3u8
 #EXTINF:-1 channel-id="67a23b4e15d6eb000827a20d-dk" tvg-id="67a23b4e15d6eb000827a20d" tvg-chno="3" tvg-name="Dominance FC TV" tvg-logo="https://images.pluto.tv/channels/67a23b4e15d6eb000827a20d/colorLogoPNG.png" group-title="Denmark",Dominance FC TV
 https://jmp2.uk/plu-67a23b4e15d6eb000827a20d.m3u8
 #EXTINF:-1 channel-id="624466b26ab25e0007dd7cfb-es" tvg-id="624466b26ab25e0007dd7cfb" tvg-chno="516" tvg-name="Dora la Exploradora" tvg-logo="https://images.pluto.tv/channels/624466b26ab25e0007dd7cfb/colorLogoPNG_1732662858921.png" group-title="Spain",Dora la Exploradora
@@ -2953,8 +2953,6 @@ https://jmp2.uk/plu-5812bd9f249444e05d09cc4e.m3u8
 https://jmp2.uk/plu-64240b7e283aa40008f79f84.m3u8
 #EXTINF:-1 channel-id="610a9ebe8c2ac2000734776e-it" tvg-id="610a9ebe8c2ac2000734776e" tvg-chno="850" tvg-name="Naturescape" tvg-logo="https://images.pluto.tv/channels/610a9ebe8c2ac2000734776e/colorLogoPNG.png" group-title="Italy",Naturescape
 https://jmp2.uk/plu-610a9ebe8c2ac2000734776e.m3u8
-#EXTINF:-1 channel-id="6792c30abc03978b9b8bb832-us" tvg-id="6792c30abc03978b9b8bb832" tvg-chno="2805" tvg-name="NBA Fast Channel" tvg-logo="https://images.pluto.tv/channels/6792c30abc03978b9b8bb832/colorLogoPNG.png" group-title="United States",NBA Fast Channel
-https://jmp2.uk/plu-6792c30abc03978b9b8bb832.m3u8
 #EXTINF:-1 channel-id="65790cda6e4f6a0008768764-us" tvg-id="65790cda6e4f6a0008768764" tvg-chno="5152" tvg-name="NBC Los Angeles News" tvg-logo="https://images.pluto.tv/channels/65790cda6e4f6a0008768764/colorLogoPNG.png" group-title="United States",NBC Los Angeles News
 https://jmp2.uk/plu-65790cda6e4f6a0008768764.m3u8
 #EXTINF:-1 channel-id="5df97894467dfa00091c873c-us" tvg-id="5df97894467dfa00091c873c" tvg-chno="2531" tvg-name="NBC News NOW" tvg-logo="https://images.pluto.tv/channels/5df97894467dfa00091c873c/colorLogoPNG.png" group-title="United States",NBC News NOW
@@ -5085,6 +5083,8 @@ https://jmp2.uk/plu-67b4b8b47d8025b1610a0a57.m3u8
 https://jmp2.uk/plu-67c7249be979b84e78ca43ff.m3u8
 #EXTINF:-1 channel-id="6391cef9edb23c0008598cee-dk" tvg-id="6391cef9edb23c0008598cee" tvg-chno="356" tvg-name="The Nanny" tvg-logo="https://images.pluto.tv/channels/6391cef9edb23c0008598cee/colorLogoPNG.png" group-title="Denmark",The Nanny
 https://jmp2.uk/plu-6391cef9edb23c0008598cee.m3u8
+#EXTINF:-1 channel-id="6792c30abc03978b9b8bb832-us" tvg-id="6792c30abc03978b9b8bb832" tvg-chno="2805" tvg-name="The NBA Channel" tvg-logo="https://images.pluto.tv/channels/6792c30abc03978b9b8bb832/colorLogoPNG.png" group-title="United States",The NBA Channel
+https://jmp2.uk/plu-6792c30abc03978b9b8bb832.m3u8
 #EXTINF:-1 channel-id="5aea40b35126c2157123aa64-us" tvg-id="5aea40b35126c2157123aa64" tvg-chno="1280" tvg-name="The New Detectives" tvg-logo="https://images.pluto.tv/channels/5aea40b35126c2157123aa64/colorLogoPNG.png" group-title="United States",The New Detectives
 https://jmp2.uk/plu-5aea40b35126c2157123aa64.m3u8
 #EXTINF:-1 channel-id="5e393d5c696b3b0009775c8b-gb" tvg-id="5e393d5c696b3b0009775c8b" tvg-chno="363" tvg-name="The New Detectives" tvg-logo="https://images.pluto.tv/channels/5e393d5c696b3b0009775c8b/colorLogoPNG.png" group-title="United Kingdom",The New Detectives
