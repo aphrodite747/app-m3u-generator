@@ -655,7 +655,7 @@ https://jmp2.uk/plu-64e87cc644fe100009ccad13.m3u8
 https://jmp2.uk/plu-625eaebc2a73a00007d3f855.m3u8
 #EXTINF:-1 channel-id="64f8a2a23a0d700008a6ed7b-ca" tvg-id="64f8a2a23a0d700008a6ed7b" tvg-chno="452" tvg-name="Catfish" tvg-logo="https://images.pluto.tv/channels/64f8a2a23a0d700008a6ed7b/colorLogoPNG.png" group-title="Canada",Catfish
 https://jmp2.uk/plu-64f8a2a23a0d700008a6ed7b.m3u8
-#EXTINF:-1 channel-id="6093f9ed2c75660007322bb7-it" tvg-id="6093f9ed2c75660007322bb7" tvg-chno="420" tvg-name="Catfish" tvg-logo="https://images.pluto.tv/channels/6093f9ed2c75660007322bb7/colorLogoPNG.png" group-title="Italy",Catfish
+#EXTINF:-1 channel-id="6093f9ed2c75660007322bb7-it" tvg-id="6093f9ed2c75660007322bb7" tvg-chno="425" tvg-name="Catfish" tvg-logo="https://images.pluto.tv/channels/6093f9ed2c75660007322bb7/colorLogoPNG.png" group-title="Italy",Catfish
 https://jmp2.uk/plu-6093f9ed2c75660007322bb7.m3u8
 #EXTINF:-1 channel-id="61781a52a3638a00078fa57e-no" tvg-id="61781a52a3638a00078fa57e" tvg-chno="504" tvg-name="Catfish" tvg-logo="https://images.pluto.tv/channels/61781a52a3638a00078fa57e/colorLogoPNG.png" group-title="Norway",Catfish
 https://jmp2.uk/plu-61781a52a3638a00078fa57e.m3u8
@@ -1959,7 +1959,7 @@ https://jmp2.uk/plu-62beb6c0371e6c000775930f.m3u8
 https://jmp2.uk/plu-633560bfa693390008b99cf0.m3u8
 #EXTINF:-1 channel-id="60e4507a06171800072339a3-it" tvg-id="60e4507a06171800072339a3" tvg-chno="400" tvg-name="Il Banco dei Pugni" tvg-logo="https://images.pluto.tv/channels/60e4507a06171800072339a3/colorLogoPNG.png" group-title="Italy",Il Banco dei Pugni
 https://jmp2.uk/plu-60e4507a06171800072339a3.m3u8
-#EXTINF:-1 channel-id="61fbd3f0733df400076c9a2d-it" tvg-id="61fbd3f0733df400076c9a2d" tvg-chno="410" tvg-name="Il Testimone" tvg-logo="https://images.pluto.tv/channels/61fbd3f0733df400076c9a2d/colorLogoPNG.png" group-title="Italy",Il Testimone
+#EXTINF:-1 channel-id="61fbd3f0733df400076c9a2d-it" tvg-id="61fbd3f0733df400076c9a2d" tvg-chno="415" tvg-name="Il Testimone" tvg-logo="https://images.pluto.tv/channels/61fbd3f0733df400076c9a2d/colorLogoPNG.png" group-title="Italy",Il Testimone
 https://jmp2.uk/plu-61fbd3f0733df400076c9a2d.m3u8
 #EXTINF:-1 channel-id="64e35aff6b1fdb0008ea8441-mx" tvg-id="64e35aff6b1fdb0008ea8441" tvg-chno="1113" tvg-name="Imagen TV+" tvg-logo="https://images.pluto.tv/channels/64e35aff6b1fdb0008ea8441/colorLogoPNG.png" group-title="Mexico",Imagen TV+
 https://jmp2.uk/plu-64e35aff6b1fdb0008ea8441.m3u8
@@ -2389,11 +2389,11 @@ https://jmp2.uk/plu-66bb3212fe11e5000883ea6b.m3u8
 https://jmp2.uk/plu-66166ccaaec96800080f6b59.m3u8
 #EXTINF:-1 channel-id="6077045b6031bd00078de127-br" tvg-id="6077045b6031bd00078de127" tvg-chno="350" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/6077045b6031bd00078de127/colorLogoPNG.png" group-title="Brazil",MasterChef
 https://jmp2.uk/plu-6077045b6031bd00078de127.m3u8
-#EXTINF:-1 channel-id="5e3ddbd27091820009f86dd9-mx" tvg-id="5e3ddbd27091820009f86dd9" tvg-chno="435" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/5e3ddbd27091820009f86dd9/colorLogoPNG.png" group-title="Mexico",MasterChef
+#EXTINF:-1 channel-id="5e3ddbd27091820009f86dd9-mx" tvg-id="5e3ddbd27091820009f86dd9" tvg-chno="435" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/5e3ddbd27091820009f86dd9/colorLogoPNG_1745622451211.png" group-title="Mexico",MasterChef
 https://jmp2.uk/plu-5e3ddbd27091820009f86dd9.m3u8
-#EXTINF:-1 channel-id="5e3ddbd27091820009f86dd9-cl" tvg-id="5e3ddbd27091820009f86dd9" tvg-chno="435" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/5e3ddbd27091820009f86dd9/colorLogoPNG.png" group-title="Chile",MasterChef
+#EXTINF:-1 channel-id="5e3ddbd27091820009f86dd9-cl" tvg-id="5e3ddbd27091820009f86dd9" tvg-chno="435" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/5e3ddbd27091820009f86dd9/colorLogoPNG_1745622451211.png" group-title="Chile",MasterChef
 https://jmp2.uk/plu-5e3ddbd27091820009f86dd9.m3u8
-#EXTINF:-1 channel-id="5e3ddbd27091820009f86dd9-ar" tvg-id="5e3ddbd27091820009f86dd9" tvg-chno="435" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/5e3ddbd27091820009f86dd9/colorLogoPNG.png" group-title="Argentina",MasterChef
+#EXTINF:-1 channel-id="5e3ddbd27091820009f86dd9-ar" tvg-id="5e3ddbd27091820009f86dd9" tvg-chno="435" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/5e3ddbd27091820009f86dd9/colorLogoPNG_1745622451211.png" group-title="Argentina",MasterChef
 https://jmp2.uk/plu-5e3ddbd27091820009f86dd9.m3u8
 #EXTINF:-1 channel-id="61c19edbf535220007075c4e-dk" tvg-id="61c19edbf535220007075c4e" tvg-chno="551" tvg-name="MasterChef Danmarks største madtalenter" tvg-logo="https://images.pluto.tv/channels/61c19edbf535220007075c4e/colorLogoPNG.png" group-title="Denmark",MasterChef Danmarks største madtalenter
 https://jmp2.uk/plu-61c19edbf535220007075c4e.m3u8
@@ -3429,6 +3429,8 @@ https://jmp2.uk/plu-65a69ef53af63d000825e0ee.m3u8
 https://jmp2.uk/plu-645a309c5a0cd5000873f609.m3u8
 #EXTINF:-1 channel-id="612e05b885183d0007958101-it" tvg-id="612e05b885183d0007958101" tvg-chno="230" tvg-name="Pluto TV Christmas" tvg-logo="https://images.pluto.tv/channels/612e05b885183d0007958101/colorLogoPNG.png" group-title="Italy",Pluto TV Christmas
 https://jmp2.uk/plu-612e05b885183d0007958101.m3u8
+#EXTINF:-1 channel-id="63eb5825da71180008acebb4-it" tvg-id="63eb5825da71180008acebb4" tvg-chno="51" tvg-name="Pluto TV Ciclismo" tvg-logo="https://images.pluto.tv/channels/63eb5825da71180008acebb4/colorLogoPNG.png" group-title="Italy",Pluto TV Ciclismo
+https://jmp2.uk/plu-63eb5825da71180008acebb4.m3u8
 #EXTINF:-1 channel-id="5dd8364ea1d6780009929902-mx" tvg-id="5dd8364ea1d6780009929902" tvg-chno="572" tvg-name="Pluto TV Ciencia" tvg-logo="https://images.pluto.tv/channels/5dd8364ea1d6780009929902/colorLogoPNG.png" group-title="Mexico",Pluto TV Ciencia
 https://jmp2.uk/plu-5dd8364ea1d6780009929902.m3u8
 #EXTINF:-1 channel-id="5dd8364ea1d6780009929902-cl" tvg-id="5dd8364ea1d6780009929902" tvg-chno="572" tvg-name="Pluto TV Ciencia" tvg-logo="https://images.pluto.tv/channels/5dd8364ea1d6780009929902/colorLogoPNG.png" group-title="Chile",Pluto TV Ciencia
@@ -4359,7 +4361,7 @@ https://jmp2.uk/plu-65ef002b4e01740008d2d5c1.m3u8
 https://jmp2.uk/plu-6643b8c42eafd40008daab8b.m3u8
 #EXTINF:-1 channel-id="6643b8c42eafd40008daab8b-cl" tvg-id="6643b8c42eafd40008daab8b" tvg-chno="1028" tvg-name="PRIDEtv" tvg-logo="https://images.pluto.tv/channels/6643b8c42eafd40008daab8b/colorLogoPNG.png" group-title="Chile",PRIDEtv
 https://jmp2.uk/plu-6643b8c42eafd40008daab8b.m3u8
-#EXTINF:-1 channel-id="656d86e957fe4a00087e0e94-it" tvg-id="656d86e957fe4a00087e0e94" tvg-chno="415" tvg-name="PRIDEtv" tvg-logo="https://images.pluto.tv/channels/656d86e957fe4a00087e0e94/colorLogoPNG.png" group-title="Italy",PRIDEtv
+#EXTINF:-1 channel-id="656d86e957fe4a00087e0e94-it" tvg-id="656d86e957fe4a00087e0e94" tvg-chno="420" tvg-name="PRIDEtv" tvg-logo="https://images.pluto.tv/channels/656d86e957fe4a00087e0e94/colorLogoPNG.png" group-title="Italy",PRIDEtv
 https://jmp2.uk/plu-656d86e957fe4a00087e0e94.m3u8
 #EXTINF:-1 channel-id="656d873d9d5ac4000839a88e-se" tvg-id="656d873d9d5ac4000839a88e" tvg-chno="520" tvg-name="PRIDEtv" tvg-logo="https://images.pluto.tv/channels/656d873d9d5ac4000839a88e/colorLogoPNG.png" group-title="Sweden",PRIDEtv
 https://jmp2.uk/plu-656d873d9d5ac4000839a88e.m3u8
@@ -5495,7 +5497,7 @@ https://jmp2.uk/plu-63693fa2bfa0690007ebc880.m3u8
 https://jmp2.uk/plu-6728c561daad7f000881ac83.m3u8
 #EXTINF:-1 channel-id="65253d66c52b3600083d8dd2-de" tvg-id="65253d66c52b3600083d8dd2" tvg-chno="359" tvg-name="Wicked Tuna" tvg-logo="https://images.pluto.tv/channels/65253d66c52b3600083d8dd2/colorLogoPNG.png" group-title="Germany",Wicked Tuna
 https://jmp2.uk/plu-65253d66c52b3600083d8dd2.m3u8
-#EXTINF:-1 channel-id="67c832cc9b53325ee16fb899-it" tvg-id="67c832cc9b53325ee16fb899" tvg-chno="51" tvg-name="Wicked Tuna" tvg-logo="https://images.pluto.tv/channels/67c832cc9b53325ee16fb899/colorLogoPNG.png" group-title="Italy",Wicked Tuna
+#EXTINF:-1 channel-id="67c832cc9b53325ee16fb899-it" tvg-id="67c832cc9b53325ee16fb899" tvg-chno="410" tvg-name="Wicked Tuna" tvg-logo="https://images.pluto.tv/channels/67c832cc9b53325ee16fb899/colorLogoPNG.png" group-title="Italy",Wicked Tuna
 https://jmp2.uk/plu-67c832cc9b53325ee16fb899.m3u8
 #EXTINF:-1 channel-id="5d48678d34ceb37d3c458a55-us" tvg-id="5d48678d34ceb37d3c458a55" tvg-chno="380" tvg-name="Wild 'N Out" tvg-logo="https://images.pluto.tv/channels/5d48678d34ceb37d3c458a55/colorLogoPNG.png" group-title="United States",Wild 'N Out
 https://jmp2.uk/plu-5d48678d34ceb37d3c458a55.m3u8
