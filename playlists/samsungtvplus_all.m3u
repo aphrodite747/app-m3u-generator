@@ -197,6 +197,10 @@ https://jmp2.uk/sam-CHAJ0500455A.m3u8
 https://jmp2.uk/sam-DEAK0500448A.m3u8
 #EXTINF:-1 channel-id="GB2700016H5-gb" tvg-id="GB2700016H5" tvg-chno="4071" tvg-name="Artist of the Year" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB2700016H5_20250107T031056SQUARE.png" group-title="United Kingdom",Artist of the Year
 https://jmp2.uk/sam-GB2700016H5.m3u8
+#EXTINF:-1 channel-id="IN800012RO-in" tvg-id="IN800012RO" tvg-chno="1109" tvg-name="Asianet News" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN800012RO_20250507T003805SQUARE.png" group-title="India",Asianet News
+https://jmp2.uk/sam-IN800012RO.m3u8
+#EXTINF:-1 channel-id="IN8000106W-in" tvg-id="IN8000106W" tvg-chno="1104" tvg-name="Asianet Suvarna News" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN8000106W_20250507T003808SQUARE.png" group-title="India",Asianet Suvarna News
+https://jmp2.uk/sam-IN8000106W.m3u8
 #EXTINF:-1 channel-id="IN26000170D-in" tvg-id="IN26000170D" tvg-chno="1373" tvg-name="Astro Tak" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN26000170D_20241023T011743SQUARE.png" group-title="India",Astro Tak
 https://jmp2.uk/sam-IN26000170D.m3u8
 #EXTINF:-1 channel-id="USBD25000138Y-us" tvg-id="USBD25000138Y" tvg-chno="2026" tvg-name="At Home with Family Handyman" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD25000138Y_20240520T221410SQUARE.png" group-title="United States",At Home with Family Handyman
@@ -2411,7 +2415,7 @@ https://jmp2.uk/sam-GB300036IM.m3u8
 https://jmp2.uk/sam-KRBD3100007WB.m3u8
 #EXTINF:-1 channel-id="US400001M2-us" tvg-id="US400001M2" tvg-chno="2436" tvg-name="PGA Tour" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US400001M2_20250211T021716SQUARE.png" group-title="United States",PGA Tour
 https://jmp2.uk/sam-US400001M2.m3u8
-#EXTINF:-1 channel-id="GB270001473-gb" tvg-id="GB270001473" tvg-chno="4442" tvg-name="PiCK Paranormal" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB270001473_20250506T090909SQUARE.png" group-title="United Kingdom",PiCK Paranormal
+#EXTINF:-1 channel-id="GB270001473-gb" tvg-id="GB270001473" tvg-chno="4442" tvg-name="PICK Monkey Rescue" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB270001473_20250506T090909SQUARE.png" group-title="United Kingdom",PICK Monkey Rescue
 https://jmp2.uk/sam-GB270001473.m3u8
 #EXTINF:-1 channel-id="CA110000152-ca" tvg-id="CA110000152" tvg-chno="2444" tvg-name="PickleballTV" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA110000152_20250121T095216SQUARE.png" group-title="Canada",PickleballTV
 https://jmp2.uk/sam-CA110000152.m3u8
@@ -3185,8 +3189,8 @@ https://jmp2.uk/sam-IT3600007QQ.m3u8
 https://jmp2.uk/sam-USBC600001QL.m3u8
 #EXTINF:-1 channel-id="FRBB49000059E-fr" tvg-id="FRBB49000059E" tvg-chno="4427" tvg-name="Tahiti TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FRBB49000059E_20241015T042847SQUARE.png" group-title="France",Tahiti TV
 https://jmp2.uk/sam-FRBB49000059E.m3u8
-#EXTINF:-1 channel-id="GBBB1000002VQ-gb" tvg-id="GBBB1000002VQ" tvg-chno="4557" tvg-name="Talk" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBB1000002VQ_20250121T013012SQUARE.png" group-title="United Kingdom",Talk
-https://jmp2.uk/sam-GBBB1000002VQ.m3u8
+#EXTINF:-1 channel-id="GB1200006IV-gb" tvg-id="GB1200006IV" tvg-chno="4557" tvg-name="Talk" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB1200006IV_20250506T021119SQUARE.png" group-title="United Kingdom",Talk
+https://jmp2.uk/sam-GB1200006IV.m3u8
 #EXTINF:-1 channel-id="GB30003577-gb" tvg-id="GB30003577" tvg-chno="4603" tvg-name="talkSPORT" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB30003577_20250131T145302SQUARE.png" group-title="United Kingdom",talkSPORT
 https://jmp2.uk/sam-GB30003577.m3u8
 #EXTINF:-1 channel-id="CABD1200002T9-ca" tvg-id="CABD1200002T9" tvg-chno="2120" tvg-name="Tastemade" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABD1200002T9_20250121T095346SQUARE.png" group-title="Canada",Tastemade

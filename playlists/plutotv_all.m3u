@@ -2411,8 +2411,6 @@ https://jmp2.uk/plu-66290b7523e24f000832cc17.m3u8
 https://jmp2.uk/plu-66290c12801af8000850c1a9.m3u8
 #EXTINF:-1 channel-id="66290a779e68c20008a18cf3-dk" tvg-id="66290a779e68c20008a18cf3" tvg-chno="603" tvg-name="Matlock" tvg-logo="https://images.pluto.tv/channels/66290a779e68c20008a18cf3/colorLogoPNG.png" group-title="Denmark",Matlock
 https://jmp2.uk/plu-66290a779e68c20008a18cf3.m3u8
-#EXTINF:-1 channel-id="65a6818c7bdc8d0008457b21-br" tvg-id="65a6818c7bdc8d0008457b21" tvg-chno="843" tvg-name="MAVTV Brasil" tvg-logo="https://images.pluto.tv/channels/65a6818c7bdc8d0008457b21/colorLogoPNG.png" group-title="Brazil",MAVTV Brasil
-https://jmp2.uk/plu-65a6818c7bdc8d0008457b21.m3u8
 #EXTINF:-1 channel-id="62fb6a4feb32e8000708f4d0-ca" tvg-id="62fb6a4feb32e8000708f4d0" tvg-chno="603" tvg-name="Max & Ruby" tvg-logo="https://images.pluto.tv/channels/62fb6a4feb32e8000708f4d0/colorLogoPNG.png" group-title="Canada",Max & Ruby
 https://jmp2.uk/plu-62fb6a4feb32e8000708f4d0.m3u8
 #EXTINF:-1 channel-id="5ea18e5df6dd1d0007cf7bad-gb" tvg-id="5ea18e5df6dd1d0007cf7bad" tvg-chno="259" tvg-name="McLeod's Daughters" tvg-logo="https://images.pluto.tv/channels/5ea18e5df6dd1d0007cf7bad/colorLogoPNG.png" group-title="United Kingdom",McLeod's Daughters
@@ -2573,7 +2571,7 @@ https://jmp2.uk/plu-67488b80030a2c000839641c.m3u8
 https://jmp2.uk/plu-650b6905d1f20c0008586b0c.m3u8
 #EXTINF:-1 channel-id="62e949f0cec1e60007f03314-ca" tvg-id="62e949f0cec1e60007f03314" tvg-chno="245" tvg-name="More NCIS" tvg-logo="https://images.pluto.tv/channels/62e949f0cec1e60007f03314/colorLogoPNG.png" group-title="Canada",More NCIS
 https://jmp2.uk/plu-62e949f0cec1e60007f03314.m3u8
-#EXTINF:-1 channel-id="62e91c3add66e00007eeb24c-ca" tvg-id="62e91c3add66e00007eeb24c" tvg-chno="108" tvg-name="More Pluto TV Comedy" tvg-logo="https://images.pluto.tv/channels/62e91c3add66e00007eeb24c/colorLogoPNG.png" group-title="Canada",More Pluto TV Comedy
+#EXTINF:-1 channel-id="62e91c3add66e00007eeb24c-ca" tvg-id="62e91c3add66e00007eeb24c" tvg-chno="108" tvg-name="More Pluto TV Comedy" tvg-logo="https://images.pluto.tv/channels/62e91c3add66e00007eeb24c/colorLogoPNG-1746634545016.png" group-title="Canada",More Pluto TV Comedy
 https://jmp2.uk/plu-62e91c3add66e00007eeb24c.m3u8
 #EXTINF:-1 channel-id="6532e6a9bdf3cf000887ab29-us" tvg-id="6532e6a9bdf3cf000887ab29" tvg-chno="1230" tvg-name="More True Crime" tvg-logo="https://images.pluto.tv/channels/6532e6a9bdf3cf000887ab29/colorLogoPNG.png" group-title="United States",More True Crime
 https://jmp2.uk/plu-6532e6a9bdf3cf000887ab29.m3u8
@@ -4187,13 +4185,13 @@ https://jmp2.uk/plu-61b87a155deef000075a4579.m3u8
 https://jmp2.uk/plu-61b86c6ef30f5d0007e4c6d1.m3u8
 #EXTINF:-1 channel-id="61c1e30f738ecd0008825184-no" tvg-id="61c1e30f738ecd0008825184" tvg-chno="362" tvg-name="Pluto TV Spenning" tvg-logo="https://images.pluto.tv/channels/61c1e30f738ecd0008825184/colorLogoPNG.png" group-title="Norway",Pluto TV Spenning
 https://jmp2.uk/plu-61c1e30f738ecd0008825184.m3u8
-#EXTINF:-1 channel-id="608030eff4b6f70007e1684c-it" tvg-id="608030eff4b6f70007e1684c" tvg-chno="570" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/608030eff4b6f70007e1684c/colorLogoPNG.png" group-title="Italy",Pluto TV Sport
+#EXTINF:-1 channel-id="608030eff4b6f70007e1684c-it" tvg-id="608030eff4b6f70007e1684c" tvg-chno="570" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/608030eff4b6f70007e1684c/colorLogoPNG-1746613470285.png" group-title="Italy",Pluto TV Sport
 https://jmp2.uk/plu-608030eff4b6f70007e1684c.m3u8
-#EXTINF:-1 channel-id="6357f33cb51d2d00077927c6-no" tvg-id="6357f33cb51d2d00077927c6" tvg-chno="152" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/6357f33cb51d2d00077927c6/colorLogoPNG.png" group-title="Norway",Pluto TV Sport
+#EXTINF:-1 channel-id="6357f33cb51d2d00077927c6-no" tvg-id="6357f33cb51d2d00077927c6" tvg-chno="152" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/6357f33cb51d2d00077927c6/colorLogoPNG-1746613308219.png" group-title="Norway",Pluto TV Sport
 https://jmp2.uk/plu-6357f33cb51d2d00077927c6.m3u8
-#EXTINF:-1 channel-id="62cd74e38f6f0d000798cd93-se" tvg-id="62cd74e38f6f0d000798cd93" tvg-chno="102" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/62cd74e38f6f0d000798cd93/colorLogoPNG.png" group-title="Sweden",Pluto TV Sport
+#EXTINF:-1 channel-id="62cd74e38f6f0d000798cd93-se" tvg-id="62cd74e38f6f0d000798cd93" tvg-chno="102" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/62cd74e38f6f0d000798cd93/colorLogoPNG-1746613159995.png" group-title="Sweden",Pluto TV Sport
 https://jmp2.uk/plu-62cd74e38f6f0d000798cd93.m3u8
-#EXTINF:-1 channel-id="6357f3de3643ba0007bc0b50-dk" tvg-id="6357f3de3643ba0007bc0b50" tvg-chno="201" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/6357f3de3643ba0007bc0b50/colorLogoPNG.png" group-title="Denmark",Pluto TV Sport
+#EXTINF:-1 channel-id="6357f3de3643ba0007bc0b50-dk" tvg-id="6357f3de3643ba0007bc0b50" tvg-chno="201" tvg-name="Pluto TV Sport" tvg-logo="https://images.pluto.tv/channels/6357f3de3643ba0007bc0b50/colorLogoPNG-1746613370383.png" group-title="Denmark",Pluto TV Sport
 https://jmp2.uk/plu-6357f3de3643ba0007bc0b50.m3u8
 #EXTINF:-1 channel-id="5ba3fb9c4b078e0f37ad34e8-us" tvg-id="5ba3fb9c4b078e0f37ad34e8" tvg-chno="10" tvg-name="Pluto TV Spotlight" tvg-logo="https://images.pluto.tv/channels/5ba3fb9c4b078e0f37ad34e8/colorLogoPNG.png" group-title="United States",Pluto TV Spotlight
 https://jmp2.uk/plu-5ba3fb9c4b078e0f37ad34e8.m3u8
@@ -4387,6 +4385,8 @@ https://jmp2.uk/plu-652d0b9ceb72580008a4ea5b.m3u8
 https://jmp2.uk/plu-5bdcdf1e851dd5632e2c11d1.m3u8
 #EXTINF:-1 channel-id="67817323dd7846fe546940dd-us" tvg-id="67817323dd7846fe546940dd" tvg-chno="2505" tvg-name="QVC2" tvg-logo="https://images.pluto.tv/channels/67817323dd7846fe546940dd/colorLogoPNG.png" group-title="United States",QVC2
 https://jmp2.uk/plu-67817323dd7846fe546940dd.m3u8
+#EXTINF:-1 channel-id="65a6818c7bdc8d0008457b21-br" tvg-id="65a6818c7bdc8d0008457b21" tvg-chno="843" tvg-name="RACER Brasil" tvg-logo="https://images.pluto.tv/channels/65a6818c7bdc8d0008457b21/logo7_2-20250507192304.png" group-title="Brazil",RACER Brasil
+https://jmp2.uk/plu-65a6818c7bdc8d0008457b21.m3u8
 #EXTINF:-1 channel-id="62cc1e1e0d0611000837dc1d-ca" tvg-id="62cc1e1e0d0611000837dc1d" tvg-chno="542" tvg-name="Radio-Canada INFO" tvg-logo="https://images.pluto.tv/channels/62cc1e1e0d0611000837dc1d/colorLogoPNG.png" group-title="Canada",Radio-Canada INFO
 https://jmp2.uk/plu-62cc1e1e0d0611000837dc1d.m3u8
 #EXTINF:-1 channel-id="60fb028c2e6a0c00075275a5-us" tvg-id="60fb028c2e6a0c00075275a5" tvg-chno="3850" tvg-name="Rainbow Squad" tvg-logo="https://images.pluto.tv/channels/60fb028c2e6a0c00075275a5/colorLogoPNG.png" group-title="United States",Rainbow Squad
