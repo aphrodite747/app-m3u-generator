@@ -637,7 +637,7 @@ https://jmp2.uk/sam-USBD1200021JM.m3u8
 https://jmp2.uk/sam-USBB52000022Q.m3u8
 #EXTINF:-1 channel-id="USBD33000180S" tvg-id="USBD33000180S" tvg-chno="3693" tvg-name="Slugterra" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD33000180S_20250121T101040SQUARE.png" group-title="Kids",Slugterra
 https://jmp2.uk/sam-USBD33000180S.m3u8
-#EXTINF:-1 channel-id="US10000135V" tvg-id="US10000135V" tvg-chno="1000" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US10000135V_20250511T072107SQUARE.png" group-title="Music",SMTOWN
+#EXTINF:-1 channel-id="US10000135V" tvg-id="US10000135V" tvg-chno="1004" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US10000135V_20250512T161807SQUARE.png" group-title="Music",SMTOWN
 https://jmp2.uk/sam-US10000135V.m3u8
 #EXTINF:-1 channel-id="US1800012MT" tvg-id="US1800012MT" tvg-chno="2627" tvg-name="SNL Vault" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1800012MT_20250121T101118SQUARE.png" group-title="Comedy",SNL Vault
 https://jmp2.uk/sam-US1800012MT.m3u8

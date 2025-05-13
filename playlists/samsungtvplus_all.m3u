@@ -1161,7 +1161,7 @@ https://jmp2.uk/sam-GBBD1100008YW.m3u8
 https://jmp2.uk/sam-IN270000230.m3u8
 #EXTINF:-1 channel-id="ITBD1000002HF-it" tvg-id="ITBD1000002HF" tvg-chno="4631" tvg-name="FIFA+" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20250415T022344SQUARE.png" group-title="Italy",FIFA+
 https://jmp2.uk/sam-ITBD1000002HF.m3u8
-#EXTINF:-1 channel-id="KR2900002NO-kr" tvg-id="KR2900002NO" tvg-chno="811" tvg-name="FIFA+" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KR2900002NO_20250402T010155SQUARE.png" group-title="South Korea",FIFA+
+#EXTINF:-1 channel-id="KR2900002NO-kr" tvg-id="KR2900002NO" tvg-chno="811" tvg-name="FIFA+" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KR2900002NO_20250512T023710SQUARE.png" group-title="South Korea",FIFA+
 https://jmp2.uk/sam-KR2900002NO.m3u8
 #EXTINF:-1 channel-id="USBD12000255B-us" tvg-id="USBD12000255B" tvg-chno="2368" tvg-name="FIFA+" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD12000255B_20241105T024210SQUARE.png" group-title="United States",FIFA+
 https://jmp2.uk/sam-USBD12000255B.m3u8
@@ -2847,7 +2847,7 @@ https://jmp2.uk/sam-GB2700013Y7.m3u8
 https://jmp2.uk/sam-USBD33000180S.m3u8
 #EXTINF:-1 channel-id="ITBC1100002ZU-it" tvg-id="ITBC1100002ZU" tvg-chno="4905" tvg-name="Smile" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100002ZU_20241022T043826SQUARE.png" group-title="Italy",Smile
 https://jmp2.uk/sam-ITBC1100002ZU.m3u8
-#EXTINF:-1 channel-id="CA1000003PR-ca" tvg-id="CA1000003PR" tvg-chno="1000" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA1000003PR_20250511T072111SQUARE.png" group-title="Canada",SMTOWN
+#EXTINF:-1 channel-id="CA1000003PR-ca" tvg-id="CA1000003PR" tvg-chno="1004" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA1000003PR_20250512T161811SQUARE.png" group-title="Canada",SMTOWN
 https://jmp2.uk/sam-CA1000003PR.m3u8
 #EXTINF:-1 channel-id="DE1000002V4-de" tvg-id="DE1000002V4" tvg-chno="4743" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE1000002V4_20250429T155713SQUARE.png" group-title="Germany",SMTOWN
 https://jmp2.uk/sam-DE1000002V4.m3u8
@@ -2863,7 +2863,7 @@ https://jmp2.uk/sam-IN4900008ZP.m3u8
 https://jmp2.uk/sam-IT1000001YA.m3u8
 #EXTINF:-1 channel-id="KR10000027H-kr" tvg-id="KR10000027H" tvg-chno="511" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KR10000027H_20250430T012706SQUARE.png" group-title="South Korea",SMTOWN
 https://jmp2.uk/sam-KR10000027H.m3u8
-#EXTINF:-1 channel-id="US10000135V-us" tvg-id="US10000135V" tvg-chno="1000" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US10000135V_20250511T072107SQUARE.png" group-title="United States",SMTOWN
+#EXTINF:-1 channel-id="US10000135V-us" tvg-id="US10000135V" tvg-chno="1004" tvg-name="SMTOWN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US10000135V_20250512T161807SQUARE.png" group-title="United States",SMTOWN
 https://jmp2.uk/sam-US10000135V.m3u8
 #EXTINF:-1 channel-id="GBBD1300001WA-gb" tvg-id="GBBD1300001WA" tvg-chno="4804" tvg-name="Smurf TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD1300001WA_20250107T030751SQUARE.png" group-title="United Kingdom",Smurf TV
 https://jmp2.uk/sam-GBBD1300001WA.m3u8

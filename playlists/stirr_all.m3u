@@ -29,6 +29,8 @@ https://jmp2.uk/str-6701.m3u8
 https://jmp2.uk/str-5721.m3u8
 #EXTINF:-1 channel-id="5289" tvg-id="5289" tvg-chno="600" tvg-name="AWE plus" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/02/08/1707418171gi9D5gADWQ-632x395-hZUZLeO1.png" group-title="Entertainment Live",AWE plus
 https://jmp2.uk/str-5289.m3u8
+#EXTINF:-1 channel-id="6489" tvg-id="6489" tvg-chno="912" tvg-name="Baltimore News: Breaking, Weather & Sports | FOX 45" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/12/28/1735350870gmiUn4zU2k-632x395-DPxYBp1Y.png" group-title="News Live, STIRR Cities",Baltimore News: Breaking Weather & Sports | FOX 45
+https://jmp2.uk/str-6489.m3u8
 #EXTINF:-1 channel-id="6583" tvg-id="6583" tvg-chno="751" tvg-name="Bright Side" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/01/24/1737757436mpMRHiHf9j-632x395-VnZS4Iyz.png" group-title="Entertainment Live",Bright Side
 https://jmp2.uk/str-6583.m3u8
 #EXTINF:-1 channel-id="6503" tvg-id="6503" tvg-chno="919" tvg-name="CBS 12 - WPEC - (West Palm Beach, FL*)" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/12/28/1735351000z16Rpq428D-632x395-ao3xUbKv.png" group-title="News Live, STIRR Cities",CBS 12 - WPEC - (West Palm Beach FL*)
@@ -85,8 +87,6 @@ https://jmp2.uk/str-6519.m3u8
 https://jmp2.uk/str-6511.m3u8
 #EXTINF:-1 channel-id="6515" tvg-id="6515" tvg-chno="925" tvg-name="Fox 26 - KMPH - (Fresno, CA*)" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/12/28/1735351112xiLYWSNX3B-632x395-pgnvHWLn.png" group-title="News Live, STIRR Cities",Fox 26 - KMPH - (Fresno CA*)
 https://jmp2.uk/str-6515.m3u8
-#EXTINF:-1 channel-id="6489" tvg-id="6489" tvg-chno="912" tvg-name="FOX 45 NEWS - WBFF - (Baltimore, MD*)" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/12/28/1735350870gmiUn4zU2k-632x395-DPxYBp1Y.png" group-title="News Live, STIRR Cities",FOX 45 NEWS - WBFF - (Baltimore MD*)
-https://jmp2.uk/str-6489.m3u8
 #EXTINF:-1 channel-id="6531" tvg-id="6531" tvg-chno="933" tvg-name="FOX 9 - WTOV - (Steubenville, OH*)" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/12/28/1735351253ntM1zUqR3r-632x395-j1dMNj5H.png" group-title="News Live, STIRR Cities",FOX 9 - WTOV - (Steubenville OH*)
 https://jmp2.uk/str-6531.m3u8
 #EXTINF:-1 channel-id="5299" tvg-id="5299" tvg-chno="610" tvg-name="Freebie TV" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/02/09/1707442253rVkI5jmfsL-632x395-sJSOSCWM.png" group-title="Entertainment Live",Freebie TV
