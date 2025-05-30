@@ -2647,8 +2647,6 @@ https://jmp2.uk/sam-USBD1700019RN.m3u8
 https://jmp2.uk/sam-ITBA2200008IM.m3u8
 #EXTINF:-1 channel-id="CABC2300010E4-ca" tvg-id="CABC2300010E4" tvg-chno="1065" tvg-name="Radio-Canada INFO" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABC2300010E4_20250121T095226SQUARE.png" group-title="Canada",Radio-Canada INFO
 https://jmp2.uk/sam-CABC2300010E4.m3u8
-#EXTINF:-1 channel-id="IT3200004WU-it" tvg-id="IT3200004WU" tvg-chno="4553" tvg-name="Rai News 24" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3200004WU_20250527T014842SQUARE.png" group-title="Italy",Rai News 24
-https://jmp2.uk/sam-IT3200004WU.m3u8
 #EXTINF:-1 channel-id="USBD3300015BY-us" tvg-id="USBD3300015BY" tvg-chno="3657" tvg-name="Rainbow Ruby" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD3300015BY_20250121T101108SQUARE.png" group-title="United States",Rainbow Ruby
 https://jmp2.uk/sam-USBD3300015BY.m3u8
 #EXTINF:-1 channel-id="CA1400015BB-ca" tvg-id="CA1400015BB" tvg-chno="4530" tvg-name="Rainy Day Vibes" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA1400015BB_20250318T021307SQUARE.png" group-title="Canada",Rainy Day Vibes
