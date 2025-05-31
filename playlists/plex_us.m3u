@@ -841,7 +841,7 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-66a2818ce1a2934adfe851e5.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6348ac7090b96ef5e0eb3288.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-650299cdec4e38daa56e9c7c" tvg-id="5e20b730f2f8d5003d739db7-650299cdec4e38daa56e9c7c" tvg-chno="" tvg-name="PBS Food" tvg-logo="https://provider-static.plex.tv/epg/cms/production/d5d8caa9-6a26-480b-b990-c4ea65b27e30/PBS_Food_Logo_Dark_1500x1000_-_Antonio_de_la_Torre__Tony_.png" group-title="Food & Home",PBS Food
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-650299cdec4e38daa56e9c7c.m3u8
-#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6823bfc6e9c807aaef15a7f5" tvg-id="5e20b730f2f8d5003d739db7-6823bfc6e9c807aaef15a7f5" tvg-chno="" tvg-name="PBS Genealogy" tvg-logo="https://provider-static.plex.tv/epg/cms/production/9135d568-88b4-494f-aea7-bad4b1598145/Plex_PartnerAssets_Logo_BlueWhite_1500x1000_-_Antonio_de_la_Torre__Tony_.png" group-title="Uncategorized",PBS Genealogy
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6823bfc6e9c807aaef15a7f5" tvg-id="5e20b730f2f8d5003d739db7-6823bfc6e9c807aaef15a7f5" tvg-chno="" tvg-name="PBS Genealogy" tvg-logo="https://provider-static.plex.tv/epg/cms/production/89236045-d033-4e04-a690-8cb46443a71d/Plex_PartnerAssets_Logo_BlueWhite_Stacked_1500x1000.png" group-title="Uncategorized",PBS Genealogy
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6823bfc6e9c807aaef15a7f5.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-63506e7747b2355a27e76e7f" tvg-id="5e20b730f2f8d5003d739db7-63506e7747b2355a27e76e7f" tvg-chno="" tvg-name="PBS Nature" tvg-logo="https://provider-static.plex.tv/epg/cms/production/489e066a-d4e6-4d2e-9265-a8c7be935651/PBS-Nature_logo-1_for-dark-bkgrd.png" group-title="Nature & Travel",PBS Nature
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-63506e7747b2355a27e76e7f.m3u8
@@ -1029,8 +1029,6 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-656fbbd6dbcce28c3a41741b.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-66a1acc577649467da169f0c.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-61f04d2bb01a6e8df3f72902" tvg-id="5e20b730f2f8d5003d739db7-61f04d2bb01a6e8df3f72902" tvg-chno="" tvg-name="Swerve Combat" tvg-logo="https://provider-static.plex.tv/epg/cms/production/aa449194-1789-42d6-8a03-55ef1e991c40/PLEX_1500x1000_Logo_Dark.png" group-title="Sports",Swerve Combat
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-61f04d2bb01a6e8df3f72902.m3u8
-#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-65944d40cbc51b25e5070a18" tvg-id="5e20b730f2f8d5003d739db7-65944d40cbc51b25e5070a18" tvg-chno="" tvg-name="T2" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f03c74c1-e873-4346-beb0-804372660176/T2_1_1500_x_1000___Logo_Dark_BG_-_Ari_Brock.png" group-title="Sports",T2
-https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65944d40cbc51b25e5070a18.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5ef51c802ddee5003f1c0225" tvg-id="5e20b730f2f8d5003d739db7-5ef51c802ddee5003f1c0225" tvg-chno="" tvg-name="Tastemade" tvg-logo="https://provider-static.plex.tv/8/epg/channels/logos/gracenote/8ccf64ea199095b2d5aab71b73a7ed1c.png" group-title="Food & Home",Tastemade
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5ef51c802ddee5003f1c0225.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-656fb965cb7e8e6a9bc3f370" tvg-id="5e20b730f2f8d5003d739db7-656fb965cb7e8e6a9bc3f370" tvg-chno="" tvg-name="Team Liquid" tvg-logo="https://provider-static.plex.tv/epg/cms/production/69909ae4-2c54-409f-a2ac-49c4b6664904/Logo_Art_-_Team_Liquid_ALL_WHITE.png" group-title="Sports",Team Liquid
@@ -1043,6 +1041,8 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6478acb5c83f56da796f1670.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6478acb5c83f56da796f166f.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61" tvg-id="5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61" tvg-chno="" tvg-name="Teletubbies" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f50e841a-8e39-441c-a7de-aa5925e6171a/teled39375085042573d5d6d78b53aca27b8.png" group-title="Kids & Family",Teletubbies
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-65944d40cbc51b25e5070a18" tvg-id="5e20b730f2f8d5003d739db7-65944d40cbc51b25e5070a18" tvg-chno="" tvg-name="Tennis Channel 2" tvg-logo="https://provider-static.plex.tv/epg/cms/production/a4713cf8-8897-41c2-bab4-132f733d3f5f/TC2_Logo_Plex_1500X1000_LightRDX.png" group-title="Uncategorized",Tennis Channel 2
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65944d40cbc51b25e5070a18.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6761f91555e174e95ccc4e4c" tvg-id="5e20b730f2f8d5003d739db7-6761f91555e174e95ccc4e4c" tvg-chno="" tvg-name="Tennis+" tvg-logo="https://provider-static.plex.tv/epg/cms/production/704e7af1-90a0-4ad4-94de-af2559c19fa6/1_Tennis_Plus_Logo__Dark_Mode__1500x1000px.png" group-title="Uncategorized",Tennis+
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6761f91555e174e95ccc4e4c.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5f170d64b898490041b4938f" tvg-id="5e20b730f2f8d5003d739db7-5f170d64b898490041b4938f" tvg-chno="" tvg-name="TG Junior" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/tg-junior-us.png" group-title="Kids & Family",TG Junior
