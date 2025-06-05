@@ -833,6 +833,8 @@ https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8
 https://jmp2.uk/plu-5f513564e4622a0007c578c0.m3u8
 #EXTINF:-1 channel-id="671754d8e482950008962aaf-it" tvg-id="671754d8e482950008962aaf" tvg-chno="275" tvg-name="Cinema Poliziottesco" tvg-logo="https://images.pluto.tv/channels/671754d8e482950008962aaf/colorLogoPNG.png" group-title="Italy",Cinema Poliziottesco
 https://jmp2.uk/plu-671754d8e482950008962aaf.m3u8
+#EXTINF:-1 channel-id="653660b4295b840008a70ba3-it" tvg-id="653660b4295b840008a70ba3" tvg-chno="292" tvg-name="CineThriller" tvg-logo="https://images.pluto.tv/channels/653660b4295b840008a70ba3/colorLogoPNG_1749022092472.png" group-title="Italy",CineThriller
+https://jmp2.uk/plu-653660b4295b840008a70ba3.m3u8
 #EXTINF:-1 channel-id="60812fc8539963000707d1e1-fr" tvg-id="60812fc8539963000707d1e1" tvg-chno="350" tvg-name="Ciné Romance by Pluto TV" tvg-logo="https://images.pluto.tv/channels/60812fc8539963000707d1e1/colorLogoPNG.png" group-title="France",Ciné Romance by Pluto TV
 https://jmp2.uk/plu-60812fc8539963000707d1e1.m3u8
 #EXTINF:-1 channel-id="60c34592c911890007f29a73-fr" tvg-id="60c34592c911890007f29a73" tvg-chno="310" tvg-name="Ciné Sci-Fi by Pluto TV" tvg-logo="https://images.pluto.tv/channels/60c34592c911890007f29a73/colorLogoPNG.png" group-title="France",Ciné Sci-Fi by Pluto TV
@@ -1863,7 +1865,7 @@ https://jmp2.uk/plu-619e286e093e7c0007489e6a.m3u8
 https://jmp2.uk/plu-619e4a3518d6970008bebc95.m3u8
 #EXTINF:-1 channel-id="619e21b213ef6b0007d8c17a-dk" tvg-id="619e21b213ef6b0007d8c17a" tvg-chno="865" tvg-name="Homicide Hunter" tvg-logo="https://images.pluto.tv/channels/619e21b213ef6b0007d8c17a/colorLogoPNG.png" group-title="Denmark",Homicide Hunter
 https://jmp2.uk/plu-619e21b213ef6b0007d8c17a.m3u8
-#EXTINF:-1 channel-id="66c35c0c92b1af0008c8e83a-it" tvg-id="66c35c0c92b1af0008c8e83a" tvg-chno="292" tvg-name="Horror Club" tvg-logo="https://images.pluto.tv/channels/66c35c0c92b1af0008c8e83a/colorLogoPNG.png" group-title="Italy",Horror Club
+#EXTINF:-1 channel-id="66c35c0c92b1af0008c8e83a-it" tvg-id="66c35c0c92b1af0008c8e83a" tvg-chno="293" tvg-name="Horror Club" tvg-logo="https://images.pluto.tv/channels/66c35c0c92b1af0008c8e83a/colorLogoPNG.png" group-title="Italy",Horror Club
 https://jmp2.uk/plu-66c35c0c92b1af0008c8e83a.m3u8
 #EXTINF:-1 channel-id="671b4e47daad7f000868b840-no" tvg-id="671b4e47daad7f000868b840" tvg-chno="160" tvg-name="Horse & Country" tvg-logo="https://images.pluto.tv/channels/671b4e47daad7f000868b840/colorLogoPNG.png" group-title="Norway",Horse & Country
 https://jmp2.uk/plu-671b4e47daad7f000868b840.m3u8
@@ -2227,8 +2229,6 @@ https://jmp2.uk/plu-650aff3398020f00086380cd.m3u8
 https://jmp2.uk/plu-60549c238c3f21000753d3e0.m3u8
 #EXTINF:-1 channel-id="60a2837f8154ab0007c4dcdf-it" tvg-id="60a2837f8154ab0007c4dcdf" tvg-chno="130" tvg-name="Le sorelle McLeod" tvg-logo="https://images.pluto.tv/channels/60a2837f8154ab0007c4dcdf/colorLogoPNG.png" group-title="Italy",Le sorelle McLeod
 https://jmp2.uk/plu-60a2837f8154ab0007c4dcdf.m3u8
-#EXTINF:-1 channel-id="653660b4295b840008a70ba3-it" tvg-id="653660b4295b840008a70ba3" tvg-chno="855" tvg-name="Le vite degli altri" tvg-logo="https://images.pluto.tv/channels/653660b4295b840008a70ba3/colorLogoPNG.png" group-title="Italy",Le vite degli altri
-https://jmp2.uk/plu-653660b4295b840008a70ba3.m3u8
 #EXTINF:-1 channel-id="62e91b5ca909cb0008114ae4-ca" tvg-id="62e91b5ca909cb0008114ae4" tvg-chno="571" tvg-name="Leave it to Bryan" tvg-logo="https://images.pluto.tv/channels/62e91b5ca909cb0008114ae4/colorLogoPNG.png" group-title="Canada",Leave it to Bryan
 https://jmp2.uk/plu-62e91b5ca909cb0008114ae4.m3u8
 #EXTINF:-1 channel-id="60fb01a24795a6000762fe83-us" tvg-id="60fb01a24795a6000762fe83" tvg-chno="3830" tvg-name="LEGO Kids TV" tvg-logo="https://images.pluto.tv/channels/60fb01a24795a6000762fe83/colorLogoPNG.png" group-title="United States",LEGO Kids TV
@@ -4063,7 +4063,7 @@ https://jmp2.uk/plu-62e92a58f3e4290007290c96.m3u8
 https://jmp2.uk/plu-5f98487036af340008da1e37.m3u8
 #EXTINF:-1 channel-id="5f8ed9461b35690007a0bc3a-fr" tvg-id="5f8ed9461b35690007a0bc3a" tvg-chno="405" tvg-name="Pluto TV Paranormal" tvg-logo="https://images.pluto.tv/channels/5f8ed9461b35690007a0bc3a/colorLogoPNG.png" group-title="France",Pluto TV Paranormal
 https://jmp2.uk/plu-5f8ed9461b35690007a0bc3a.m3u8
-#EXTINF:-1 channel-id="66c70033b1a34600087bb09a-it" tvg-id="66c70033b1a34600087bb09a" tvg-chno="293" tvg-name="Pluto TV Paranormal" tvg-logo="https://images.pluto.tv/channels/66c70033b1a34600087bb09a/colorLogoPNG.png" group-title="Italy",Pluto TV Paranormal
+#EXTINF:-1 channel-id="66c70033b1a34600087bb09a-it" tvg-id="66c70033b1a34600087bb09a" tvg-chno="294" tvg-name="Pluto TV Paranormal" tvg-logo="https://images.pluto.tv/channels/66c70033b1a34600087bb09a/colorLogoPNG.png" group-title="Italy",Pluto TV Paranormal
 https://jmp2.uk/plu-66c70033b1a34600087bb09a.m3u8
 #EXTINF:-1 channel-id="62b1e4189f5db20007ff03be-se" tvg-id="62b1e4189f5db20007ff03be" tvg-chno="636" tvg-name="Pluto TV Paranormal" tvg-logo="https://images.pluto.tv/channels/62b1e4189f5db20007ff03be/colorLogoPNG.png" group-title="Sweden",Pluto TV Paranormal
 https://jmp2.uk/plu-62b1e4189f5db20007ff03be.m3u8
@@ -4933,7 +4933,7 @@ https://jmp2.uk/plu-65c69bbfd77d450008c7ffee.m3u8
 https://jmp2.uk/plu-634dacf51d90320007fcd5fa.m3u8
 #EXTINF:-1 channel-id="65787ed36e4f6a000873ff40-es" tvg-id="65787ed36e4f6a000873ff40" tvg-chno="123" tvg-name="Star Trek: Deep Space Nine" tvg-logo="https://images.pluto.tv/channels/65787ed36e4f6a000873ff40/colorLogoPNG.png" group-title="Spain",Star Trek: Deep Space Nine
 https://jmp2.uk/plu-65787ed36e4f6a000873ff40.m3u8
-#EXTINF:-1 channel-id="65cb783b3af63d00087bedda-it" tvg-id="65cb783b3af63d00087bedda" tvg-chno="296" tvg-name="Star Trek: Deep Space Nine" tvg-logo="https://images.pluto.tv/channels/65cb783b3af63d00087bedda/colorLogoPNG.png" group-title="Italy",Star Trek: Deep Space Nine
+#EXTINF:-1 channel-id="65cb783b3af63d00087bedda-it" tvg-id="65cb783b3af63d00087bedda" tvg-chno="297" tvg-name="Star Trek: Deep Space Nine" tvg-logo="https://images.pluto.tv/channels/65cb783b3af63d00087bedda/colorLogoPNG.png" group-title="Italy",Star Trek: Deep Space Nine
 https://jmp2.uk/plu-65cb783b3af63d00087bedda.m3u8
 #EXTINF:-1 channel-id="66337ed7a0a74e0008895699-de" tvg-id="66337ed7a0a74e0008895699" tvg-chno="81" tvg-name="Star Trek: Enterprise" tvg-logo="https://images.pluto.tv/channels/66337ed7a0a74e0008895699/colorLogoPNG.png" group-title="Germany",Star Trek: Enterprise
 https://jmp2.uk/plu-66337ed7a0a74e0008895699.m3u8
@@ -4947,11 +4947,11 @@ https://jmp2.uk/plu-65786b94cbd0d60008f7e4d9.m3u8
 https://jmp2.uk/plu-66601d838ce3110008a9d7bf.m3u8
 #EXTINF:-1 channel-id="66601e338ea5560008f7820e-ca" tvg-id="66601e338ea5560008f7820e" tvg-chno="270" tvg-name="Star Trek: The Original Series" tvg-logo="https://images.pluto.tv/channels/66601e338ea5560008f7820e/colorLogoPNG.png" group-title="Canada",Star Trek: The Original Series
 https://jmp2.uk/plu-66601e338ea5560008f7820e.m3u8
-#EXTINF:-1 channel-id="6581a09edfed030008e12b39-it" tvg-id="6581a09edfed030008e12b39" tvg-chno="294" tvg-name="Star Trek: The Original Series" tvg-logo="https://images.pluto.tv/channels/6581a09edfed030008e12b39/colorLogoPNG.png" group-title="Italy",Star Trek: The Original Series
+#EXTINF:-1 channel-id="6581a09edfed030008e12b39-it" tvg-id="6581a09edfed030008e12b39" tvg-chno="295" tvg-name="Star Trek: The Original Series" tvg-logo="https://images.pluto.tv/channels/6581a09edfed030008e12b39/colorLogoPNG.png" group-title="Italy",Star Trek: The Original Series
 https://jmp2.uk/plu-6581a09edfed030008e12b39.m3u8
 #EXTINF:-1 channel-id="65787f2eb228b7000843fa5c-es" tvg-id="65787f2eb228b7000843fa5c" tvg-chno="122" tvg-name="Star Trek: Voyager" tvg-logo="https://images.pluto.tv/channels/65787f2eb228b7000843fa5c/colorLogoPNG.png" group-title="Spain",Star Trek: Voyager
 https://jmp2.uk/plu-65787f2eb228b7000843fa5c.m3u8
-#EXTINF:-1 channel-id="65cb73d33ba51e00084cabad-it" tvg-id="65cb73d33ba51e00084cabad" tvg-chno="295" tvg-name="Star Trek: Voyager" tvg-logo="https://images.pluto.tv/channels/65cb73d33ba51e00084cabad/colorLogoPNG.png" group-title="Italy",Star Trek: Voyager
+#EXTINF:-1 channel-id="65cb73d33ba51e00084cabad-it" tvg-id="65cb73d33ba51e00084cabad" tvg-chno="296" tvg-name="Star Trek: Voyager" tvg-logo="https://images.pluto.tv/channels/65cb73d33ba51e00084cabad/colorLogoPNG.png" group-title="Italy",Star Trek: Voyager
 https://jmp2.uk/plu-65cb73d33ba51e00084cabad.m3u8
 #EXTINF:-1 channel-id="620bfa7df72827000703ddb1-us" tvg-id="620bfa7df72827000703ddb1" tvg-chno="860" tvg-name="Stargate" tvg-logo="https://images.pluto.tv/channels/620bfa7df72827000703ddb1/colorLogoPNG.png" group-title="United States",Stargate
 https://jmp2.uk/plu-620bfa7df72827000703ddb1.m3u8
