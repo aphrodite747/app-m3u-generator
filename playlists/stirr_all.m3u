@@ -3,6 +3,8 @@
 https://jmp2.uk/str-6489.m3u8
 #EXTINF:-1 channel-id="6513" tvg-id="6513" tvg-chno="924" tvg-name="10 NBC WJAR - (Providence, RI*)" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/12/28/1735351091BkRmYuNTOi-632x395-Xc06SyPK.png" group-title="News Live, STIRR Cities",10 NBC WJAR - (Providence RI*)
 https://jmp2.uk/str-6513.m3u8
+#EXTINF:-1 channel-id="6593" tvg-id="6593" tvg-chno="221" tvg-name="123 GO!" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/01/24/1737758246VwehlduQvI-632x395-9fLmAxyk.png" group-title="Entertainment Live",123 GO!
+https://jmp2.uk/str-6593.m3u8
 #EXTINF:-1 channel-id="5734" tvg-id="5734" tvg-chno="760" tvg-name="4K Travel TV" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/04/08/1712612339bhKq2lZNGi-632x395-I5f7f5UE.png" group-title="Travel Live",4K Travel TV
 https://jmp2.uk/str-5734.m3u8
 #EXTINF:-1 channel-id="6581" tvg-id="6581" tvg-chno="503" tvg-name="5-Minute Crafts" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/01/24/1737755649zG7KSo4xYG-632x395-RJ2EhbuI.png" group-title="Other",5-Minute Crafts
@@ -141,6 +143,8 @@ https://jmp2.uk/str-5752.m3u8
 https://jmp2.uk/str-6641.m3u8
 #EXTINF:-1 channel-id="6643" tvg-id="6643" tvg-chno="156" tvg-name="Mi Raza Canal Plus" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/03/26/1743028543DGdNGBXCOU-632x395-72fuEGzc.png" group-title="Music Live",Mi Raza Canal Plus
 https://jmp2.uk/str-6643.m3u8
+#EXTINF:-1 channel-id="7063" tvg-id="7063" tvg-chno="222" tvg-name="MVMT of Culture" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/06/06/1749168432etnDgHtMlC-632x395-nR3B8TS2.png" group-title="Other",MVMT of Culture
+https://jmp2.uk/str-7063.m3u8
 #EXTINF:-1 channel-id="6441" tvg-id="6441" tvg-chno="209" tvg-name="My Money" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/11/12/173145112098GcT6p6jd-632x395-YxSXqXwK.png" group-title="News Live",My Money
 https://jmp2.uk/str-6441.m3u8
 #EXTINF:-1 channel-id="5726" tvg-id="5726" tvg-chno="425" tvg-name="Nautical Channel" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/04/08/17126107611l3ZAg8tJ1-632x395-P8YewLrP.png" group-title="Sports Live",Nautical Channel
@@ -229,6 +233,8 @@ https://jmp2.uk/str-5720.m3u8
 https://jmp2.uk/str-6479.m3u8
 #EXTINF:-1 channel-id="6595" tvg-id="6595" tvg-chno="151" tvg-name="Western Bound" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/01/31/1738363007dPIHvjze44-632x395-c12Jj4OB.png" group-title="Entertainment Live",Western Bound
 https://jmp2.uk/str-6595.m3u8
+#EXTINF:-1 channel-id="7061" tvg-id="7061" tvg-chno="159" tvg-name="Wild Nature " tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2025/06/05/1749167295EbIcuYKFtn-632x395-ZRlhd6wj.png" group-title="Other",Wild Nature 
+https://jmp2.uk/str-7061.m3u8
 #EXTINF:-1 channel-id="6439" tvg-id="6439" tvg-chno="103" tvg-name="Wild TV: Nonstop Outdoor Action & Adventure" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/11/12/1731450734sR0YMSWnS6-632x395-8NHdzJSa.png" group-title="Entertainment Live",Wild TV: Nonstop Outdoor Action & Adventure
 https://jmp2.uk/str-6439.m3u8
 #EXTINF:-1 channel-id="5306" tvg-id="5306" tvg-chno="420" tvg-name="World Poker Tour" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/02/09/1707447076xqJOPBocEx-632x395-QE0tbHvL.png" group-title="Sports Live",World Poker Tour
