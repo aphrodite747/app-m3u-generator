@@ -45,6 +45,8 @@ https://jmp2.uk/plu-6793eaa4bc03978b9bc63db1.m3u8
 https://jmp2.uk/plu-615b8ec39e878900073f419a.m3u8
 #EXTINF:-1 channel-id="5ce44810b421747ae467b7cd" tvg-id="5ce44810b421747ae467b7cd" tvg-chno="3400" tvg-name="Antiques Roadshow UK" tvg-logo="https://images.pluto.tv/channels/5ce44810b421747ae467b7cd/colorLogoPNG.png" group-title="Home + Food",Antiques Roadshow UK
 https://jmp2.uk/plu-5ce44810b421747ae467b7cd.m3u8
+#EXTINF:-1 channel-id="682e43b21295f98347710917" tvg-id="682e43b21295f98347710917" tvg-chno="2900" tvg-name="AWSN" tvg-logo="https://images.pluto.tv/channels/682e43b21295f98347710917/colorLogoPNG_1748886692805.png" group-title="Sports",AWSN
+https://jmp2.uk/plu-682e43b21295f98347710917.m3u8
 #EXTINF:-1 channel-id="60faffc3fbbc120007fc4376" tvg-id="60faffc3fbbc120007fc4376" tvg-chno="3760" tvg-name="Baby Shark TV" tvg-logo="https://images.pluto.tv/channels/60faffc3fbbc120007fc4376/colorLogoPNG.png" group-title="Kids",Baby Shark TV
 https://jmp2.uk/plu-60faffc3fbbc120007fc4376.m3u8
 #EXTINF:-1 channel-id="654932fa4d6d8f00084c4723" tvg-id="654932fa4d6d8f00084c4723" tvg-chno="1800" tvg-name="Bad Girls Club" tvg-logo="https://images.pluto.tv/channels/654932fa4d6d8f00084c4723/colorLogoPNG.png" group-title="Reality",Bad Girls Club
@@ -307,7 +309,7 @@ https://jmp2.uk/plu-5e54187aae660e00093561d6.m3u8
 https://jmp2.uk/plu-60faf9ddfcc1f200070a5932.m3u8
 #EXTINF:-1 channel-id="64e561a4354251000823a0e0" tvg-id="64e561a4354251000823a0e0" tvg-chno="1550" tvg-name="Ghost Hunters" tvg-logo="https://images.pluto.tv/channels/64e561a4354251000823a0e0/colorLogoPNG.png" group-title="Reality",Ghost Hunters
 https://jmp2.uk/plu-64e561a4354251000823a0e0.m3u8
-#EXTINF:-1 channel-id="5417a212ff9fba68282fbf5e" tvg-id="5417a212ff9fba68282fbf5e" tvg-chno="2900" tvg-name="GLORY Kickboxing" tvg-logo="https://images.pluto.tv/channels/5417a212ff9fba68282fbf5e/colorLogoPNG.png" group-title="Sports",GLORY Kickboxing
+#EXTINF:-1 channel-id="5417a212ff9fba68282fbf5e" tvg-id="5417a212ff9fba68282fbf5e" tvg-chno="2885" tvg-name="GLORY Kickboxing" tvg-logo="https://images.pluto.tv/channels/5417a212ff9fba68282fbf5e/colorLogoPNG.png" group-title="Sports",GLORY Kickboxing
 https://jmp2.uk/plu-5417a212ff9fba68282fbf5e.m3u8
 #EXTINF:-1 channel-id="667f3852efa2a10008e1e514" tvg-id="667f3852efa2a10008e1e514" tvg-chno="3815" tvg-name="Go Go Gadget!" tvg-logo="https://images.pluto.tv/channels/667f3852efa2a10008e1e514/colorLogoPNG.png" group-title="Kids",Go Go Gadget!
 https://jmp2.uk/plu-667f3852efa2a10008e1e514.m3u8
