@@ -237,6 +237,8 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-612919784f53e1002c9aa219.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9-nz" tvg-id="5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9" tvg-chno="" tvg-name="Arthur" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2d2c1c5b-dc09-43e6-b2f1-9db51a299fc5/Plex_PartnerAssets_Logo_Color_RDX.png" group-title="New Zealand",Arthur
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9.m3u8
+#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65a061008b6d8fe79ee1ddc9-ca" tvg-id="647f8d22a2fc3fadb4721685-65a061008b6d8fe79ee1ddc9" tvg-chno="" tvg-name="Arthur" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2d2c1c5b-dc09-43e6-b2f1-9db51a299fc5/Plex_PartnerAssets_Logo_Color_RDX.png" group-title="Canada",Arthur
+https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65a061008b6d8fe79ee1ddc9.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5eea605474085f0040ddc767-us" tvg-id="5e20b730f2f8d5003d739db7-5eea605474085f0040ddc767" tvg-chno="" tvg-name="AsianCrush" tvg-logo="https://provider-static.plex.tv/e/epg/channels/logos/gracenote/e1e8bf91cc2064e36aaf0a596d6a641d.png" group-title="United States",AsianCrush
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5eea605474085f0040ddc767.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-5eea605474085f0040ddc767-ca" tvg-id="647f8d22a2fc3fadb4721685-5eea605474085f0040ddc767" tvg-chno="" tvg-name="AsianCrush" tvg-logo="https://provider-static.plex.tv/e/epg/channels/logos/gracenote/e1e8bf91cc2064e36aaf0a596d6a641d.png" group-title="Canada",AsianCrush
@@ -3621,10 +3623,6 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-62ab5aabbb869dd0df6a3487.m3u8
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-62ab5aabbb869dd0df6a3487.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6478acb5c83f56da796f1670-us" tvg-id="5e20b730f2f8d5003d739db7-6478acb5c83f56da796f1670" tvg-chno="" tvg-name="Telemundo Acción" tvg-logo="https://provider-static.plex.tv/f/epg/channels/logos/gracenote/f2bcd48e7f98134abe3ce52550a31bd7.png" group-title="United States",Telemundo Acción
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6478acb5c83f56da796f1670.m3u8
-#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6478acb5c83f56da796f166f-us" tvg-id="5e20b730f2f8d5003d739db7-6478acb5c83f56da796f166f" tvg-chno="" tvg-name="Telemundo al Dia" tvg-logo="https://provider-static.plex.tv/1/epg/channels/logos/gracenote/183209ec7041b4645921574cffd096f4.png" group-title="United States",Telemundo al Dia
-https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6478acb5c83f56da796f166f.m3u8
-#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6478acb5c83f56da796f166f-ca" tvg-id="647f8d22a2fc3fadb4721685-6478acb5c83f56da796f166f" tvg-chno="" tvg-name="Telemundo al Dia" tvg-logo="https://provider-static.plex.tv/1/epg/channels/logos/gracenote/183209ec7041b4645921574cffd096f4.png" group-title="Canada",Telemundo al Dia
-https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6478acb5c83f56da796f166f.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61-us" tvg-id="5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61" tvg-chno="" tvg-name="Teletubbies" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f50e841a-8e39-441c-a7de-aa5925e6171a/teled39375085042573d5d6d78b53aca27b8.png" group-title="United States",Teletubbies
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61-au" tvg-id="5e20b730f2f8d5003d739db7-6615522e50e81fa51eb0df61" tvg-chno="" tvg-name="Teletubbies" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f50e841a-8e39-441c-a7de-aa5925e6171a/teled39375085042573d5d6d78b53aca27b8.png" group-title="Australia",Teletubbies
