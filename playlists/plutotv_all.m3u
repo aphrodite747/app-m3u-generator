@@ -1265,14 +1265,6 @@ https://jmp2.uk/plu-67a23b4e15d6eb000827a20d.m3u8
 https://jmp2.uk/plu-62e951258a26d40007b3034c.m3u8
 #EXTINF:-1 channel-id="5f8ecb9524419b0007365a1c-fr" tvg-id="5f8ecb9524419b0007365a1c" tvg-chno="1160" tvg-name="Dora TV" tvg-logo="https://images.pluto.tv/channels/5f8ecb9524419b0007365a1c/colorLogoPNG.png" group-title="France",Dora TV
 https://jmp2.uk/plu-5f8ecb9524419b0007365a1c.m3u8
-#EXTINF:-1 channel-id="656e28dd57fe4a0008819c3d-br" tvg-id="656e28dd57fe4a0008819c3d" tvg-chno="1403" tvg-name="Dora, A Aventureira" tvg-logo="https://images.pluto.tv/channels/656e28dd57fe4a0008819c3d/colorLogoPNG.png" group-title="Brazil",Dora A Aventureira
-https://jmp2.uk/plu-656e28dd57fe4a0008819c3d.m3u8
-#EXTINF:-1 channel-id="656e28a2954b020008ed133a-mx" tvg-id="656e28a2954b020008ed133a" tvg-chno="1403" tvg-name="Dora, La Exploradora" tvg-logo="https://images.pluto.tv/channels/656e28a2954b020008ed133a/colorLogoPNG.png" group-title="Mexico",Dora La Exploradora
-https://jmp2.uk/plu-656e28a2954b020008ed133a.m3u8
-#EXTINF:-1 channel-id="656e28a2954b020008ed133a-cl" tvg-id="656e28a2954b020008ed133a" tvg-chno="1403" tvg-name="Dora, La Exploradora" tvg-logo="https://images.pluto.tv/channels/656e28a2954b020008ed133a/colorLogoPNG.png" group-title="Chile",Dora La Exploradora
-https://jmp2.uk/plu-656e28a2954b020008ed133a.m3u8
-#EXTINF:-1 channel-id="656e28a2954b020008ed133a-ar" tvg-id="656e28a2954b020008ed133a" tvg-chno="1403" tvg-name="Dora, La Exploradora" tvg-logo="https://images.pluto.tv/channels/656e28a2954b020008ed133a/colorLogoPNG.png" group-title="Argentina",Dora La Exploradora
-https://jmp2.uk/plu-656e28a2954b020008ed133a.m3u8
 #EXTINF:-1 channel-id="5f8edad922b10b000753bc37-fr" tvg-id="5f8edad922b10b000753bc37" tvg-chno="410" tvg-name="Dossiers FBI" tvg-logo="https://images.pluto.tv/channels/5f8edad922b10b000753bc37/colorLogoPNG-1608307486966.png" group-title="France",Dossiers FBI
 https://jmp2.uk/plu-5f8edad922b10b000753bc37.m3u8
 #EXTINF:-1 channel-id="65a67c494a10d800085cab06-de" tvg-id="65a67c494a10d800085cab06" tvg-chno="312" tvg-name="Drake & Josh" tvg-logo="https://images.pluto.tv/channels/65a67c494a10d800085cab06/colorLogoPNG.png" group-title="Germany",Drake & Josh
@@ -2181,12 +2173,6 @@ https://jmp2.uk/plu-63211ba9cad976000794f988.m3u8
 https://jmp2.uk/plu-667d3534ca74680008696051.m3u8
 #EXTINF:-1 channel-id="654a3fe6986ad20008a42add-dk" tvg-id="654a3fe6986ad20008a42add" tvg-chno="117" tvg-name="Langt fra Bryggen" tvg-logo="https://images.pluto.tv/channels/654a3fe6986ad20008a42add/colorLogoPNG.png" group-title="Denmark",Langt fra Bryggen
 https://jmp2.uk/plu-654a3fe6986ad20008a42add.m3u8
-#EXTINF:-1 channel-id="5f9996533c9de3000759ccb5-mx" tvg-id="5f9996533c9de3000759ccb5" tvg-chno="1405" tvg-name="Las Pistas de Blue" tvg-logo="https://images.pluto.tv/channels/5f9996533c9de3000759ccb5/colorLogoPNG.png" group-title="Mexico",Las Pistas de Blue
-https://jmp2.uk/plu-5f9996533c9de3000759ccb5.m3u8
-#EXTINF:-1 channel-id="5f9996533c9de3000759ccb5-cl" tvg-id="5f9996533c9de3000759ccb5" tvg-chno="1405" tvg-name="Las Pistas de Blue" tvg-logo="https://images.pluto.tv/channels/5f9996533c9de3000759ccb5/colorLogoPNG.png" group-title="Chile",Las Pistas de Blue
-https://jmp2.uk/plu-5f9996533c9de3000759ccb5.m3u8
-#EXTINF:-1 channel-id="5f9996533c9de3000759ccb5-ar" tvg-id="5f9996533c9de3000759ccb5" tvg-chno="1405" tvg-name="Las Pistas de Blue" tvg-logo="https://images.pluto.tv/channels/5f9996533c9de3000759ccb5/colorLogoPNG.png" group-title="Argentina",Las Pistas de Blue
-https://jmp2.uk/plu-5f9996533c9de3000759ccb5.m3u8
 #EXTINF:-1 channel-id="61373f1a12dd9f00077dcd6f-es" tvg-id="61373f1a12dd9f00077dcd6f" tvg-chno="511" tvg-name="Las Tortugas Ninja" tvg-logo="https://images.pluto.tv/channels/61373f1a12dd9f00077dcd6f/colorLogoPNG.png" group-title="Spain",Las Tortugas Ninja
 https://jmp2.uk/plu-61373f1a12dd9f00077dcd6f.m3u8
 #EXTINF:-1 channel-id="63dd5d7a4e83e700088fbca8-mx" tvg-id="63dd5d7a4e83e700088fbca8" tvg-chno="1470" tvg-name="Las Tortugas Ninja" tvg-logo="https://images.pluto.tv/channels/63dd5d7a4e83e700088fbca8/colorLogoPNG.png" group-title="Mexico",Las Tortugas Ninja
@@ -3205,14 +3191,6 @@ https://jmp2.uk/plu-5ff8c708653d080007361b14.m3u8
 https://jmp2.uk/plu-60804d85858bd00007c5d591.m3u8
 #EXTINF:-1 channel-id="62ea3ec626dc1900078e9f26-ca" tvg-id="62ea3ec626dc1900078e9f26" tvg-chno="601" tvg-name="Paw Patrol" tvg-logo="https://images.pluto.tv/channels/62ea3ec626dc1900078e9f26/colorLogoPNG.png" group-title="Canada",Paw Patrol
 https://jmp2.uk/plu-62ea3ec626dc1900078e9f26.m3u8
-#EXTINF:-1 channel-id="6495c7ad115d060008bf6df0-br" tvg-id="6495c7ad115d060008bf6df0" tvg-chno="1400" tvg-name="PAW Patrol Patrulha Canina" tvg-logo="https://images.pluto.tv/channels/6495c7ad115d060008bf6df0/colorLogoPNG.png" group-title="Brazil",PAW Patrol Patrulha Canina
-https://jmp2.uk/plu-6495c7ad115d060008bf6df0.m3u8
-#EXTINF:-1 channel-id="6495c6ad115d060008bf6b52-mx" tvg-id="6495c6ad115d060008bf6b52" tvg-chno="1400" tvg-name="PAW Patrol Patrulla de Cachorros" tvg-logo="https://images.pluto.tv/channels/6495c6ad115d060008bf6b52/colorLogoPNG.png" group-title="Mexico",PAW Patrol Patrulla de Cachorros
-https://jmp2.uk/plu-6495c6ad115d060008bf6b52.m3u8
-#EXTINF:-1 channel-id="6495c6ad115d060008bf6b52-cl" tvg-id="6495c6ad115d060008bf6b52" tvg-chno="1400" tvg-name="PAW Patrol Patrulla de Cachorros" tvg-logo="https://images.pluto.tv/channels/6495c6ad115d060008bf6b52/colorLogoPNG.png" group-title="Chile",PAW Patrol Patrulla de Cachorros
-https://jmp2.uk/plu-6495c6ad115d060008bf6b52.m3u8
-#EXTINF:-1 channel-id="6495c6ad115d060008bf6b52-ar" tvg-id="6495c6ad115d060008bf6b52" tvg-chno="1400" tvg-name="PAW Patrol Patrulla de Cachorros" tvg-logo="https://images.pluto.tv/channels/6495c6ad115d060008bf6b52/colorLogoPNG.png" group-title="Argentina",PAW Patrol Patrulla de Cachorros
-https://jmp2.uk/plu-6495c6ad115d060008bf6b52.m3u8
 #EXTINF:-1 channel-id="60d39387706fe50007fda8e8-us" tvg-id="60d39387706fe50007fda8e8" tvg-chno="2840" tvg-name="PBR RidePass" tvg-logo="https://images.pluto.tv/channels/60d39387706fe50007fda8e8/colorLogoPNG.png" group-title="United States",PBR RidePass
 https://jmp2.uk/plu-60d39387706fe50007fda8e8.m3u8
 #EXTINF:-1 channel-id="636c2b3c55d2e700074105c4-us" tvg-id="636c2b3c55d2e700074105c4" tvg-chno="3390" tvg-name="PBS Antiques Roadshow" tvg-logo="https://images.pluto.tv/channels/636c2b3c55d2e700074105c4/colorLogoPNG.png" group-title="United States",PBS Antiques Roadshow
