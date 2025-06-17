@@ -1,10 +1,10 @@
-# FAST Service M3U Playlist Generator
+# ⭐ FAST Service M3U Playlist Generator
 
 This repository automatically generates M3U playlist files for various free ad-supported streaming television (FAST) services using a Python script and GitHub Actions. The playlists include embedded EPG (Electronic Program Guide) information via the `url-tvg` tag in the M3U header.
 
 ## ▶️ How It Works
 
-1.  **Data Fetching:** A Python script (`generate_playlists.py`) fetches the latest channel data from reliable upstream sources (primarily repositories maintained by [matthuisman/i.mjh.nz](https://github.com/matthuisman/i.mjh.nz) and [BuddyChewChew/tubi-scraper](https://github.com/BuddyChewChew/tubi-scraper)).
+1.  **Data Fetching:** A Python script (`generate_playlists.py`) fetches the latest channel data from reliable upstream sources ( primarily repositories maintained by [matthuisman/i.mjh.nz](https://github.com/matthuisman/i.mjh.nz ) and [BuddyChewChew/tubi-scraper](https://github.com/BuddyChewChew/tubi-scraper)).
 2.  **M3U Generation:** The script parses the data, formats it into the standard M3U playlist format, and includes the appropriate `url-tvg` EPG link in the header for compatible players.
 3.  **GitHub Action:** A scheduled GitHub Action (`.github/workflows/generate_playlists.yml`) runs the Python script daily (around 03:00 UTC by default).
 4.  **Commit Updates:** The workflow checks if the newly generated playlists differ from the ones currently in the repository. If changes are detected, the Action commits and pushes the updated files to the `playlists/` directory. If no changes are detected, no commit is made, keeping the history clean.
@@ -17,8 +17,7 @@ This generator currently creates playlists for:
 *   **Plex Live TV** (`plex_us.m3u`, `plex_all.m3u`)
 *   **Samsung TV Plus** (`samsungtvplus_us.m3u`, `samsungtvplus_all.m3u`)
 *   **Stirr TV** (`stirr_all.m3u`) 👉 Might be removing. No working EPG.
-*   **Tubi TV** (`tubi_all.m3u`)
-
+*   **Tubi TV** (`tubi_all.m3u`) 
 
 **Example URLs:**
 
@@ -69,32 +68,3 @@ If you want to change the specific regions generated, the update schedule, or th
 *   Ensure your use of these streams complies with the terms of service of the respective platforms and any applicable laws in your region.
 *   The EPG data is also provided by the upstream sources and its accuracy is not guaranteed.
 
-## 💥SHAMELESS◼️PLUG◼️OUR SHOP◼️CHECK IT OUT💥
-Designs available on more than just shirts. Dozens of products in the store. Check them out.
-
-Our t-shirts and merch makes a statement through fashion. We design stylish, expressive tees that reflect individuality, passion, and creativity. With witty slogans, bold graphics, and a commitment to quality, comfort, and sustainability, our shirts go beyond clothing—they’re a canvas for self-expression. Let your t-shirt do the talking!
-- Store: http://tee.pub/lic/DNT
-- Store: https://www.redbubble.com/people/DNT123Designs/shop?asc=u
-
-
-## 💲 Donate Crypto 📱 Wallet: buddychewchewun.cbd.id
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="https://github.com/BuddyChewChew/My-Streams/blob/main/QR/BITCOIN.png" width="200"><br>
-      <strong>Bitcoin</strong><br>
-      <code>3ENVoL2W1jkDDpxAP2V6jodRwSmWH3vnXA</code>
-    </td>
-    <td align="center">
-      <img src="https://github.com/BuddyChewChew/My-Streams/blob/main/QR/ETHEREUM.png" width="200"><br>
-      <strong>Ethereum</strong><br>
-      <code>0x55498E15C4BBC398e8D06cCA3bF23D1127AdA85d</code>
-    </td>
-    <td align="center">
-      <img src="https://github.com/BuddyChewChew/My-Streams/blob/main/QR/DOGECOIN.png" width="200"><br>
-      <strong>Dogecoin</strong><br>
-      <code>D6UcqWSB2Bnh92UqLUmDwkGVasFdPveXBy</code>
-    </td>
-  </tr>
-</table>
