@@ -1049,8 +1049,6 @@ https://jmp2.uk/plu-62f54c6439183b000769fb8f.m3u8
 https://jmp2.uk/plu-63f4e11c7533d80008a1d5f0.m3u8
 #EXTINF:-1 channel-id="632b606e12a67b0007c9e371-us" tvg-id="632b606e12a67b0007c9e371" tvg-chno="4270" tvg-name="CSI: NY en español" tvg-logo="https://images.pluto.tv/channels/632b606e12a67b0007c9e371/colorLogoPNG_1731837281479.png" group-title="United States",CSI: NY en español
 https://jmp2.uk/plu-632b606e12a67b0007c9e371.m3u8
-#EXTINF:-1 channel-id="66296e755a402e00086a2c47-br" tvg-id="66296e755a402e00086a2c47" tvg-chno="1218" tvg-name="Cultne TV" tvg-logo="https://images.pluto.tv/channels/66296e755a402e00086a2c47/colorLogoPNG.png" group-title="Brazil",Cultne TV
-https://jmp2.uk/plu-66296e755a402e00086a2c47.m3u8
 #EXTINF:-1 channel-id="5f1acd36779de70007a680d1-es" tvg-id="5f1acd36779de70007a680d1" tvg-chno="55" tvg-name="Curro Jiménez" tvg-logo="https://images.pluto.tv/channels/5f1acd36779de70007a680d1/colorLogoPNG.png" group-title="Spain",Curro Jiménez
 https://jmp2.uk/plu-5f1acd36779de70007a680d1.m3u8
 #EXTINF:-1 channel-id="64e77016324d190008291c13-no" tvg-id="64e77016324d190008291c13" tvg-chno="438" tvg-name="Dallas Cowboys Cheerleaders" tvg-logo="https://images.pluto.tv/channels/64e77016324d190008291c13/colorLogoPNG.png" group-title="Norway",Dallas Cowboys Cheerleaders
@@ -1293,6 +1291,8 @@ https://jmp2.uk/plu-622f48de713e510007f85808.m3u8
 https://jmp2.uk/plu-62e919ca865c590007ecd0bd.m3u8
 #EXTINF:-1 channel-id="65cb76ea11ced70008206b66-it" tvg-id="65cb76ea11ced70008206b66" tvg-chno="180" tvg-name="Dynasty" tvg-logo="https://images.pluto.tv/channels/65cb76ea11ced70008206b66/colorLogoPNG.png" group-title="Italy",Dynasty
 https://jmp2.uk/plu-65cb76ea11ced70008206b66.m3u8
+#EXTINF:-1 channel-id="67e1251e443f0671bc0e56de-no" tvg-id="67e1251e443f0671bc0e56de" tvg-chno="4" tvg-name="Døds World Championship" tvg-logo="https://images.pluto.tv/channels/67e1251e443f0671bc0e56de/colorLogoPNG_1749797020520.png" group-title="Norway",Døds World Championship
+https://jmp2.uk/plu-67e1251e443f0671bc0e56de.m3u8
 #EXTINF:-1 channel-id="67e1255b03c76bc15ebba607-se" tvg-id="67e1255b03c76bc15ebba607" tvg-chno="5" tvg-name="Døds World Championship" tvg-logo="https://images.pluto.tv/channels/67e1255b03c76bc15ebba607/colorLogoPNG_1749805459736.png" group-title="Sweden",Døds World Championship
 https://jmp2.uk/plu-67e1255b03c76bc15ebba607.m3u8
 #EXTINF:-1 channel-id="67e124ca17c292dfd532ddee-dk" tvg-id="67e124ca17c292dfd532ddee" tvg-chno="4" tvg-name="Døds World Championship" tvg-logo="https://images.pluto.tv/channels/67e124ca17c292dfd532ddee/colorLogoPNG_1748929409900.png" group-title="Denmark",Døds World Championship
