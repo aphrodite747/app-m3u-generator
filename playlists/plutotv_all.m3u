@@ -5025,6 +5025,8 @@ https://jmp2.uk/plu-5f998c1fc54853000797bacd.m3u8
 https://jmp2.uk/plu-5f998c1fc54853000797bacd.m3u8
 #EXTINF:-1 channel-id="5f998c1fc54853000797bacd-ar" tvg-id="5f998c1fc54853000797bacd" tvg-chno="1209" tvg-name="Tastemade" tvg-logo="https://images.pluto.tv/channels/5f998c1fc54853000797bacd/colorLogoPNG_1730999716441.png" group-title="Argentina",Tastemade
 https://jmp2.uk/plu-5f998c1fc54853000797bacd.m3u8
+#EXTINF:-1 channel-id="68509fe882d704acfc5bacd1-us" tvg-id="68509fe882d704acfc5bacd1" tvg-chno="3425" tvg-name="Tastemade Smokehouse" tvg-logo="https://images.pluto.tv/channels/68509fe882d704acfc5bacd1/colorLogoPNG_1750914005853.png" group-title="United States",Tastemade Smokehouse
+https://jmp2.uk/plu-68509fe882d704acfc5bacd1.m3u8
 #EXTINF:-1 channel-id="647f09e5f77b61000823ff24-gb" tvg-id="647f09e5f77b61000823ff24" tvg-chno="609" tvg-name="Tattoo Fixers" tvg-logo="https://images.pluto.tv/channels/647f09e5f77b61000823ff24/colorLogoPNG.png" group-title="United Kingdom",Tattoo Fixers
 https://jmp2.uk/plu-647f09e5f77b61000823ff24.m3u8
 #EXTINF:-1 channel-id="62bd991fc0ecf10007d2cb18-no" tvg-id="62bd991fc0ecf10007d2cb18" tvg-chno="428" tvg-name="Tattoo Fixers" tvg-logo="https://images.pluto.tv/channels/62bd991fc0ecf10007d2cb18/colorLogoPNG.png" group-title="Norway",Tattoo Fixers
