@@ -3543,7 +3543,7 @@ https://jmp2.uk/plu-683456acf59cc6a13212f1c1.m3u8
 https://jmp2.uk/plu-655e5c4d2c46f3000877a54b.m3u8
 #EXTINF:-1 channel-id="6672f49f61a39900089db68e-de" tvg-id="6672f49f61a39900089db68e" tvg-chno="243" tvg-name="Pluto TV Deutsche Comedy" tvg-logo="https://images.pluto.tv/channels/6672f49f61a39900089db68e/colorLogoPNG_1748857141516.png" group-title="Germany",Pluto TV Deutsche Comedy
 https://jmp2.uk/plu-6672f49f61a39900089db68e.m3u8
-#EXTINF:-1 channel-id="63e2316e4e83e70008953158-gb" tvg-id="63e2316e4e83e70008953158" tvg-chno="2" tvg-name="Pluto TV Disaster Movies" tvg-logo="https://images.pluto.tv/channels/63e2316e4e83e70008953158/colorLogoPNG.png" group-title="United Kingdom",Pluto TV Disaster Movies
+#EXTINF:-1 channel-id="63e2316e4e83e70008953158-gb" tvg-id="63e2316e4e83e70008953158" tvg-chno="2" tvg-name="Pluto TV Disaster Movies" tvg-logo="https://images.pluto.tv/channels/63e2316e4e83e70008953158/colorLogoPNG_1752064856622.png" group-title="United Kingdom",Pluto TV Disaster Movies
 https://jmp2.uk/plu-63e2316e4e83e70008953158.m3u8
 #EXTINF:-1 channel-id="64db2e0835425100080f2f5a-es" tvg-id="64db2e0835425100080f2f5a" tvg-chno="451" tvg-name="Pluto TV Diseño" tvg-logo="https://images.pluto.tv/channels/64db2e0835425100080f2f5a/colorLogoPNG.png" group-title="Spain",Pluto TV Diseño
 https://jmp2.uk/plu-64db2e0835425100080f2f5a.m3u8
@@ -4793,6 +4793,8 @@ https://jmp2.uk/plu-6576c20fb3801200084786c9.m3u8
 https://jmp2.uk/plu-65b9268fc798e800085add89.m3u8
 #EXTINF:-1 channel-id="5c393cad2de254456f7ef8c2-us" tvg-id="5c393cad2de254456f7ef8c2" tvg-chno="1480" tvg-name="Spike Outdoors" tvg-logo="https://images.pluto.tv/channels/5c393cad2de254456f7ef8c2/colorLogoPNG.png" group-title="United States",Spike Outdoors
 https://jmp2.uk/plu-5c393cad2de254456f7ef8c2.m3u8
+#EXTINF:-1 channel-id="5812bcc8237a6ff45d16c407-us" tvg-id="5812bcc8237a6ff45d16c407" tvg-chno="1420" tvg-name="Spike Pluto TV" tvg-logo="https://images.pluto.tv/channels/5812bcc8237a6ff45d16c407/colorLogoPNG.png" group-title="United States",Spike Pluto TV
+https://jmp2.uk/plu-5812bcc8237a6ff45d16c407.m3u8
 #EXTINF:-1 channel-id="5d00e8adaab96b5635b2a005-de" tvg-id="5d00e8adaab96b5635b2a005" tvg-chno="328" tvg-name="SpongeBob Schwammkopf" tvg-logo="https://images.pluto.tv/channels/5d00e8adaab96b5635b2a005/colorLogoPNG.png" group-title="Germany",SpongeBob Schwammkopf
 https://jmp2.uk/plu-5d00e8adaab96b5635b2a005.m3u8
 #EXTINF:-1 channel-id="63f87d057533d80008ab9549-ca" tvg-id="63f87d057533d80008ab9549" tvg-chno="611" tvg-name="SpongeBob SquarePants" tvg-logo="https://images.pluto.tv/channels/63f87d057533d80008ab9549/colorLogoPNG.png" group-title="Canada",SpongeBob SquarePants
