@@ -221,8 +221,6 @@ https://jmp2.uk/plu-62da73c4ec46c000070f4cb1.m3u8
 https://jmp2.uk/plu-61fbf91afb1b10000880dd08.m3u8
 #EXTINF:-1 channel-id="5f760c3d41aa2d0007bfde19-de" tvg-id="5f760c3d41aa2d0007bfde19" tvg-chno="291" tvg-name="Auto Motor Sport" tvg-logo="https://images.pluto.tv/channels/5f760c3d41aa2d0007bfde19/colorLogoPNG.png" group-title="Germany",Auto Motor Sport
 https://jmp2.uk/plu-5f760c3d41aa2d0007bfde19.m3u8
-#EXTINF:-1 channel-id="650315163a0d700008bb07f8-gb" tvg-id="650315163a0d700008bb07f8" tvg-chno="366" tvg-name="Autopsy" tvg-logo="https://images.pluto.tv/channels/650315163a0d700008bb07f8/colorLogoPNG.png" group-title="United Kingdom",Autopsy
-https://jmp2.uk/plu-650315163a0d700008bb07f8.m3u8
 #EXTINF:-1 channel-id="638f286445264d00084ec6dc-it" tvg-id="638f286445264d00084ec6dc" tvg-chno="149" tvg-name="Autostop per il cielo" tvg-logo="https://images.pluto.tv/channels/638f286445264d00084ec6dc/colorLogoPNG.png" group-title="Italy",Autostop per il cielo
 https://jmp2.uk/plu-638f286445264d00084ec6dc.m3u8
 #EXTINF:-1 channel-id="656df599c0fc8800089c75ab-gb" tvg-id="656df599c0fc8800089c75ab" tvg-chno="460" tvg-name="Avatar" tvg-logo="https://images.pluto.tv/channels/656df599c0fc8800089c75ab/colorLogoPNG.png" group-title="United Kingdom",Avatar
@@ -551,6 +549,8 @@ https://jmp2.uk/plu-660d67c419ca71000849a4e9.m3u8
 https://jmp2.uk/plu-660d67eec8311c0008b8c3f7.m3u8
 #EXTINF:-1 channel-id="660d66be7bcd8600087cfee5-dk" tvg-id="660d66be7bcd8600087cfee5" tvg-chno="471" tvg-name="Bondi Rescue" tvg-logo="https://images.pluto.tv/channels/660d66be7bcd8600087cfee5/colorLogoPNG.png" group-title="Denmark",Bondi Rescue
 https://jmp2.uk/plu-660d66be7bcd8600087cfee5.m3u8
+#EXTINF:-1 channel-id="650315163a0d700008bb07f8-gb" tvg-id="650315163a0d700008bb07f8" tvg-chno="366" tvg-name="Born to Kill" tvg-logo="https://images.pluto.tv/channels/650315163a0d700008bb07f8/colorLogoPNG-1752590031.png" group-title="United Kingdom",Born to Kill
+https://jmp2.uk/plu-650315163a0d700008bb07f8.m3u8
 #EXTINF:-1 channel-id="656f389c3944b60008e5bdab-br" tvg-id="656f389c3944b60008e5bdab" tvg-chno="1261" tvg-name="Boruto: Naruto Next Generations" tvg-logo="https://images.pluto.tv/channels/656f389c3944b60008e5bdab/colorLogoPNG.png" group-title="Brazil",Boruto: Naruto Next Generations
 https://jmp2.uk/plu-656f389c3944b60008e5bdab.m3u8
 #EXTINF:-1 channel-id="656f37f257fe4a000884dfee-mx" tvg-id="656f37f257fe4a000884dfee" tvg-chno="1261" tvg-name="Boruto: Naruto Next Generations" tvg-logo="https://images.pluto.tv/channels/656f37f257fe4a000884dfee/colorLogoPNG.png" group-title="Mexico",Boruto: Naruto Next Generations
@@ -627,8 +627,6 @@ https://jmp2.uk/plu-64666345f3f5b1000882bfb4.m3u8
 https://jmp2.uk/plu-65244c403fd33c0008ffff31.m3u8
 #EXTINF:-1 channel-id="65b3895660eb8700089e7f53-gb" tvg-id="65b3895660eb8700089e7f53" tvg-chno="462" tvg-name="Car Chase" tvg-logo="https://images.pluto.tv/channels/65b3895660eb8700089e7f53/colorLogoPNG.png" group-title="United Kingdom",Car Chase
 https://jmp2.uk/plu-65b3895660eb8700089e7f53.m3u8
-#EXTINF:-1 channel-id="65b384020cb1a1000880dee9-ca" tvg-id="65b384020cb1a1000880dee9" tvg-chno="266" tvg-name="Car Chase" tvg-logo="https://images.pluto.tv/channels/65b384020cb1a1000880dee9/colorLogoPNG.png" group-title="Canada",Car Chase
-https://jmp2.uk/plu-65b384020cb1a1000880dee9.m3u8
 #EXTINF:-1 channel-id="65a93b870c7ff50008d1ca47-no" tvg-id="65a93b870c7ff50008d1ca47" tvg-chno="412" tvg-name="Car Chase" tvg-logo="https://images.pluto.tv/channels/65a93b870c7ff50008d1ca47/colorLogoPNG.png" group-title="Norway",Car Chase
 https://jmp2.uk/plu-65a93b870c7ff50008d1ca47.m3u8
 #EXTINF:-1 channel-id="65a93be02fac9c00083cbac4-se" tvg-id="65a93be02fac9c00083cbac4" tvg-chno="364" tvg-name="Car Chase" tvg-logo="https://images.pluto.tv/channels/65a93be02fac9c00083cbac4/colorLogoPNG.png" group-title="Sweden",Car Chase
@@ -1231,7 +1229,7 @@ https://jmp2.uk/plu-62724ae034f5190007b63424.m3u8
 https://jmp2.uk/plu-62b1e5e77d15410007f798c6.m3u8
 #EXTINF:-1 channel-id="67e5987eef24f48ffca08fd7-ar" tvg-id="67e5987eef24f48ffca08fd7" tvg-chno="161" tvg-name="Doc Martin" tvg-logo="https://images.pluto.tv/channels/67e5987eef24f48ffca08fd7/colorLogoPNG_1745592891380.png" group-title="Argentina",Doc Martin
 https://jmp2.uk/plu-67e5987eef24f48ffca08fd7.m3u8
-#EXTINF:-1 channel-id="60d3574e97f10800078455de-es" tvg-id="60d3574e97f10800078455de" tvg-chno="120" tvg-name="Doctor Who" tvg-logo="https://images.pluto.tv/channels/60d3574e97f10800078455de/colorLogoPNG.png" group-title="Spain",Doctor Who
+#EXTINF:-1 channel-id="60d3574e97f10800078455de-es" tvg-id="60d3574e97f10800078455de" tvg-chno="120" tvg-name="Doctor Who" tvg-logo="https://images.pluto.tv/channels/60d3574e97f10800078455de/colorLogoPNG_1752566447188.png" group-title="Spain",Doctor Who
 https://jmp2.uk/plu-60d3574e97f10800078455de.m3u8
 #EXTINF:-1 channel-id="62e92d2e9bc0ab00072e10a3-ca" tvg-id="62e92d2e9bc0ab00072e10a3" tvg-chno="791" tvg-name="Doctor Who" tvg-logo="https://images.pluto.tv/channels/62e92d2e9bc0ab00072e10a3/colorLogoPNG.png" group-title="Canada",Doctor Who
 https://jmp2.uk/plu-62e92d2e9bc0ab00072e10a3.m3u8
@@ -1387,8 +1385,6 @@ https://jmp2.uk/plu-5e972a21ad709d00074195ba.m3u8
 https://jmp2.uk/plu-5cf0622da00ca1e2f6fac712.m3u8
 #EXTINF:-1 channel-id="5dc0c78281eddb0009a02d5e-us" tvg-id="5dc0c78281eddb0009a02d5e" tvg-chno="2185" tvg-name="ET" tvg-logo="https://images.pluto.tv/channels/5dc0c78281eddb0009a02d5e/colorLogoPNG.png" group-title="United States",ET
 https://jmp2.uk/plu-5dc0c78281eddb0009a02d5e.m3u8
-#EXTINF:-1 channel-id="60492dcf1c9b6a00089f41df-us" tvg-id="60492dcf1c9b6a00089f41df" tvg-chno="4540" tvg-name="Euronews" tvg-logo="https://images.pluto.tv/channels/60492dcf1c9b6a00089f41df/colorLogoPNG.png" group-title="United States",Euronews
-https://jmp2.uk/plu-60492dcf1c9b6a00089f41df.m3u8
 #EXTINF:-1 channel-id="5ca1da6c593a5d78f0e7edce-gb" tvg-id="5ca1da6c593a5d78f0e7edce" tvg-chno="841" tvg-name="Euronews" tvg-logo="https://images.pluto.tv/channels/5ca1da6c593a5d78f0e7edce/colorLogoPNG.png" group-title="United Kingdom",Euronews
 https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8
 #EXTINF:-1 channel-id="60d3583ef310610007fb02b1-es" tvg-id="60d3583ef310610007fb02b1" tvg-chno="601" tvg-name="Euronews" tvg-logo="https://images.pluto.tv/channels/60d3583ef310610007fb02b1/colorLogoPNG.png" group-title="Spain",Euronews
@@ -2055,8 +2051,6 @@ https://jmp2.uk/plu-6380c36389eccc000858c50f.m3u8
 https://jmp2.uk/plu-5e9decb953e157000752321c.m3u8
 #EXTINF:-1 channel-id="600acdc434a37000070004cf-gb" tvg-id="600acdc434a37000070004cf" tvg-chno="609" tvg-name="Judge Nosey" tvg-logo="https://images.pluto.tv/channels/600acdc434a37000070004cf/colorLogoPNG.png" group-title="United Kingdom",Judge Nosey
 https://jmp2.uk/plu-600acdc434a37000070004cf.m3u8
-#EXTINF:-1 channel-id="60d32888e31a0300073d9f08-gb" tvg-id="60d32888e31a0300073d9f08" tvg-chno="317" tvg-name="Just for Laughs GAGS" tvg-logo="https://images.pluto.tv/channels/60d32888e31a0300073d9f08/colorLogoPNG_1745913815879.png" group-title="United Kingdom",Just for Laughs GAGS
-https://jmp2.uk/plu-60d32888e31a0300073d9f08.m3u8
 #EXTINF:-1 channel-id="677f929054f43dad4b325c1c-ca" tvg-id="677f929054f43dad4b325c1c" tvg-chno="113" tvg-name="Just for Laughs GAGS" tvg-logo="https://images.pluto.tv/channels/677f929054f43dad4b325c1c/colorLogoPNG.png" group-title="Canada",Just for Laughs GAGS
 https://jmp2.uk/plu-677f929054f43dad4b325c1c.m3u8
 #EXTINF:-1 channel-id="6093f48c95132a00075fd859-it" tvg-id="6093f48c95132a00075fd859" tvg-chno="630" tvg-name="Just for Laughs GAGS" tvg-logo="https://images.pluto.tv/channels/6093f48c95132a00075fd859/colorLogoPNG_1745912777006.png" group-title="Italy",Just for Laughs GAGS
@@ -3983,7 +3977,7 @@ https://jmp2.uk/plu-67ebc1b6432a0e406f141341.m3u8
 https://jmp2.uk/plu-5dcde197f6591d0009839e04.m3u8
 #EXTINF:-1 channel-id="5dcde197f6591d0009839e04-cl" tvg-id="5dcde197f6591d0009839e04" tvg-chno="380" tvg-name="Pluto TV Reality" tvg-logo="https://images.pluto.tv/channels/5dcde197f6591d0009839e04/colorLogoPNG.png" group-title="Chile",Pluto TV Reality
 https://jmp2.uk/plu-5dcde197f6591d0009839e04.m3u8
-#EXTINF:-1 channel-id="6092544e7639460007d4835e-fr" tvg-id="6092544e7639460007d4835e" tvg-chno="910" tvg-name="Pluto TV Reality" tvg-logo="https://images.pluto.tv/channels/6092544e7639460007d4835e/colorLogoPNG_1751463124501.png" group-title="France",Pluto TV Reality
+#EXTINF:-1 channel-id="6092544e7639460007d4835e-fr" tvg-id="6092544e7639460007d4835e" tvg-chno="910" tvg-name="Pluto TV Reality" tvg-logo="https://images.pluto.tv/channels/6092544e7639460007d4835e/colorLogoPNG_1752588077085.png" group-title="France",Pluto TV Reality
 https://jmp2.uk/plu-6092544e7639460007d4835e.m3u8
 #EXTINF:-1 channel-id="61925f874b1ec000075e700a-it" tvg-id="61925f874b1ec000075e700a" tvg-chno="510" tvg-name="Pluto TV Reality" tvg-logo="https://images.pluto.tv/channels/61925f874b1ec000075e700a/colorLogoPNG.png" group-title="Italy",Pluto TV Reality
 https://jmp2.uk/plu-61925f874b1ec000075e700a.m3u8
@@ -4557,8 +4551,6 @@ https://jmp2.uk/plu-62c5d80dc6de440007e033eb.m3u8
 https://jmp2.uk/plu-6565430c9d5ac4000822f508.m3u8
 #EXTINF:-1 channel-id="5fb584b7613a31000789de5a-us" tvg-id="5fb584b7613a31000789de5a" tvg-chno="3880" tvg-name="Ryan and Friends" tvg-logo="https://images.pluto.tv/channels/5fb584b7613a31000789de5a/colorLogoPNG.png" group-title="United States",Ryan and Friends
 https://jmp2.uk/plu-5fb584b7613a31000789de5a.m3u8
-#EXTINF:-1 channel-id="6356584de76adf0007dcec3c-ca" tvg-id="6356584de76adf0007dcec3c" tvg-chno="608" tvg-name="Ryan and Friends" tvg-logo="https://images.pluto.tv/channels/6356584de76adf0007dcec3c/colorLogoPNG.png" group-title="Canada",Ryan and Friends
-https://jmp2.uk/plu-6356584de76adf0007dcec3c.m3u8
 #EXTINF:-1 channel-id="622f40c901d4b70007ad7609-de" tvg-id="622f40c901d4b70007ad7609" tvg-chno="13" tvg-name="Sabrina - Total verhext!" tvg-logo="https://images.pluto.tv/channels/622f40c901d4b70007ad7609/colorLogoPNG.png" group-title="Germany",Sabrina - Total verhext!
 https://jmp2.uk/plu-622f40c901d4b70007ad7609.m3u8
 #EXTINF:-1 channel-id="66276091cee0d900085fe053-gb" tvg-id="66276091cee0d900085fe053" tvg-chno="302" tvg-name="Sabrina The Teenage Witch" tvg-logo="https://images.pluto.tv/channels/66276091cee0d900085fe053/colorLogoPNG.png" group-title="United Kingdom",Sabrina The Teenage Witch
@@ -4841,12 +4833,6 @@ https://jmp2.uk/plu-65cb73d33ba51e00084cabad.m3u8
 https://jmp2.uk/plu-620bfa7df72827000703ddb1.m3u8
 #EXTINF:-1 channel-id="6304979e62d51c000722df46-fr" tvg-id="6304979e62d51c000722df46" tvg-chno="52" tvg-name="Starsky & Hutch" tvg-logo="https://images.pluto.tv/channels/6304979e62d51c000722df46/colorLogoPNG.png" group-title="France",Starsky & Hutch
 https://jmp2.uk/plu-6304979e62d51c000722df46.m3u8
-#EXTINF:-1 channel-id="65775a88b3801200084a39ed-us" tvg-id="65775a88b3801200084a39ed" tvg-chno="3120" tvg-name="StarTalk TV" tvg-logo="https://images.pluto.tv/channels/65775a88b3801200084a39ed/colorLogoPNG.png" group-title="United States",StarTalk TV
-https://jmp2.uk/plu-65775a88b3801200084a39ed.m3u8
-#EXTINF:-1 channel-id="668d6aebfd9eb2000886b365-gb" tvg-id="668d6aebfd9eb2000886b365" tvg-chno="807" tvg-name="StarTalk TV" tvg-logo="https://images.pluto.tv/channels/668d6aebfd9eb2000886b365/colorLogoPNG.png" group-title="United Kingdom",StarTalk TV
-https://jmp2.uk/plu-668d6aebfd9eb2000886b365.m3u8
-#EXTINF:-1 channel-id="65e9dcd81803650008303d00-ca" tvg-id="65e9dcd81803650008303d00" tvg-chno="524" tvg-name="StarTalk TV" tvg-logo="https://images.pluto.tv/channels/65e9dcd81803650008303d00/colorLogoPNG.png" group-title="Canada",StarTalk TV
-https://jmp2.uk/plu-65e9dcd81803650008303d00.m3u8
 #EXTINF:-1 channel-id="5ede464e7be0030007c58b73-de" tvg-id="5ede464e7be0030007c58b73" tvg-chno="390" tvg-name="Storage Wars: Canada" tvg-logo="https://images.pluto.tv/channels/5ede464e7be0030007c58b73/colorLogoPNG.png" group-title="Germany",Storage Wars: Canada
 https://jmp2.uk/plu-5ede464e7be0030007c58b73.m3u8
 #EXTINF:-1 channel-id="66177d18c8311c0008d077d0-it" tvg-id="66177d18c8311c0008d077d0" tvg-chno="380" tvg-name="Storie Criminali" tvg-logo="https://images.pluto.tv/channels/66177d18c8311c0008d077d0/colorLogoPNG.png" group-title="Italy",Storie Criminali
