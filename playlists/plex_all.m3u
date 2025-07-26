@@ -729,8 +729,6 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-671c1c8f572427bfa1eb7ecd.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-66ce3ef09ac0b1441b19ca2b.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-66ce3ef09ac0b1441b19ca2b-ca" tvg-id="647f8d22a2fc3fadb4721685-66ce3ef09ac0b1441b19ca2b" tvg-chno="" tvg-name="Continuum" tvg-logo="https://provider-static.plex.tv/epg/cms/production/1c8909c9-e161-4bca-afd4-649b7486a01b/Continuum_Channel_Logo_White.png" group-title="Canada",Continuum
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-66ce3ef09ac0b1441b19ca2b.m3u8
-#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda-us" tvg-id="5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda" tvg-chno="" tvg-name="Cooking Panda" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/cooking-panda.png" group-title="United States",Cooking Panda
-https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda-au" tvg-id="5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda" tvg-chno="" tvg-name="Cooking Panda" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/cooking-panda.png" group-title="Australia",Cooking Panda
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda-nz" tvg-id="5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda" tvg-chno="" tvg-name="Cooking Panda" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/cooking-panda.png" group-title="New Zealand",Cooking Panda
