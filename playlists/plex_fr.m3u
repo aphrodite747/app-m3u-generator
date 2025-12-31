@@ -271,8 +271,6 @@ https://jmp2.uk/plex-6430aa45fc3be5947780904e-5fb81660b7ad2d002dcb7335.m3u8
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-66bfb2e6144c201b8b61c10f.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-60aeb5cd87f9b1002ce12323" tvg-id="6430aa45fc3be5947780904e-60aeb5cd87f9b1002ce12323" tvg-chno="" tvg-name="NHRA TV" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/NHRA_logo_dark.png" group-title="Sports",NHRA TV
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-60aeb5cd87f9b1002ce12323.m3u8
-#EXTINF:-1 channel-id="6430aa45fc3be5947780904e-656fb665cb7e8e6a9bc3f36c" tvg-id="6430aa45fc3be5947780904e-656fb665cb7e8e6a9bc3f36c" tvg-chno="" tvg-name="NitroCircusTV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/331d73a7-e95d-4ded-9c61-546eb867c32f/Logo_Art_-_Nitro_Circus_Dark_Backgrounds.png" group-title="Sports",NitroCircusTV
-https://jmp2.uk/plex-6430aa45fc3be5947780904e-656fb665cb7e8e6a9bc3f36c.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-64b1e1217d4037206787f384" tvg-id="6430aa45fc3be5947780904e-64b1e1217d4037206787f384" tvg-chno="" tvg-name="Nolly Africa HD" tvg-logo="https://provider-static.plex.tv/epg/cms/production/a50425a8-5b58-47b5-96c9-43c842f77806/1500X1000_PNG_w__transparent_background__Logo_suitable_for_light_backgrounds__-_Herliane_Pedro.png" group-title="Black Entertainment",Nolly Africa HD
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-64b1e1217d4037206787f384.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-5f0ff262d71dcb00449ec015" tvg-id="6430aa45fc3be5947780904e-5f0ff262d71dcb00449ec015" tvg-chno="" tvg-name="Nosey" tvg-logo="https://provider-static.plex.tv/epg/cms/production/881d4e9f-10ec-4ca8-9309-17cc1126b768/nosey_green.png" group-title="Daytime TV",Nosey
@@ -433,6 +431,8 @@ https://jmp2.uk/plex-6430aa45fc3be5947780904e-61d738b5a7b7c7f703418514.m3u8
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-614398a08f30fa61e0da7c97.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-68b74890b5b437bf872b6b72" tvg-id="6430aa45fc3be5947780904e-68b74890b5b437bf872b6b72" tvg-chno="" tvg-name="TV5MONDE Chefs" tvg-logo="https://provider-static.plex.tv/epg/cms/production/9adadebc-556e-4510-a632-ee532eb5863b/LOGO_PLEX_CHEFS_1500X1000_WHITE.png" group-title="Uncategorized",TV5MONDE Chefs
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-68b74890b5b437bf872b6b72.m3u8
+#EXTINF:-1 channel-id="6430aa45fc3be5947780904e-68a799722895f21006e758e4" tvg-id="6430aa45fc3be5947780904e-68a799722895f21006e758e4" tvg-chno="" tvg-name="TV5MONDE Info" tvg-logo="https://provider-static.plex.tv/epg/cms/production/1ac1bf6b-ab6e-4a44-9268-c8c2374befce/TV5MONDE_INFO_WHT_1500x1000_-_Patrice.png" group-title="Uncategorized",TV5MONDE Info
+https://jmp2.uk/plex-6430aa45fc3be5947780904e-68a799722895f21006e758e4.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-68b74a235dc5413c905efd62" tvg-id="6430aa45fc3be5947780904e-68b74a235dc5413c905efd62" tvg-chno="" tvg-name="TV5MONDE Voyage" tvg-logo="https://provider-static.plex.tv/epg/cms/production/1fbf682f-90ba-4318-a649-12c7f89cdc48/LOGO_PLEX_VOYAGE_1500X1000_WHITE.png" group-title="Uncategorized",TV5MONDE Voyage
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-68b74a235dc5413c905efd62.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-66ccae1a78822c7edc4b6df1" tvg-id="6430aa45fc3be5947780904e-66ccae1a78822c7edc4b6df1" tvg-chno="" tvg-name="UFC" tvg-logo="https://provider-static.plex.tv/epg/cms/production/e1cfac6a-9e69-443a-b14c-c99e2cb50ead/UFC_logo_WHT_1500x1000.png" group-title="Sports",UFC
