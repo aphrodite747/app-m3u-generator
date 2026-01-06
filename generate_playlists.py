@@ -382,7 +382,7 @@ def generate_stirr_m3u(sort='name'):
 def generate_tubi_m3u():
     """Generates M3U playlist for Tubi by fetching pre-made list."""
     TUBI_PLAYLIST_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u'
-    EPG_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml'
+    # EPG_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml'
     TUBI_HEADERS = {'User-Agent': USER_AGENT}
 
     logging.info("--- Generating Tubi playlist ---")
