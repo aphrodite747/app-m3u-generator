@@ -63,6 +63,8 @@ https://jmp2.uk/plu-631fa8dd7f25240007099a40.m3u8
 https://jmp2.uk/plu-64ff1d92d545e9000877fba4.m3u8
 #EXTINF:-1 channel-id="6852854bce36f0644f37d765-gb" tvg-id="6852854bce36f0644f37d765" tvg-chno="840" tvg-name="A New Life in the Sun" tvg-logo="https://images.pluto.tv/channels/6852854bce36f0644f37d765/colorLogoPNG_1762189013725.png" group-title="United Kingdom",A New Life in the Sun
 https://jmp2.uk/plu-6852854bce36f0644f37d765.m3u8
+#EXTINF:-1 channel-id="6000a5a9e767980007b497ca-us" tvg-id="6000a5a9e767980007b497ca" tvg-chno="1330" tvg-name="A&E Crime 360" tvg-logo="https://images.pluto.tv/channels/6000a5a9e767980007b497ca/colorLogoPNG_1767745470551.png" group-title="United States",A&E Crime 360
+https://jmp2.uk/plu-6000a5a9e767980007b497ca.m3u8
 #EXTINF:-1 channel-id="6508be683a0d700008c534e4-us" tvg-id="6508be683a0d700008c534e4" tvg-chno="2532" tvg-name="ABC News Live" tvg-logo="https://images.pluto.tv/channels/6508be683a0d700008c534e4/colorLogoPNG.png" group-title="United States",ABC News Live
 https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8
 #EXTINF:-1 channel-id="64dab1f835425100080e1e7b-us" tvg-id="64dab1f835425100080e1e7b" tvg-chno="4340" tvg-name="Acapulco Shore" tvg-logo="https://images.pluto.tv/channels/64dab1f835425100080e1e7b/colorLogoPNG_1751300628513.png" group-title="United States",Acapulco Shore
@@ -873,7 +875,7 @@ https://jmp2.uk/plu-66c45b1803e3b20008d8c200.m3u8
 https://jmp2.uk/plu-62d969fd8451a30007f0fd94.m3u8
 #EXTINF:-1 channel-id="62f3dd1c2f29ce0007e18596-fr" tvg-id="62f3dd1c2f29ce0007e18596" tvg-chno="225" tvg-name="Coeur Océan" tvg-logo="https://images.pluto.tv/channels/62f3dd1c2f29ce0007e18596/colorLogoPNG.png" group-title="France",Coeur Océan
 https://jmp2.uk/plu-62f3dd1c2f29ce0007e18596.m3u8
-#EXTINF:-1 channel-id="5c37d6712de254456f7ec340-us" tvg-id="5c37d6712de254456f7ec340" tvg-chno="1290" tvg-name="Cold Case Files by A&E" tvg-logo="https://images.pluto.tv/channels/5c37d6712de254456f7ec340/colorLogoPNG.png" group-title="United States",Cold Case Files by A&E
+#EXTINF:-1 channel-id="5c37d6712de254456f7ec340-us" tvg-id="5c37d6712de254456f7ec340" tvg-chno="1290" tvg-name="Cold Case Files by A&E" tvg-logo="https://images.pluto.tv/channels/5c37d6712de254456f7ec340/colorLogoPNG_1767744689997.png" group-title="United States",Cold Case Files by A&E
 https://jmp2.uk/plu-5c37d6712de254456f7ec340.m3u8
 #EXTINF:-1 channel-id="65367e724f123d000877cfe5-ca" tvg-id="65367e724f123d000877cfe5" tvg-chno="476" tvg-name="Come Dine with Me" tvg-logo="https://images.pluto.tv/channels/65367e724f123d000877cfe5/colorLogoPNG.png" group-title="Canada",Come Dine with Me
 https://jmp2.uk/plu-65367e724f123d000877cfe5.m3u8
@@ -973,8 +975,6 @@ https://jmp2.uk/plu-6578848a6e4f6a0008741910.m3u8
 https://jmp2.uk/plu-6578875614fbe400086e319e.m3u8
 #EXTINF:-1 channel-id="657880c46e4f6a00087404d0-dk" tvg-id="657880c46e4f6a00087404d0" tvg-chno="871" tvg-name="Crime 360" tvg-logo="https://images.pluto.tv/channels/657880c46e4f6a00087404d0/colorLogoPNG.png" group-title="Denmark",Crime 360
 https://jmp2.uk/plu-657880c46e4f6a00087404d0.m3u8
-#EXTINF:-1 channel-id="6000a5a9e767980007b497ca-us" tvg-id="6000a5a9e767980007b497ca" tvg-chno="1330" tvg-name="Crime 360 by A&E" tvg-logo="https://images.pluto.tv/channels/6000a5a9e767980007b497ca/colorLogoPNG_1750786948836.png" group-title="United States",Crime 360 by A&E
-https://jmp2.uk/plu-6000a5a9e767980007b497ca.m3u8
 #EXTINF:-1 channel-id="5ea18cd42ee5410007e349dc-gb" tvg-id="5ea18cd42ee5410007e349dc" tvg-chno="364" tvg-name="Crime Investigation" tvg-logo="https://images.pluto.tv/channels/5ea18cd42ee5410007e349dc/colorLogoPNG.png" group-title="United Kingdom",Crime Investigation
 https://jmp2.uk/plu-5ea18cd42ee5410007e349dc.m3u8
 #EXTINF:-1 channel-id="63fe2ea349839300086d6d3e-gb" tvg-id="63fe2ea349839300086d6d3e" tvg-chno="367" tvg-name="Crime Scene Solvers" tvg-logo="https://images.pluto.tv/channels/63fe2ea349839300086d6d3e/colorLogoPNG.png" group-title="United Kingdom",Crime Scene Solvers
@@ -5427,7 +5427,7 @@ https://jmp2.uk/plu-623b92a2ccefed0007b1db48.m3u8
 https://jmp2.uk/plu-623b93628e6ded0007337d4d.m3u8
 #EXTINF:-1 channel-id="623a1b5188ecdc0007c9ef5a-us" tvg-id="623a1b5188ecdc0007c9ef5a" tvg-chno="4750" tvg-name="XITE Rock x Metal" tvg-logo="https://images.pluto.tv/channels/623a1b5188ecdc0007c9ef5a/colorLogoPNG.png" group-title="United States",XITE Rock x Metal
 https://jmp2.uk/plu-623a1b5188ecdc0007c9ef5a.m3u8
-#EXTINF:-1 channel-id="6000a6f4c3f8550008fc9b91-us" tvg-id="6000a6f4c3f8550008fc9b91" tvg-chno="1470" tvg-name="Xtreme Outdoor Presented by HISTORY" tvg-logo="https://images.pluto.tv/channels/6000a6f4c3f8550008fc9b91/colorLogoPNG.png" group-title="United States",Xtreme Outdoor Presented by HISTORY
+#EXTINF:-1 channel-id="6000a6f4c3f8550008fc9b91-us" tvg-id="6000a6f4c3f8550008fc9b91" tvg-chno="1470" tvg-name="Xtreme Outdoor Presented by HISTORY" tvg-logo="https://images.pluto.tv/channels/6000a6f4c3f8550008fc9b91/colorLogoPNG_1767745185882.png" group-title="United States",Xtreme Outdoor Presented by HISTORY
 https://jmp2.uk/plu-6000a6f4c3f8550008fc9b91.m3u8
 #EXTINF:-1 channel-id="612e044c970e6f00083bcf3b-fr" tvg-id="612e044c970e6f00083bcf3b" tvg-chno="630" tvg-name="Y'a que la vérité qui compte" tvg-logo="https://images.pluto.tv/channels/612e044c970e6f00083bcf3b/colorLogoPNG.png" group-title="France",Y'a que la vérité qui compte
 https://jmp2.uk/plu-612e044c970e6f00083bcf3b.m3u8
