@@ -3,6 +3,7 @@ import gzip
 import json
 import os
 import logging
+import uuid  # Added for the new Pluto session logic
 from io import BytesIO
 
 # --- Configuration ---
@@ -96,9 +97,11 @@ def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title,
 # --- Service Functions ---
 
 def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
-    """Generates M3U playlists for PlutoTV."""
+    """Generates M3U playlists for PlutoTV using updated V4 Stitcher logic."""
     PLUTO_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz'
-    STREAM_URL_TEMPLATE = 'https://jmp2.uk/plu-{id}.m3u8'
+    
+    # New V4 Stitcher Host
+    STITCHER_BASE = "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/{id}/master.m3u8"
     EPG_URL_TEMPLATE = 'https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/{region}.xml.gz'
 
     data = fetch_url(PLUTO_URL, is_json=True, is_gzipped=True)
@@ -106,12 +109,15 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
         logging.error("Failed to fetch or parse PlutoTV data.")
         return
 
+    # Consistent device ID for the generation session
+    device_id = str(uuid.uuid4())
+
     region_name_map = {
         "ar": "Argentina", "br": "Brazil", "ca": "Canada", "cl": "Chile", "co": "Colombia",
         "cr": "Costa Rica", "de": "Germany", "dk": "Denmark", "do": "Dominican Republic",
         "ec": "Ecuador", "es": "Spain", "fr": "France", "gb": "United Kingdom", "gt": "Guatemala",
         "it": "Italy", "mx": "Mexico", "no": "Norway", "pe": "Peru", "se": "Sweden",
-        "us": "United States", "latam": "Latin America" # Add others as needed from data
+        "us": "United States", "latam": "Latin America"
     }
 
     for region in regions:
@@ -126,7 +132,6 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
                 region_full_name = region_name_map.get(region_key, region_key.upper())
                 for channel_key, channel_info in region_data.get('channels', {}).items():
                     unique_channel_id = f"{channel_key}-{region_key}"
-                    # Add region info for grouping in 'all' list
                     channels_to_process[unique_channel_id] = {
                         **channel_info,
                         'region_code': region_key,
@@ -158,15 +163,24 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
         # Build M3U entries
         for channel_id in sorted_channel_ids:
             channel = channels_to_process[channel_id]
-            chno = channel.get('chno')
-            name = channel.get('name', 'Unknown Channel')
-            logo = channel.get('logo', '')
-            group = channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized')
-            original_id = channel.get('original_id', channel_id.split('-')[0]) # Fallback for safety
-            tvg_id = original_id # Use the base ID for EPG matching across regions
+            original_id = channel.get('original_id', channel_id.split('-')[0])
+            
+            # Generate unique session ID for this stream entry
+            sid = str(uuid.uuid4())
+            
+            # Build the modern Stitcher URL
+            stream_url = (
+                f"{STITCHER_BASE.format(id=original_id)}"
+                f"?advertisingId=&appName=web&appVersion=unknown&deviceId={device_id}"
+                f"&deviceMake=Chrome&deviceModel=web&deviceType=web"
+                f"&sid={sid}&serverSideAds=true"
+            )
 
-            extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group, name)
-            stream_url = STREAM_URL_TEMPLATE.replace('{id}', original_id)
+            extinf = format_extinf(channel_id, original_id, channel.get('chno'), 
+                                  channel.get('name', 'Unknown'), channel.get('logo', ''), 
+                                  channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized'), 
+                                  channel.get('name', 'Unknown'))
+            
             output_lines.append(extinf)
             output_lines.append(stream_url + '\n')
 
@@ -341,7 +355,7 @@ def generate_stirr_m3u(sort='name'):
     """Generates M3U playlist for Stirr."""
     STIRR_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz'
     STREAM_URL_TEMPLATE = 'https://jmp2.uk/str-{id}.m3u8'
-    EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz' # Note: master branch, not refs/heads/master for EPG usually
+    EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz' 
 
     logging.info("--- Generating Stirr playlist ---")
     data = fetch_url(STIRR_URL, is_json=True, is_gzipped=True)
@@ -370,7 +384,7 @@ def generate_stirr_m3u(sort='name'):
         logo = channel.get('logo', '')
         groups_list = channel.get('groups', [])
         group_title = ', '.join(groups_list) if groups_list else 'Uncategorized'
-        tvg_id = channel_id # Stirr IDs seem unique enough
+        tvg_id = channel_id 
 
         extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group_title, name)
         stream_url = STREAM_URL_TEMPLATE.replace('{id}', channel_id)
@@ -380,22 +394,18 @@ def generate_stirr_m3u(sort='name'):
     write_m3u_file("stirr_all.m3u", "".join(output_lines))
 
 def generate_tubi_m3u():
-    """Generates M3U playlist for Tubi by fetching pre-made list."""
+    """Generates M3U playlist for Tubi."""
     TUBI_PLAYLIST_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u'
-    # EPG_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml'
+    EPG_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml'
     TUBI_HEADERS = {'User-Agent': USER_AGENT}
 
     logging.info("--- Generating Tubi playlist ---")
-    # Fetch Tubi's M3U content directly as text (stream=True in helper not strictly needed here, but good practice)
-    # response = fetch_url(TUBI_PLAYLIST_URL, is_json=False, is_gzipped=False, headers=TUBI_HEADERS, stream=True)
-    # Using stream=False is simpler if the file isn't huge
     playlist_content = fetch_url(TUBI_PLAYLIST_URL, is_json=False, is_gzipped=False, headers=TUBI_HEADERS)
 
     if not playlist_content:
         logging.error("Failed to fetch Tubi playlist content.")
         return
 
-    # Ensure the fetched content doesn't start with its own M3U header
     lines = playlist_content.strip().splitlines()
     if lines and lines[0].strip().upper() == '#EXTM3U':
         logging.info("Removing existing #EXTM3U header from fetched Tubi content.")
@@ -403,11 +413,9 @@ def generate_tubi_m3u():
     else:
         playlist_data = "\n".join(lines)
 
-
     output_content = f'#EXTM3U url-tvg="{EPG_URL}"\n'
     output_content += playlist_data
 
-    # Add a newline at the end if it's missing
     if not output_content.endswith('\n'):
         output_content += '\n'
 
@@ -448,7 +456,7 @@ def generate_roku_m3u(sort='name'):
         logo = channel.get('logo', '')
         groups_list = channel.get('groups', [])
         group_title = groups_list[0] if groups_list else 'Uncategorized'
-        tvg_id = channel_id  # Roku IDs seem unique enough
+        tvg_id = channel_id 
 
         extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group_title, name)
         stream_url = STREAM_URL_TEMPLATE.replace('{id}', channel_id)
@@ -461,20 +469,17 @@ def generate_roku_m3u(sort='name'):
 if __name__ == "__main__":
     logging.info("Starting playlist generation process...")
     
-    # List of services to generate playlists for
     services = [
         'pluto',
         'plex',
         'samsungtvplus',
         'stirr',
         'tubi',
-        'roku'  # Added Roku service
+        'roku'
     ]
     
-    # Default regions for services that support them
     regions = ['nl', 'ie', 'th', 'be', 'lu', 'pt', 'fi', 'th', 'sg', 'ph', 'ar', 'br', 'ca', 'cl', 'co', 'cr', 'de', 'dk', 'do','ec', 'es', 'fr', 'gb', 'gt', 'it', 'kr' , 'mx' , 'no', 'pe', 'se', 'us', 'latam', 'all']
     
-    # Generate playlists for each service
     for service in services:
         try:
             if service == 'pluto':
@@ -488,7 +493,7 @@ if __name__ == "__main__":
             elif service == 'tubi':
                 generate_tubi_m3u()
             elif service == 'roku':
-                generate_roku_m3u()  # Added Roku service call
+                generate_roku_m3u()
         except Exception as e:
             logging.error(f"Error generating {service} playlist: {e}")
             continue
