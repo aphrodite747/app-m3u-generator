@@ -4,11 +4,12 @@ import json
 import os
 import logging
 import uuid
+import time
 from io import BytesIO
 
 # --- Configuration ---
 OUTPUT_DIR = "playlists"
-USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 REQUEST_TIMEOUT = 30 # seconds
 
 # --- Logging Setup ---
@@ -39,7 +40,6 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False):
             except Exception as e:
                  logging.error(f"Error decompressing gzip: {e}")
                  raise
-
         else:
              content = content.decode('utf-8')
 
@@ -96,12 +96,12 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     """Generates M3U playlists for PlutoTV with V4 Stitcher fix."""
     PLUTO_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz'
     
-    # FIXED: Updated template to include modern mandatory V4 parameters
+    # FIXED: Updated version numbers and parameters to mimic a modern browser
     STREAM_URL_TEMPLATE = (
         'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{id}/master.m3u8'
-        '?advertisingId=&appName=web&appVersion=8.0.0&deviceDNT=0'
+        '?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0'
         '&deviceId={dev_id}&deviceMake=Chrome&deviceModel=web&deviceType=web'
-        '&deviceVersion=123.0.0&sid={sid}&userId=&serverSideAds=true'
+        '&deviceVersion=126.0.0&sid={sid}&userId=&serverSideAds=true'
     )
     
     EPG_URL_TEMPLATE = 'https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/{region}.xml.gz'
@@ -110,10 +110,6 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     if not data or 'regions' not in data:
         logging.error("Failed to fetch or parse PlutoTV data.")
         return
-
-    # Generate session IDs to satisfy API validation
-    sid = str(uuid.uuid4())
-    dev_id = str(uuid.uuid4())
 
     region_name_map = {
         "ar": "Argentina", "br": "Brazil", "ca": "Canada", "cl": "Chile", "co": "Colombia",
@@ -126,7 +122,10 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     for region in regions:
         logging.info(f"--- Generating PlutoTV playlist for region: {region} ---")
         epg_url = EPG_URL_TEMPLATE.replace('{region}', region)
-        output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
+        
+        # FIXED: Added Discontinuity Sequence header to prevent TiviMate freezing during ad swaps
+        output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n', '#EXT-X-DISCONTINUITY-SEQUENCE:0\n']
+        
         channels_to_process = {}
         is_all_region = region.lower() == 'all'
 
@@ -163,6 +162,10 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
              sorted_channel_ids = list(channels_to_process.keys())
 
         for channel_id in sorted_channel_ids:
+            # FIXED: Generate unique Session and Device IDs per channel to stop 429 errors
+            chan_sid = str(uuid.uuid4())
+            chan_dev_id = str(uuid.uuid4())
+
             channel = channels_to_process[channel_id]
             chno = channel.get('chno')
             name = channel.get('name', 'Unknown Channel')
@@ -172,10 +175,15 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
             tvg_id = original_id
 
             extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group, name)
-            # FIXED: Applied the new template with proper parameter injection
-            stream_url = STREAM_URL_TEMPLATE.format(id=original_id, dev_id=dev_id, sid=sid)
+            
+            # FIXED: Unique IDs injected into every URL
+            stream_url = STREAM_URL_TEMPLATE.format(id=original_id, dev_id=chan_dev_id, sid=chan_sid)
+            
             output_lines.append(extinf)
             output_lines.append(stream_url + '\n')
+            
+            # Anti-flood delay
+            time.sleep(0.01)
 
         write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
@@ -195,9 +203,9 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
         return
     if not plex_channels_list:
         logging.warning("Failed to fetch Plex genre list, groups might be inaccurate.")
-        plex_channels_list = []
+        # plex_channels_list = [] # Already handled by fetch_url
 
-    genre_lookup = {ch.get('Title', '').lower(): ch.get('Genre', 'Uncategorized') for ch in plex_channels_list}
+    genre_lookup = {ch.get('Title', '').lower(): ch.get('Genre', 'Uncategorized') for ch in (plex_channels_list or [])}
 
     region_name_map = {
         "us": "United States", "mx": "Mexico", "es": "Spain", "ca": "Canada",
@@ -380,7 +388,7 @@ def generate_roku_m3u(sort='name'):
     EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz'
 
     logging.info("--- Generating Roku playlist ---")
-    data = fetch_url(ROKU_URL, is_json=True, is_gzipped=False) # Roku usually plain JSON here
+    data = fetch_url(ROKU_URL, is_json=True, is_gzipped=False) 
     if not data or 'channels' not in data:
         return
 
@@ -402,7 +410,7 @@ if __name__ == "__main__":
     logging.info("Starting playlist generation process...")
     
     services = ['pluto', 'plex', 'samsungtvplus', 'stirr', 'tubi', 'roku']
-    regions = ['us', 'ca', 'gb', 'au', 'all'] # Shortened for readability, add yours back as needed
+    regions = ['us', 'ca', 'gb', 'au', 'all'] 
     
     for service in services:
         try:
