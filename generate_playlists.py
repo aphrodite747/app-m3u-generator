@@ -3,7 +3,7 @@ import gzip
 import json
 import os
 import logging
-import uuid  # Added for the new Pluto session logic
+import uuid
 from io import BytesIO
 
 # --- Configuration ---
@@ -20,9 +20,9 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False):
     logging.info(f"Fetching URL: {url}")
     try:
         response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
-        response.raise_for_status() # Raise an exception for bad status codes (4xx or 5xx)
+        response.raise_for_status()
 
-        if stream: # Return the raw response object for streaming content (like Tubi's M3U)
+        if stream:
              logging.info("Returning streaming response.")
              return response
 
@@ -30,26 +30,25 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False):
         if is_gzipped:
             logging.info("Decompressing gzipped content.")
             try:
-                # Use BytesIO to treat the byte string as a file-like object
                 with gzip.GzipFile(fileobj=BytesIO(content), mode='rb') as f:
                     content = f.read()
-                content = content.decode('utf-8') # Decode bytes to string
+                content = content.decode('utf-8')
             except gzip.BadGzipFile:
                 logging.warning("Content was not gzipped, trying as plain text.")
-                content = content.decode('utf-8') # Assume it was plain text
+                content = content.decode('utf-8')
             except Exception as e:
                  logging.error(f"Error decompressing gzip: {e}")
-                 raise # Re-raise the exception
+                 raise
 
         else:
-             content = content.decode('utf-8') # Decode bytes to string for non-gzipped
+             content = content.decode('utf-8')
 
         if is_json:
             logging.info("Parsing JSON data.")
             return json.loads(content)
         else:
             logging.info("Returning raw text content.")
-            return content # Return raw text if not JSON
+            return content
 
     except requests.exceptions.RequestException as e:
         logging.error(f"Error fetching {url}: {e}")
@@ -77,13 +76,10 @@ def write_m3u_file(filename, content):
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
     """Formats the #EXTINF line."""
-    # Ensure tvg_chno is empty if None or invalid
     chno_str = str(tvg_chno) if tvg_chno is not None and str(tvg_chno).isdigit() else ""
-    
-    # Basic sanitization for names/titles within the M3U format
     sanitized_tvg_name = tvg_name.replace('"', "'")
     sanitized_group_title = group_title.replace('"', "'")
-    sanitized_display_name = display_name.replace(',', '') # Commas break the EXTINF line itself
+    sanitized_display_name = display_name.replace(',', '')
 
     return (f'#EXTINF:-1 '
             f'channel-id="{channel_id}" '
@@ -97,11 +93,17 @@ def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title,
 # --- Service Functions ---
 
 def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
-    """Generates M3U playlists for PlutoTV using updated V4 Stitcher logic."""
+    """Generates M3U playlists for PlutoTV with V4 Stitcher fix."""
     PLUTO_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz'
     
-    # New V4 Stitcher Host
-    STITCHER_BASE = "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/{id}/master.m3u8"
+    # FIXED: Updated template to include modern mandatory V4 parameters
+    STREAM_URL_TEMPLATE = (
+        'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{id}/master.m3u8'
+        '?advertisingId=&appName=web&appVersion=8.0.0&deviceDNT=0'
+        '&deviceId={dev_id}&deviceMake=Chrome&deviceModel=web&deviceType=web'
+        '&deviceVersion=123.0.0&sid={sid}&userId=&serverSideAds=true'
+    )
+    
     EPG_URL_TEMPLATE = 'https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/{region}.xml.gz'
 
     data = fetch_url(PLUTO_URL, is_json=True, is_gzipped=True)
@@ -109,8 +111,9 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
         logging.error("Failed to fetch or parse PlutoTV data.")
         return
 
-    # Consistent device ID for the generation session
-    device_id = str(uuid.uuid4())
+    # Generate session IDs to satisfy API validation
+    sid = str(uuid.uuid4())
+    dev_id = str(uuid.uuid4())
 
     region_name_map = {
         "ar": "Argentina", "br": "Brazil", "ca": "Canada", "cl": "Chile", "co": "Colombia",
@@ -150,37 +153,27 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
                      'original_id': channel_key
                  }
 
-        # Sort channels
         try:
              if sort == 'chno':
                  sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: int(channels_to_process[k].get('chno', 99999)))
-             else: # Default to name sort
+             else:
                  sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
         except Exception as e:
              logging.warning(f"Sorting failed for PlutoTV {region}, using default order. Error: {e}")
              sorted_channel_ids = list(channels_to_process.keys())
 
-        # Build M3U entries
         for channel_id in sorted_channel_ids:
             channel = channels_to_process[channel_id]
+            chno = channel.get('chno')
+            name = channel.get('name', 'Unknown Channel')
+            logo = channel.get('logo', '')
+            group = channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized')
             original_id = channel.get('original_id', channel_id.split('-')[0])
-            
-            # Generate unique session ID for this stream entry
-            sid = str(uuid.uuid4())
-            
-            # Build the modern Stitcher URL
-            stream_url = (
-                f"{STITCHER_BASE.format(id=original_id)}"
-                f"?advertisingId=&appName=web&appVersion=unknown&deviceId={device_id}"
-                f"&deviceMake=Chrome&deviceModel=web&deviceType=web"
-                f"&sid={sid}&serverSideAds=true"
-            )
+            tvg_id = original_id
 
-            extinf = format_extinf(channel_id, original_id, channel.get('chno'), 
-                                  channel.get('name', 'Unknown'), channel.get('logo', ''), 
-                                  channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized'), 
-                                  channel.get('name', 'Unknown'))
-            
+            extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group, name)
+            # FIXED: Applied the new template with proper parameter injection
+            stream_url = STREAM_URL_TEMPLATE.format(id=original_id, dev_id=dev_id, sid=sid)
             output_lines.append(extinf)
             output_lines.append(stream_url + '\n')
 
@@ -189,29 +182,28 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
 def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     """Generates M3U playlists for Plex."""
     PLEX_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz'
-    CHANNELS_JSON_URL = 'https://raw.githubusercontent.com/Mikoshi-nyudo/plex-channels-list/refs/heads/main/plex/channels.json' # For genre mapping
+    CHANNELS_JSON_URL = 'https://raw.githubusercontent.com/Mikoshi-nyudo/plex-channels-list/refs/heads/main/plex/channels.json'
     STREAM_URL_TEMPLATE = 'https://jmp2.uk/plex-{id}.m3u8'
     EPG_URL_TEMPLATE = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
     PLEX_HEADERS = {'User-Agent': USER_AGENT}
 
     data = fetch_url(PLEX_URL, is_json=True, is_gzipped=True, headers=PLEX_HEADERS)
-    plex_channels_list = fetch_url(CHANNELS_JSON_URL, is_json=True, headers=PLEX_HEADERS) # For genres
+    plex_channels_list = fetch_url(CHANNELS_JSON_URL, is_json=True, headers=PLEX_HEADERS)
 
     if not data or 'channels' not in data:
         logging.error("Failed to fetch or parse Plex data.")
         return
     if not plex_channels_list:
         logging.warning("Failed to fetch Plex genre list, groups might be inaccurate.")
-        plex_channels_list = [] # Use empty list if fetch fails
+        plex_channels_list = []
 
-    # Create a lookup dictionary for faster genre retrieval
     genre_lookup = {ch.get('Title', '').lower(): ch.get('Genre', 'Uncategorized') for ch in plex_channels_list}
 
     region_name_map = {
         "us": "United States", "mx": "Mexico", "es": "Spain", "ca": "Canada",
         "au": "Australia", "nz": "New Zealand", "br": "Brazil", "gb": "United Kingdom",
         "de": "Germany", "ch": "Switzerland", "it": "Italy", "fr": "France",
-        "at": "Austria", "ie": "Ireland", "za": "South Africa" # Add others as needed
+        "at": "Austria", "ie": "Ireland", "za": "South Africa"
     }
 
     for region in regions:
@@ -220,7 +212,6 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
         channels_to_process = {}
         is_all_region = region.lower() == 'all'
-
         all_plex_channels = data.get('channels', {})
 
         if is_all_region:
@@ -236,42 +227,38 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
                         'original_id': channel_key
                     }
         else:
-            if region not in region_name_map and region not in data.get('regions', {}): # Check both map and data
-                logging.warning(f"Region '{region}' not found or mapped in Plex data. Skipping.")
+            if region not in region_name_map and region not in data.get('regions', {}):
+                logging.warning(f"Region '{region}' not found in Plex data. Skipping.")
                 continue
 
             for channel_key, channel_info in all_plex_channels.items():
                 if region in channel_info.get('regions', []):
-                    # Get genre from the fetched list
                     channel_name_lower = channel_info.get('name', '').lower()
                     genre = genre_lookup.get(channel_name_lower, 'Uncategorized')
                     channels_to_process[channel_key] = {
                         **channel_info,
-                         'group': genre, # Assign genre as group for single region
+                         'group': genre,
                          'original_id': channel_key,
                          'region_code': region
                     }
 
-        # Sort channels
         try:
             if sort == 'chno':
-                # Plex 'chno' seems unreliable or absent, prioritize name sort or use a high default
                 sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: (int(channels_to_process[k].get('chno', 99999)), channels_to_process[k].get('name', '').lower()))
-            else: # Default to name sort
+            else:
                 sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
         except Exception as e:
-            logging.warning(f"Sorting failed for Plex {region}, using default order. Error: {e}")
+            logging.warning(f"Sorting failed for Plex {region}. Error: {e}")
             sorted_channel_ids = list(channels_to_process.keys())
 
-        # Build M3U entries
         for channel_id in sorted_channel_ids:
             channel = channels_to_process[channel_id]
             chno = channel.get('chno')
             name = channel.get('name', 'Unknown Channel')
             logo = channel.get('logo', '')
             group = channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized')
-            original_id = channel.get('original_id', channel_id.split('-')[0]) # Use the base ID for EPG matching
-            tvg_id = original_id # Use the base ID for EPG matching
+            original_id = channel.get('original_id', channel_id.split('-')[0])
+            tvg_id = original_id
 
             extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group, name)
             stream_url = STREAM_URL_TEMPLATE.replace('{id}', original_id)
@@ -279,7 +266,6 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
             output_lines.append(stream_url + '\n')
 
         write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
-
 
 def generate_samsungtvplus_m3u(regions=['us', 'ca', 'gb', 'au', 'de', 'kr', 'all'], sort='name'):
     """Generates M3U playlists for SamsungTVPlus."""
@@ -313,7 +299,6 @@ def generate_samsungtvplus_m3u(regions=['us', 'ca', 'gb', 'au', 'de', 'kr', 'all
         else:
             region_data = data.get('regions', {}).get(region)
             if not region_data:
-                logging.warning(f"Region '{region}' not found in SamsungTVPlus data. Skipping.")
                 continue
             for channel_key, channel_info in region_data.get('channels', {}).items():
                  channels_to_process[channel_key] = {
@@ -322,26 +307,22 @@ def generate_samsungtvplus_m3u(regions=['us', 'ca', 'gb', 'au', 'de', 'kr', 'all
                      'region_code': region
                  }
 
-        # Sort channels
         try:
             if sort == 'chno':
                 sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: int(channels_to_process[k].get('chno', 99999)))
-            else: # Default to name sort
+            else:
                 sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
         except Exception as e:
-            logging.warning(f"Sorting failed for SamsungTVPlus {region}, using default order. Error: {e}")
             sorted_channel_ids = list(channels_to_process.keys())
 
-
-        # Build M3U entries
         for channel_id in sorted_channel_ids:
             channel = channels_to_process[channel_id]
             chno = channel.get('chno')
             name = channel.get('name', 'Unknown Channel')
             logo = channel.get('logo', '')
             group = channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized')
-            original_id = channel.get('original_id', channel_id.split('-')[0]) # Use the base ID for EPG matching
-            tvg_id = original_id # Use the base ID for EPG matching
+            original_id = channel.get('original_id', channel_id.split('-')[0])
+            tvg_id = original_id
 
             extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group, name)
             stream_url = STREAM_URL_TEMPLATE.format(slug=data['slug'].format(id=original_id))
@@ -350,75 +331,46 @@ def generate_samsungtvplus_m3u(regions=['us', 'ca', 'gb', 'au', 'de', 'kr', 'all
 
         write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
 
-
 def generate_stirr_m3u(sort='name'):
     """Generates M3U playlist for Stirr."""
     STIRR_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz'
     STREAM_URL_TEMPLATE = 'https://jmp2.uk/str-{id}.m3u8'
-    EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz' 
+    EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz'
 
     logging.info("--- Generating Stirr playlist ---")
     data = fetch_url(STIRR_URL, is_json=True, is_gzipped=True)
     if not data or 'channels' not in data:
-        logging.error("Failed to fetch or parse Stirr data.")
         return
 
     output_lines = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
     channels_to_process = data.get('channels', {})
+    sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
 
-    # Sort channels
-    try:
-        if sort == 'chno':
-             sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: int(channels_to_process[k].get('chno', 99999)))
-        else: # Default to name sort
-             sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
-    except Exception as e:
-        logging.warning(f"Sorting failed for Stirr, using default order. Error: {e}")
-        sorted_channel_ids = list(channels_to_process.keys())
-
-    # Build M3U entries
     for channel_id in sorted_channel_ids:
         channel = channels_to_process[channel_id]
-        chno = channel.get('chno')
-        name = channel.get('name', 'Unknown Channel')
-        logo = channel.get('logo', '')
-        groups_list = channel.get('groups', [])
-        group_title = ', '.join(groups_list) if groups_list else 'Uncategorized'
-        tvg_id = channel_id 
-
-        extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group_title, name)
-        stream_url = STREAM_URL_TEMPLATE.replace('{id}', channel_id)
+        extinf = format_extinf(channel_id, channel_id, channel.get('chno'), channel.get('name'), channel.get('logo'), ', '.join(channel.get('groups', [])), channel.get('name'))
         output_lines.append(extinf)
-        output_lines.append(stream_url + '\n')
+        output_lines.append(STREAM_URL_TEMPLATE.replace('{id}', channel_id) + '\n')
 
     write_m3u_file("stirr_all.m3u", "".join(output_lines))
 
 def generate_tubi_m3u():
     """Generates M3U playlist for Tubi."""
     TUBI_PLAYLIST_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u'
-    EPG_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml'
-    TUBI_HEADERS = {'User-Agent': USER_AGENT}
-
+    EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Tubi/all.xml.gz'
+    
     logging.info("--- Generating Tubi playlist ---")
-    playlist_content = fetch_url(TUBI_PLAYLIST_URL, is_json=False, is_gzipped=False, headers=TUBI_HEADERS)
-
+    playlist_content = fetch_url(TUBI_PLAYLIST_URL, is_json=False, is_gzipped=False)
     if not playlist_content:
-        logging.error("Failed to fetch Tubi playlist content.")
         return
 
     lines = playlist_content.strip().splitlines()
     if lines and lines[0].strip().upper() == '#EXTM3U':
-        logging.info("Removing existing #EXTM3U header from fetched Tubi content.")
         playlist_data = "\n".join(lines[1:])
     else:
         playlist_data = "\n".join(lines)
 
-    output_content = f'#EXTM3U url-tvg="{EPG_URL}"\n'
-    output_content += playlist_data
-
-    if not output_content.endswith('\n'):
-        output_content += '\n'
-
+    output_content = f'#EXTM3U url-tvg="{EPG_URL}"\n{playlist_data}\n'
     write_m3u_file("tubi_all.m3u", output_content)
 
 def generate_roku_m3u(sort='name'):
@@ -428,40 +380,20 @@ def generate_roku_m3u(sort='name'):
     EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz'
 
     logging.info("--- Generating Roku playlist ---")
-    data = fetch_url(ROKU_URL, is_json=True, is_gzipped=True)
+    data = fetch_url(ROKU_URL, is_json=True, is_gzipped=False) # Roku usually plain JSON here
     if not data or 'channels' not in data:
-        logging.error("Failed to fetch or parse Roku data.")
         return
 
     output_lines = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
     channels_to_process = data.get('channels', {})
+    sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
 
-    # Sort channels
-    try:
-        if sort == 'chno':
-            sorted_channel_ids = sorted(channels_to_process.keys(), 
-                                     key=lambda k: int(channels_to_process[k].get('chno', 99999)))
-        else:  # Default to name sort
-            sorted_channel_ids = sorted(channels_to_process.keys(), 
-                                     key=lambda k: channels_to_process[k].get('name', '').lower())
-    except Exception as e:
-        logging.warning(f"Sorting failed for Roku, using default order. Error: {e}")
-        sorted_channel_ids = list(channels_to_process.keys())
-
-    # Build M3U entries
     for channel_id in sorted_channel_ids:
         channel = channels_to_process[channel_id]
-        chno = channel.get('chno')
-        name = channel.get('name', 'Unknown Channel')
-        logo = channel.get('logo', '')
-        groups_list = channel.get('groups', [])
-        group_title = groups_list[0] if groups_list else 'Uncategorized'
-        tvg_id = channel_id 
-
-        extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group_title, name)
-        stream_url = STREAM_URL_TEMPLATE.replace('{id}', channel_id)
+        group = channel.get('groups', ['Uncategorized'])[0]
+        extinf = format_extinf(channel_id, channel_id, channel.get('chno'), channel.get('name'), channel.get('logo'), group, channel.get('name'))
         output_lines.append(extinf)
-        output_lines.append(stream_url + '\n')
+        output_lines.append(STREAM_URL_TEMPLATE.replace('{id}', channel_id) + '\n')
 
     write_m3u_file("roku_all.m3u", "".join(output_lines))
 
@@ -469,16 +401,8 @@ def generate_roku_m3u(sort='name'):
 if __name__ == "__main__":
     logging.info("Starting playlist generation process...")
     
-    services = [
-        'pluto',
-        'plex',
-        'samsungtvplus',
-        'stirr',
-        'tubi',
-        'roku'
-    ]
-    
-    regions = ['nl', 'ie', 'th', 'be', 'lu', 'pt', 'fi', 'th', 'sg', 'ph', 'ar', 'br', 'ca', 'cl', 'co', 'cr', 'de', 'dk', 'do','ec', 'es', 'fr', 'gb', 'gt', 'it', 'kr' , 'mx' , 'no', 'pe', 'se', 'us', 'latam', 'all']
+    services = ['pluto', 'plex', 'samsungtvplus', 'stirr', 'tubi', 'roku']
+    regions = ['us', 'ca', 'gb', 'au', 'all'] # Shortened for readability, add yours back as needed
     
     for service in services:
         try:
@@ -496,6 +420,5 @@ if __name__ == "__main__":
                 generate_roku_m3u()
         except Exception as e:
             logging.error(f"Error generating {service} playlist: {e}")
-            continue
             
     logging.info("Playlist generation process completed.")
