@@ -16,6 +16,7 @@ REQUEST_TIMEOUT = 30
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False):
+    """Utility to fetch and decode data."""
     try:
         response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
         response.raise_for_status()
@@ -31,13 +32,15 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False):
         return None
 
 def write_m3u_file(filename, content):
+    """Saves the generated string to a file."""
     if not os.path.exists(OUTPUT_DIR): os.makedirs(OUTPUT_DIR)
     filepath = os.path.join(OUTPUT_DIR, filename)
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(content)
-    logging.info(f"Wrote {filename}")
+    logging.info(f"Successfully wrote {filename}")
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
+    """Standardizes the M3U metadata line."""
     chno_str = str(tvg_chno) if tvg_chno else ""
     return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
             f'tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" group-title="{group_title}",{display_name}\n')
@@ -57,7 +60,7 @@ def generate_pluto_m3u(regions):
     if not data: return
 
     for region in regions:
-        logging.info(f"PlutoTV: {region}")
+        logging.info(f"Processing PlutoTV: {region}")
         epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/{region}.xml.gz'
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
         
@@ -66,7 +69,8 @@ def generate_pluto_m3u(regions):
             reg_data = data['regions'].get(r)
             if not reg_data: continue
             for cid, info in reg_data['channels'].items():
-                extinf = format_extinf(cid, cid, info.get('chno'), info['name'], info['logo'], REGION_NAME_MAP.get(r, r.upper()), info['name'])
+                group = REGION_NAME_MAP.get(r, r.upper())
+                extinf = format_extinf(cid, cid, info.get('chno'), info['name'], info['logo'], group, info['name'])
                 stream = STREAM_URL_TEMPLATE.format(id=cid, dev_id=str(uuid.uuid4()), sid=str(uuid.uuid4()))
                 output_lines.extend([extinf, stream + '\n'])
         
@@ -78,7 +82,7 @@ def generate_plex_m3u(regions):
     if not data: return
 
     for region in regions:
-        logging.info(f"Plex: {region}")
+        logging.info(f"Processing Plex: {region}")
         epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
         
@@ -97,7 +101,7 @@ def generate_samsungtvplus_m3u(regions):
     if not data: return
 
     for region in regions:
-        logging.info(f"Samsung: {region}")
+        logging.info(f"Processing Samsung: {region}")
         epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz'
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
         
@@ -108,7 +112,7 @@ def generate_samsungtvplus_m3u(regions):
             for cid, info in reg_data['channels'].items():
                 group = info.get('group', REGION_NAME_MAP.get(r, r.upper()))
                 extinf = format_extinf(cid, cid, info.get('chno'), info['name'], info['logo'], group, info['name'])
-                stream = f'https://jmp2.uk/stp-{cid}.m3u8\n' # Using the standard jmp2 redirect
+                stream = f'https://jmp2.uk/stp-{cid}.m3u8\n'
                 output_lines.extend([extinf, stream])
 
         write_m3u_file(f"samsung_{region}.m3u", "".join(output_lines))
@@ -119,7 +123,8 @@ def generate_stirr_m3u():
     if not data: return
     output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz"\n']
     for cid, info in data['channels'].items():
-        group = info.get('groups', ['Stirr'])[0]
+        groups = info.get('groups', [])
+        group = groups[0] if groups else 'Stirr'
         output_lines.extend([format_extinf(cid, cid, info.get('chno'), info['name'], info['logo'], group, info['name']), f'https://jmp2.uk/str-{cid}.m3u8\n'])
     write_m3u_file("stirr_all.m3u", "".join(output_lines))
 
@@ -130,17 +135,20 @@ def generate_tubi_m3u():
         write_m3u_file("tubi_all.m3u", output + content.replace('#EXTM3U', ''))
 
 def generate_roku_m3u():
-    data = fetch_url('https://i.mjh.nz/Roku/.channels.json', is_json=True)
+    # Use raw MJH URL for the channels data
+    data = fetch_url('https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/Roku/.channels.json', is_json=True)
     if not data: return
     output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz"\n']
     for cid, info in data['channels'].items():
-        group = info.get('groups', ['Roku'])[0]
+        # FIX: Defensive check for empty groups list
+        groups = info.get('groups', [])
+        group = groups[0] if (groups and len(groups) > 0) else 'Roku'
         output_lines.extend([format_extinf(cid, cid, info.get('chno'), info['name'], info['logo'], group, info['name']), f'https://jmp2.uk/rok-{cid}.m3u8\n'])
     write_m3u_file("roku_all.m3u", "".join(output_lines))
 
 # --- Main Execution ---
 if __name__ == "__main__":
-    # Your full list of regions
+    # Your full list of regions to process
     ALL_REGIONS = [
         'us', 'ca', 'gb', 'au', 'de', 'es', 'fr', 'it', 'no', 
         'se', 'dk', 'br', 'ar', 'cl', 'co', 'mx', 'pe', 'latam', 'all'
@@ -152,4 +160,4 @@ if __name__ == "__main__":
     generate_stirr_m3u()
     generate_tubi_m3u()
     generate_roku_m3u()
-    logging.info("All playlists generated successfully.")
+    logging.info("Process Complete: All playlists generated without errors.")
