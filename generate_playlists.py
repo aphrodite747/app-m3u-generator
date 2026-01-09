@@ -15,21 +15,26 @@ REQUEST_TIMEOUT = 30
 # --- Logging Setup ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False):
-    """Utility to fetch and decode data."""
-    try:
-        response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
-        response.raise_for_status()
-        if stream: return response
-        content = response.content
-        if is_gzipped:
-            with gzip.GzipFile(fileobj=BytesIO(content), mode='rb') as f:
-                content = f.read()
-        content = content.decode('utf-8')
-        return json.loads(content) if is_json else content
-    except Exception as e:
-        logging.error(f"Error fetching {url}: {e}")
-        return None
+def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, retries=3):
+    """Utility to fetch and decode data with retry logic."""
+    for i in range(retries):
+        try:
+            response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
+            response.raise_for_status()
+            if stream: return response
+            content = response.content
+            if is_gzipped:
+                with gzip.GzipFile(fileobj=BytesIO(content), mode='rb') as f:
+                    content = f.read()
+            content = content.decode('utf-8')
+            return json.loads(content) if is_json else content
+        except Exception as e:
+            logging.warning(f"Attempt {i+1} failed for {url}: {e}")
+            if i < retries - 1:
+                time.sleep(5) # Wait 5 seconds before retrying
+            else:
+                logging.error(f"Final failure fetching {url}")
+                return None
 
 def write_m3u_file(filename, content):
     """Saves the generated string to a file."""
@@ -135,12 +140,11 @@ def generate_tubi_m3u():
         write_m3u_file("tubi_all.m3u", output + content.replace('#EXTM3U', ''))
 
 def generate_roku_m3u():
-    # Use raw MJH URL for the channels data
-    data = fetch_url('https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/Roku/.channels.json', is_json=True)
+    # Use direct API URL to avoid GitHub 404
+    data = fetch_url('https://i.mjh.nz/Roku/.channels.json', is_json=True)
     if not data: return
     output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz"\n']
     for cid, info in data['channels'].items():
-        # FIX: Defensive check for empty groups list
         groups = info.get('groups', [])
         group = groups[0] if (groups and len(groups) > 0) else 'Roku'
         output_lines.extend([format_extinf(cid, cid, info.get('chno'), info['name'], info['logo'], group, info['name']), f'https://jmp2.uk/rok-{cid}.m3u8\n'])
@@ -148,16 +152,22 @@ def generate_roku_m3u():
 
 # --- Main Execution ---
 if __name__ == "__main__":
-    # Your full list of regions to process
     ALL_REGIONS = [
         'us', 'ca', 'gb', 'au', 'de', 'es', 'fr', 'it', 'no', 
         'se', 'dk', 'br', 'ar', 'cl', 'co', 'mx', 'pe', 'latam', 'all'
     ]
     
+    # Run generations with short delays to be polite to servers
     generate_pluto_m3u(ALL_REGIONS)
+    time.sleep(2)
     generate_plex_m3u(ALL_REGIONS)
+    time.sleep(2)
     generate_samsungtvplus_m3u(ALL_REGIONS)
+    time.sleep(2)
     generate_stirr_m3u()
+    time.sleep(2)
     generate_tubi_m3u()
+    time.sleep(2)
     generate_roku_m3u()
-    logging.info("Process Complete: All playlists generated without errors.")
+    
+    logging.info("Process Complete: All playlists generated successfully.")
