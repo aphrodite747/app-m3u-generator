@@ -96,7 +96,6 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     """Generates M3U playlists for PlutoTV with V4 Stitcher fix."""
     PLUTO_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz'
     
-    # FIXED: Updated version numbers and parameters to mimic a modern browser
     STREAM_URL_TEMPLATE = (
         'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{id}/master.m3u8'
         '?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0'
@@ -122,8 +121,6 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     for region in regions:
         logging.info(f"--- Generating PlutoTV playlist for region: {region} ---")
         epg_url = EPG_URL_TEMPLATE.replace('{region}', region)
-        
-        # FIXED: Added Discontinuity Sequence header to prevent TiviMate freezing during ad swaps
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n', '#EXT-X-DISCONTINUITY-SEQUENCE:0\n']
         
         channels_to_process = {}
@@ -162,7 +159,6 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
              sorted_channel_ids = list(channels_to_process.keys())
 
         for channel_id in sorted_channel_ids:
-            # FIXED: Generate unique Session and Device IDs per channel to stop 429 errors
             chan_sid = str(uuid.uuid4())
             chan_dev_id = str(uuid.uuid4())
 
@@ -175,14 +171,10 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
             tvg_id = original_id
 
             extinf = format_extinf(channel_id, tvg_id, chno, name, logo, group, name)
-            
-            # FIXED: Unique IDs injected into every URL
             stream_url = STREAM_URL_TEMPLATE.format(id=original_id, dev_id=chan_dev_id, sid=chan_sid)
             
             output_lines.append(extinf)
             output_lines.append(stream_url + '\n')
-            
-            # Anti-flood delay
             time.sleep(0.01)
 
         write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
@@ -201,10 +193,7 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     if not data or 'channels' not in data:
         logging.error("Failed to fetch or parse Plex data.")
         return
-    if not plex_channels_list:
-        logging.warning("Failed to fetch Plex genre list, groups might be inaccurate.")
-        # plex_channels_list = [] # Already handled by fetch_url
-
+    
     genre_lookup = {ch.get('Title', '').lower(): ch.get('Genre', 'Uncategorized') for ch in (plex_channels_list or [])}
 
     region_name_map = {
@@ -236,7 +225,6 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
                     }
         else:
             if region not in region_name_map and region not in data.get('regions', {}):
-                logging.warning(f"Region '{region}' not found in Plex data. Skipping.")
                 continue
 
             for channel_key, channel_info in all_plex_channels.items():
@@ -256,7 +244,6 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
             else:
                 sorted_channel_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
         except Exception as e:
-            logging.warning(f"Sorting failed for Plex {region}. Error: {e}")
             sorted_channel_ids = list(channels_to_process.keys())
 
         for channel_id in sorted_channel_ids:
@@ -328,7 +315,11 @@ def generate_samsungtvplus_m3u(regions=['us', 'ca', 'gb', 'au', 'de', 'kr', 'all
             chno = channel.get('chno')
             name = channel.get('name', 'Unknown Channel')
             logo = channel.get('logo', '')
+            
+            # FIXED: Defensive group check
             group = channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized')
+            if not group: group = 'Uncategorized'
+            
             original_id = channel.get('original_id', channel_id.split('-')[0])
             tvg_id = original_id
 
@@ -356,7 +347,12 @@ def generate_stirr_m3u(sort='name'):
 
     for channel_id in sorted_channel_ids:
         channel = channels_to_process[channel_id]
-        extinf = format_extinf(channel_id, channel_id, channel.get('chno'), channel.get('name'), channel.get('logo'), ', '.join(channel.get('groups', [])), channel.get('name'))
+        
+        # FIXED: Defensive group check for Stirr
+        groups_list = channel.get('groups', [])
+        group_str = ', '.join(groups_list) if groups_list else 'Uncategorized'
+        
+        extinf = format_extinf(channel_id, channel_id, channel.get('chno'), channel.get('name'), channel.get('logo'), group_str, channel.get('name'))
         output_lines.append(extinf)
         output_lines.append(STREAM_URL_TEMPLATE.replace('{id}', channel_id) + '\n')
 
@@ -398,7 +394,11 @@ def generate_roku_m3u(sort='name'):
 
     for channel_id in sorted_channel_ids:
         channel = channels_to_process[channel_id]
-        group = channel.get('groups', ['Uncategorized'])[0]
+        
+        # FIXED: Safety check for empty/missing group list to prevent index out of range
+        groups = channel.get('groups', [])
+        group = groups[0] if groups and len(groups) > 0 else 'Uncategorized'
+        
         extinf = format_extinf(channel_id, channel_id, channel.get('chno'), channel.get('name'), channel.get('logo'), group, channel.get('name'))
         output_lines.append(extinf)
         output_lines.append(STREAM_URL_TEMPLATE.replace('{id}', channel_id) + '\n')
