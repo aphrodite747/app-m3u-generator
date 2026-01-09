@@ -92,7 +92,7 @@ def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title,
 
 # --- Service Functions ---
 
-def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
+def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'all'], sort='name'):
     """Generates M3U playlists for PlutoTV with V4 Stitcher fix."""
     PLUTO_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz'
     
@@ -410,7 +410,7 @@ if __name__ == "__main__":
     logging.info("Starting playlist generation process...")
     
     services = ['pluto', 'plex', 'samsungtvplus', 'stirr', 'tubi', 'roku']
-    regions = ['us', 'ca', 'gb', 'au', 'all'] 
+    regions = ['us', 'ca', 'gb', 'au', 'de', 'es', 'fr', 'it', 'no', 'se', 'dk', 'br', 'ar', 'cl', 'co', 'mx', 'pe', 'latam', 'all'] 
     
     for service in services:
         try:
