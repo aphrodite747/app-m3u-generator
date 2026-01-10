@@ -1,4 +1,4 @@
-⭐ PLUTO UPDATE: The Pluto 403 error is fixed. Its is not fixed in the Google Self-Host script. I will get to that at some point. Use 
+📌 PLUTO UPDATE: The Pluto 403 error is fixed. Its is not fixed in the Google Self-Host script. I will get to that at some point. Use 
 
 Url: https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/refs/heads/main/playlists/plutotv_all.m3u or a Region url from here: https://github.com/BuddyChewChew/app-m3u-generator/tree/main/playlists
 
