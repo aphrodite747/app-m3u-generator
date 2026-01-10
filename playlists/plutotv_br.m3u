@@ -3,804 +3,804 @@
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67e59a6557487a8b7fe73e23/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=69c534b8-72b9-4f8d-9db9-e1d5982905e7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ed338a72-cf5f-4bca-bdd0-0812654df700&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67e59a6557487a8b7fe73e23/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2efce5cd-96e9-450f-8d90-9f3ab31e3161&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d1688e50-5754-4135-ad4f-1486c3f594d9&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="631fa8dd7f25240007099a40" tvg-id="631fa8dd7f25240007099a40" tvg-chno="211" tvg-name="A Feiticeira" tvg-logo="https://images.pluto.tv/channels/631fa8dd7f25240007099a40/colorLogoPNG.png" group-title="Retrô",A Feiticeira
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/631fa8dd7f25240007099a40/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1e3b6f3b-0e92-4d89-87d5-58291c4dce3f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d96e00a6-dadf-4832-a814-80a4cec6fcfd&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/631fa8dd7f25240007099a40/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ce2d18ac-e9e1-47cd-9336-d0209f431762&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a20ae83a-283e-4e0f-adb6-577a126836c1&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="656e2a4b4261ca00083aa99e" tvg-id="656e2a4b4261ca00083aa99e" tvg-chno="518" tvg-name="Acumuladores Obsessivos" tvg-logo="https://images.pluto.tv/channels/656e2a4b4261ca00083aa99e/colorLogoPNG.png" group-title="Curiosidades",Acumuladores Obsessivos
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656e2a4b4261ca00083aa99e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0c9013d1-41cb-4381-9cb6-9bb148f38843&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=1f977d1b-9ab2-4c6a-a2f5-38f560ba432c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656e2a4b4261ca00083aa99e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=7386f183-48d6-4c25-9f08-b5c8ca65b9a5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=50d2526b-1562-40d9-94c3-e17194163309&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="61b790b985706b00072cb797" tvg-id="61b790b985706b00072cb797" tvg-chno="63" tvg-name="Adrenalina Pura TV" tvg-logo="https://images.pluto.tv/channels/61b790b985706b00072cb797/colorLogoPNG.png" group-title="Filmes",Adrenalina Pura TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61b790b985706b00072cb797/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=644e6269-8929-4f6d-9770-cfe3f43279b7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=80102207-a02f-4edb-b42d-fee11d9ffc15&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61b790b985706b00072cb797/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=8f908f1b-aa1a-4215-8e3b-0a486c93ecb2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8044ac51-89d3-4885-9789-236a7f82f645&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63dd5c904e83e700088fb68a" tvg-id="63dd5c904e83e700088fb68a" tvg-chno="1513" tvg-name="As Tartarugas Ninja" tvg-logo="https://images.pluto.tv/channels/63dd5c904e83e700088fb68a/colorLogoPNG.png" group-title="Nickelodeon",As Tartarugas Ninja
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63dd5c904e83e700088fb68a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bdd1ba48-5c4d-4a9b-b407-0008fcb2a523&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=602e6d40-17ea-4fa1-90e3-e90dd881e4a6&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63dd5c904e83e700088fb68a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a34307bd-cfa5-4b30-ae33-a96de3504105&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=050a2dfc-d2ba-41ee-bee8-c87659989454&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="620d1512c7986a0007220213" tvg-id="620d1512c7986a0007220213" tvg-chno="550" tvg-name="Assombrações" tvg-logo="https://images.pluto.tv/channels/620d1512c7986a0007220213/colorLogoPNG.png" group-title="Mistérios e Sobrenatural",Assombrações
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620d1512c7986a0007220213/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e3106b70-ebf8-41d5-a7e3-8d7747e6142b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=774cb3b0-aba8-4858-a08c-4a7fdd6d0a18&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620d1512c7986a0007220213/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=defa0054-652a-45b1-8a8a-68ed017c36e2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a4c5044d-5df1-48db-ab0a-72748b3eb87b&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6759eeb1bd523200083b4f29" tvg-id="6759eeb1bd523200083b4f29" tvg-chno="1514" tvg-name="Avatar: A lenda de Aang" tvg-logo="https://images.pluto.tv/channels/6759eeb1bd523200083b4f29/colorLogoPNG.png" group-title="Nickelodeon",Avatar: A lenda de Aang
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6759eeb1bd523200083b4f29/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=8f334a92-b704-42c8-8b56-8aa39be78aa5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=49635fa9-2396-4bea-a228-b3288d0785df&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6759eeb1bd523200083b4f29/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=700c52a6-93d2-44e5-ab47-31177723c793&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=34274948-98a1-4fbb-8672-a3c9d7a4f875&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5ff768b6a4c8b80008498610" tvg-id="5ff768b6a4c8b80008498610" tvg-chno="168" tvg-name="BET Pluto TV" tvg-logo="https://images.pluto.tv/channels/5ff768b6a4c8b80008498610/colorLogoPNG_1756804608228.png" group-title="Séries",BET Pluto TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ff768b6a4c8b80008498610/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=34b32baf-d381-43e9-849c-4659e50bf0cd&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=68864b2d-07ab-4f62-9ed6-61970c5ab930&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ff768b6a4c8b80008498610/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9d9a8614-bb17-44a6-975f-573a4dfe1ea7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a107be42-8b9d-4c90-ae57-da20dad0ef56&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="666c9c60a7efd40008f552f0" tvg-id="666c9c60a7efd40008f552f0" tvg-chno="679" tvg-name="BM&C News" tvg-logo="https://images.pluto.tv/channels/666c9c60a7efd40008f552f0/colorLogoPNG.png" group-title="Notícias",BM&C News
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/666c9c60a7efd40008f552f0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=eb6aa881-1c79-4c13-84a6-f3c094bfecca&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5fc90700-8a5c-4a60-8890-c8801bff6bb3&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/666c9c60a7efd40008f552f0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=730587a3-c059-45c8-8e78-0f9d220504cd&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ffcbf38b-ee19-4954-80a8-881d06365e7f&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63da6bcd60bc8f0008a5d364" tvg-id="63da6bcd60bc8f0008a5d364" tvg-chno="1455" tvg-name="Baby Shark TV" tvg-logo="https://images.pluto.tv/channels/63da6bcd60bc8f0008a5d364/colorLogoPNG.png" group-title="Infantil",Baby Shark TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63da6bcd60bc8f0008a5d364/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=64599b84-762b-4c4d-87a2-b1e4ae5ebacb&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3e3f7e7f-cf73-44ed-a548-479da3adaa50&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63da6bcd60bc8f0008a5d364/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c4ab45ba-c3bb-458d-a56e-0cc39fcdb487&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=eeffac15-63bd-411f-9078-ce91b4c2c6fd&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f4fb4cf605ddf000748e16f" tvg-id="5f4fb4cf605ddf000748e16f" tvg-chno="1460" tvg-name="Babyfirst" tvg-logo="https://images.pluto.tv/channels/5f4fb4cf605ddf000748e16f/colorLogoPNG.png" group-title="Infantil",Babyfirst
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4fb4cf605ddf000748e16f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=58c14a20-520b-40fc-87d7-b282f474dea4&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=aabcfb2d-7055-4b21-ae74-cb464e0594c5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4fb4cf605ddf000748e16f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c90437ee-3f8b-4cf5-ad58-668d0c9c0744&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=806ad33d-02cc-4870-b64c-636089b95faa&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="633dc392e0282400071b0d39" tvg-id="633dc392e0282400071b0d39" tvg-chno="1274" tvg-name="Beyblade" tvg-logo="https://images.pluto.tv/channels/633dc392e0282400071b0d39/colorLogoPNG.png" group-title="Anime & Geek",Beyblade
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/633dc392e0282400071b0d39/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=456ed63f-dac7-468e-b70e-d99a76f4ff7a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=851dca00-a944-4bb6-9338-586bd859f1af&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/633dc392e0282400071b0d39/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=d14e6163-aba7-44c7-8b0f-4617371004d2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9d46ef1a-9914-4322-96ca-9c44c994d04e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62545c0b002f4b0007688b61" tvg-id="62545c0b002f4b0007688b61" tvg-chno="1511" tvg-name="Bob Esponja Calça Quadrada" tvg-logo="https://images.pluto.tv/channels/62545c0b002f4b0007688b61/colorLogoPNG.png" group-title="Nickelodeon",Bob Esponja Calça Quadrada
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62545c0b002f4b0007688b61/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c2c69098-b3b9-4689-adde-fe591b1d30d2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=13dd395a-8319-454a-9c15-ae866f933633&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62545c0b002f4b0007688b61/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=96528a8b-5ba0-4dda-afb7-1bab2eaeeec9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8c86f06e-aec2-4e1b-a94c-a42091ca19ed&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="656f389c3944b60008e5bdab" tvg-id="656f389c3944b60008e5bdab" tvg-chno="1261" tvg-name="Boruto: Naruto Next Generations" tvg-logo="https://images.pluto.tv/channels/656f389c3944b60008e5bdab/colorLogoPNG.png" group-title="Anime & Geek",Boruto: Naruto Next Generations
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656f389c3944b60008e5bdab/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=53d0129e-e029-4d7a-b098-da68012d26c8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=40e0a349-0cf3-4ade-aaef-a09c526d0c4d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656f389c3944b60008e5bdab/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=123bfb31-b045-4e67-8b9a-f81765fb916e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=04ddac82-ddb2-4516-bf90-22d3cb7f733b&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62310f66d5888f0007534342" tvg-id="62310f66d5888f0007534342" tvg-chno="677" tvg-name="CBS News" tvg-logo="https://images.pluto.tv/channels/62310f66d5888f0007534342/colorLogoPNG_1732045752575.png" group-title="Notícias",CBS News
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62310f66d5888f0007534342/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=cef4ed99-3fd0-40fc-8268-fe8f69a12bba&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5d078660-3060-43fc-a578-6095fdd322e8&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62310f66d5888f0007534342/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=5e96359e-0238-48a6-a548-fbf1fb4a666c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=82af03e4-323d-4deb-8ec1-c7691e7b4579&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63eb9c5351f5d000085e8d7e" tvg-id="63eb9c5351f5d000085e8d7e" tvg-chno="104" tvg-name="CSI: Miami" tvg-logo="https://images.pluto.tv/channels/63eb9c5351f5d000085e8d7e/colorLogoPNG.png" group-title="Séries",CSI: Miami
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eb9c5351f5d000085e8d7e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=fcee72b3-3c34-4f72-b2f9-0695c34d1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7a8f883a-8157-41be-ac66-91c04ff95ade&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eb9c5351f5d000085e8d7e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9a916e2f-b662-412f-849d-2e60877a2905&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c0aeaccc-cf1b-4478-82c6-d887394e225e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="656e2a10954b020008ed167c" tvg-id="656e2a10954b020008ed167c" tvg-chno="552" tvg-name="Caçadores de Óvnis" tvg-logo="https://images.pluto.tv/channels/656e2a10954b020008ed167c/colorLogoPNG_1732041732595.png" group-title="Mistérios e Sobrenatural",Caçadores de Óvnis
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656e2a10954b020008ed167c/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bda20274-9bc0-41fa-aa8c-415a583544d1&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a9b65eff-90f1-4062-99ab-fb075e788d64&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656e2a10954b020008ed167c/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ee90d3e8-f59b-4092-a525-7149d5ae7ed9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=118d19ec-1afb-4a83-b3a2-6b53fe633862&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="67f9602ee173fa5664fafae8" tvg-id="67f9602ee173fa5664fafae8" tvg-chno="148" tvg-name="Charmed: Jovens Bruxas" tvg-logo="https://images.pluto.tv/channels/67f9602ee173fa5664fafae8/colorLogoPNG_1747333127716.png" group-title="Séries",Charmed: Jovens Bruxas
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67f9602ee173fa5664fafae8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=70a58d00-7d25-4029-987e-11f0f77e348c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c14f37da-c21f-4532-b955-0c514a3b09a6&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67f9602ee173fa5664fafae8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=833955dd-0e60-4d5e-a716-80cb773d6c4e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=807d1312-b670-4f69-98a4-4f084b14dce8&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64e501eec630a900088ed0f8" tvg-id="64e501eec630a900088ed0f8" tvg-chno="190" tvg-name="Clube do Terror" tvg-logo="https://images.pluto.tv/channels/64e501eec630a900088ed0f8/colorLogoPNG.png" group-title="Séries",Clube do Terror
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64e501eec630a900088ed0f8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=b392cd2e-f80b-4d0f-966b-d9b50c8e9eeb&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=466d7ff0-da30-4d3c-982d-fa426af56455&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64e501eec630a900088ed0f8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3e121cd8-8557-4a04-b916-a846657cf591&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5ed3bb7c-d0f7-47ee-a144-1993c9c64063&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62d969fd8451a30007f0fd94" tvg-id="62d969fd8451a30007f0fd94" tvg-chno="1450" tvg-name="Cocoricó" tvg-logo="https://images.pluto.tv/channels/62d969fd8451a30007f0fd94/colorLogoPNG.png" group-title="Infantil",Cocoricó
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62d969fd8451a30007f0fd94/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a1ceee37-074c-4fbb-bb18-7ca987afa656&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d9ea92da-0f36-4611-b31c-1efc692d6ad9&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62d969fd8451a30007f0fd94/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f250b3b3-525c-4c18-9873-3cd7cbdab8bb&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d7f83efb-5144-4d59-bd92-9e969ab9f994&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f357e91b18f0b00073583d2" tvg-id="5f357e91b18f0b00073583d2" tvg-chno="999" tvg-name="Comedy Central Pluto TV" tvg-logo="https://images.pluto.tv/channels/5f357e91b18f0b00073583d2/colorLogoPNG.png" group-title="Comédia",Comedy Central Pluto TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f357e91b18f0b00073583d2/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0a906820-7a16-4907-b63d-891b57d1cbe2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0be39a01-a647-47f4-80bc-5be12c3a1d43&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f357e91b18f0b00073583d2/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f2299001-75d3-47dd-8c5d-832f7d14f857&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bc985a22-2b06-4ca1-a7c0-acec5574254e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="609ae66b359b270007869ff1" tvg-id="609ae66b359b270007869ff1" tvg-chno="929" tvg-name="Comedy Central South Park" tvg-logo="https://images.pluto.tv/channels/609ae66b359b270007869ff1/colorLogoPNG_1733160636316.png" group-title="South Park",Comedy Central South Park
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/609ae66b359b270007869ff1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=954ec72f-e000-44e9-ac97-790e95f92c1b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c738b456-4cfc-41de-bef1-e36191df28c6&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/609ae66b359b270007869ff1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=acb49834-3b0f-4091-a050-4fae27ccd582&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e2b03faf-3bc9-41a8-abc0-bef9d8950636&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64df7ab4dfa32400083c517b" tvg-id="64df7ab4dfa32400083c517b" tvg-chno="860" tvg-name="DAZN Combat" tvg-logo="https://images.pluto.tv/channels/64df7ab4dfa32400083c517b/colorLogoPNG.png" group-title="Esportes",DAZN Combat
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64df7ab4dfa32400083c517b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=b9761075-f17a-4911-9e6c-824c9b559daa&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=da6306ee-610f-4cd9-a226-dad0cb96de5b&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64df7ab4dfa32400083c517b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=40a3fa52-2b93-4a26-9217-8e7e4a15946e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=194d945f-24a6-412b-99fd-cb3205398582&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="625464a945b6a200079257d1" tvg-id="625464a945b6a200079257d1" tvg-chno="1264" tvg-name="Death Note" tvg-logo="https://images.pluto.tv/channels/625464a945b6a200079257d1/colorLogoPNG.png" group-title="Anime & Geek",Death Note
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/625464a945b6a200079257d1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=7b8ad5fc-00e3-47a0-a8bf-35d3c1db8e37&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ff378233-bb48-41af-b771-6e89db58f50e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/625464a945b6a200079257d1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9c38ad3a-1d46-4b36-881c-d84fc2744901&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a1d83b1e-29e4-4e87-98e8-582535e18599&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="638df93ae2f2a3000737c168" tvg-id="638df93ae2f2a3000737c168" tvg-chno="593" tvg-name="Detetives Médicos" tvg-logo="https://images.pluto.tv/channels/638df93ae2f2a3000737c168/colorLogoPNG.png" group-title="Investigação",Detetives Médicos
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/638df93ae2f2a3000737c168/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e5341d11-4f21-4b4c-a08a-2fd01a623f70&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a57f1609-47bc-4806-baf6-d99100c5fb50&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/638df93ae2f2a3000737c168/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=7726dd29-444e-4819-8bc0-dc6907bcc4bd&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=fda7396e-11be-4560-8cde-199906186dea&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="61f1d27a189ed10007b7393e" tvg-id="61f1d27a189ed10007b7393e" tvg-chno="219" tvg-name="Diff’rent Strokes Arnold" tvg-logo="https://images.pluto.tv/channels/61f1d27a189ed10007b7393e/colorLogoPNG.png" group-title="Retrô",Diff’rent Strokes Arnold
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61f1d27a189ed10007b7393e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=b327568e-74d5-414c-a62f-63158e5dd96b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f0ff5c21-5ea1-4000-8017-f6bbf1546ba8&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61f1d27a189ed10007b7393e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f34caf52-a6c7-42a9-a75f-19001bca8c92&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b8c4c304-7660-43f3-935b-1c897274b9a3&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="656e2a81954b020008ed17a4" tvg-id="656e2a81954b020008ed17a4" tvg-chno="551" tvg-name="Estado Paranormal" tvg-logo="https://images.pluto.tv/channels/656e2a81954b020008ed17a4/colorLogoPNG_1732041604478.png" group-title="Mistérios e Sobrenatural",Estado Paranormal
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656e2a81954b020008ed17a4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=dbaf7992-0e71-4d93-95d2-e1316c222027&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0073ccc1-8d08-4440-aecd-3d480f92cf62&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/656e2a81954b020008ed17a4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=97cee822-c862-4164-bd8c-41ec5f4245da&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d5d41d7e-24e2-4549-9b1f-595b58aef9c8&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="619e6614c9d9650007a2b171" tvg-id="619e6614c9d9650007a2b171" tvg-chno="685" tvg-name="Euronews Português" tvg-logo="https://images.pluto.tv/channels/619e6614c9d9650007a2b171/colorLogoPNG.png" group-title="Notícias",Euronews Português
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/619e6614c9d9650007a2b171/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=02c653b8-0360-41f1-92b8-3a72119334d0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=4690bf57-dc93-4932-9650-599344c2f79c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/619e6614c9d9650007a2b171/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f6a4aaee-8286-44a8-852e-5fbc206e30e8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=58b9b92d-61fe-4432-93be-12dfcaa69787&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66997e8d3a4ad20008e50be9" tvg-id="66997e8d3a4ad20008e50be9" tvg-chno="830" tvg-name="FIFA+" tvg-logo="https://images.pluto.tv/channels/66997e8d3a4ad20008e50be9/colorLogoPNG_1749841306387.png" group-title="Esportes",FIFA+
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66997e8d3a4ad20008e50be9/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=de3e127e-a96b-4141-ac08-1831846c93f0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9a78fc7a-5dc6-4083-a97c-6c1c6624042d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66997e8d3a4ad20008e50be9/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3fd24a88-5def-4c7a-bfa8-ff9a05cb7524&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ae5902bb-36d0-4060-b69c-2b3f37abd558&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f5141c1605ddf000748eb1b" tvg-id="5f5141c1605ddf000748eb1b" tvg-chno="1009" tvg-name="FailArmy" tvg-logo="https://images.pluto.tv/channels/5f5141c1605ddf000748eb1b/colorLogoPNG.png" group-title="Comédia",FailArmy
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f5141c1605ddf000748eb1b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=aef29e59-fb90-47b2-af40-3f0ea0dd160d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a909033a-7fd1-4d90-887f-0a7412d31812&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f5141c1605ddf000748eb1b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f03e7421-bee7-4b81-923a-dcc9e728d09f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e43b9690-5b22-44b1-80e6-0594dfc3e3dd&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="633dcebd80386500074a2461" tvg-id="633dcebd80386500074a2461" tvg-chno="84" tvg-name="Filmelier TV" tvg-logo="https://images.pluto.tv/channels/633dcebd80386500074a2461/colorLogoPNG.png" group-title="Filmes",Filmelier TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/633dcebd80386500074a2461/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c87314a6-8ca2-49a9-9daa-8e23e14a3962&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0e1a7278-5c33-4b87-862a-b62e44cb4e81&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/633dcebd80386500074a2461/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2c685e68-4607-4398-8842-10e2f2eb990e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0fa4a6a4-13db-47c7-a5e5-dccde359d37e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f171d3442a0500007362f22" tvg-id="5f171d3442a0500007362f22" tvg-chno="30" tvg-name="Filmes Suspense" tvg-logo="https://images.pluto.tv/channels/5f171d3442a0500007362f22/colorLogoPNG.png" group-title="Filmes",Filmes Suspense
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f171d3442a0500007362f22/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=19bb8aac-ad9f-40bc-9184-12e4992baef9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bf6fd6c2-5004-4545-a0e2-f4cf226b7e84&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f171d3442a0500007362f22/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a802ca85-f208-4803-92e7-bf3808050d60&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7fd0cda6-f18d-408f-9436-8f1d396095db&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="67603668f433320008760af1" tvg-id="67603668f433320008760af1" tvg-chno="1181" tvg-name="Homeful" tvg-logo="https://images.pluto.tv/channels/67603668f433320008760af1/colorLogoPNG.png" group-title="Estilo de Vida",Homeful
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67603668f433320008760af1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9de3de4b-a781-48eb-9f0f-5b9c5850609c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9449dbda-3bfa-416c-8d19-3d87bbf133be&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67603668f433320008760af1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6aa670b7-1b8e-420d-a24f-b7cd4d384661&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=62fc990d-2640-4a2a-9fd8-f6db151dacca&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="65d9167818036500080e8780" tvg-id="65d9167818036500080e8780" tvg-chno="1263" tvg-name="Hunter x Hunter" tvg-logo="https://images.pluto.tv/channels/65d9167818036500080e8780/colorLogoPNG.png" group-title="Anime & Geek",Hunter x Hunter
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65d9167818036500080e8780/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0b024d37-c14e-4a01-8a9b-f669d93e1a98&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=81777ea6-14dd-43b4-9049-35abc453577b&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65d9167818036500080e8780/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e19bf90d-af11-4252-b512-028151dfd406&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f632d8c2-b723-4c62-8a55-278391a6c753&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66b26681d2d50d00083abe8b" tvg-id="66b26681d2d50d00083abe8b" tvg-chno="1279" tvg-name="Inuyasha" tvg-logo="https://images.pluto.tv/channels/66b26681d2d50d00083abe8b/colorLogoPNG.png" group-title="Anime & Geek",Inuyasha
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66b26681d2d50d00083abe8b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9c234a19-7e42-4fcd-a2ee-4a742f60352e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7de59780-b353-4919-ba32-9670b90b6162&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66b26681d2d50d00083abe8b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0c5b9c56-d4f3-405f-bd38-c6461c18b22b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3bc8ab50-681a-47c2-884a-d165b68b48c9&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66c7982f6838ee00085f0d24" tvg-id="66c7982f6838ee00085f0d24" tvg-chno="1265" tvg-name="JoJo’s Bizarre Adventure" tvg-logo="https://images.pluto.tv/channels/66c7982f6838ee00085f0d24/colorLogoPNG.png" group-title="Anime & Geek",JoJo’s Bizarre Adventure
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66c7982f6838ee00085f0d24/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c4cc8d2f-98c5-400e-8927-61b2686b6451&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d65afb89-d67c-4ff8-9a2c-261dbf12e62a&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66c7982f6838ee00085f0d24/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ececd0c7-ff81-4d5e-995a-c0669c2790c7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d32a6fca-89dc-447d-84a5-0d8382730711&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6317ba014d4d040007227f72" tvg-id="6317ba014d4d040007227f72" tvg-chno="699" tvg-name="Jovem Pan NEWS" tvg-logo="https://images.pluto.tv/channels/6317ba014d4d040007227f72/colorLogoPNG.png" group-title="Notícias",Jovem Pan NEWS
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6317ba014d4d040007227f72/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=74683103-c7b2-4600-8336-4f9b9fc0984e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=88692697-3124-4dbc-ab05-a0036a912f79&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6317ba014d4d040007227f72/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=eacb873c-7146-4bef-9c1a-6ae21e84a2c8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=1cd5b320-ee24-4dc9-97cc-ef616d432cb9&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5ffcc5130fd98c0007f2e216" tvg-id="5ffcc5130fd98c0007f2e216" tvg-chno="1555" tvg-name="Kenan & Kel" tvg-logo="https://images.pluto.tv/channels/5ffcc5130fd98c0007f2e216/colorLogoPNG.png" group-title="Nickelodeon",Kenan & Kel
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ffcc5130fd98c0007f2e216/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=446e6fcf-0af8-48b2-8537-0dffa6976946&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=279cfc36-0ed1-4f19-a2c2-4ae055b79c5e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ffcc5130fd98c0007f2e216/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1367c5ab-0911-4a5e-9dff-f4049dbc1ccc&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=96dcf54c-2498-4184-b07a-414c3805efe5&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f6108d8cc331900075e98e4" tvg-id="5f6108d8cc331900075e98e4" tvg-chno="399" tvg-name="MTV Are you the One?" tvg-logo="https://images.pluto.tv/channels/5f6108d8cc331900075e98e4/colorLogoPNG.png" group-title="MTV",MTV Are you the One?
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f6108d8cc331900075e98e4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=08b78801-9bab-4186-9818-5dd27786d705&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=594c5115-b9cc-4435-9f3d-8f38ff10aa1c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f6108d8cc331900075e98e4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=623d0282-a7c3-4475-b964-dd9686910700&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=45ca70c1-8b7a-4a1f-8286-8bb750f57e4d&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6047fbdbbb776a0007e7f2ff" tvg-id="6047fbdbbb776a0007e7f2ff" tvg-chno="440" tvg-name="MTV Biggest Pop" tvg-logo="https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png" group-title="MTV",MTV Biggest Pop
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6047fbdbbb776a0007e7f2ff/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bc12c95a-1be6-48a8-af5c-355302abaa30&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3cb19231-88aa-42d7-acdc-2639ecf22a29&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6047fbdbbb776a0007e7f2ff/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6c21e6e4-46b3-4826-8754-87b527808f63&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8a045582-1cc9-44ef-b571-1eccaae4072c&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="626c2a3502d84a0007cec817" tvg-id="626c2a3502d84a0007cec817" tvg-chno="397" tvg-name="MTV Catfish" tvg-logo="https://images.pluto.tv/channels/626c2a3502d84a0007cec817/colorLogoPNG.png" group-title="MTV",MTV Catfish
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/626c2a3502d84a0007cec817/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=79283eed-5a59-4cc7-9f19-6f3b0a84c1e9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0f638242-0111-4215-80f1-3ddf33af4328&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/626c2a3502d84a0007cec817/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bca2da73-b635-4ac5-b82f-6d829df788cc&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7234da16-953d-4f29-8888-e01914936483&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66a01dcb8561260008b0a41d" tvg-id="66a01dcb8561260008b0a41d" tvg-chno="435" tvg-name="MTV Classic" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" group-title="MTV",MTV Classic
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66a01dcb8561260008b0a41d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=5f1c9dc4-c308-45a8-8e37-fbbde6772649&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5928261c-aa4e-45c0-99ea-fc8c15157272&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66a01dcb8561260008b0a41d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=18b2f52a-98dc-45f5-95be-3c62596da3fd&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6bbdbb33-249a-4775-b76b-293a64de4210&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="61a528267e1b8b0007357920" tvg-id="61a528267e1b8b0007357920" tvg-chno="391" tvg-name="MTV Com o Ex" tvg-logo="https://images.pluto.tv/channels/61a528267e1b8b0007357920/colorLogoPNG.png" group-title="MTV",MTV Com o Ex
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61a528267e1b8b0007357920/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a5da2eb0-06cf-44c6-ad4d-0221e2a6e8e0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2c8acf3e-ec3e-4e44-b10e-e22a9abdc564&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61a528267e1b8b0007357920/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=be0fade2-9b4a-4632-948a-c2ba359a592e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=47cd014f-5779-4ca1-bd06-22f422a2a6a9&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6851bb3426beced4f2f67ee6" tvg-id="6851bb3426beced4f2f67ee6" tvg-chno="387" tvg-name="MTV Dating" tvg-logo="https://images.pluto.tv/channels/6851bb3426beced4f2f67ee6/colorLogoPNG_1750686926779.png" group-title="MTV",MTV Dating
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6851bb3426beced4f2f67ee6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=67b045c4-4fe5-42ec-8e67-107b0a4bb697&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=be9d9f39-8b40-4f8b-a0c0-1af98e280f8c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6851bb3426beced4f2f67ee6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e9e40dcd-6aee-4ba2-b087-3484f4113c53&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b857e110-ee49-498b-a6c4-ce43b3c43979&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="645111f1d8436e00081bb2bd" tvg-id="645111f1d8436e00081bb2bd" tvg-chno="388" tvg-name="MTV Drag" tvg-logo="https://images.pluto.tv/channels/645111f1d8436e00081bb2bd/colorLogoPNG.png" group-title="MTV",MTV Drag
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/645111f1d8436e00081bb2bd/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2c52114a-f739-47fa-95e6-f7983849ecdc&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bffcda4f-418e-4b0a-9a5e-58c9a3f64b7a&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/645111f1d8436e00081bb2bd/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=308732f2-21a9-4765-908a-d7ffbbec965f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a6ea4947-f04e-4fd9-b28b-72ca7552a7a4&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="620fdc7d8a36fc000710e3ba" tvg-id="620fdc7d8a36fc000710e3ba" tvg-chno="395" tvg-name="MTV Jovens e Mães" tvg-logo="https://images.pluto.tv/channels/620fdc7d8a36fc000710e3ba/colorLogoPNG.png" group-title="MTV",MTV Jovens e Mães
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620fdc7d8a36fc000710e3ba/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=36982a26-cea5-49c0-9513-a487d3ab30fe&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3bd82c4c-a153-4bf0-b348-5220a4910e68&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620fdc7d8a36fc000710e3ba/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1b5e9726-e207-40cb-bbfc-d164decdd962&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=13b82fd5-1b35-48fe-bfe4-d9063f532007&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63988b61c8d285000798a22a" tvg-id="63988b61c8d285000798a22a" tvg-chno="401" tvg-name="MTV Just Tattoo of Us" tvg-logo="https://images.pluto.tv/channels/63988b61c8d285000798a22a/colorLogoPNG.png" group-title="MTV",MTV Just Tattoo of Us
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63988b61c8d285000798a22a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bbca40d6-1e66-40e2-9f8a-c207ec23762c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=389355d1-0d2a-4ab7-b17e-f0767c640a30&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63988b61c8d285000798a22a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=911eb5fa-c25f-4e89-85d3-5332d51e0981&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=129fb9c6-1677-4eb5-8fc8-88dc56d4c7de&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f1212fb81e85c00077ae9ef" tvg-id="5f1212fb81e85c00077ae9ef" tvg-chno="385" tvg-name="MTV Pluto TV" tvg-logo="https://images.pluto.tv/channels/5f1212fb81e85c00077ae9ef/colorLogoPNG_1759263027326.png" group-title="MTV",MTV Pluto TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1212fb81e85c00077ae9ef/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6599c72f-9063-4d47-a97b-b3b735464c61&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b4a302d4-a072-4a76-8162-6b397a07809d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1212fb81e85c00077ae9ef/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ebf4b9aa-18ed-4050-adc1-2bca3da84084&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=fe5f2318-3a01-4b46-b7a1-77a7c335b306&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6851bdfc9ac48fde5e07f5ae" tvg-id="6851bdfc9ac48fde5e07f5ae" tvg-chno="386" tvg-name="MTV Reality" tvg-logo="https://images.pluto.tv/channels/6851bdfc9ac48fde5e07f5ae/colorLogoPNG_1750699186447.png" group-title="MTV",MTV Reality
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6851bdfc9ac48fde5e07f5ae/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f5c9f958-14a4-400d-a558-c91542dcf03e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c12d31f7-741e-4bbe-a917-0ce610e8923e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6851bdfc9ac48fde5e07f5ae/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=563259a2-85ac-4b0f-846b-34a87f5a3491&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9db23a5e-1d5e-437b-9d60-7e9a5fa9f75b&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="68641eb4852dfe78698c3390" tvg-id="68641eb4852dfe78698c3390" tvg-chno="403" tvg-name="MTV Ridiculousness" tvg-logo="https://images.pluto.tv/channels/68641eb4852dfe78698c3390/colorLogoPNG_1751392300412.png" group-title="MTV",MTV Ridiculousness
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/68641eb4852dfe78698c3390/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=24c76577-7604-418f-bde2-c099e24b8453&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8e6f0973-6fa6-4d25-94e2-b3c4d32789b1&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/68641eb4852dfe78698c3390/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=8208e396-de99-4ea8-b857-f5c33ca7e8c4&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=13bc6350-b158-4561-9bc8-557e25c1d7b0&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66a01e07d2d50d0008100d6a" tvg-id="66a01e07d2d50d0008100d6a" tvg-chno="430" tvg-name="MTV Rocks" tvg-logo="https://images.pluto.tv/channels/66a01e07d2d50d0008100d6a/colorLogoPNG.png" group-title="MTV",MTV Rocks
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66a01e07d2d50d0008100d6a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=504c0425-0f36-4998-bffd-3523b1997ab5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d696f91c-7886-4e42-8c0f-963fb21c7fa2&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66a01e07d2d50d0008100d6a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=4c93f7d0-c40c-4947-ae36-5bbe01f7fc43&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c207aaad-27a7-4ae0-a028-fb062f8de44e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="625463563b8ddc0007134aeb" tvg-id="625463563b8ddc0007134aeb" tvg-chno="389" tvg-name="MTV Shore" tvg-logo="https://images.pluto.tv/channels/625463563b8ddc0007134aeb/colorLogoPNG.png" group-title="MTV",MTV Shore
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/625463563b8ddc0007134aeb/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c96e1d0a-9e18-4790-9c68-10e729acae8c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=22956f7f-29cf-41df-afdb-4a2fd9ad43e5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/625463563b8ddc0007134aeb/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3e20a7f6-e353-4845-839f-c2bf557803e1&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=80934645-1f53-4708-a0a5-aace5f87d211&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63eb9dc84e83e70008abea92" tvg-id="63eb9dc84e83e70008abea92" tvg-chno="235" tvg-name="MacGyver" tvg-logo="https://images.pluto.tv/channels/63eb9dc84e83e70008abea92/colorLogoPNG.png" group-title="Retrô",MacGyver
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eb9dc84e83e70008abea92/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1af106a4-e073-48e5-b124-d6f432d61c36&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=cf1d9908-82e0-4fbd-b4e6-90fec245f372&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eb9dc84e83e70008abea92/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6b946490-f0bf-4deb-b86a-fcc4a3209991&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=fdd2f7fd-6947-4a52-9eed-b9c9d580eb0d&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="681111be5e0764e297fb200e" tvg-id="681111be5e0764e297fb200e" tvg-chno="352" tvg-name="Mais MasterChef Brasil" tvg-logo="https://images.pluto.tv/channels/681111be5e0764e297fb200e/colorLogoPNG_1749582970597.png" group-title="Reality",Mais MasterChef Brasil
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/681111be5e0764e297fb200e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=22df6ac3-10ea-45bc-a939-e7e195ba2444&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7aece1c5-3050-48a8-b8d6-b6222cc41f60&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/681111be5e0764e297fb200e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=31ee28d5-1cb4-408d-bb8f-341b02adac6c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=69df3989-9f81-462a-8968-265e417fe2aa&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6077045b6031bd00078de127" tvg-id="6077045b6031bd00078de127" tvg-chno="350" tvg-name="MasterChef" tvg-logo="https://images.pluto.tv/channels/6077045b6031bd00078de127/colorLogoPNG.png" group-title="Reality",MasterChef
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6077045b6031bd00078de127/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=b663c315-1eaf-42db-ae66-034bce89fa25&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7bfc1482-2e7a-4267-a729-62600919ecd4&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6077045b6031bd00078de127/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=571950ad-ef64-41af-abf5-781f2ee94c96&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8dfe7546-26ce-4686-8ad0-3dd6596c737c&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="681110afc188aa63faa147e0" tvg-id="681110afc188aa63faa147e0" tvg-chno="351" tvg-name="MasterChef Brasil Profissionais" tvg-logo="https://images.pluto.tv/channels/681110afc188aa63faa147e0/colorLogoPNG_1749226372857.png" group-title="Reality",MasterChef Brasil Profissionais
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/681110afc188aa63faa147e0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=14bf6626-118b-4144-b730-54346d8315a8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9b8f024f-ff3d-44bf-bcf9-f6901fe31b2e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/681110afc188aa63faa147e0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=00759e6d-dc51-4817-b498-e9349474a62b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e016ecb7-d7dd-473a-b132-958db0e45a99&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62b5c5a064163d0007b2efe6" tvg-id="62b5c5a064163d0007b2efe6" tvg-chno="601" tvg-name="Mistérios sem Solução" tvg-logo="https://images.pluto.tv/channels/62b5c5a064163d0007b2efe6/colorLogoPNG.png" group-title="Investigação",Mistérios sem Solução
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62b5c5a064163d0007b2efe6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=617ece1a-5f37-48fe-8eaf-33861d7fd655&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=909c46a8-9d12-466e-af7d-b6c48392cb85&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62b5c5a064163d0007b2efe6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=7dd315b7-ef2d-4249-9914-3e96f9a7cded&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a231049a-b432-499a-acde-8f9c600600bf&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63eba189c111bc0008ff59c5" tvg-id="63eba189c111bc0008ff59c5" tvg-chno="1445" tvg-name="Moranguinho" tvg-logo="https://images.pluto.tv/channels/63eba189c111bc0008ff59c5/colorLogoPNG.png" group-title="Infantil",Moranguinho
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eba189c111bc0008ff59c5/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2830185a-a4d1-4af0-add2-2eed8cc7015a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0a6ce6cd-39b3-4501-99a9-4c3f4ae4978b&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eba189c111bc0008ff59c5/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=086ae0bd-8e32-41bb-ab88-33da91ae4e1a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f6ddb9b6-52fb-446e-926b-5a6ba57719fa&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63eb9fdda995710008991c54" tvg-id="63eb9fdda995710008991c54" tvg-chno="108" tvg-name="NCIS" tvg-logo="https://images.pluto.tv/channels/63eb9fdda995710008991c54/colorLogoPNG.png" group-title="Séries",NCIS
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eb9fdda995710008991c54/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=23238f00-5c3d-4f39-a42e-c3c5054fd3ef&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b40b2bf6-23e6-4b82-ae55-9ef458226481&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eb9fdda995710008991c54/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=daaf28eb-35bc-480a-8cc4-6c1ac4534ad2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=1a27f2ca-2878-49ea-8d36-ad0a8259b911&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f6df5a173d7340007c559f7" tvg-id="5f6df5a173d7340007c559f7" tvg-chno="1259" tvg-name="Naruto" tvg-logo="https://images.pluto.tv/channels/5f6df5a173d7340007c559f7/colorLogoPNG.png" group-title="Anime & Geek",Naruto
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f6df5a173d7340007c559f7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=271a96b7-f3e0-4f34-9720-369a939cd14b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=40563766-f46f-4bba-8685-d2bd8bc742cf&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f6df5a173d7340007c559f7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=33f03a1b-50f3-4f49-ab39-e20506c1ed1b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=505784a0-c07c-4c5b-bd79-27623e2aec3f&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64c92f965580090008084968" tvg-id="64c92f965580090008084968" tvg-chno="1260" tvg-name="Naruto Shippuden" tvg-logo="https://images.pluto.tv/channels/64c92f965580090008084968/colorLogoPNG.png" group-title="Anime & Geek",Naruto Shippuden
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64c92f965580090008084968/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=56454d4f-5647-4cc0-8e1d-0d4caf3486f5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=56ff494b-de55-47d2-ac2e-6119d014d743&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64c92f965580090008084968/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=37f58f35-c2c8-4afe-97d5-478e24fa64f9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=98079eef-9130-466a-8900-1d16a4d94247&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="681ba2ad93d3d19bcab47433" tvg-id="681ba2ad93d3d19bcab47433" tvg-chno="479" tvg-name="NatureTime" tvg-logo="https://images.pluto.tv/channels/681ba2ad93d3d19bcab47433/colorLogoPNG_1746817092360.png" group-title="Natureza",NatureTime
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/681ba2ad93d3d19bcab47433/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=7974d08c-171a-43a1-8885-da7dc31f73c3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c47d66bf-abc1-4968-ab97-64f927fcb5cb&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/681ba2ad93d3d19bcab47433/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=eb432f5c-82bb-4706-9ab9-f3cdf8138fc6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2843fa48-1f03-4718-a9d5-25b7213a0c1d&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6824ce95f09106f4b18f4114" tvg-id="6824ce95f09106f4b18f4114" tvg-chno="1530" tvg-name="Nick Jr. Club" tvg-logo="https://images.pluto.tv/channels/6824ce95f09106f4b18f4114/colorLogoPNG_1747935179470.png" group-title="Nickelodeon",Nick Jr. Club
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6824ce95f09106f4b18f4114/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9977be22-3d56-4380-9a7d-e7c06eab2a2f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=64e58567-06a3-4ad0-b72e-af22337f5b19&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6824ce95f09106f4b18f4114/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3ab1d275-62eb-490e-821a-58d6faa7307e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=53939972-a3cb-4353-bbd1-e5cdae09bd5b&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6824ce10c5d53e1351ceb8d1" tvg-id="6824ce10c5d53e1351ceb8d1" tvg-chno="1510" tvg-name="Nickelodeon Clássico" tvg-logo="https://images.pluto.tv/channels/6824ce10c5d53e1351ceb8d1/colorLogoPNG_1750111537223.png" group-title="Nickelodeon",Nickelodeon Clássico
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6824ce10c5d53e1351ceb8d1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=8d508c0f-5c5a-4bc4-8f4d-44f196918482&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d7cf402f-72de-4e38-8285-3a1e2efceb55&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6824ce10c5d53e1351ceb8d1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=fc9786ce-57d6-4735-80bb-8def37e9e31d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=25adcf12-1005-422c-9826-78dcf1a00497&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="60f5fabf0721880007cd50e3" tvg-id="60f5fabf0721880007cd50e3" tvg-chno="1550" tvg-name="Nickelodeon Teen" tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" group-title="Nickelodeon",Nickelodeon Teen
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60f5fabf0721880007cd50e3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=461bcc3d-b8dc-42f9-84e8-928461361fb3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=06ddabb2-74af-46c8-8776-40a77b7aa926&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60f5fabf0721880007cd50e3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1912d201-53dd-4887-b10a-043cf79c0759&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=4396cb48-956c-46f6-9c93-458b6e4df08a&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="645951c0e94c38000802d2cb" tvg-id="645951c0e94c38000802d2cb" tvg-chno="1500" tvg-name="Nickelodeon Toons" tvg-logo="https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png" group-title="Nickelodeon",Nickelodeon Toons
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/645951c0e94c38000802d2cb/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6e105e19-a1c5-495c-82bf-d4dd592b8213&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=25fcec9e-2820-4cf4-bb6b-900773ca00c5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/645951c0e94c38000802d2cb/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e7876b5b-052f-4ffe-a48e-26f93fc8585e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=307c4a84-f93e-43b8-af59-2d4795b1c7fe&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="620ff46e0a576e0007dc2f89" tvg-id="620ff46e0a576e0007dc2f89" tvg-chno="1551" tvg-name="Nickelodeon iCarly" tvg-logo="https://images.pluto.tv/channels/620ff46e0a576e0007dc2f89/colorLogoPNG.png" group-title="Nickelodeon",Nickelodeon iCarly
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620ff46e0a576e0007dc2f89/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f56dbdbc-4bf9-4485-acd1-f78ca108867f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9e17d4c7-944d-4e78-ae76-8e6e4466b83f&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620ff46e0a576e0007dc2f89/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=682ea5c1-7824-4224-8ebd-b907e0fbda87&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d89c2205-d27d-4804-9d9d-fbe5998e88b3&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="67f960c5441853fe50e7afc1" tvg-id="67f960c5441853fe50e7afc1" tvg-chno="112" tvg-name="Numbers" tvg-logo="https://images.pluto.tv/channels/67f960c5441853fe50e7afc1/colorLogoPNG_1747430170532.png" group-title="Séries",Numbers
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67f960c5441853fe50e7afc1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0401d285-b14a-49c4-92e7-d3dd2c327d6c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=25382e04-ec2e-4176-97b4-fa5230fcc292&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67f960c5441853fe50e7afc1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e4fcabb1-ca70-4444-9e4d-185774621517&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=aecf91d0-e89a-422a-9ee3-90890768b983&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="61099df8cee03b00074b2ecf" tvg-id="61099df8cee03b00074b2ecf" tvg-chno="486" tvg-name="O Encantador de Cães" tvg-logo="https://images.pluto.tv/channels/61099df8cee03b00074b2ecf/colorLogoPNG.png" group-title="Natureza",O Encantador de Cães
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61099df8cee03b00074b2ecf/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6e1611e3-9518-4256-bd3f-cd91416c843e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=62ce4efd-ea5f-4c8c-af16-ace47171ce80&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61099df8cee03b00074b2ecf/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e7ebc14d-0d6e-4ac6-8e91-65019868eb4d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a15b1708-7f53-43be-a97e-0beef7c43935&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62052d3b4eeb740007fbe125" tvg-id="62052d3b4eeb740007fbe125" tvg-chno="238" tvg-name="O Homem que veio do Céu" tvg-logo="https://images.pluto.tv/channels/62052d3b4eeb740007fbe125/colorLogoPNG_1732044609381.png" group-title="Retrô",O Homem que veio do Céu
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62052d3b4eeb740007fbe125/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=31675a98-4961-4ccf-b985-8e4045415541&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8dca4030-2a33-42f3-8107-b18348d07486&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62052d3b4eeb740007fbe125/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=afa91a55-a09d-41e4-bc09-bcf2e5890f0f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c4e9d347-09f7-4b0c-b82d-e00a93b256a4&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f5c216df68f920007888315" tvg-id="5f5c216df68f920007888315" tvg-chno="1435" tvg-name="O Reino Infantil" tvg-logo="https://images.pluto.tv/channels/5f5c216df68f920007888315/colorLogoPNG.png" group-title="Infantil",O Reino Infantil
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f5c216df68f920007888315/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=7145f940-8fc4-41f6-b737-972d2d89ae7e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f84904e3-01a0-4561-bcaa-382f4c02ffc4&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f5c216df68f920007888315/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=026e7772-515d-44a6-aa79-dfdd6d3bca02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=064d4089-1729-436b-ac19-f5bbe021c1ff&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63221bafdc6e110007b50270" tvg-id="63221bafdc6e110007b50270" tvg-chno="1440" tvg-name="Oggy e as Baratas Tontas" tvg-logo="https://images.pluto.tv/channels/63221bafdc6e110007b50270/colorLogoPNG.png" group-title="Infantil",Oggy e as Baratas Tontas
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63221bafdc6e110007b50270/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3e4bf04c-64be-41b2-a9f5-87a27b1cb48e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=26e8b811-be6a-431b-b663-2695df832e70&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63221bafdc6e110007b50270/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=238ff9c3-ce9f-4c25-8710-19a641900844&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6280a033-45bf-4cd6-a71e-6863dcbf6be5&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="624b1c8d4321e200073ee421" tvg-id="624b1c8d4321e200073ee421" tvg-chno="1284" tvg-name="One Piece" tvg-logo="https://images.pluto.tv/channels/624b1c8d4321e200073ee421/colorLogoPNG.png" group-title="Anime & Geek",One Piece
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/624b1c8d4321e200073ee421/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c1dbc848-d547-4e36-9131-0fb70fcbb5a0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c1e62d4b-b67e-4932-8ab8-14935909dc83&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/624b1c8d4321e200073ee421/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6b2951eb-c603-4d8f-9d4f-61d96d4c6e15&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c47ce171-db48-43d2-9abe-5d014f24a989&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="620d12a82e8ac50007c269c3" tvg-id="620d12a82e8ac50007c269c3" tvg-chno="588" tvg-name="Os Arquivos do FBI" tvg-logo="https://images.pluto.tv/channels/620d12a82e8ac50007c269c3/colorLogoPNG.png" group-title="Investigação",Os Arquivos do FBI
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620d12a82e8ac50007c269c3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=abc06425-195f-4729-a21f-a929b511cebe&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=02ea419b-ea99-4c01-af77-95e58e7a5513&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/620d12a82e8ac50007c269c3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2721fa89-6864-4bb3-9f60-4cbe02eeb6da&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ebcb2817-682d-45e0-a8df-140ca1bddc50&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63221e41af69b500076f84e7" tvg-id="63221e41af69b500076f84e7" tvg-chno="1512" tvg-name="Os Padrinhos Mágicos" tvg-logo="https://images.pluto.tv/channels/63221e41af69b500076f84e7/colorLogoPNG.png" group-title="Nickelodeon",Os Padrinhos Mágicos
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63221e41af69b500076f84e7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c30aadaa-7455-4343-b364-4c585758ae85&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bf429130-3895-4d7e-b7ce-14c59d5a11c7&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63221e41af69b500076f84e7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=83b1f26f-54c6-43f9-9264-85b2a93c42e3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=52769087-d3cc-4cf2-8a15-5aaac9872860&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64f6180130ab3300083d896b" tvg-id="64f6180130ab3300083d896b" tvg-chno="862" tvg-name="PFL MMA" tvg-logo="https://images.pluto.tv/channels/64f6180130ab3300083d896b/colorLogoPNG.png" group-title="Esportes",PFL MMA
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64f6180130ab3300083d896b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=5fbc052f-b126-40c8-b8bd-5d3c55393830&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=dcd4dbc2-6ace-4a53-a6b0-85289ed77a5f&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64f6180130ab3300083d896b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=02e59bd7-0ca7-423a-9bc2-d76453a41c5b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3d396d40-44a7-4641-98fa-f73e169b991b&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="67802a22a5d8215f99dcee30" tvg-id="67802a22a5d8215f99dcee30" tvg-chno="1007" tvg-name="Pegadinhas - Just for Laughs" tvg-logo="https://images.pluto.tv/channels/67802a22a5d8215f99dcee30/colorLogoPNG.png" group-title="Comédia",Pegadinhas - Just for Laughs
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67802a22a5d8215f99dcee30/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bec96910-0652-4f80-8c2a-a57d2f9dc1a4&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=29321fcf-0491-4bb5-aa6c-266afa115381&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/67802a22a5d8215f99dcee30/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ff1c010b-97c5-4c0c-acc7-f90f856dfb60&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e5d35565-6efb-4940-9573-5cd005319e78&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6806d65e84f24b70109485fa" tvg-id="6806d65e84f24b70109485fa" tvg-chno="546" tvg-name="Pluto TV Aliens" tvg-logo="https://images.pluto.tv/channels/6806d65e84f24b70109485fa/colorLogoPNG_1746817107468.png" group-title="Mistérios e Sobrenatural",Pluto TV Aliens
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6806d65e84f24b70109485fa/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2c665869-0cba-48c7-aa82-9389eda1dd00&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=cd1ad15b-a3ca-43bf-be62-64ce8f4d4da7&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6806d65e84f24b70109485fa/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3b651fe6-7f3e-47cf-80eb-324443fa1d1f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=70bdfb7d-7b6f-4480-850b-66cd707f0f6a&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6474aa984cfc2c0008883a92" tvg-id="6474aa984cfc2c0008883a92" tvg-chno="483" tvg-name="Pluto TV Animais" tvg-logo="https://images.pluto.tv/channels/6474aa984cfc2c0008883a92/colorLogoPNG.png" group-title="Natureza",Pluto TV Animais
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474aa984cfc2c0008883a92/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=35213a4c-dd0f-4c12-98d6-86cc287b9624&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=03335104-4efe-4102-8d0c-ef7c21f1cc2b&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474aa984cfc2c0008883a92/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=7ec25f94-7577-4b12-8c14-6d5128ba55bf&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6506b48c-ec36-46f8-8efc-e01e2efa5591&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f12136385bccc00070142ed" tvg-id="5f12136385bccc00070142ed" tvg-chno="1251" tvg-name="Pluto TV Anime" tvg-logo="https://images.pluto.tv/channels/5f12136385bccc00070142ed/colorLogoPNG-1599153408949.png" group-title="Anime & Geek",Pluto TV Anime
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12136385bccc00070142ed/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=608a1ba8-ca9f-47ae-9712-e530b3bdbbbf&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=91c99bf4-4850-4ed8-9730-6fdf0ef68c61&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12136385bccc00070142ed/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=78635c8e-0d17-4926-bed2-ea66f37ae65d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d11d9c90-a6e6-4366-a902-51cf821ad6d7&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="604b79c558393100078faeef" tvg-id="604b79c558393100078faeef" tvg-chno="1254" tvg-name="Pluto TV Anime Ação" tvg-logo="https://images.pluto.tv/channels/604b79c558393100078faeef/colorLogoPNG.png" group-title="Anime & Geek",Pluto TV Anime Ação
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604b79c558393100078faeef/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c14e3b70-ba35-464b-aa93-1847cb4cd2a5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2e157cc6-9442-4cf4-afe2-c972a59396f2&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604b79c558393100078faeef/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=427fdda6-b4ce-457e-a5f8-2b922c8f2e28&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=15ffb927-a866-4777-bbf9-15e15f6ff3d0&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="663b9dc7cb3ea10008f1a0ce" tvg-id="663b9dc7cb3ea10008f1a0ce" tvg-chno="54" tvg-name="Pluto TV Bang Bang" tvg-logo="https://images.pluto.tv/channels/663b9dc7cb3ea10008f1a0ce/colorLogoPNG.png" group-title="Filmes",Pluto TV Bang Bang
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/663b9dc7cb3ea10008f1a0ce/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c6d63b68-0391-4a6f-8ccd-b3690412ea18&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=1966c24c-ef7b-4c7c-88a9-52593bf1749f&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/663b9dc7cb3ea10008f1a0ce/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ba4d7bb9-274b-4ef9-9ab6-2fb690eb1742&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=74537e92-e67a-4d7f-977d-c0a080a641a7&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64b9370b409629000802d32b" tvg-id="64b9370b409629000802d32b" tvg-chno="790" tvg-name="Pluto TV Canal UOL" tvg-logo="https://images.pluto.tv/channels/64b9370b409629000802d32b/colorLogoPNG.png" group-title="TV Brasileira",Pluto TV Canal UOL
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64b9370b409629000802d32b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=89ffac40-ae7b-4ff2-a628-9a977ab38843&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bc663711-e06b-4d51-afad-628395f5f861&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64b9370b409629000802d32b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=4a376c49-e675-4611-af1a-dbc698d1f2be&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=175545b5-4dc8-4f9c-86a5-c3539ca31a5e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5fa1612a669ba0000702017b" tvg-id="5fa1612a669ba0000702017b" tvg-chno="55" tvg-name="Pluto TV Cine Clássicos" tvg-logo="https://images.pluto.tv/channels/5fa1612a669ba0000702017b/colorLogoPNG_1733440556804.png" group-title="Filmes",Pluto TV Cine Clássicos
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fa1612a669ba0000702017b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0c7ff847-86ee-46eb-9525-349ae63b0fab&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5e8f5c28-1134-4d1b-8ad4-f74e6c6b3140&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fa1612a669ba0000702017b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ab07e30b-a147-4317-98b4-d8ac17618cca&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=12cb56cb-536a-41ed-9bad-2877893dadaf&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f12101f0b12f00007844c7c" tvg-id="5f12101f0b12f00007844c7c" tvg-chno="42" tvg-name="Pluto TV Cine Comédia" tvg-logo="https://images.pluto.tv/channels/5f12101f0b12f00007844c7c/colorLogoPNG_1732662798298.png" group-title="Filmes",Pluto TV Cine Comédia
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12101f0b12f00007844c7c/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=29239980-1644-46bb-9bba-d974d9255f71&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=827cca2d-0b66-4f81-af28-7e936d707182&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12101f0b12f00007844c7c/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c464813a-78a2-4157-ac2d-786cd4018a5e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=85178638-110b-4c86-a2f7-4285879578da&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62545ed3dab4380007582f7c" tvg-id="62545ed3dab4380007582f7c" tvg-chno="46" tvg-name="Pluto TV Cine Comédia Romântica" tvg-logo="https://images.pluto.tv/channels/62545ed3dab4380007582f7c/colorLogoPNG.png" group-title="Filmes",Pluto TV Cine Comédia Romântica
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62545ed3dab4380007582f7c/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=975c5e21-cc34-4ded-9018-fa74f10b1ece&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=1bc9c48f-948b-45c0-aca1-2bc8fbd1a0e1&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62545ed3dab4380007582f7c/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=58876fb9-ec5c-4360-b744-f77dd663bb56&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a397f167-ca03-45e6-9795-a588354d7e96&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6479ff764f5ba5000878dfe2" tvg-id="6479ff764f5ba5000878dfe2" tvg-chno="38" tvg-name="Pluto TV Cine Crime" tvg-logo="https://images.pluto.tv/channels/6479ff764f5ba5000878dfe2/colorLogoPNG.png" group-title="Filmes",Pluto TV Cine Crime
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6479ff764f5ba5000878dfe2/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=5730fd97-56bd-4f07-ba8a-dbd085f060a9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=52a9f817-ed3b-4c6a-a5a9-181b8e70944d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6479ff764f5ba5000878dfe2/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a4870d78-1feb-48ea-866e-a7072cc16546&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bb9f65d2-b191-4535-aad4-75b40732ad13&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f1210d14ae1f80007bafb1d" tvg-id="5f1210d14ae1f80007bafb1d" tvg-chno="51" tvg-name="Pluto TV Cine Drama" tvg-logo="https://images.pluto.tv/channels/5f1210d14ae1f80007bafb1d/colorLogoPNG.png" group-title="Filmes",Pluto TV Cine Drama
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1210d14ae1f80007bafb1d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=13b88a57-2375-4b5c-91e3-6866a230aca7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=eb7344c4-dd27-4ba8-80db-7b063ee18414&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1210d14ae1f80007bafb1d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c1784731-a178-44c4-87c2-9f3abcc9afa5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=100a754d-938a-477c-bf40-f6304e9d6ad4&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f171f032cd22e0007f17f3d" tvg-id="5f171f032cd22e0007f17f3d" tvg-chno="71" tvg-name="Pluto TV Cine Família" tvg-logo="https://images.pluto.tv/channels/5f171f032cd22e0007f17f3d/colorLogoPNG_1732045254120.png" group-title="Filmes",Pluto TV Cine Família
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f171f032cd22e0007f17f3d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=413c1fab-5ae7-4b96-9507-38ca1600b68a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=1a5dc02f-12a2-4fc6-9412-e97ee34c8333&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f171f032cd22e0007f17f3d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=09e101cd-c638-471f-98a4-83fd78d7a3cd&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6a57f230-201b-47f6-9699-4052df1d3fb0&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5fa991b1f09e020007e78626" tvg-id="5fa991b1f09e020007e78626" tvg-chno="72" tvg-name="Pluto TV Cine Inspiração" tvg-logo="https://images.pluto.tv/channels/5fa991b1f09e020007e78626/colorLogoPNG_1748874366972.png" group-title="Filmes",Pluto TV Cine Inspiração
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fa991b1f09e020007e78626/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=81be02fc-31d5-4475-857d-39d59ae22d5f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c0e9f1c3-cba1-4c07-b618-7e644c65adf1&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fa991b1f09e020007e78626/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=43675a4d-f36d-4c88-ad98-e6ad9bef71f1&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=503eb572-2f69-4f64-b404-c888b90cc7a6&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f171f988ab9780007fa95ea" tvg-id="5f171f988ab9780007fa95ea" tvg-chno="47" tvg-name="Pluto TV Cine Romance" tvg-logo="https://images.pluto.tv/channels/5f171f988ab9780007fa95ea/colorLogoPNG_1760457359793.png" group-title="Filmes",Pluto TV Cine Romance
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f171f988ab9780007fa95ea/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9e7a4cd6-489b-4892-af36-229a4e60b030&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=238942f0-7e28-4c3f-abbe-1216032924bb&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f171f988ab9780007fa95ea/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c35a0f60-0e4a-4d55-94f0-48d4ad6a38a6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=108a6495-da5a-48c7-aef5-568b8c2d1f01&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f120e94a5714d00074576a1" tvg-id="5f120e94a5714d00074576a1" tvg-chno="18" tvg-name="Pluto TV Cine Sucessos" tvg-logo="https://images.pluto.tv/channels/5f120e94a5714d00074576a1/colorLogoPNG.png" group-title="Filmes",Pluto TV Cine Sucessos
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f120e94a5714d00074576a1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=60c3bd8c-2e3e-4ec5-ac40-f02d3bbf3ed8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9a8282f9-8c0b-4cbb-8a6e-3dfbf2fdc5c9&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f120e94a5714d00074576a1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=d72f2322-22cf-4d0a-90ec-37604940868a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=506355ab-4b5a-4661-906b-444bf45272dd&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f12111c9e6c2c00078ef3bb" tvg-id="5f12111c9e6c2c00078ef3bb" tvg-chno="26" tvg-name="Pluto TV Cine Terror" tvg-logo="https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png" group-title="Filmes",Pluto TV Cine Terror
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12111c9e6c2c00078ef3bb/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=fc571a16-21f9-4dd8-bb18-6ec43e6f7186&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=81c2dc26-d1b5-4e8b-b8e2-512342c22232&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12111c9e6c2c00078ef3bb/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ee15895e-6e20-40fa-a256-fa48021129f8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2f7553c1-7273-4d30-8624-004af42dfb59&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f1ef23020a5ac0007e5e8ea" tvg-id="5f1ef23020a5ac0007e5e8ea" tvg-chno="1199" tvg-name="Pluto TV Cozinha" tvg-logo="https://images.pluto.tv/channels/5f1ef23020a5ac0007e5e8ea/colorLogoPNG.png" group-title="Estilo de Vida",Pluto TV Cozinha
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1ef23020a5ac0007e5e8ea/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f220a6c0-8812-45b5-9f8e-4bee004a807b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7eb1d582-5842-4e95-9826-ed2d319ca53b&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1ef23020a5ac0007e5e8ea/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2c27cdad-4552-4f47-8987-09811c841bf9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8d404647-daa6-44b2-90ea-a0437890186a&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6474aadc8e3c0a0008b98493" tvg-id="6474aadc8e3c0a0008b98493" tvg-chno="500" tvg-name="Pluto TV Curiosidade" tvg-logo="https://images.pluto.tv/channels/6474aadc8e3c0a0008b98493/colorLogoPNG_1732044385150.png" group-title="Curiosidades",Pluto TV Curiosidade
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474aadc8e3c0a0008b98493/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=4ebd3e6f-b440-4178-9bc3-3bb151507cfd&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8c6b564e-3cb8-496e-b9a1-d96cce98dc3b&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474aadc8e3c0a0008b98493/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=d9f92f71-7f6e-4673-9d57-8fb236fc6336&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2c05715a-ecb9-4614-a622-c18f1bdb1029&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="655e5c4d2c46f3000877a54b" tvg-id="655e5c4d2c46f3000877a54b" tvg-chno="265" tvg-name="Pluto TV Desenhos Clássicos" tvg-logo="https://images.pluto.tv/channels/655e5c4d2c46f3000877a54b/colorLogoPNG.png" group-title="Retrô",Pluto TV Desenhos Clássicos
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/655e5c4d2c46f3000877a54b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=38ed24e2-dcad-419b-b13d-e399cca3437d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6d40fc62-87ee-4513-8b4b-44e1b1a0e799&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/655e5c4d2c46f3000877a54b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e1df582c-7787-48a6-8a50-fe4ada94c537&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ca0df919-fa0f-435c-8412-a2cb9c22d28b&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f32d2db0af67400077f29c4" tvg-id="5f32d2db0af67400077f29c4" tvg-chno="827" tvg-name="Pluto TV Esportes" tvg-logo="https://images.pluto.tv/channels/5f32d2db0af67400077f29c4/colorLogoPNG_1762439215914.png" group-title="Esportes",Pluto TV Esportes
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32d2db0af67400077f29c4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=17802888-1494-4a70-a032-8392c0db489c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c7358124-6dfb-4beb-b434-9db0c3d026db&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32d2db0af67400077f29c4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a310dbee-be46-4950-a62f-01f91f0a3ae2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d0f48f44-338e-4f30-b522-ac3693714b4d&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5fa15ad6367e170007cdd098" tvg-id="5fa15ad6367e170007cdd098" tvg-chno="34" tvg-name="Pluto TV Ficção Científica" tvg-logo="https://images.pluto.tv/channels/5fa15ad6367e170007cdd098/colorLogoPNG.png" group-title="Filmes",Pluto TV Ficção Científica
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fa15ad6367e170007cdd098/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=db209b5a-f01a-41a8-899d-e560774f8059&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8f060e74-08eb-4e22-9926-81472c232738&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fa15ad6367e170007cdd098/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=72876334-b1e4-42cb-92c6-678470c4079b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=12f75cf0-e447-415a-9cb4-ffb9f0111513&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66c79a4262e5510008ff68a5" tvg-id="66c79a4262e5510008ff68a5" tvg-chno="67" tvg-name="Pluto TV Filmes Aventura" tvg-logo="https://images.pluto.tv/channels/66c79a4262e5510008ff68a5/colorLogoPNG.png" group-title="Filmes",Pluto TV Filmes Aventura
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66c79a4262e5510008ff68a5/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=fe591568-11fb-4984-85fe-bf2eb03506c4&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6380f222-c6bf-4e18-8507-ba55146f91f0&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66c79a4262e5510008ff68a5/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1297e5d9-448a-4665-91e7-ebbef0ddf153&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=80d256c7-807c-40eb-ae22-92f02f5d37d2&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f120f41b7d403000783a6d6" tvg-id="5f120f41b7d403000783a6d6" tvg-chno="22" tvg-name="Pluto TV Filmes Ação" tvg-logo="https://images.pluto.tv/channels/5f120f41b7d403000783a6d6/colorLogoPNG.png" group-title="Filmes",Pluto TV Filmes Ação
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f120f41b7d403000783a6d6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6c667ed4-9d5e-47e2-a3a3-c3e6880b6ae3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d4a438e9-7b66-432c-a150-37d4b58c1403&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f120f41b7d403000783a6d6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=48278bbd-6ceb-4295-8ad2-b75c7a471d1c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0885dd34-d23e-40de-b2ad-b35e783c1de6&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f5a545d0dbf7f0007c09408" tvg-id="5f5a545d0dbf7f0007c09408" tvg-chno="77" tvg-name="Pluto TV Filmes Nacionais" tvg-logo="https://images.pluto.tv/channels/5f5a545d0dbf7f0007c09408/colorLogoPNG_1732044719987.png" group-title="Filmes",Pluto TV Filmes Nacionais
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f5a545d0dbf7f0007c09408/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e3ef83ea-8910-4312-8b49-ea36d129a984&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=df98e8f9-a900-40f9-bf28-bfbf8dbf9f54&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f5a545d0dbf7f0007c09408/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=958abba6-1fd3-4a63-a45b-40cbfda1d929&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8fe352cd-fd32-4f88-b570-89208e953803&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6806d62369aec5b19cd628c0" tvg-id="6806d62369aec5b19cd628c0" tvg-chno="40" tvg-name="Pluto TV Filmes de Luta" tvg-logo="https://images.pluto.tv/channels/6806d62369aec5b19cd628c0/colorLogoPNG_1746817781806.png" group-title="Filmes",Pluto TV Filmes de Luta
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6806d62369aec5b19cd628c0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1b53760d-efae-4d05-a2fd-33f71a8355c7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9f2d6117-7188-4988-ac35-cdb99a68bd38&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6806d62369aec5b19cd628c0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=5d5189d1-89fb-4a0e-9498-00478d95ce2e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=419e805d-e90b-4461-87ea-37418310edab&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64c815e8a1c6130008fef928" tvg-id="64c815e8a1c6130008fef928" tvg-chno="1340" tvg-name="Pluto TV Gaming por Ubisoft" tvg-logo="https://images.pluto.tv/channels/64c815e8a1c6130008fef928/colorLogoPNG.png" group-title="Anime & Geek",Pluto TV Gaming por Ubisoft
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64c815e8a1c6130008fef928/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=cec5b40c-7655-4c6f-a059-1f7fe90a3054&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a9e40e01-28ed-4de6-9da3-a769ae3411cf&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64c815e8a1c6130008fef928/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=50fb34ff-a962-4de6-bd11-7cf24642d186&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=4243bc24-b002-4990-bda2-98cac432ee08&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f1ef1a8cec6be00072a7ac9" tvg-id="5f1ef1a8cec6be00072a7ac9" tvg-chno="540" tvg-name="Pluto TV História" tvg-logo="https://images.pluto.tv/channels/5f1ef1a8cec6be00072a7ac9/colorLogoPNG_1754405659295.png" group-title="Curiosidades",Pluto TV História
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1ef1a8cec6be00072a7ac9/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=80457999-be14-4c3f-94a2-528fe641cf55&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6b5740ed-0d7e-4298-a05d-d8f87f4368aa&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1ef1a8cec6be00072a7ac9/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0aecd482-09c1-4386-841f-3a860a005c75&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e6d69aa5-1bc1-4896-8021-03eaca1dc274&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f32cf37c9ff2b00082adbc8" tvg-id="5f32cf37c9ff2b00082adbc8" tvg-chno="578" tvg-name="Pluto TV Investigação" tvg-logo="https://images.pluto.tv/channels/5f32cf37c9ff2b00082adbc8/colorLogoPNG.png" group-title="Investigação",Pluto TV Investigação
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32cf37c9ff2b00082adbc8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ca5377e7-2cc7-45b5-ad37-0fe341caa504&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c912dd25-a15d-416e-ab24-d91dcb5879e5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32cf37c9ff2b00082adbc8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f0ba99e5-6eb3-40f3-9992-564fcf35f298&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e7ab6f5d-c8e9-48f0-9df4-0a177ebaa575&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f12141b146d760007934ea7" tvg-id="5f12141b146d760007934ea7" tvg-chno="1420" tvg-name="Pluto TV Junior" tvg-logo="https://images.pluto.tv/channels/5f12141b146d760007934ea7/colorLogoPNG.png" group-title="Infantil",Pluto TV Junior
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12141b146d760007934ea7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=83b53971-96fa-4e8f-acc3-59ba0d235dd4&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ea7fd9e4-049a-4cc1-b0ef-f1080bcbbb2d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f12141b146d760007934ea7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=550054cb-2e1d-4dd9-9cd4-a1b254031ac0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6518bc13-6777-401a-ac88-f48864c50fe6&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="633ee9ba83c08f00076b60a6" tvg-id="633ee9ba83c08f00076b60a6" tvg-chno="1204" tvg-name="Pluto TV KFOOD" tvg-logo="https://images.pluto.tv/channels/633ee9ba83c08f00076b60a6/colorLogoPNG.png" group-title="Estilo de Vida",Pluto TV KFOOD
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/633ee9ba83c08f00076b60a6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=53698739-3316-4aa1-8d79-0e0fbab8cc47&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=985f7d54-6e76-4081-a06c-e54c20d4e79e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/633ee9ba83c08f00076b60a6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=719c7644-7363-45b5-8c63-4de04ab22106&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f3dcdfc6-ef4c-40f9-a2a5-926b8e91d624&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="604b99d633a72b00078e05ad" tvg-id="604b99d633a72b00078e05ad" tvg-chno="465" tvg-name="Pluto TV Karaokê por Stingray" tvg-logo="https://images.pluto.tv/channels/604b99d633a72b00078e05ad/colorLogoPNG.png" group-title="Música",Pluto TV Karaokê por Stingray
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604b99d633a72b00078e05ad/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=9b711020-f63c-4c2d-8660-9bddfad72f12&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5077bf82-e88c-4278-9cbe-138ed905d18c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604b99d633a72b00078e05ad/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1932ddfd-fc4f-47b7-9f71-55b52670b5d8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b6399bcc-44d0-42cc-82d6-e5533ee70def&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f1214a637c6fd00079c652f" tvg-id="5f1214a637c6fd00079c652f" tvg-chno="1421" tvg-name="Pluto TV Kids" tvg-logo="https://images.pluto.tv/channels/5f1214a637c6fd00079c652f/colorLogoPNG.png" group-title="Infantil",Pluto TV Kids
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1214a637c6fd00079c652f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0d585abf-d86d-4331-aba3-2da96ad848c8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6b008154-68a4-4eef-9674-f93ad51e5663&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1214a637c6fd00079c652f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ec026bf8-2532-4cd2-8f83-e01645ff1e15&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=68dd8580-1ba5-4167-9e24-b47af9ddc08e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66c8cae7fed35b0008580ec0" tvg-id="66c8cae7fed35b0008580ec0" tvg-chno="1422" tvg-name="Pluto TV Kids Club" tvg-logo="https://images.pluto.tv/channels/66c8cae7fed35b0008580ec0/colorLogoPNG.png" group-title="Infantil",Pluto TV Kids Club
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66c8cae7fed35b0008580ec0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=63201030-ebca-469a-9d4e-879bd004a453&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=141dcb5a-fc7f-4561-bf6e-656aef16b5be&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66c8cae7fed35b0008580ec0/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=dad8e1b6-f767-4db7-a3fb-69f5a7e88465&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=cc4d21cd-df86-483b-82ed-ac89b3da2e81&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="61843f5e491af10007f7eefa" tvg-id="61843f5e491af10007f7eefa" tvg-chno="517" tvg-name="Pluto TV Minha Obsessão Favorita" tvg-logo="https://images.pluto.tv/channels/61843f5e491af10007f7eefa/colorLogoPNG.png" group-title="Curiosidades",Pluto TV Minha Obsessão Favorita
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61843f5e491af10007f7eefa/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e8b65428-9fd6-485c-9706-ef57ddf2dee9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f1cdfe45-9b42-41f6-bea2-805e8909d620&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61843f5e491af10007f7eefa/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c7298cfd-af07-4d30-be61-90d82e038370&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9299f4b9-8dea-4cc3-89ce-f7573efff892&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5fac52f142044f00078e2a51" tvg-id="5fac52f142044f00078e2a51" tvg-chno="545" tvg-name="Pluto TV Mistérios" tvg-logo="https://images.pluto.tv/channels/5fac52f142044f00078e2a51/colorLogoPNG.png" group-title="Mistérios e Sobrenatural",Pluto TV Mistérios
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fac52f142044f00078e2a51/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bcdb3304-4f9b-4a4f-9ad7-7b33ad563bc5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=862bc8a0-50f2-4564-9a20-49002215c377&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fac52f142044f00078e2a51/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3d46d1a4-6407-4a74-b4a0-47c71cb85a4d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2a3ec957-863a-41b7-9aac-a1801d31a655&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f1213ba0ecebc00070e170f" tvg-id="5f1213ba0ecebc00070e170f" tvg-chno="477" tvg-name="Pluto TV Natureza" tvg-logo="https://images.pluto.tv/channels/5f1213ba0ecebc00070e170f/colorLogoPNG.png" group-title="Natureza",Pluto TV Natureza
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1213ba0ecebc00070e170f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=621ad690-daf7-4730-ba2f-8086c860ba67&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e039b86c-c342-47cc-8500-2f02097ec436&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1213ba0ecebc00070e170f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=4dd83a0c-d57b-48d7-bb74-afc73da74629&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e5e5385a-c0db-4422-bc71-1b04576c4915&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64ad7394798def00087b2bfe" tvg-id="64ad7394798def00087b2bfe" tvg-chno="530" tvg-name="Pluto TV Negócio Fechado" tvg-logo="https://images.pluto.tv/channels/64ad7394798def00087b2bfe/colorLogoPNG.png" group-title="Curiosidades",Pluto TV Negócio Fechado
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64ad7394798def00087b2bfe/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a898d3b0-5ba6-42ba-b8f7-6bdcfb8443c3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=399e73cb-17dc-4efd-8efe-f7c4eba50ccc&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64ad7394798def00087b2bfe/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6bd306ad-e470-4589-842f-2880d18dff25&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ccc59e13-50fb-48b0-8e29-2d665d80282c&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="663b9de4f999220008230fa8" tvg-id="663b9de4f999220008230fa8" tvg-chno="82" tvg-name="Pluto TV Netmovies" tvg-logo="https://images.pluto.tv/channels/663b9de4f999220008230fa8/colorLogoPNG.png" group-title="Filmes",Pluto TV Netmovies
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/663b9de4f999220008230fa8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=40838481-2c4a-4833-aca7-9744f6661e6c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=fb8fd923-6801-42ee-87d4-80c15e62d160&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/663b9de4f999220008230fa8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=46793524-d936-453d-abdc-4a0cf3532286&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=cc62526e-9f24-44dc-b92e-4e52835ee96e&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f512365abe1f50007d3ff56" tvg-id="5f512365abe1f50007d3ff56" tvg-chno="278" tvg-name="Pluto TV Novelas" tvg-logo="https://images.pluto.tv/channels/5f512365abe1f50007d3ff56/colorLogoPNG.png" group-title="Novelas",Pluto TV Novelas
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f512365abe1f50007d3ff56/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=95de8a0e-0b7e-43a4-a3bc-0992e3faf163&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bd043964-b583-4c41-9a95-f484adaa40cd&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f512365abe1f50007d3ff56/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e38c7c2d-7e07-4992-b8b0-cedea0080fe7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a3c53945-245c-421c-bbab-bcc9a894969c&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="604a8dedbca75b0007b1c753" tvg-id="604a8dedbca75b0007b1c753" tvg-chno="480" tvg-name="Pluto TV Paisagens por Stingray" tvg-logo="https://images.pluto.tv/channels/604a8dedbca75b0007b1c753/colorLogoPNG.png" group-title="Natureza",Pluto TV Paisagens por Stingray
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604a8dedbca75b0007b1c753/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e0c6d408-99b7-471c-b8eb-cb9ddcb663ab&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=050f75f5-9590-42e1-ad7d-400a091878cd&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604a8dedbca75b0007b1c753/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c71db586-0ea1-448e-8194-842041820f07&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=28c10b00-b89b-4d0b-bcb4-9f5407bece56&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="678fdf9e3de7c8cf948e8824" tvg-id="678fdf9e3de7c8cf948e8824" tvg-chno="580" tvg-name="Pluto TV Policial" tvg-logo="https://images.pluto.tv/channels/678fdf9e3de7c8cf948e8824/colorLogoPNG.png" group-title="Investigação",Pluto TV Policial
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/678fdf9e3de7c8cf948e8824/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=56073730-6798-4ce7-9991-7f4f082bac7d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=4a801e11-b9b2-495b-856e-3d2c9b21717f&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/678fdf9e3de7c8cf948e8824/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3d908359-a1bc-49fc-82f8-285a91caafd6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3d914496-6d89-45b7-b4e8-faebcfae6c85&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6102e04e9ab1db0007a980a1" tvg-id="6102e04e9ab1db0007a980a1" tvg-chno="693" tvg-name="Pluto TV Record News" tvg-logo="https://images.pluto.tv/channels/6102e04e9ab1db0007a980a1/colorLogoPNG.png" group-title="Notícias",Pluto TV Record News
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6102e04e9ab1db0007a980a1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=43ca3e22-4cb9-4a80-8cd6-e83219c78148&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=547735f4-18b5-4fd5-9247-6bb4e05f13d4&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6102e04e9ab1db0007a980a1/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2eeec357-ac6f-4ae3-8644-1e079fadf2fc&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2c812e1a-a818-403d-b2ce-3efd78be126f&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f1212ad1728050007a523b8" tvg-id="5f1212ad1728050007a523b8" tvg-chno="203" tvg-name="Pluto TV Retrô" tvg-logo="https://images.pluto.tv/channels/5f1212ad1728050007a523b8/colorLogoPNG.png" group-title="Retrô",Pluto TV Retrô
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1212ad1728050007a523b8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=39a620fc-befa-4b07-80e8-92027fc0df4a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5139117f-8321-44ff-83a5-fca62325ca69&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1212ad1728050007a523b8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=ff1b4e67-7b5a-4f50-a821-eaa38f3e8ec9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2bf0ed06-a7b6-4768-a219-6cd4646482ae&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="604b91e0692f770007d9f33f" tvg-id="604b91e0692f770007d9f33f" tvg-chno="460" tvg-name="Pluto TV Shows por Stingray" tvg-logo="https://images.pluto.tv/channels/604b91e0692f770007d9f33f/colorLogoPNG.png" group-title="Música",Pluto TV Shows por Stingray
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604b91e0692f770007d9f33f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=489c4166-a227-4b75-be88-58cfc7d6a861&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=fa3c6a89-b7cc-447b-842f-122c90f3e376&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/604b91e0692f770007d9f33f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=b7091304-70a7-4f5e-888e-414b4c651d3b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=13946a75-d83b-41b7-b643-437e65900d30&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f99ac4fded33000078f29ab" tvg-id="5f99ac4fded33000078f29ab" tvg-chno="133" tvg-name="Pluto TV Star Trek" tvg-logo="https://images.pluto.tv/channels/5f99ac4fded33000078f29ab/colorLogoPNG_1753988616763.png" group-title="Séries",Pluto TV Star Trek
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f99ac4fded33000078f29ab/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2ca4d8a7-6f39-4a20-bc34-9a73819e3d0d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ea6e719b-efe0-498d-abbd-7b812aa96835&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f99ac4fded33000078f29ab/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=b660ff0c-49a3-44d3-859a-4656121e77a3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c88ced21-4b40-4b5a-a3e3-6a7924e14211&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6474ab1da51cb80008bfb5f4" tvg-id="6474ab1da51cb80008bfb5f4" tvg-chno="125" tvg-name="Pluto TV Séries Ação" tvg-logo="https://images.pluto.tv/channels/6474ab1da51cb80008bfb5f4/colorLogoPNG.png" group-title="Séries",Pluto TV Séries Ação
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474ab1da51cb80008bfb5f4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=39ed6f13-a5bb-445b-b941-b6cd071672a4&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8c7ae024-87bb-4d4e-9a5b-0d556baaabb0&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474ab1da51cb80008bfb5f4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=616eadd5-d5da-410b-9aeb-c1971b6ad2b8&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8076e87c-d651-413f-8584-043868b38ec6&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="655e5bc94261ca000810cb17" tvg-id="655e5bc94261ca000810cb17" tvg-chno="150" tvg-name="Pluto TV Séries Comédia" tvg-logo="https://images.pluto.tv/channels/655e5bc94261ca000810cb17/colorLogoPNG.png" group-title="Séries",Pluto TV Séries Comédia
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/655e5bc94261ca000810cb17/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=fbee4ed3-e913-47d2-8f24-5b2747ec9921&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=918095d0-1631-4b39-9c62-650cf2ccc9ff&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/655e5bc94261ca000810cb17/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=17f555e9-fad8-488a-a48f-65ce6becc15c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=4a904f07-6bef-4ef5-b9c6-e22e2fe24785&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6474ab5cdc7a760008745008" tvg-id="6474ab5cdc7a760008745008" tvg-chno="102" tvg-name="Pluto TV Séries Criminais" tvg-logo="https://images.pluto.tv/channels/6474ab5cdc7a760008745008/colorLogoPNG.png" group-title="Séries",Pluto TV Séries Criminais
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474ab5cdc7a760008745008/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c6c3f872-09f1-44cc-ac23-4c1829cf74a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=4771f70e-b117-4a0a-88e8-1c2681740eb9&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6474ab5cdc7a760008745008/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=53543a6c-4a6a-4dd5-aa0e-dfc448ce1584&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=bdc7cd15-a665-4ba0-b10a-4117c2e1e284&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="65f060d84e01740008d7421f" tvg-id="65f060d84e01740008d7421f" tvg-chno="141" tvg-name="Pluto TV Séries Drama" tvg-logo="https://images.pluto.tv/channels/65f060d84e01740008d7421f/colorLogoPNG.png" group-title="Séries",Pluto TV Séries Drama
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65f060d84e01740008d7421f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=83347df5-b5b4-4ec7-991e-ea6d62049bc0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=28eec518-4955-44ce-bc90-c27bc7f6aa70&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65f060d84e01740008d7421f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6308843a-1e76-419a-a7fe-10d4844bccc3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=42821c91-7392-4673-b7b0-199ae4cf88a3&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63d2ba2f60bc8f0008981a0e" tvg-id="63d2ba2f60bc8f0008981a0e" tvg-chno="132" tvg-name="Pluto TV Séries Sci-Fi" tvg-logo="https://images.pluto.tv/channels/63d2ba2f60bc8f0008981a0e/colorLogoPNG.png" group-title="Séries",Pluto TV Séries Sci-Fi
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63d2ba2f60bc8f0008981a0e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=db7f2e58-2ee1-40c6-9c1f-92486be2468d&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0662a91d-8e9e-4357-9206-f9e4222b788e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63d2ba2f60bc8f0008981a0e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=8d47bbed-356a-4b20-ad92-392ee6f9f733&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0e6d7c62-e42b-4b71-a405-cb4c6a7c9eee&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66aa67493a4ad2000806d91b" tvg-id="66aa67493a4ad2000806d91b" tvg-chno="59" tvg-name="Pluto TV Terror Trash" tvg-logo="https://images.pluto.tv/channels/66aa67493a4ad2000806d91b/colorLogoPNG.png" group-title="Filmes",Pluto TV Terror Trash
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66aa67493a4ad2000806d91b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1958a6a9-377a-4946-a2f3-f5d7baee448c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=607a3024-46df-4c5e-a5df-3865dcfb038c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66aa67493a4ad2000806d91b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=be84899f-291e-4268-90b9-603994bc830a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=82041e1a-41bc-4e03-b119-cd0a596da3d3&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6014761dfb91870008ea6463" tvg-id="6014761dfb91870008ea6463" tvg-chno="535" tvg-name="Pluto TV Turbo" tvg-logo="https://images.pluto.tv/channels/6014761dfb91870008ea6463/colorLogoPNG.png" group-title="Curiosidades",Pluto TV Turbo
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6014761dfb91870008ea6463/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0841fe0b-3a9e-4873-b859-1c47afc34772&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=28cf57ee-9246-4df2-822f-af891e4a694c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6014761dfb91870008ea6463/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=375af753-7b76-4e28-a2c3-83dcfae8f451&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6906102e-553d-45a5-96e4-ddcbcf2766e2&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f32d432d612e50007e56133" tvg-id="5f32d432d612e50007e56133" tvg-chno="1154" tvg-name="Pluto TV Viagens" tvg-logo="https://images.pluto.tv/channels/5f32d432d612e50007e56133/colorLogoPNG_1760986502648.png" group-title="Estilo de Vida",Pluto TV Viagens
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32d432d612e50007e56133/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=49053752-255e-4d90-916c-2f0fd70bf622&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=80d4789c-1318-4c50-842e-d7623e08fb8c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32d432d612e50007e56133/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=8612392a-8a88-40a6-85d0-135c2a93c6d0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=85c26881-f7cc-487b-8f6d-28b8e4b6de34&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f32d4d9ec194100070c7449" tvg-id="5f32d4d9ec194100070c7449" tvg-chno="515" tvg-name="Pluto TV Vida Real" tvg-logo="https://images.pluto.tv/channels/5f32d4d9ec194100070c7449/colorLogoPNG_1732044921019.png" group-title="Curiosidades",Pluto TV Vida Real
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32d4d9ec194100070c7449/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=00f04674-5668-4bb1-9a2b-a772f7aefe2f&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f0ee8f04-9403-4fe9-88b6-219069e3ad31&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f32d4d9ec194100070c7449/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=99b7504a-8e3b-4eda-a115-08b71a051d3e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9852159a-40f2-4a41-b78d-b22bb216feba&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="687007a8ee4155e89a8f6d67" tvg-id="687007a8ee4155e89a8f6d67" tvg-chno="1255" tvg-name="Pokémon" tvg-logo="https://images.pluto.tv/channels/687007a8ee4155e89a8f6d67/colorLogoPNG_1752174174089.png" group-title="Anime & Geek",Pokémon
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/687007a8ee4155e89a8f6d67/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=b4317980-8a97-4067-aab7-e0b01ba91c7e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0ba9af77-5f2e-4466-9315-9edcbfa91e42&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/687007a8ee4155e89a8f6d67/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=80f0e89e-0903-47cb-bacf-4c71f6c605c5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b155c675-637e-4dec-adab-12b5ea0988a2&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="677d93f37bffa600080795e7" tvg-id="677d93f37bffa600080795e7" tvg-chno="270" tvg-name="Popeye" tvg-logo="https://images.pluto.tv/channels/677d93f37bffa600080795e7/colorLogoPNG.png" group-title="Retrô",Popeye
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/677d93f37bffa600080795e7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=6014affe-abbd-434e-809d-b92c1f45df58&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0625003d-9767-43b3-bae9-3e324e35ad7d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/677d93f37bffa600080795e7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3b3c3d61-5368-4f27-98a7-2bca4004d0a9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ca76a166-fdd0-4a43-9515-eccfd80c5fe8&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="61bb72a7bf8c520007a8fd27" tvg-id="61bb72a7bf8c520007a8fd27" tvg-chno="525" tvg-name="Pronto-socorro: Histórias De Emergência" tvg-logo="https://images.pluto.tv/channels/61bb72a7bf8c520007a8fd27/colorLogoPNG.png" group-title="Curiosidades",Pronto-socorro: Histórias De Emergência
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61bb72a7bf8c520007a8fd27/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=27ea6606-a720-401b-9fe1-f9ed8c3333f5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=280643c8-859d-4c0f-a637-e4ef69d05da8&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/61bb72a7bf8c520007a8fd27/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=cfbd734f-9f6d-4397-bc76-e31a8e8ee77c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=ea84fb29-7ab1-4e65-b43a-a8e968c1d300&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="65a6818c7bdc8d0008457b21" tvg-id="65a6818c7bdc8d0008457b21" tvg-chno="843" tvg-name="RACER Brasil" tvg-logo="https://images.pluto.tv/channels/65a6818c7bdc8d0008457b21/colorLogoPNG_1746817068891.png" group-title="Esportes",RACER Brasil
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65a6818c7bdc8d0008457b21/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3f1c478d-1f2a-4b92-bac9-cb38279f0059&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=dff96a44-bb69-4ec1-b958-f140047247da&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65a6818c7bdc8d0008457b21/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=c88e42a9-ba82-43d4-9701-52b0ef328125&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=0622ea1e-5a24-497c-ac17-cc2cf383a45d&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63dac28760bc8f0008a7654b" tvg-id="63dac28760bc8f0008a7654b" tvg-chno="834" tvg-name="Realmadrid TV" tvg-logo="https://images.pluto.tv/channels/63dac28760bc8f0008a7654b/colorLogoPNG.png" group-title="Esportes",Realmadrid TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63dac28760bc8f0008a7654b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3dccde4f-bf10-4bdb-8de0-f8f5d107147b&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b8709402-ce03-4417-a743-1a91906592f5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63dac28760bc8f0008a7654b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e7bf9a18-0cfc-4cf3-9c9a-48c3c7faaed6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=5d5a198f-ab59-4616-ad4b-28b3f600b7ff&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64ff2d8c6625510008c5a512" tvg-id="64ff2d8c6625510008c5a512" tvg-chno="127" tvg-name="Rookie Blue" tvg-logo="https://images.pluto.tv/channels/64ff2d8c6625510008c5a512/colorLogoPNG.png" group-title="Séries",Rookie Blue
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64ff2d8c6625510008c5a512/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=f61174f1-3f06-489a-859d-ea095b00daae&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d7adec9f-c5ec-4a30-b1e8-ddbc48e89286&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64ff2d8c6625510008c5a512/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1d8fb73f-8290-4287-8bfd-4607b3001e10&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3bd9a3b0-021c-46bf-ac81-56d6feb79694&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62c5d32e2c48f9000715b6e9" tvg-id="62c5d32e2c48f9000715b6e9" tvg-chno="83" tvg-name="Runtime" tvg-logo="https://images.pluto.tv/channels/62c5d32e2c48f9000715b6e9/colorLogoPNG.png" group-title="Filmes",Runtime
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62c5d32e2c48f9000715b6e9/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=228eee90-dda7-4f4e-84a7-1785cf4328e2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=947f8f60-c02a-447d-b380-eee9a813e482&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62c5d32e2c48f9000715b6e9/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=16073e2b-3634-40a5-ad02-415988712694&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=88683a9c-e0f3-44cd-9bb2-ee8c215e40e4&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6660b636cb3ea10008429c6a" tvg-id="6660b636cb3ea10008429c6a" tvg-chno="855" tvg-name="SFT Combat" tvg-logo="https://images.pluto.tv/channels/6660b636cb3ea10008429c6a/colorLogoPNG.png" group-title="Esportes",SFT Combat
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6660b636cb3ea10008429c6a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2a915a06-e7fe-466e-a3c8-8849ecb6e3d9&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b88747bc-821f-44fc-9909-9ae17b80c335&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6660b636cb3ea10008429c6a/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=975aeae7-87f8-4724-93d1-e68ac746ccef&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b0245440-58eb-45d8-85d2-3818e7b7b6cf&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66a7d0e0cd0d310008448610" tvg-id="66a7d0e0cd0d310008448610" tvg-chno="1150" tvg-name="Salon Line" tvg-logo="https://images.pluto.tv/channels/66a7d0e0cd0d310008448610/colorLogoPNG_1748628256459.png" group-title="Estilo de Vida",Salon Line
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66a7d0e0cd0d310008448610/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1af352b3-21ac-4a9b-a138-794b749635d4&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=a99b4ae7-844f-4032-ba35-ba7ab63ba81a&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66a7d0e0cd0d310008448610/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=41d455c5-3543-4a27-a9f3-1cea8b2d7a46&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8df9f898-b8ec-45a5-a994-d1cfbd14ed22&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6298bd10d88ef000073f16b7" tvg-id="6298bd10d88ef000073f16b7" tvg-chno="538" tvg-name="Smithsonian Channel Pluto TV" tvg-logo="https://images.pluto.tv/channels/6298bd10d88ef000073f16b7/colorLogoPNG.png" group-title="Curiosidades",Smithsonian Channel Pluto TV
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6298bd10d88ef000073f16b7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=8ac32aa4-28d1-41f8-92a3-4e2a096d259e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=085fa2e7-ef55-454c-a885-1cd6254f6519&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6298bd10d88ef000073f16b7/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=dd37e249-c151-48c1-82c7-ed8b639b3081&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7d9cecaf-cec0-4eef-a104-c53b0bdf16ce&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="6647c0b91050b60008390de4" tvg-id="6647c0b91050b60008390de4" tvg-chno="360" tvg-name="Sony One Shark Tank Brasil" tvg-logo="https://images.pluto.tv/channels/6647c0b91050b60008390de4/colorLogoPNG.png" group-title="Reality",Sony One Shark Tank Brasil
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6647c0b91050b60008390de4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=17552bd7-8a64-4ce0-8120-ec23083aca55&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=833e8382-9606-4629-ad87-09de8ea06fe8&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6647c0b91050b60008390de4/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=62acbbf6-ed0b-4e92-96af-6105729fc221&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=1b155e0a-86ea-44d8-9a80-165957ce4cad&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="65df71008b24c80008f04281" tvg-id="65df71008b24c80008f04281" tvg-chno="922" tvg-name="South Park: Coleção Cartman" tvg-logo="https://images.pluto.tv/channels/65df71008b24c80008f04281/colorLogoPNG.png" group-title="South Park",South Park: Coleção Cartman
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df71008b24c80008f04281/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0398e4bf-55c8-43dd-89a9-6d184c19d373&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=d597bdbf-677b-471c-8b6f-b50341f236ff&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df71008b24c80008f04281/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=213e7c8b-522e-426b-98c6-a9eca400d4ea&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=42c0751d-29c0-4b71-860a-d3a5b6c4d120&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="65df704366eec8000898e32f" tvg-id="65df704366eec8000898e32f" tvg-chno="923" tvg-name="South Park: Coleção Kenny" tvg-logo="https://images.pluto.tv/channels/65df704366eec8000898e32f/colorLogoPNG.png" group-title="South Park",South Park: Coleção Kenny
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df704366eec8000898e32f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e7fcbfbe-8dc8-403e-97e7-be0f0ea0f1dc&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9cd8fa8a-5dee-40f1-b8b8-a7422c999419&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df704366eec8000898e32f/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2920a405-334f-42ec-983f-9be8c31f80e1&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=3d792da0-a91c-4b51-9555-0eca2ec6f302&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="65df713dec9fda0008b7a81d" tvg-id="65df713dec9fda0008b7a81d" tvg-chno="924" tvg-name="South Park: Coleção Kyle" tvg-logo="https://images.pluto.tv/channels/65df713dec9fda0008b7a81d/colorLogoPNG.png" group-title="South Park",South Park: Coleção Kyle
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df713dec9fda0008b7a81d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=95d6a56d-dc41-40f3-9add-806e1477d538&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=08c85262-d1d2-400b-86aa-e165dd7ba0a4&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df713dec9fda0008b7a81d/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=26924601-ed58-4adc-b677-ab38e78f6e1a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=7bc539ad-6750-40d4-a2a5-4bf93c927a64&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="65df70b0f7f0af0008c3b316" tvg-id="65df70b0f7f0af0008c3b316" tvg-chno="925" tvg-name="South Park: Coleção Stan" tvg-logo="https://images.pluto.tv/channels/65df70b0f7f0af0008c3b316/colorLogoPNG.png" group-title="South Park",South Park: Coleção Stan
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df70b0f7f0af0008c3b316/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=30d228ca-b8c6-4d50-8f77-3e45eb0b5508&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=cb72e9ae-3e3b-4e4d-acbd-b2062b017c8e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/65df70b0f7f0af0008c3b316/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=4dcc829b-6dcc-4779-9312-62924420afae&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=dab9add3-c371-4b47-9eec-aabc449f2279&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63988c2750108d00072e2686" tvg-id="63988c2750108d00072e2686" tvg-chno="1267" tvg-name="Super Onze" tvg-logo="https://images.pluto.tv/channels/63988c2750108d00072e2686/colorLogoPNG.png" group-title="Anime & Geek",Super Onze
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63988c2750108d00072e2686/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=19adda23-95b4-46e1-b8d5-8e98f1ee76e2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f90de3fa-0cd8-4e36-a1f6-57e1e1a23c0d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63988c2750108d00072e2686/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2d1b2121-83c7-4e57-9b39-e53c7282795a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6b35ccc5-033d-4389-8e64-e80cfbcaba44&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="62e010e6cd663f0007e57dc8" tvg-id="62e010e6cd663f0007e57dc8" tvg-chno="785" tvg-name="TV Cultura" tvg-logo="https://images.pluto.tv/channels/62e010e6cd663f0007e57dc8/colorLogoPNG.png" group-title="TV Brasileira",TV Cultura
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62e010e6cd663f0007e57dc8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0e8dcf06-8f15-441d-b5a4-2c944bce884e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=dfac1286-7566-4764-bfed-913d909fc75a&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/62e010e6cd663f0007e57dc8/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0dba5cd3-4647-4a4d-868a-8372eb213df3&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=452de459-a77c-49f4-a3de-5900c38763b4&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5fd1419a3b4f4b000773ba85" tvg-id="5fd1419a3b4f4b000773ba85" tvg-chno="1209" tvg-name="Tastemade" tvg-logo="https://images.pluto.tv/channels/5fd1419a3b4f4b000773ba85/colorLogoPNG.png" group-title="Estilo de Vida",Tastemade
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fd1419a3b4f4b000773ba85/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1659401b-8fdf-4815-9ef1-b5dcb64610db&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=503f1fba-67e6-4f5b-bc5a-7666114a7582&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5fd1419a3b4f4b000773ba85/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a94f3f5d-2893-4bd2-a63c-9bb8f24c7404&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=47b897a8-15dc-4524-aa05-56c6ee536e8d&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="68b88821e542386ab0bf5bef" tvg-id="68b88821e542386ab0bf5bef" tvg-chno="1210" tvg-name="Tastemade Casa" tvg-logo="https://images.pluto.tv/channels/68b88821e542386ab0bf5bef/colorLogoPNG_1759795743690.png" group-title="Estilo de Vida",Tastemade Casa
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/68b88821e542386ab0bf5bef/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=633a8c45-e4d2-4c35-bb5c-2376840115b1&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=957c6f57-330b-4124-94ec-5083e82401db&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/68b88821e542386ab0bf5bef/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3e6a83fa-0b4d-497f-9b54-fb40f9dc72ee&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c41ac52a-85a7-4e14-ac18-41da6ddd57dc&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="68b8875777201ec428d9eaa5" tvg-id="68b8875777201ec428d9eaa5" tvg-chno="1211" tvg-name="Tastemade Viagem" tvg-logo="https://images.pluto.tv/channels/68b8875777201ec428d9eaa5/colorLogoPNG_1759784936254.png" group-title="Estilo de Vida",Tastemade Viagem
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/68b8875777201ec428d9eaa5/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a002ec60-8390-43ba-9f0b-2dd449c56eae&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=423a85dc-1df9-4705-9e1d-a8be2a4e8b0e&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/68b8875777201ec428d9eaa5/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bb2a56b0-3378-40c0-bd3d-7cd33270ce27&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e990626e-cd8b-4613-9a4e-772131f54b83&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="64e50055286f6b000838c067" tvg-id="64e50055286f6b000838c067" tvg-chno="1465" tvg-name="Teletubbies" tvg-logo="https://images.pluto.tv/channels/64e50055286f6b000838c067/colorLogoPNG.png" group-title="Infantil",Teletubbies
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64e50055286f6b000838c067/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=d38a9cd9-2e39-4906-97d8-6906f01398e6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=69f0f4ce-ed65-4467-ac6c-cb0b43229331&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/64e50055286f6b000838c067/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=db0928da-30da-4d31-976a-fa6a51408cc5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=36e2a50a-b742-4c21-b293-c44ea365c47a&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f515ebac01c0f00080e8439" tvg-id="5f515ebac01c0f00080e8439" tvg-chno="1014" tvg-name="The Pet Collective" tvg-logo="https://images.pluto.tv/channels/5f515ebac01c0f00080e8439/colorLogoPNG.png" group-title="Comédia",The Pet Collective
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f515ebac01c0f00080e8439/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=74f1c191-f563-490a-ac5c-4e6931b3610e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=9d305a8d-794d-496c-8564-0ab4b2889290&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f515ebac01c0f00080e8439/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=e465b92b-1c12-4515-a22d-9cdcf803e5e1&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c1354656-ae43-473a-ae3e-14276bdae4f3&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="678aa104680721c77c506746" tvg-id="678aa104680721c77c506746" tvg-chno="130" tvg-name="The Walking Dead by AMC" tvg-logo="https://images.pluto.tv/channels/678aa104680721c77c506746/colorLogoPNG.png" group-title="Séries",The Walking Dead by AMC
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/678aa104680721c77c506746/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=bb80616d-81f4-43b4-adaf-2a33fffdc217&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=8f970f0e-d38b-4a4d-b7d7-032c06116bd2&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/678aa104680721c77c506746/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=1e654c8e-adfd-484c-8202-1f2fe3ab3b93&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=b91d27e1-ea42-41b3-b33c-35592641e2bf&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63dac32bda711800088a2ba3" tvg-id="63dac32bda711800088a2ba3" tvg-chno="455" tvg-name="TikTok Radio Brasil" tvg-logo="https://images.pluto.tv/channels/63dac32bda711800088a2ba3/colorLogoPNG_1758347017431.png" group-title="Música",TikTok Radio Brasil
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63dac32bda711800088a2ba3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=556f0d07-5fe3-4508-a897-2322410b3562&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=331e94da-3a90-4d86-abe6-3bf7950df3de&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63dac32bda711800088a2ba3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0acbbc50-3b8b-4a20-966d-ef467dad1d74&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c6ee098f-422b-433d-afad-630c957b5830&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="679a973a97782f0008ff4bb6" tvg-id="679a973a97782f0008ff4bb6" tvg-chno="676" tvg-name="Times Brasil | CNBC" tvg-logo="https://images.pluto.tv/channels/679a973a97782f0008ff4bb6/colorLogoPNG.png" group-title="Notícias",Times Brasil | CNBC
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/679a973a97782f0008ff4bb6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=81796508-1536-4a11-8462-166fe18a05f7&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=15111c6d-ad4b-4efb-a90e-54aef2ca6ea5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/679a973a97782f0008ff4bb6/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=5da264a6-8de9-4eea-a941-9f3775b28508&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=c8ddddf7-b217-4c8c-8978-14f0f55f00db&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5ff609de50ab210008025c1b" tvg-id="5ff609de50ab210008025c1b" tvg-chno="255" tvg-name="Tokusato" tvg-logo="https://images.pluto.tv/channels/5ff609de50ab210008025c1b/colorLogoPNG.png" group-title="Retrô",Tokusato
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ff609de50ab210008025c1b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=66405748-8af3-400d-8ed5-59163ccd7812&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=6a834263-37f4-4fb0-bb1a-237c25fc9e07&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ff609de50ab210008025c1b/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=840f60fc-9a3f-4e3c-a8f2-a1f5a7a1b5a5&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=de7b028a-c1e6-4cd8-ad7b-654af026dff9&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="5f997e44949bc70007a6941e" tvg-id="5f997e44949bc70007a6941e" tvg-chno="1430" tvg-name="Turma da Mônica" tvg-logo="https://images.pluto.tv/channels/5f997e44949bc70007a6941e/colorLogoPNG.png" group-title="Infantil",Turma da Mônica
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f997e44949bc70007a6941e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=94f9cf64-cc47-4f24-b10b-e547b9619e1e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=fe65eba8-849b-4efa-a868-838fa9e3119c&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f997e44949bc70007a6941e/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=40657e59-9f69-4142-ac5a-a88214f5c382&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=e7becb57-f9ca-47da-8a70-e9c7830ec2e2&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63eba66da8b2270008436b10" tvg-id="63eba66da8b2270008436b10" tvg-chno="910" tvg-name="World Poker Tour" tvg-logo="https://images.pluto.tv/channels/63eba66da8b2270008436b10/colorLogoPNG.png" group-title="Esportes",World Poker Tour
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eba66da8b2270008436b10/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=2647eadf-e438-41b4-9375-0b77a8a26536&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=50576dcb-b6d5-4100-a15b-325a5be5fcd5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63eba66da8b2270008436b10/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=802618f8-ff87-480c-b782-7ace74ab4ea0&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=59a35e81-e982-48e6-ad76-94842a94daf5&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="63988a50be012600070f5db3" tvg-id="63988a50be012600070f5db3" tvg-chno="1269" tvg-name="Yu-Gi-Oh" tvg-logo="https://images.pluto.tv/channels/63988a50be012600070f5db3/colorLogoPNG.png" group-title="Anime & Geek",Yu-Gi-Oh
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63988a50be012600070f5db3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=3839d686-ddb8-4e3f-a04b-37c5f0c0c054&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=2c0f3561-2ebd-4c02-96a7-8958addc8eb5&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/63988a50be012600070f5db3/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=a62712ad-ac6d-4f13-8e4d-e71a0c541c1e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=97a565f9-b344-476d-aabd-23239b9d6fb2&userId=&serverSideAds=true
 #EXTINF:-1 channel-id="66b3af48d2d50d00083d6936" tvg-id="66b3af48d2d50d00083d6936" tvg-chno="134" tvg-name="Z Nation" tvg-logo="https://images.pluto.tv/channels/66b3af48d2d50d00083d6936/colorLogoPNG.png" group-title="Séries",Z Nation
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66b3af48d2d50d00083d6936/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=0e714941-8c88-4ca7-b49b-efb5dde658cb&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=f47ff212-4f2c-440d-b0b5-9ec347e6979d&userId=&serverSideAds=true
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/66b3af48d2d50d00083d6936/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId=18c51c3c-ab9a-41e3-bfdf-59c134f9c739&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid=49823bda-ac62-44e5-ac3a-0c361914bb79&userId=&serverSideAds=true
