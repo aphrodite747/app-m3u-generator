@@ -1,3 +1,6 @@
+![Build Status](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/actions/workflows/generate_playlists.yml/badge.svg)
+
+
 📌 PLUTO UPDATE: The Pluto 403 error is fixed. Its is not fixed in the Google Self-Host script. I will get to that at some point. 
 
 Use this url: https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/refs/heads/main/playlists/plutotv_all.m3u
