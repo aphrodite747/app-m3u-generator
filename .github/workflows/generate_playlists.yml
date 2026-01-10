@@ -22,7 +22,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Fetches all history for a cleaner push
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -43,7 +43,8 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
           # Stage the playlists folder AND the new merged EPG file
-          git add playlists/ merged_epg.xml.gz
+          # We use -f to ensure it's added even if it was previously in .gitignore
+          git add playlists/*.m3u merged_epg.xml.gz
           
           # Check if there is actually anything to commit
           if git diff --cached --quiet; then
@@ -54,10 +55,11 @@ jobs:
           echo "Changes detected, committing updates..."
           git commit -m "Update M3U and Merged EPG [skip ci]"
           
-          # Push logic with retry
+          # Push logic with retry and pull-rebase for stability
           n=0
           until [ $n -ge 5 ]
           do
+              git pull --rebase origin main
               git push origin main && break
               n=$((n+1))
               echo "Push failed. Retrying attempt $n/5..."
