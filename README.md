@@ -27,51 +27,55 @@ This generator currently creates playlists for
 
 *   **Pluto TV Region Map** = ( `plutotv_all.m3u` )
       ```
-      "ar": "Argentina"
-      "br": "Brazil"
-      "ca": "Canada"
-      "cl": "Chile"
-      "de": "Germany"
-      "dk": "Denmark"
-      "es": "Spain"
-      "fr": "France"
-      "gb": "United Kingdom"
-      "it": "Italy"
-      "mx": "Mexico"
-      "no": "Norway"
-      "se": "Sweden"
-      "us": "United States"
+       "ar": "Argentina",
+       "br": "Brazil",
+       "ca": "Canada",
+       "cl": "Chile",
+       "de": "Germany",
+       "dk": "Denmark",
+       "es": "Spain",
+       "fr": "France",
+       "gb": "United Kingdom",
+       "it": "Italy",
+       "mx": "Mexico",
+       "no": "Norway",
+       "se": "Sweden",
+       "us": "United States",
+       "all": "All Regions Combined"
      ```
 
 
 *   **Plex TV Region Map**  = ( `plexs_all.m3u` )
-      ```
-       "au": "Australia"
-       "br": "Brazil"
-       "ca": "Canad"
-       "de": "Germany"
-       "es": "Spain"
-       "fr": "France"
-       "gb": "United Kingdom"
-       "ie": "Ireland"
-       "it": "Italy"
-       "mx": "Mexico"
-       "us": "United States"
-     ```
+
+```
+       "au:" "Australia",
+       "ca": "Canada",
+       "es": "Spain",
+       "fr": "France",
+       "gb": "United Kingdom",
+       "mx": "Mexico",
+       "nz": "New Zealand",
+       "us": "United States",
+       "all": "All Regions Combined"
+```
        
     
 *   **Samsung TV Plus**  = ( `samsungtvplus_all.m3u` )
-      ```
-       "ca": "Canada"
-       "de": "Germany"
-       "es": "Spain"
-       "fr": "France"
-       "gb": "United Kingdom"
-       "it": "Italy"
-       "us": "United States"
-      ```
+```
+       "at": "Austria",
+       "ca": "Canada",
+       "ch": "Switzerland",
+       "de": "Germany",
+       "es": "Spain",
+       "fr": "France",
+       "gb": "United Kingdom",
+       "in": "India",
+       "it": "Italy",
+       "kr": "South Korea",
+       "us": "United States",
+       "all": "All Regions Combined"
+```
 
-*   **Tubi TV** (`tubi_all.m3u`)
 *   **Roku TV** (`roku_all.m3u`) 
 *   **Stirr TV** (`stirr_all.m3u`) 👉 Might be removing. No working EPG.
 
