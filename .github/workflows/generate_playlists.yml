@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs every day at 3:00 AM UTC
     - cron: '0 3 * * *'
-  workflow_dispatch: # Allows manual triggering from the Actions tab
+  workflow_dispatch: # Allows manual triggering
   push:
     branches:
       - main
@@ -16,13 +16,13 @@ jobs:
   build-playlists:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Essential for pushing the .m3u files back
+      contents: write # Essential for pushing the files back
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetches all history so git push works better
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,24 +42,23 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Stage all changes (new files and modified files)
-          git add playlists/
+          # Stage the playlists folder AND the new merged EPG file
+          git add playlists/ merged_epg.xml.gz
           
           # Check if there is actually anything to commit
           if git diff --cached --quiet; then
-            echo "No changes detected in playlists."
+            echo "No changes detected."
             exit 0
           fi
           
           echo "Changes detected, committing updates..."
-          git commit -m "Update M3U playlists [skip ci]"
+          git commit -m "Update M3U and Merged EPG [skip ci]"
           
-          # Push logic
+          # Push logic with retry
           n=0
           until [ $n -ge 5 ]
           do
-              # Using the GITHUB_TOKEN for authentication
-              git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main && break
+              git push origin main && break
               n=$((n+1))
               echo "Push failed. Retrying attempt $n/5..."
               sleep 15
