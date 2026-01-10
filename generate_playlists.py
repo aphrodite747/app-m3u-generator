@@ -266,20 +266,22 @@ def generate_stirr_m3u(sort='name'):
     write_m3u_file("stirr_all.m3u", "".join(output_lines))
 
 def generate_tubi_m3u():
-    """Generates M3U playlist for Tubi."""
+    """Generates M3U playlist for Tubi by preserving source content."""
     TUBI_PLAYLIST_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u'
-    EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Tubi/all.xml.gz'
     
-    logging.info("--- Generating Tubi playlist ---")
+    logging.info("--- Generating Tubi playlist (Preserving Source Header) ---")
     playlist_content = fetch_url(TUBI_PLAYLIST_URL, is_json=False)
-    if not playlist_content: return
+    
+    if not playlist_content:
+        logging.error("Failed to fetch Tubi playlist content.")
+        return
 
-    lines = playlist_content.strip().splitlines()
-    playlist_data = "\n".join(lines[1:]) if lines and lines[0].strip().upper() == '#EXTM3U' else "\n".join(lines)
-    write_m3u_file("tubi_all.m3u", f'#EXTM3U url-tvg="{EPG_URL}"\n{playlist_data}\n')
+    # Write the raw content directly. 
+    # This keeps the single #EXTM3U line and BuddyChewChew's EPG link.
+    write_m3u_file("tubi_all.m3u", playlist_content.strip() + "\n")
 
 def generate_roku_m3u(sort='name'):
-    """Generates M3U playlist for Roku. (UNTOUCHED)"""
+    """Generates M3U playlist for Roku."""
     ROKU_URL = 'https://i.mjh.nz/Roku/.channels.json'
     STREAM_URL_TEMPLATE = 'https://jmp2.uk/rok-{id}.m3u8'
     EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz'
