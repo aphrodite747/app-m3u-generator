@@ -12,6 +12,12 @@ OUTPUT_DIR = "playlists"
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 REQUEST_TIMEOUT = 30 
 
+# IMPORTANT: Update these to match your GitHub details
+GITHUB_USERNAME = "YOUR_USERNAME"
+GITHUB_REPO = "YOUR_REPO_NAME"
+# This is the single link you will provide to your IPTV player
+LOCAL_EPG_URL = f"https://raw.githubusercontent.com/{GITHUB_USERNAME}/{GITHUB_REPO}/main/merged_epg.xml.gz"
+
 # --- Logging Setup ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -40,6 +46,37 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, r
             if i < retries - 1: time.sleep(2)
     return None
 
+def merge_epgs():
+    """Downloads all EPG sources and merges them into one compressed file."""
+    logging.info("--- Merging EPG Sources ---")
+    epg_sources = [
+        "https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/us.xml.gz",
+        "https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/us.xml.gz",
+        "https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/us.xml.gz",
+        "https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz",
+        "https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz"
+    ]
+    
+    combined_xml = '<?xml version="1.0" encoding="UTF-8"?><tv>'
+    
+    for url in epg_sources:
+        try:
+            # Reusing your fetch_url to get raw content
+            content = fetch_url(url, is_json=False, is_gzipped=True)
+            if content and '<tv' in content:
+                # Extract inner content between <tv> tags
+                body = content.split('>', 1)[1].rsplit('</tv>', 1)[0]
+                combined_xml += body
+        except Exception as e:
+            logging.error(f"Failed to merge EPG from {url}: {e}")
+            
+    combined_xml += '</tv>'
+    
+    # Save as compressed .gz file in the root directory
+    with gzip.open("merged_epg.xml.gz", "wb") as f:
+        f.write(combined_xml.encode('utf-8'))
+    logging.info("Merged EPG saved to merged_epg.xml.gz")
+
 def write_m3u_file(filename, content):
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
@@ -54,95 +91,17 @@ def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title,
             f'tvg-name="{tvg_name.replace(chr(34), chr(39))}" tvg-logo="{tvg_logo}" '
             f'group-title="{group_title.replace(chr(34), chr(39))}",{display_name.replace(",", "")}\n')
 
-# --- Service Functions ---
+# --- Service Functions (Pluto, Plex, Samsung, etc. remain the same) ---
+# ... [Keep your generate_pluto_m3u, generate_plex_m3u, etc. here] ...
 
-def generate_pluto_m3u(regions=['us']):
-    PLUTO_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz'
-    STREAM_URL_TEMPLATE = 'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{id}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={dev_id}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={sid}&userId=&serverSideAds=true'
-    data = fetch_url(PLUTO_URL, is_json=True, is_gzipped=True)
-    if not data: return
-    for region in regions:
-        epg = f'https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/{region}.xml.gz'
-        output = [f'#EXTM3U url-tvg="{epg}"\n']
-        region_data = data.get('regions', {}).get(region, {})
-        for cid, ch in region_data.get('channels', {}).items():
-            extinf = format_extinf(cid, cid, ch.get('chno'), ch.get('name'), ch.get('logo'), ch.get('group', 'PlutoTV'), ch.get('name'))
-            stream = STREAM_URL_TEMPLATE.format(id=cid, dev_id=str(uuid.uuid4()), sid=str(uuid.uuid4()))
-            output.extend([extinf, stream + '\n'])
-        write_m3u_file(f"plutotv_{region}.m3u", "".join(output))
-
-def generate_plex_m3u(regions=['us']):
-    PLEX_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz'
-    data = fetch_url(PLEX_URL, is_json=True, is_gzipped=True, headers={'User-Agent': USER_AGENT})
-    if not data: return
-    for region in regions:
-        epg = f'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
-        output = [f'#EXTM3U url-tvg="{epg}"\n']
-        for cid, ch in data.get('channels', {}).items():
-            if region in ch.get('regions', []):
-                extinf = format_extinf(cid, cid, ch.get('chno'), ch.get('name'), ch.get('logo'), "Plex", ch.get('name'))
-                output.extend([extinf, f"https://jmp2.uk/plex-{cid}.m3u8\n"])
-        write_m3u_file(f"plex_{region}.m3u", "".join(output))
-
-def generate_samsungtvplus_m3u(regions=['us']):
-    SAMSUNG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz'
-    data = fetch_url(SAMSUNG_URL, is_json=True, is_gzipped=True)
-    if not data: return
-    for region in regions:
-        epg = f'https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz'
-        output = [f'#EXTM3U url-tvg="{epg}"\n']
-        region_data = data.get('regions', {}).get(region, {})
-        for cid, ch in region_data.get('channels', {}).items():
-            extinf = format_extinf(cid, cid, ch.get('chno'), ch.get('name'), ch.get('logo'), ch.get('group', 'Samsung TV'), ch.get('name'))
-            stream = f"https://jmp2.uk/stvp-{cid}.m3u8\n"
-            output.extend([extinf, stream])
-        write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output))
-
-def generate_stirr_m3u():
-    STIRR_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz'
-    data = fetch_url(STIRR_URL, is_json=True, is_gzipped=True)
-    if not data: return
-    epg = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz'
-    output = [f'#EXTM3U url-tvg="{epg}"\n']
-    for cid, ch in data.get('channels', {}).items():
-        extinf = format_extinf(cid, cid, ch.get('chno'), ch.get('name'), ch.get('logo'), "Stirr", ch.get('name'))
-        output.extend([extinf, f"https://jmp2.uk/str-{cid}.m3u8\n"])
-    write_m3u_file("stirr_all.m3u", "".join(output))
-
-def generate_tubi_m3u():
-    URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u'
-    content = fetch_url(URL, is_json=False)
-    if content: write_m3u_file("tubi_all.m3u", content.strip() + "\n")
-
-def generate_roku_m3u():
-    ROKU_URL = 'https://i.mjh.nz/Roku/.channels.json'
-    data = fetch_url(ROKU_URL, is_json=True)
-    if not data: return
-    epg = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz'
-    output = [f'#EXTM3U url-tvg="{epg}"\n']
-    for cid, ch in data.get('channels', {}).items():
-        extinf = format_extinf(cid, cid, ch.get('chno'), ch.get('name'), ch.get('logo'), "Roku", ch.get('name'))
-        output.extend([extinf, f"https://jmp2.uk/rok-{cid}.m3u8\n"])
-    write_m3u_file("roku_all.m3u", "".join(output))
-
-# --- New Master Function ---
+# --- Updated Master Function ---
 def generate_master_playlist():
-    """Combines individual service files into one master playlist."""
+    """Combines individual service files into one master playlist using the LOCAL merged EPG."""
     logging.info("--- Generating Master All-in-One Playlist ---")
     
-    # Define EPGs for the master header
-    epgs = [
-        "https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/us.xml.gz",
-        "https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/us.xml.gz",
-        "https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/us.xml.gz",
-        "https://github.com/matthuisman/i.mjh.gz/raw/master/Stirr/all.xml.gz",
-        "https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz"
-    ]
+    # Start the master file with the SINGLE merged EPG link
+    master_content = f'#EXTM3U url-tvg="{LOCAL_EPG_URL}"\n\n'
     
-    # Start the master file with the combined EPG header
-    master_content = f'#EXTM3U url-tvg="{",".join(epgs)}"\n\n'
-    
-    # List of files we want to merge into the master
     files_to_merge = [
         "plutotv_us.m3u", 
         "plex_us.m3u", 
@@ -157,7 +116,6 @@ def generate_master_playlist():
         if os.path.exists(filepath):
             with open(filepath, 'r', encoding='utf-8') as f:
                 lines = f.readlines()
-                # Skip the first line (#EXTM3U) to avoid repeating it inside the file
                 if len(lines) > 0:
                     master_content += "".join(lines[1:])
                     master_content += "\n"
@@ -166,7 +124,7 @@ def generate_master_playlist():
 
 # --- Updated Execution ---
 if __name__ == "__main__":
-    # Generate original playlists
+    # 1. Generate the individual playlists first
     generate_pluto_m3u(regions=['us'])
     generate_plex_m3u(regions=['us'])
     generate_samsungtvplus_m3u(regions=['us'])
@@ -174,7 +132,10 @@ if __name__ == "__main__":
     generate_tubi_m3u()
     generate_roku_m3u()
     
-    # Merge them into the master file
+    # 2. Merge the EPGs into one file
+    merge_epgs()
+    
+    # 3. Create the master playlist pointing to that merged file
     generate_master_playlist()
     
     logging.info("All tasks completed.")
