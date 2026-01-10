@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs every day at 3:00 AM UTC
     - cron: '0 3 * * *'
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch: # Allows manual triggering from the Actions tab
   push:
     branches:
       - main
@@ -16,13 +16,13 @@ jobs:
   build-playlists:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Essential for pushing the files back
+      contents: write # Essential for pushing the .m3u files back
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetches all history for a cleaner push
+          fetch-depth: 0 # Fetches all history so git push works better
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,25 +42,24 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Stage the playlists folder AND the new merged EPG file
-          # We use -f to ensure it's added even if it was previously in .gitignore
-          git add playlists/*.m3u merged_epg.xml.gz
+          # Stage all changes (new files and modified files)
+          git add playlists/
           
           # Check if there is actually anything to commit
           if git diff --cached --quiet; then
-            echo "No changes detected."
+            echo "No changes detected in playlists."
             exit 0
           fi
           
           echo "Changes detected, committing updates..."
-          git commit -m "Update M3U and Merged EPG [skip ci]"
+          git commit -m "Update M3U playlists [skip ci]"
           
-          # Push logic with retry and pull-rebase for stability
+          # Push logic
           n=0
           until [ $n -ge 5 ]
           do
-              git pull --rebase origin main
-              git push origin main && break
+              # Using the GITHUB_TOKEN for authentication
+              git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main && break
               n=$((n+1))
               echo "Push failed. Retrying attempt $n/5..."
               sleep 15
