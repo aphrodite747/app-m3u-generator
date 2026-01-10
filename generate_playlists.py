@@ -6,7 +6,6 @@ import json
 import os
 import logging
 import uuid
-import time
 import shutil
 from io import BytesIO
 
@@ -15,7 +14,6 @@ OUTPUT_DIR = "playlists"
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 REQUEST_TIMEOUT = 30 
 
-# Map for country codes to full names
 REGION_MAP = {
     'us': 'United States', 'gb': 'United Kingdom', 'ca': 'Canada',
     'de': 'Germany', 'at': 'Austria', 'ch': 'Switzerland',
@@ -27,24 +25,19 @@ REGION_MAP = {
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# --- Shared Session for Performance ---
 session = requests.Session()
 retries = Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504])
 session.mount('https://', HTTPAdapter(max_retries=retries))
 session.headers.update({'User-Agent': USER_AGENT})
 
-# --- Helper Functions ---
-
 def cleanup_output_dir():
-    """Wipes the output directory so removed regions don't stay in the repo."""
     if os.path.exists(OUTPUT_DIR):
-        logging.info(f"Cleaning up old playlists in {OUTPUT_DIR}...")
         for filename in os.listdir(OUTPUT_DIR):
             file_path = os.path.join(OUTPUT_DIR, filename)
             try:
                 if os.path.isfile(file_path): os.unlink(file_path)
                 elif os.path.isdir(file_path): shutil.rmtree(file_path)
-            except Exception as e: logging.error(f"Failed to delete {file_path}: {e}")
+            except Exception as e: logging.error(f"Cleanup error: {e}")
     else: os.makedirs(OUTPUT_DIR)
 
 def fetch_url(url, is_json=True, is_gzipped=False):
@@ -62,22 +55,11 @@ def fetch_url(url, is_json=True, is_gzipped=False):
     return None
 
 def write_m3u_file(filename, content):
-    filepath = os.path.join(OUTPUT_DIR, filename)
-    with open(filepath, 'w', encoding='utf-8') as f:
+    with open(os.path.join(OUTPUT_DIR, filename), 'w', encoding='utf-8') as f:
         f.write(content)
-    logging.info(f"Successfully wrote {filename}")
+    logging.info(f"Wrote {filename}")
 
-def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
-    chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
-    # Optimization: Added VLC-specific headers for smoother playback
-    opts = f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n"
-    inf = (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
-           f'tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" '
-           f'group-title="{group_title}",{display_name}\n')
-    return f"{inf}{opts}"
-
-# --- Service Generators ---
-
+# --- Fixed Pluto Generator ---
 def generate_pluto_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
@@ -90,6 +72,7 @@ def generate_pluto_m3u():
         
         if is_all:
             for r_code, r_data in data['regions'].items():
+                # Full Name Fix
                 full_name = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_data.get('channels', {}).items():
                     channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': f"Pluto TV - {full_name}"}
@@ -98,28 +81,29 @@ def generate_pluto_m3u():
             for c_id, c_info in region_data.items():
                 channels[c_id] = {**c_info, 'original_id': c_id, 'group': c_info.get('group', 'Pluto TV')}
         
-        if channels: # Guard against blank files
+        if channels:
             for c_id, ch in sorted(channels.items(), key=lambda x: x[1].get('name', '')):
-                extinf = format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name'])
-                url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?sid={uuid.uuid4()}&serverSideAds=true\n'
-                output_lines.extend([extinf, url])
+                # Restored original simple #EXTINF line
+                line = f'#EXTINF:-1 tvg-id="{ch["original_id"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}\n'
+                # Restored original working Pluto URL format
+                url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?advertisingId=&appName=web&deviceMake=Chrome&deviceType=web&sid={uuid.uuid4()}&serverSideAds=true\n'
+                output_lines.extend([line, url])
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
+# --- Standardized others for consistency ---
 def generate_plex_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'channels' not in data: return
-    
     found_regions = set()
     for ch in data['channels'].values(): found_regions.update(ch.get('regions', []))
-    
     for region in list(found_regions) + ['all']:
         is_all = region == 'all'
         output_lines = [f'#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz"\n']
         count = 0
         for c_id, ch in data['channels'].items():
             if is_all or region in ch.get('regions', []):
-                group_name = "Plex TV" if not is_all else f"Plex TV - {region.upper()}"
-                output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], group_name, ch['name']), f"https://jmp2.uk/plex-{c_id}.m3u8\n"])
+                line = f'#EXTINF:-1 tvg-id="{c_id}" tvg-logo="{ch["logo"]}" group-title="Plex TV",{ch["name"]}\n'
+                output_lines.extend([line, f"https://jmp2.uk/plex-{c_id}.m3u8\n"])
                 count += 1
         if count > 0: write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
 
@@ -139,10 +123,10 @@ def generate_samsungtvplus_m3u():
             region_dict = data['regions'].get(region, {}).get('channels', {})
             for c_id, c_info in region_dict.items():
                 target[c_id] = {**c_info, 'original_id': c_id, 'group': c_info.get('group', 'Samsung TV Plus')}
-        
         if target:
             for c_id, ch in target.items():
-                output_lines.extend([format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name']), f"https://jmp2.uk/sam-{ch['original_id']}.m3u8\n"])
+                line = f'#EXTINF:-1 tvg-id="{ch["original_id"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}\n'
+                output_lines.extend([line, f"https://jmp2.uk/sam-{ch['original_id']}.m3u8\n"])
             write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
 
 def generate_stirr_m3u():
@@ -150,7 +134,8 @@ def generate_stirr_m3u():
     if not data: return
     output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz"\n']
     for c_id, ch in data['channels'].items():
-        output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Stirr", ch['name']), f"https://jmp2.uk/str-{c_id}.m3u8\n"])
+        line = f'#EXTINF:-1 tvg-id="{c_id}" tvg-logo="{ch["logo"]}" group-title="Stirr",{ch["name"]}\n'
+        output_lines.extend([line, f"https://jmp2.uk/str-{c_id}.m3u8\n"])
     if len(output_lines) > 1: write_m3u_file("stirr_all.m3u", "".join(output_lines))
 
 def generate_tubi_m3u():
@@ -162,7 +147,8 @@ def generate_roku_m3u():
     if not data: return
     output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz"\n']
     for c_id, ch in data['channels'].items():
-        output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Roku", ch['name']), f"https://jmp2.uk/rok-{c_id}.m3u8\n"])
+        line = f'#EXTINF:-1 tvg-id="{c_id}" tvg-logo="{ch["logo"]}" group-title="Roku",{ch["name"]}\n'
+        output_lines.extend([line, f"https://jmp2.uk/rok-{c_id}.m3u8\n"])
     if len(output_lines) > 1: write_m3u_file("roku_all.m3u", "".join(output_lines))
 
 if __name__ == "__main__":
@@ -173,4 +159,4 @@ if __name__ == "__main__":
     generate_stirr_m3u()
     generate_tubi_m3u()
     generate_roku_m3u()
-    logging.info("Playlist generation complete.")
+    logging.info("Complete.")
