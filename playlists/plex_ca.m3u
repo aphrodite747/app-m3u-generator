@@ -137,6 +137,8 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6348b2cb1159f6a5ce819b89.m3u8
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6348adc71159f6a5ce819b85.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c4" tvg-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c4" tvg-chno="" tvg-name="FilmRise Action" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ce869fe2-88c9-4d78-b594-02148e4755c3/Plex_FilmRise_ActionCA_Color_Logo.png" group-title="Plex",FilmRise Action
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c4.m3u8
+#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb" tvg-id="647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb" tvg-chno="" tvg-name="FilmRise Free Movies" tvg-logo="https://provider-static.plex.tv/epg/cms/production/497b5a8c-5feb-4d93-9cd8-623f68bcdc2c/Plex_FilmRise_FreeMoviesCA_Color_Logo.png" group-title="Plex",FilmRise Free Movies
+https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16" tvg-id="647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16" tvg-chno="" tvg-name="American Crimes" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5b694d82-7b61-49a2-a28e-95b07d8105ac/american-crimes-fclogo-White.png" group-title="Plex",American Crimes
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-686450561407335ea0f95542" tvg-id="647f8d22a2fc3fadb4721685-686450561407335ea0f95542" tvg-chno="" tvg-name="A Haunting" tvg-logo="https://provider-static.plex.tv/epg/cms/production/37a592ac-3828-44d7-95f1-3cbdd4a3e6c1/A_Haunting_whiteRDX.png" group-title="Plex",A Haunting
@@ -189,8 +191,6 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6308eda9ac9983739c8a29bb.m3u8
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6699937717c9985deeb74e39.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-67291fdbc1edbd1509fb9d11" tvg-id="647f8d22a2fc3fadb4721685-67291fdbc1edbd1509fb9d11" tvg-chno="" tvg-name="Evolution Earth" tvg-logo="https://provider-static.plex.tv/epg/cms/production/31571b22-1399-4d51-b979-a4600bb449ed/Evolution_Earth_WHITE_Logo_RDX.png" group-title="Plex",Evolution Earth
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-67291fdbc1edbd1509fb9d11.m3u8
-#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb" tvg-id="647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb" tvg-chno="" tvg-name="FilmRise Free Movies" tvg-logo="https://provider-static.plex.tv/epg/cms/production/497b5a8c-5feb-4d93-9cd8-623f68bcdc2c/Plex_FilmRise_FreeMoviesCA_Color_Logo.png" group-title="Plex",FilmRise Free Movies
-https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-689fb7110a486aeba3c7917c" tvg-id="647f8d22a2fc3fadb4721685-689fb7110a486aeba3c7917c" tvg-chno="" tvg-name="The Addams Family" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ae901652-7714-41cd-8ff7-cb31fb07f6df/AddamsFamily_logo_Attribution_-_Carl_HoffelderRDX.png" group-title="Plex",The Addams Family
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-689fb7110a486aeba3c7917c.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6196c9241d310bf925e02616" tvg-id="647f8d22a2fc3fadb4721685-6196c9241d310bf925e02616" tvg-chno="" tvg-name="Lone Star" tvg-logo="https://provider-static.plex.tv/1/epg/channels/logos/gracenote/1d8c9bf417f3e12668fecafc25fc8f72.png" group-title="Plex",Lone Star
