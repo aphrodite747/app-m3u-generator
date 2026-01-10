@@ -13,7 +13,6 @@ OUTPUT_DIR = "playlists"
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 REQUEST_TIMEOUT = 30 
 
-# Map for country codes to full names
 REGION_MAP = {
     'us': 'United States', 'gb': 'United Kingdom', 'ca': 'Canada',
     'de': 'Germany', 'at': 'Austria', 'ch': 'Switzerland',
@@ -22,6 +21,9 @@ REGION_MAP = {
     'pe': 'Peru', 'se': 'Sweden', 'no': 'Norway', 'dk': 'Denmark',
     'in': 'India', 'jp': 'Japan', 'kr': 'South Korea', 'au': 'Australia'
 }
+
+# The groups you want at the top
+TOP_REGIONS = ['United States', 'Canada', 'United Kingdom']
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -43,7 +45,6 @@ def cleanup_output_dir():
         os.makedirs(OUTPUT_DIR)
 
 def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, retries=3):
-    logging.info(f"Fetching URL: {url}")
     for i in range(retries):
         try:
             response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
@@ -70,7 +71,6 @@ def write_m3u_file(filename, content):
     filepath = os.path.join(OUTPUT_DIR, filename)
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(content)
-    logging.info(f"Successfully wrote {filename}")
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
     chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
@@ -92,24 +92,28 @@ def generate_pluto_m3u():
         channels = {}
         if is_all:
             for r_code, r_data in data['regions'].items():
-                # FIX: Set the group strictly to the Full Name (no prefix)
                 display_group = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_data.get('channels', {}).items():
                     channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': display_group}
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
-            # Also fix single-region files if they are meant to have full names
             display_group = REGION_MAP.get(region.lower(), region.upper())
             for c_id, c_info in region_data.items():
                 channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
         
         if channels:
-            for c_id, ch in sorted(channels.items(), key=lambda x: x[1].get('name', '')):
+            # CUSTOM SORT: Priority 0 for Top Regions, 1 for others, then sort by name
+            sorted_channels = sorted(
+                channels.items(), 
+                key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', ''))
+            )
+            for c_id, ch in sorted_channels:
                 extinf = format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name'])
                 url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n'
                 output_lines.extend([extinf, url])
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
+# (Rest of the functions remain exactly as you have them)
 def generate_plex_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True, headers={'User-Agent': USER_AGENT})
     if not data or 'channels' not in data: return
