@@ -77,7 +77,7 @@ This generator currently creates playlists for
 ```
 
 *   **Roku TV** (`roku_all.m3u`) 
-*   **Stirr TV** (`stirr_all.m3u`) 👉 Might be removing. No Full EPG.
+*   **Stirr TV** (`stirr_all.m3u`) 👉 Try adding this EPG: https://nocords.xyz/stirr/epg.xml to fill in gaps.
 
 *   **Two more services from other repos**
 
