@@ -30,6 +30,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # --- Helper Functions ---
 
 def cleanup_output_dir():
+    """Wipes the output directory so removed regions don't stay in the repo."""
     if os.path.exists(OUTPUT_DIR):
         logging.info(f"Cleaning up old playlists in {OUTPUT_DIR}...")
         for filename in os.listdir(OUTPUT_DIR):
@@ -102,7 +103,6 @@ def generate_pluto_m3u():
                 channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
         
         if channels:
-            # CUSTOM SORT: Priority 0 for Top Regions, 1 for others, then sort by name
             sorted_channels = sorted(
                 channels.items(), 
                 key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', ''))
@@ -113,7 +113,6 @@ def generate_pluto_m3u():
                 output_lines.extend([extinf, url])
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
-# (Rest of the functions remain exactly as you have them)
 def generate_plex_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True, headers={'User-Agent': USER_AGENT})
     if not data or 'channels' not in data: return
@@ -132,19 +131,43 @@ def generate_plex_m3u():
 def generate_samsungtvplus_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
+    
+    # FIX: Get dynamic slug template (e.g., "samsung/{id}.m3u8")
+    slug_template = data.get('slug', '{id}.m3u8')
+    
     for region in list(data['regions'].keys()) + ['all']:
         is_all = region == 'all'
-        output_lines = [f'#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz"\n']
-        target = {}
+        epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz'
+        output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
+        channels = {}
+        
         if is_all:
             for r_code, r_info in data['regions'].items():
-                for c_id, c_info in r_info.get('channels', {}).items(): target[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id}
+                display_group = REGION_MAP.get(r_code.lower(), r_code.upper())
+                for c_id, c_info in r_info.get('channels', {}).items():
+                    channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': display_group}
         else:
-            target = data['regions'].get(region, {}).get('channels', {})
-            for c_id in target: target[c_id]['original_id'] = c_id
-        if target:
-            for c_id, ch in target.items():
-                output_lines.extend([format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch.get('group', 'Samsung'), ch['name']), f"https://jmp2.uk/sam-{ch['original_id']}.m3u8\n"])
+            region_info = data['regions'].get(region, {})
+            display_group = REGION_MAP.get(region.lower(), region.upper())
+            for c_id, c_info in region_info.get('channels', {}).items():
+                channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
+        
+        if channels:
+            # FIX: Sort with TOP_REGIONS preference
+            sorted_channels = sorted(
+                channels.items(), 
+                key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', '').lower())
+            )
+            
+            for c_id, ch in sorted_channels:
+                orig_id = ch['original_id']
+                formatted_slug = slug_template.replace('{id}', orig_id)
+                stream_url = f"https://jmp2.uk/{formatted_slug}"
+                
+                output_lines.extend([
+                    format_extinf(c_id, orig_id, ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name']), 
+                    stream_url + "\n"
+                ])
             write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
 
 def generate_stirr_m3u():
