@@ -23,7 +23,6 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, r
         try:
             response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
             
-            # Handle GitHub Rate Limiting
             if response.status_code == 429:
                 wait_time = (i + 1) * 10
                 logging.warning(f"Rate limited (429). Sleeping {wait_time}s before retry...")
@@ -111,7 +110,7 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'all'], sort='name'):
 
     for region in regions:
         logging.info(f"--- Generating PlutoTV playlist for region: {region} ---")
-        time.sleep(0.5) # Anti-throttle
+        time.sleep(0.5)
         epg_url = EPG_URL_TEMPLATE.replace('{region}', region)
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n', '#EXT-X-DISCONTINUITY-SEQUENCE:0\n']
         channels_to_process = {}
@@ -149,13 +148,12 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'all'], sort='name'):
         write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
 def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
-    """Generates M3U playlists for Plex using only the core MJH file."""
+    """Generates M3U playlists for Plex."""
     PLEX_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz'
     EPG_URL_TEMPLATE = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
     
     data = fetch_url(PLEX_URL, is_json=True, is_gzipped=True, headers={'User-Agent': USER_AGENT})
     if not data or 'channels' not in data:
-        logging.error("Failed to fetch or parse Plex data.")
         return
 
     region_name_map = {
@@ -167,7 +165,7 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
 
     for region in regions:
         logging.info(f"--- Generating Plex playlist for region: {region} ---")
-        time.sleep(0.5) # Anti-throttle
+        time.sleep(0.5)
         epg_url = EPG_URL_TEMPLATE.replace('{region}', region)
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
         channels_to_process = {}
@@ -176,15 +174,11 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
 
         for channel_key, channel_info in all_plex_channels.items():
             channel_regions = channel_info.get('regions', [])
-            
             if is_all_region or region in channel_regions:
-                # If 'all', we create entries for every region the channel belongs to
                 target_regs = channel_regions if is_all_region else [region]
-                
                 for reg_code in target_regs:
                     unique_id = f"{channel_key}-{reg_code}" if is_all_region else channel_key
                     group_name = region_name_map.get(reg_code, reg_code.upper())
-                    
                     channels_to_process[unique_id] = {
                         **channel_info,
                         'group': group_name,
@@ -192,7 +186,6 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
                     }
 
         sorted_ids = sorted(channels_to_process.keys(), key=lambda k: channels_to_process[k].get('name', '').lower())
-
         for cid in sorted_ids:
             ch = channels_to_process[cid]
             extinf = format_extinf(cid, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name'])
@@ -202,9 +195,10 @@ def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
         write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
 
 def generate_samsungtvplus_m3u(regions=['us', 'ca', 'gb', 'au', 'de', 'kr', 'all'], sort='name'):
-    """Generates M3U playlists for SamsungTVPlus."""
+    """Generates M3U playlists for SamsungTVPlus - FIXED logic."""
     SAMSUNG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz'
-    STREAM_URL_TEMPLATE = 'https://jmp2.uk/{slug}'
+    # Reverted to direct replacement template for stability
+    STREAM_URL_TEMPLATE = 'https://jmp2.uk/sam-{id}.m3u8'
     EPG_URL_TEMPLATE = 'https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz'
 
     data = fetch_url(SAMSUNG_URL, is_json=True, is_gzipped=True)
@@ -237,7 +231,8 @@ def generate_samsungtvplus_m3u(regions=['us', 'ca', 'gb', 'au', 'de', 'kr', 'all
             channel = channels_to_process[channel_id]
             group = channel.get('group_title_override') if is_all_region else channel.get('group', 'Uncategorized')
             extinf = format_extinf(channel_id, channel.get('original_id'), channel.get('chno'), channel.get('name'), channel.get('logo'), group or 'Samsung TV', channel.get('name'))
-            stream_url = STREAM_URL_TEMPLATE.format(slug=data['slug'].format(id=channel.get('original_id')))
+            # Fixed: Use simple replace to avoid .format() errors with JSON slugs
+            stream_url = STREAM_URL_TEMPLATE.replace('{id}', channel.get('original_id'))
             output_lines.extend([extinf, stream_url + '\n'])
 
         write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
@@ -266,19 +261,12 @@ def generate_stirr_m3u(sort='name'):
     write_m3u_file("stirr_all.m3u", "".join(output_lines))
 
 def generate_tubi_m3u():
-    """Generates M3U playlist for Tubi by preserving source content."""
+    """Generates M3U playlist for Tubi."""
     TUBI_PLAYLIST_URL = 'https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u'
-    
-    logging.info("--- Generating Tubi playlist (Preserving Source Header) ---")
+    logging.info("--- Generating Tubi playlist ---")
     playlist_content = fetch_url(TUBI_PLAYLIST_URL, is_json=False)
-    
-    if not playlist_content:
-        logging.error("Failed to fetch Tubi playlist content.")
-        return
-
-    # Write the raw content directly. 
-    # This keeps the single #EXTM3U line and BuddyChewChew's EPG link.
-    write_m3u_file("tubi_all.m3u", playlist_content.strip() + "\n")
+    if playlist_content:
+        write_m3u_file("tubi_all.m3u", playlist_content.strip() + "\n")
 
 def generate_roku_m3u(sort='name'):
     """Generates M3U playlist for Roku."""
@@ -308,7 +296,6 @@ def generate_roku_m3u(sort='name'):
 # --- Main Execution ---
 if __name__ == "__main__":
     logging.info("Starting playlist generation process...")
-    
     services = ['pluto', 'plex', 'samsungtvplus', 'stirr', 'tubi', 'roku']
     regions = ['us', 'ca', 'gb', 'au', 'de', 'es', 'fr', 'it', 'no', 'se', 'dk', 'br', 'ar', 'cl', 'co', 'mx', 'pe', 'latam', 'all'] 
     
@@ -326,8 +313,6 @@ if __name__ == "__main__":
                 generate_tubi_m3u()
             elif service == 'roku':
                 generate_roku_m3u()
-            
-            # Pause between services to avoid GitHub flagging
             time.sleep(2)
         except Exception as e:
             logging.error(f"Error generating {service} playlist: {e}")
