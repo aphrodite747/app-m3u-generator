@@ -10,7 +10,10 @@ from io import BytesIO
 
 # --- Configuration ---
 OUTPUT_DIR = "playlists"
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+# mimicing a modern browser to bypass 403/429
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+# Unique ID helps Plex treat you as a registered player instance
+PLEX_CLIENT_ID = f"kptv-aggregator-{uuid.uuid4().hex[:8]}" 
 REQUEST_TIMEOUT = 30 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -34,27 +37,32 @@ def cleanup_output_dir():
         os.makedirs(OUTPUT_DIR)
 
 def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, retries=3):
+    if headers is None:
+        headers = {'User-Agent': USER_AGENT}
+    
     logging.info(f"Fetching URL: {url}")
     for i in range(retries):
         try:
             response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
             if response.status_code == 429:
-                time.sleep((i + 1) * 10)
+                wait = (i + 1) * 15 # Aggressive backoff for 429s
+                logging.warning(f"Rate Limited (429). Sleeping {wait}s...")
+                time.sleep(wait)
                 continue
+            
             response.raise_for_status()
             content = response.content
             if is_gzipped:
                 try:
                     with gzip.GzipFile(fileobj=BytesIO(content), mode='rb') as f:
                         content = f.read()
-                    content = content.decode('utf-8')
                 except:
-                    content = content.decode('utf-8')
-            else:
-                content = content.decode('utf-8')
-            return json.loads(content) if is_json else content
+                    pass # Fallback if already decompressed
+            
+            decoded = content.decode('utf-8', errors='ignore')
+            return json.loads(decoded) if is_json else decoded
         except Exception as e:
-            if i < retries - 1: time.sleep(2)
+            if i < retries - 1: time.sleep(5)
     return None
 
 def write_m3u_file(filename, content):
@@ -65,9 +73,19 @@ def write_m3u_file(filename, content):
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
     chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
-    return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
+    
+    # FIX: These options stop freezing in VLC/TiviMate by forcing a 5s buffer and reconnect logic
+    vlc_opts = (
+        "#EXTVLCOPT:network-caching=5000\n"
+        "#EXTVLCOPT:http-reconnect=true\n"
+        f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n"
+    )
+    
+    inf = (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
             f'tvg-name="{tvg_name.replace(chr(34), chr(39))}" tvg-logo="{tvg_logo}" '
             f'group-title="{group_title.replace(chr(34), chr(39))}",{display_name.replace(",", "")}\n')
+    
+    return f"{inf}{vlc_opts}"
 
 # --- Service Generators ---
 
@@ -96,23 +114,32 @@ def generate_pluto_m3u():
                 url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n'
                 output_lines.extend([extinf, url])
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
+        time.sleep(0.5)
 
 def generate_plex_m3u():
-    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True, headers={'User-Agent': USER_AGENT})
+    # Specific Plex headers to mimic their official app
+    headers = {
+        'User-Agent': USER_AGENT,
+        'Origin': 'https://app.plex.tv',
+        'Referer': 'https://app.plex.tv/'
+    }
+    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True, headers=headers)
     if not data or 'channels' not in data: return
     
     found_regions = set()
     for ch in data['channels'].values(): found_regions.update(ch.get('regions', []))
     
     for region in list(found_regions) + ['all']:
-        is_all = region == 'all'
         output_lines = [f'#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz"\n']
         count = 0
         for c_id, ch in data['channels'].items():
-            if is_all or region in ch.get('regions', []):
-                output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Plex", ch['name']), f"https://jmp2.uk/plex-{c_id}.m3u8\n"])
+            if region == 'all' or region in ch.get('regions', []):
+                # FIX: Appending the client ID to stop 429 IP bans
+                stream_url = f"https://jmp2.uk/plex-{c_id}.m3u8?X-Plex-Client-Identifier={PLEX_CLIENT_ID}\n"
+                output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Plex", ch['name']), stream_url])
                 count += 1
         if count > 0: write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
+        time.sleep(1) # Extra delay for Plex
 
 def generate_samsungtvplus_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz', is_json=True, is_gzipped=True)
@@ -131,6 +158,7 @@ def generate_samsungtvplus_m3u():
             for c_id, ch in target.items():
                 output_lines.extend([format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch.get('group', 'Samsung'), ch['name']), f"https://jmp2.uk/sam-{ch['original_id']}.m3u8\n"])
             write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
+        time.sleep(0.5)
 
 def generate_stirr_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz', is_json=True, is_gzipped=True)
