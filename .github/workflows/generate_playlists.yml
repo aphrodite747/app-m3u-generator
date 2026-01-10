@@ -3,7 +3,7 @@ name: Generate M3U Playlists
 on:
   schedule:
     - cron: '0 3 * * *'  # Runs at 3 AM UTC
-  workflow_dispatch:
+  workflow_dispatch:     # Allows you to run it manually from the Actions tab
   push:
     branches:
       - main
@@ -15,19 +15,19 @@ jobs:
   build-playlists:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Essential for pushing changes back
+      contents: write # Required to push the new .m3u files back to your repo
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetches all history so git push works reliably
+          fetch-depth: 0            # Fetches full history for stable pushing
+          persist-credentials: true # Ensures the auth token remains available for the retry loop
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          # Cache removed to prevent "No file matched" error
 
       - name: Install Dependencies
         run: |
@@ -42,23 +42,24 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Stage EVERYTHING (Additions, Modifications, and Deletions)
+          # Stage EVERYTHING (This handles New, Modified, and DELETED files)
           git add -A playlists/
           
+          # Check if there are actually changes to commit
           if git diff --cached --quiet; then
-            echo "No changes detected in playlists."
+            echo "No changes detected in playlists. Skipping commit."
             exit 0
           fi
           
           echo "Changes detected, committing updates..."
           git commit -m "Update M3U playlists [skip ci]"
           
-          # Using standard push method with auto-retry logic
+          # Retry loop to handle temporary GitHub congestion
           n=0
           until [ $n -ge 5 ]
           do
               git push origin main && break
               n=$((n+1))
-              echo "Push failed. Retrying attempt $n/5..."
+              echo "Push failed. Retrying attempt $n/5 in 15s..."
               sleep 15
           done
