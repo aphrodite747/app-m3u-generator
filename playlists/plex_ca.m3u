@@ -139,6 +139,8 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6348adc71159f6a5ce819b85.m3u8
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c4.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb" tvg-id="647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb" tvg-chno="" tvg-name="FilmRise Free Movies" tvg-logo="https://provider-static.plex.tv/epg/cms/production/497b5a8c-5feb-4d93-9cd8-623f68bcdc2c/Plex_FilmRise_FreeMoviesCA_Color_Logo.png" group-title="Plex",FilmRise Free Movies
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33c7e7be0a1106cd1bb.m3u8
+#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c3" tvg-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c3" tvg-chno="" tvg-name="FilmRise Horror" tvg-logo="https://provider-static.plex.tv/epg/cms/production/3177288d-b167-499d-ac0b-44c1a5f097d8/Plex_FilmRise_HorrorCA_Color_Logo.png" group-title="Plex",FilmRise Horror
+https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c3.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16" tvg-id="647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16" tvg-chno="" tvg-name="American Crimes" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5b694d82-7b61-49a2-a28e-95b07d8105ac/american-crimes-fclogo-White.png" group-title="Plex",American Crimes
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-686450561407335ea0f95542" tvg-id="647f8d22a2fc3fadb4721685-686450561407335ea0f95542" tvg-chno="" tvg-name="A Haunting" tvg-logo="https://provider-static.plex.tv/epg/cms/production/37a592ac-3828-44d7-95f1-3cbdd4a3e6c1/A_Haunting_whiteRDX.png" group-title="Plex",A Haunting
@@ -335,8 +337,6 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-60d4edd6b2fdec002c141125.m3u8
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-64704596e536e0faaf10be9b.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6674b68af04cf4bb9233c916" tvg-id="647f8d22a2fc3fadb4721685-6674b68af04cf4bb9233c916" tvg-chno="" tvg-name="Death Valley Days" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f2194eb4-c78d-4502-a3ab-616eb2624c7d/FilmRise_DeathValleyDays_White_LogoRDX.png" group-title="Plex",Death Valley Days
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6674b68af04cf4bb9233c916.m3u8
-#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c3" tvg-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c3" tvg-chno="" tvg-name="FilmRise Horror" tvg-logo="https://provider-static.plex.tv/epg/cms/production/3177288d-b167-499d-ac0b-44c1a5f097d8/Plex_FilmRise_HorrorCA_Color_Logo.png" group-title="Plex",FilmRise Horror
-https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c3.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6227e0765e753e6288a86f2f" tvg-id="647f8d22a2fc3fadb4721685-6227e0765e753e6288a86f2f" tvg-chno="" tvg-name="Unidentified" tvg-logo="https://provider-static.plex.tv/epg/cms/production/49a06b9c-f5e8-4c81-bc52-0acfdd852a1c/unidentified.png" group-title="Plex",Unidentified
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6227e0765e753e6288a86f2f.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-664292a80e0ec7b4ce5eb28c" tvg-id="647f8d22a2fc3fadb4721685-664292a80e0ec7b4ce5eb28c" tvg-chno="" tvg-name="Startalk TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/073a7f1a-45ff-44a7-8b6b-4721a0eb01f9/StarTalk_Tv_Logo_Resize_PLEX_1500x1000_LOGO_DarkBG_Color_-_RDX.png" group-title="Plex",Startalk TV
