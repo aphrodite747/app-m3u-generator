@@ -13,12 +13,21 @@ OUTPUT_DIR = "playlists"
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 REQUEST_TIMEOUT = 30 
 
+# Map for country codes to full names
+REGION_MAP = {
+    'us': 'United States', 'gb': 'United Kingdom', 'ca': 'Canada',
+    'de': 'Germany', 'at': 'Austria', 'ch': 'Switzerland',
+    'es': 'Spain', 'fr': 'France', 'it': 'Italy', 'br': 'Brazil',
+    'mx': 'Mexico', 'ar': 'Argentina', 'cl': 'Chile', 'co': 'Colombia',
+    'pe': 'Peru', 'se': 'Sweden', 'no': 'Norway', 'dk': 'Denmark',
+    'in': 'India', 'jp': 'Japan', 'kr': 'South Korea', 'au': 'Australia'
+}
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # --- Helper Functions ---
 
 def cleanup_output_dir():
-    """Wipes the output directory so removed regions don't stay in the repo."""
     if os.path.exists(OUTPUT_DIR):
         logging.info(f"Cleaning up old playlists in {OUTPUT_DIR}...")
         for filename in os.listdir(OUTPUT_DIR):
@@ -83,12 +92,16 @@ def generate_pluto_m3u():
         channels = {}
         if is_all:
             for r_code, r_data in data['regions'].items():
+                # FIX: Set the group strictly to the Full Name (no prefix)
+                display_group = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_data.get('channels', {}).items():
-                    channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': r_code.upper()}
+                    channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': display_group}
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
+            # Also fix single-region files if they are meant to have full names
+            display_group = REGION_MAP.get(region.lower(), region.upper())
             for c_id, c_info in region_data.items():
-                channels[c_id] = {**c_info, 'original_id': c_id, 'group': c_info.get('group', 'Pluto')}
+                channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
         
         if channels:
             for c_id, ch in sorted(channels.items(), key=lambda x: x[1].get('name', '')):
@@ -100,10 +113,8 @@ def generate_pluto_m3u():
 def generate_plex_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True, headers={'User-Agent': USER_AGENT})
     if not data or 'channels' not in data: return
-    
     found_regions = set()
     for ch in data['channels'].values(): found_regions.update(ch.get('regions', []))
-    
     for region in list(found_regions) + ['all']:
         is_all = region == 'all'
         output_lines = [f'#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz"\n']
