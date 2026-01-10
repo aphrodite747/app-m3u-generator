@@ -1,4 +1,4 @@
-![Build Status](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/actions/workflows/generate_playlists.yml/badge.svg)
+![Build Status](https://github.com/BuddyChewChew/app-m3u-generator/actions/workflows/generate_playlists.yml/badge.svg)
 
 
 📌 PLUTO UPDATE: The Pluto 403 error is fixed. Its is not fixed in the Google Self-Host script. I will get to that at some point. 
