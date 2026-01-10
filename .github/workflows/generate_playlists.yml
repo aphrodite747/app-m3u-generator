@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip' # Speeds up subsequent runs
+          # Cache removed to prevent "No file matched" error
 
       - name: Install Dependencies
         run: |
@@ -53,7 +53,7 @@ jobs:
           echo "Changes detected, committing updates..."
           git commit -m "Update M3U playlists [skip ci]"
           
-          # Using the standard push method which is safer with the 'contents: write' permission
+          # Using standard push method with auto-retry logic
           n=0
           until [ $n -ge 5 ]
           do
