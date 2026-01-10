@@ -137,6 +137,8 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6348b2cb1159f6a5ce819b89.m3u8
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6348adc71159f6a5ce819b85.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c4" tvg-id="647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c4" tvg-chno="" tvg-name="FilmRise Action" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ce869fe2-88c9-4d78-b594-02148e4755c3/Plex_FilmRise_ActionCA_Color_Logo.png" group-title="Plex",FilmRise Action
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65ddf33acf4a43f7017f31c4.m3u8
+#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6627ab12580825e8a7bc4f06" tvg-id="647f8d22a2fc3fadb4721685-6627ab12580825e8a7bc4f06" tvg-chno="" tvg-name="FilmRise Sci-Fi" tvg-logo="https://provider-static.plex.tv/epg/cms/production/4c175f1c-3287-41ef-a62b-b7b390c911bd/Plex_FilmRiseCA_SciFi_Color_Logo.png" group-title="Plex",FilmRise Sci-Fi
+https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6627ab12580825e8a7bc4f06.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16" tvg-id="647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16" tvg-chno="" tvg-name="American Crimes" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5b694d82-7b61-49a2-a28e-95b07d8105ac/american-crimes-fclogo-White.png" group-title="Plex",American Crimes
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6467891c73e5e029428f0e16.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-686450561407335ea0f95542" tvg-id="647f8d22a2fc3fadb4721685-686450561407335ea0f95542" tvg-chno="" tvg-name="A Haunting" tvg-logo="https://provider-static.plex.tv/epg/cms/production/37a592ac-3828-44d7-95f1-3cbdd4a3e6c1/A_Haunting_whiteRDX.png" group-title="Plex",A Haunting
@@ -293,8 +295,6 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-68017ed20268b77d02a5f4bd.m3u8
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-60d4eddab2fdec002c141131.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6533e27abd43e1c8b1865154" tvg-id="647f8d22a2fc3fadb4721685-6533e27abd43e1c8b1865154" tvg-chno="" tvg-name="Adventure Earth" tvg-logo="https://provider-static.plex.tv/epg/cms/production/1a5f2eb3-3df9-4ef7-af45-56ef0f7f44dd/Adventure_Earth_ChannelLogo_White_1500x1000_Tilman.png" group-title="Plex",Adventure Earth
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6533e27abd43e1c8b1865154.m3u8
-#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6627ab12580825e8a7bc4f06" tvg-id="647f8d22a2fc3fadb4721685-6627ab12580825e8a7bc4f06" tvg-chno="" tvg-name="FilmRise Sci-Fi" tvg-logo="https://provider-static.plex.tv/epg/cms/production/4c175f1c-3287-41ef-a62b-b7b390c911bd/Plex_FilmRiseCA_SciFi_Color_Logo.png" group-title="Plex",FilmRise Sci-Fi
-https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6627ab12580825e8a7bc4f06.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-614398a08f30fa61e0da7c97" tvg-id="647f8d22a2fc3fadb4721685-614398a08f30fa61e0da7c97" tvg-chno="" tvg-name="True History" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f37684ab-5eb6-48dd-8999-fbb6345689d4/1500x1000-DarkBG.png" group-title="Plex",True History
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-614398a08f30fa61e0da7c97.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-66b13a1f4893b3d48c72db19" tvg-id="647f8d22a2fc3fadb4721685-66b13a1f4893b3d48c72db19" tvg-chno="" tvg-name="Primetime Soaps" tvg-logo="https://provider-static.plex.tv/epg/cms/production/095a8052-aeaf-4d68-afcb-9454ed96b8ab/PrimetimeSoaps_plex_dark_1500x1000.png" group-title="Plex",Primetime Soaps
