@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz"
+#EXTM3U
 #EXTINF:-1 channel-id="5407" tvg-id="5407" tvg-chno="88" tvg-name="Drone TV" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/02/23/170871539370SyzUanQG-632x395-Cklwrb0M.jpeg" group-title="Stirr",Drone TV
 https://jmp2.uk/str-5407.m3u8
 #EXTINF:-1 channel-id="5430" tvg-id="5430" tvg-chno="110" tvg-name="RightNow TV" tvg-logo="https://vcz-ktest2-cloud-vodlix-com.b-cdn.net/u/ktest2/files/thumbs/2024/03/07/1709832676KjRR7jMuCJ-632x395-9bxy1pZC.jpeg" group-title="Stirr",RightNow TV

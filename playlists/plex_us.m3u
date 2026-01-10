@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/us.xml.gz"
+#EXTM3U
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-61e805952502a7a6fa84d70f" tvg-id="5e20b730f2f8d5003d739db7-61e805952502a7a6fa84d70f" tvg-chno="" tvg-name="NFL Channel" tvg-logo="https://provider-static.plex.tv/epg/cms/production/a7617b69-6d23-46d0-8e8e-e4ec9fa29d59/NFL_WHITE.png" group-title="Plex",NFL Channel
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-61e805952502a7a6fa84d70f.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5fc705e2a2236e002d69f3ba" tvg-id="5e20b730f2f8d5003d739db7-5fc705e2a2236e002d69f3ba" tvg-chno="" tvg-name="Stories by AMC" tvg-logo="https://provider-static.plex.tv/d/epg/channels/logos/gracenote/dc11bbe6b65b5884a0af6702f6b61c61.png" group-title="Plex",Stories by AMC
