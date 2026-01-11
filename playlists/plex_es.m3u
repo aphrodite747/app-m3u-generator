@@ -33,6 +33,8 @@ https://jmp2.uk/plex-643054b1fc3be59477853717-6683fcdf702b9db9f8177252.m3u8
 https://jmp2.uk/plex-643054b1fc3be59477853717-67c24d5a45ae99120c07158c.m3u8
 #EXTINF:-1 channel-id="643054b1fc3be59477853717-68645a8619cc2e163e38d161" tvg-id="643054b1fc3be59477853717-68645a8619cc2e163e38d161" tvg-chno="" tvg-name="Merli" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8e4cba66-9b4a-49e6-becf-bcfad804dcb9/MERLI_channel_logo_whiteRDX.png" group-title="Plex",Merli
 https://jmp2.uk/plex-643054b1fc3be59477853717-68645a8619cc2e163e38d161.m3u8
+#EXTINF:-1 channel-id="643054b1fc3be59477853717-685f25c1a7111a932d28f1ac" tvg-id="643054b1fc3be59477853717-685f25c1a7111a932d28f1ac" tvg-chno="" tvg-name="Todo Drama" tvg-logo="https://provider-static.plex.tv/epg/cms/production/c999a045-74ef-4a8d-991f-26b2867d00ef/TodoDrama_WHITERDX.png" group-title="Plex",Todo Drama
+https://jmp2.uk/plex-643054b1fc3be59477853717-685f25c1a7111a932d28f1ac.m3u8
 #EXTINF:-1 channel-id="643054b1fc3be59477853717-66840486cd6f1d3940941151" tvg-id="643054b1fc3be59477853717-66840486cd6f1d3940941151" tvg-chno="" tvg-name="Runtime Christmas" tvg-logo="https://provider-static.plex.tv/epg/cms/production/9785307f-323b-4944-980f-0944db16eb1a/Runtime_Christmas_Logo_WhiteRDX.png" group-title="Plex",Runtime Christmas
 https://jmp2.uk/plex-643054b1fc3be59477853717-66840486cd6f1d3940941151.m3u8
 #EXTINF:-1 channel-id="643054b1fc3be59477853717-67200026769d5ec4bf51d63e" tvg-id="643054b1fc3be59477853717-67200026769d5ec4bf51d63e" tvg-chno="" tvg-name="Crimen Y Historia" tvg-logo="https://provider-static.plex.tv/epg/cms/production/0902ab10-e394-4ff0-9c94-506bc528e901/Logo_Crimen_Historia_1500x1000_DarkBackground_-_Belen_Bruno.png" group-title="Plex",Crimen Y Historia
@@ -99,8 +101,6 @@ https://jmp2.uk/plex-643054b1fc3be59477853717-60da3a5c0d1cc1002c38370e.m3u8
 https://jmp2.uk/plex-643054b1fc3be59477853717-6880001d015fe7e375a1a0a8.m3u8
 #EXTINF:-1 channel-id="643054b1fc3be59477853717-666e23e4d91d13cb4c8cbb79" tvg-id="643054b1fc3be59477853717-666e23e4d91d13cb4c8cbb79" tvg-chno="" tvg-name="Todo Crimen" tvg-logo="https://provider-static.plex.tv/epg/cms/production/e6db5aa8-8c1d-48e0-9970-27a36702ba9e/TODO_CRIMEN_white__1_.png" group-title="Plex",Todo Crimen
 https://jmp2.uk/plex-643054b1fc3be59477853717-666e23e4d91d13cb4c8cbb79.m3u8
-#EXTINF:-1 channel-id="643054b1fc3be59477853717-685f25c1a7111a932d28f1ac" tvg-id="643054b1fc3be59477853717-685f25c1a7111a932d28f1ac" tvg-chno="" tvg-name="Todo Drama" tvg-logo="https://provider-static.plex.tv/epg/cms/production/c999a045-74ef-4a8d-991f-26b2867d00ef/TodoDrama_WHITERDX.png" group-title="Plex",Todo Drama
-https://jmp2.uk/plex-643054b1fc3be59477853717-685f25c1a7111a932d28f1ac.m3u8
 #EXTINF:-1 channel-id="643054b1fc3be59477853717-631bbc79a273cc38add9e5e1" tvg-id="643054b1fc3be59477853717-631bbc79a273cc38add9e5e1" tvg-chno="" tvg-name="Cine Clasico" tvg-logo="https://provider-static.plex.tv/epg/cms/production/6831986e-dd16-4b8a-be95-2149019f6bfe/CIneclassico_wht_logo_1500x1000.png" group-title="Plex",Cine Clasico
 https://jmp2.uk/plex-643054b1fc3be59477853717-631bbc79a273cc38add9e5e1.m3u8
 #EXTINF:-1 channel-id="643054b1fc3be59477853717-6334a8e48a7b2a349d903b8c" tvg-id="643054b1fc3be59477853717-6334a8e48a7b2a349d903b8c" tvg-chno="" tvg-name="Billiard TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/d413e5e7-6a1a-4539-8c84-1bf57faee1a3/Plex_billiard__1500x1000__color_rdxfds.png" group-title="Plex",Billiard TV
