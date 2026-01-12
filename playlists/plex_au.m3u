@@ -115,6 +115,8 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6470477fe536e0faaf10be9d.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-66f6b947515e742745f5ca34.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6615885e1eabecf2c9d56495" tvg-id="5e20b730f2f8d5003d739db7-6615885e1eabecf2c9d56495" tvg-chno="" tvg-name="Monster Jam" tvg-logo="https://provider-static.plex.tv/epg/cms/production/23824964-562b-4498-9eaa-d6262cb7e0c3/Monster_Jam_Logo_on_Transparent_1500x1000_Casey_Murawski.png" group-title="Plex",Monster Jam
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6615885e1eabecf2c9d56495.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616" tvg-id="5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616" tvg-chno="" tvg-name="Lone Star" tvg-logo="https://provider-static.plex.tv/1/epg/channels/logos/gracenote/1d8c9bf417f3e12668fecafc25fc8f72.png" group-title="Plex",Lone Star
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-68caada21fabab6eb2e99331" tvg-id="5e20b730f2f8d5003d739db7-68caada21fabab6eb2e99331" tvg-chno="" tvg-name="Bassmaster" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f6d14e42-d9be-4f81-893f-cb676d32c473/BassmasterChannel_DarkBackground_-_Will_Flowers.png" group-title="Plex",Bassmaster
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-68caada21fabab6eb2e99331.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-60aeb5cd87f9b1002ce12323" tvg-id="5e20b730f2f8d5003d739db7-60aeb5cd87f9b1002ce12323" tvg-chno="" tvg-name="NHRA TV" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/NHRA_logo_dark.png" group-title="Plex",NHRA TV
@@ -135,8 +137,6 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-64f124818d44f2871135a907.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6408c82eebb23ab878e8ddbb.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-656fbbd6dbcce28c3a41741b" tvg-id="5e20b730f2f8d5003d739db7-656fbbd6dbcce28c3a41741b" tvg-chno="" tvg-name="Surf Cinema" tvg-logo="https://provider-static.plex.tv/epg/cms/production/a244db09-7052-4237-ab42-58bcb2b56fe1/SurfCinemaStacked-DarkBackground-1500x1000y.png" group-title="Plex",Surf Cinema
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-656fbbd6dbcce28c3a41741b.m3u8
-#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616" tvg-id="5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616" tvg-chno="" tvg-name="Lone Star" tvg-logo="https://provider-static.plex.tv/1/epg/channels/logos/gracenote/1d8c9bf417f3e12668fecafc25fc8f72.png" group-title="Plex",Lone Star
-https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-63f914bffe2c3d32e1a7929f" tvg-id="5e20b730f2f8d5003d739db7-63f914bffe2c3d32e1a7929f" tvg-chno="" tvg-name="GLORY Kickboxing" tvg-logo="https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png" group-title="Plex",GLORY Kickboxing
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-63f914bffe2c3d32e1a7929f.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-643f0ecd76de2b4015ae6c01" tvg-id="5e20b730f2f8d5003d739db7-643f0ecd76de2b4015ae6c01" tvg-chno="" tvg-name="PFL MMA" tvg-logo="https://provider-static.plex.tv/epg/cms/production/96dd0531-b500-4bd4-93ca-763cbf46defe/1500x1000_PFL_SHIELD_DARK_BG_-_Allie_Dinsmore.png" group-title="Plex",PFL MMA
@@ -439,8 +439,6 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-66469eecdad45e1759c1c06b.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-671ab65359ad9a223f0a5dc3.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-67c2496d45ae99120c071588" tvg-id="5e20b730f2f8d5003d739db7-67c2496d45ae99120c071588" tvg-chno="" tvg-name="Life Down Under" tvg-logo="https://provider-static.plex.tv/epg/cms/production/457ba162-d75e-4b43-96b0-125f61a47a44/LDU_Logo_1500_x_1000_Anna.png" group-title="Plex",Life Down Under
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-67c2496d45ae99120c071588.m3u8
-#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9" tvg-id="5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9" tvg-chno="" tvg-name="Arthur" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2d2c1c5b-dc09-43e6-b2f1-9db51a299fc5/Plex_PartnerAssets_Logo_Color_RDX.png" group-title="Plex",Arthur
-https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-636abc6d4cbc0319a0bd49c0" tvg-id="5e20b730f2f8d5003d739db7-636abc6d4cbc0319a0bd49c0" tvg-chno="" tvg-name="MagellanTV Wildest" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8837fdc0-308d-4a47-bf86-51573d626691/Plex_MGTVWildest_Logo_DarkBackground_.png" group-title="Plex",MagellanTV Wildest
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-636abc6d4cbc0319a0bd49c0.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-68893b831b1a8359c63cf6ee" tvg-id="5e20b730f2f8d5003d739db7-68893b831b1a8359c63cf6ee" tvg-chno="" tvg-name="Real Crime Uncovered" tvg-logo="https://provider-static.plex.tv/epg/cms/production/bf91965d-eded-47f6-8594-0a9d02e6cffc/RealCrimeUncovered_Logo_White_Denise_O_KeeffeWHITE.png" group-title="Plex",Real Crime Uncovered
@@ -453,8 +451,6 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-650b6194c01ccc8eb7956734.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-67f45ef989089d917e1b1634.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5f170d62b898490041b4936e" tvg-id="5e20b730f2f8d5003d739db7-5f170d62b898490041b4936e" tvg-chno="" tvg-name="FailArmy" tvg-logo="https://provider-static.plex.tv/epg/cms/production/c3a3b230-a40b-4409-b33f-678c1923bd77/FailArmy_logo_dark_v2.png" group-title="Plex",FailArmy
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5f170d62b898490041b4936e.m3u8
-#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-666291ad8dfc36b8c8a399c8" tvg-id="5e20b730f2f8d5003d739db7-666291ad8dfc36b8c8a399c8" tvg-chno="" tvg-name="FIFA+" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2c509e78-5c38-43b6-94cf-f25e1bff3765/FIFA__Logo_Rectangle_1500x1000_WHT.png" group-title="Plex",FIFA+
-https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-666291ad8dfc36b8c8a399c8.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-621670feab2095ca85353ad4" tvg-id="5e20b730f2f8d5003d739db7-621670feab2095ca85353ad4" tvg-chno="" tvg-name="XFC TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/90cd03c9-281a-4eea-964b-6a9ce5c8d07c/XFCTV_channel_logo_dark_-_Dana_Foster.png" group-title="Plex",XFC TV
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-621670feab2095ca85353ad4.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-62ffc5cfa6cad6f2991745c2" tvg-id="5e20b730f2f8d5003d739db7-62ffc5cfa6cad6f2991745c2" tvg-chno="" tvg-name="FUEL TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png" group-title="Plex",FUEL TV
@@ -545,3 +541,7 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-66173ae27105ca5aacb0685d.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-62fbf52c1567211fdb82e922.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-66be8cd4871131188099527e" tvg-id="5e20b730f2f8d5003d739db7-66be8cd4871131188099527e" tvg-chno="" tvg-name="TRACE UK" tvg-logo="https://provider-static.plex.tv/epg/cms/production/23feecc3-94f6-49b7-98e6-1828f42695ea/1500X1000_PNG_w_transparent_background__Logo_suitable_for_dark_backgrounds__-_Pierre_Gournay.png" group-title="Plex",TRACE UK
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-66be8cd4871131188099527e.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9" tvg-id="5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9" tvg-chno="" tvg-name="Arthur" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2d2c1c5b-dc09-43e6-b2f1-9db51a299fc5/Plex_PartnerAssets_Logo_Color_RDX.png" group-title="Plex",Arthur
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65a061008b6d8fe79ee1ddc9.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-666291ad8dfc36b8c8a399c8" tvg-id="5e20b730f2f8d5003d739db7-666291ad8dfc36b8c8a399c8" tvg-chno="" tvg-name="FIFA+" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2c509e78-5c38-43b6-94cf-f25e1bff3765/FIFA__Logo_Rectangle_1500x1000_WHT.png" group-title="Plex",FIFA+
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-666291ad8dfc36b8c8a399c8.m3u8
