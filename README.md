@@ -2,7 +2,7 @@
 
 
 📌 [HOST YOUR OWN VERSION OF THE SCRIPT ON YOUR GOOGLE ACCOUNT](https://github.com/BuddyChewChew/My-Streams/tree/main/Google%20Script%20And%20Install%20Info)
-Some functions still work but the script has to be fixed. BROKEN: (Pluto)
+Some functions still work but the script has to be fixed. BROKEN: (Pluto 403 Errors), (Plex 429 Errors).
 
 
 # ⭐ FAST Service M3U Playlist Generator
