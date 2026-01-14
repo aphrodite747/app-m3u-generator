@@ -6,6 +6,7 @@ import logging
 import uuid
 import time
 import shutil
+import random
 from io import BytesIO
 
 # --- Configuration ---
@@ -26,13 +27,14 @@ REGION_MAP = {
 TOP_REGIONS = ['United States', 'Canada', 'United Kingdom']
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 # --- Helper Functions ---
 
 def cleanup_output_dir():
     """Wipes the output directory so removed regions don't stay in the repo."""
     if os.path.exists(OUTPUT_DIR):
-        logging.info(f"Cleaning up old playlists in {OUTPUT_DIR}...")
+        logger.info(f"Cleaning up old playlists in {OUTPUT_DIR}...")
         for filename in os.listdir(OUTPUT_DIR):
             file_path = os.path.join(OUTPUT_DIR, filename)
             try:
@@ -41,16 +43,17 @@ def cleanup_output_dir():
                 elif os.path.isdir(file_path):
                     shutil.rmtree(file_path)
             except Exception as e:
-                logging.error(f"Failed to delete {file_path}: {e}")
+                logger.error(f"Failed to delete {file_path}: {e}")
     else:
         os.makedirs(OUTPUT_DIR)
 
 def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, retries=3):
+    headers = headers or {'User-Agent': USER_AGENT}
     for i in range(retries):
         try:
             response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
             if response.status_code == 429:
-                time.sleep((i + 1) * 10)
+                time.sleep((i + 1) * 10 + random.uniform(0, 5))
                 continue
             response.raise_for_status()
             content = response.content
@@ -65,7 +68,8 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, r
                 content = content.decode('utf-8')
             return json.loads(content) if is_json else content
         except Exception as e:
-            if i < retries - 1: time.sleep(2)
+            logger.warning(f"Fetch failed (attempt {i+1}): {e}")
+            if i < retries - 1: time.sleep(5)
     return None
 
 def write_m3u_file(filename, content):
@@ -78,6 +82,52 @@ def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title,
     return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
             f'tvg-name="{tvg_name.replace(chr(34), chr(39))}" tvg-logo="{tvg_logo}" '
             f'group-title="{group_title.replace(chr(34), chr(39))}",{display_name.replace(",", "")}\n')
+
+# --- Plex Anonymous Token Fetch (NEW / IMPROVED) ---
+
+def get_anonymous_token(region: str = 'us') -> str | None:
+    headers = {
+        'Accept': 'application/json',
+        'User-Agent': USER_AGENT,
+        'X-Plex-Product': 'Plex Web',
+        'X-Plex-Version': '4.150.0',
+        'X-Plex-Client-Identifier': str(uuid.uuid4()).replace('-', ''),
+        'X-Plex-Platform': 'Web',
+    }
+    # Optional geo bias for better channel availability
+    x_forward_ips = {'us': '76.81.9.69'}  # example US IP; add/rotate more if needed
+    if region in x_forward_ips and x_forward_ips[region]:
+        headers['X-Forwarded-For'] = x_forward_ips[region]
+
+    params = {
+        'X-Plex-Product': 'Plex Web',
+        'X-Plex-Client-Identifier': headers['X-Plex-Client-Identifier'],
+    }
+
+    for attempt in range(4):
+        try:
+            resp = requests.post(
+                'https://clients.plex.tv/api/v2/users/anonymous',
+                headers=headers,
+                params=params,
+                timeout=15
+            )
+            if resp.status_code == 429:
+                wait = (2 ** attempt) * 10 + random.uniform(0, 5)
+                logger.warning(f"429 on Plex anon token - sleeping {wait:.1f}s")
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+            token = data.get('authToken')
+            if token:
+                logger.info(f"Got Plex anonymous token for {region}")
+                return token
+        except Exception as e:
+            logger.warning(f"Plex anon token attempt {attempt+1} failed: {e}")
+            time.sleep(5)
+    logger.error(f"Failed to get Plex anonymous token for {region}")
+    return None
 
 # --- Service Generators ---
 
@@ -114,25 +164,64 @@ def generate_pluto_m3u():
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
 def generate_plex_m3u():
-    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True, headers={'User-Agent': USER_AGENT})
+    # --- UPDATED / FIXED Plex generator ---
+    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'channels' not in data: return
+    
     found_regions = set()
-    for ch in data['channels'].values(): found_regions.update(ch.get('regions', []))
-    for region in list(found_regions) + ['all']:
-        is_all = region == 'all'
-        output_lines = [f'#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz"\n']
+    for ch in data['channels'].values():
+        found_regions.update(ch.get('regions', []))
+    
+    regions = list(found_regions) + ['all']  # no sort needed, but you can sort(list(found_regions))
+    
+    for region in regions:
+        token_region = region if region != 'all' else 'us'
+        token = get_anonymous_token(token_region)
+        if not token:
+            logger.warning(f"Skipping Plex {region} - no token")
+            continue
+        
+        epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
+        output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
         count = 0
+        
+        channel_list = []
         for c_id, ch in data['channels'].items():
-            if is_all or region in ch.get('regions', []):
-                output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Plex", ch['name']), f"https://jmp2.uk/plex-{c_id}.m3u8\n"])
+            ch_regions = ch.get('regions', [])
+            if region == 'all' or region in ch_regions:
+                # Group title logic
+                if region != 'all':
+                    group_title = REGION_MAP.get(region.lower(), region.upper())
+                else:
+                    primary = ch_regions[0] if ch_regions else 'other'
+                    group_title = REGION_MAP.get(primary.lower(), primary.upper())
+                
+                extinf = format_extinf(
+                    c_id, c_id, ch.get('chno'), ch['name'], ch.get('logo', ''),
+                    group_title, ch['name']
+                )
+                stream_url = f"https://epg.provider.plex.tv/library/parts/{c_id}/?X-Plex-Token={token}"
+                # Alternative if needed: f"https://epg.provider.plex.tv/hls/{c_id}/master.m3u8?X-Plex-Token={token}"
+                
+                channel_list.append((group_title, ch['name'].lower(), extinf, stream_url))
                 count += 1
-        if count > 0: write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
+        
+        if count == 0:
+            continue
+        
+        # Sort: TOP_REGIONS first, then alpha by name
+        channel_list.sort(key=lambda x: (0 if x[0] in TOP_REGIONS else 1, x[1]))
+        
+        for _, _, extinf, url in channel_list:
+            output_lines.extend([extinf, url + "\n"])
+        
+        write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
+        logger.info(f"Plex {region}: {count} channels written")
 
 def generate_samsungtvplus_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
     
-    # FIX: Get dynamic slug template (e.g., "samsung/{id}.m3u8")
     slug_template = data.get('slug', '{id}.m3u8')
     
     for region in list(data['regions'].keys()) + ['all']:
@@ -153,7 +242,6 @@ def generate_samsungtvplus_m3u():
                 channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
         
         if channels:
-            # FIX: Sort with TOP_REGIONS preference
             sorted_channels = sorted(
                 channels.items(), 
                 key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', '').lower())
@@ -193,9 +281,9 @@ def generate_roku_m3u():
 if __name__ == "__main__":
     cleanup_output_dir()
     generate_pluto_m3u()
-    generate_plex_m3u()
+    generate_plex_m3u()          # ← now fixed/improved
     generate_samsungtvplus_m3u()
     generate_stirr_m3u()
     generate_tubi_m3u()
     generate_roku_m3u()
-    logging.info("Playlist generation complete.")
+    logger.info("Playlist generation complete.")
