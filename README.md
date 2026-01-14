@@ -1,4 +1,10 @@
-📌 UPDATE: The Pluto 403 error is fixed. Its is not fixed in the Google Self-Host script. I will get to that at some point.
+
+
+```
+UPDATE: The Pluto 403 error fixed.
+UPDATE: Plex: 429 error fixed.
+UPDATE: Tubie headder fixed.
+```
 
 
 📌 [HOST YOUR OWN VERSION OF THE SCRIPT ON YOUR GOOGLE ACCOUNT](https://github.com/BuddyChewChew/My-Streams/tree/main/Google%20Script%20And%20Install%20Info)
