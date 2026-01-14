@@ -1,6 +1,3 @@
-![Build Status](https://github.com/BuddyChewChew/app-m3u-generator/actions/workflows/generate_playlists.yml/badge.svg)
-
-
 📌 PLUTO UPDATE: The Pluto 403 error is fixed. Its is not fixed in the Google Self-Host script. I will get to that at some point. 
 
 Use this url: https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/refs/heads/main/playlists/plutotv_all.m3u
@@ -9,8 +6,12 @@ Or a Region url from here: https://github.com/BuddyChewChew/app-m3u-generator/tr
 
 
 📌 [HOST YOUR OWN VERSION OF THE SCRIPT ON YOUR GOOGLE ACCOUNT](https://github.com/BuddyChewChew/My-Streams/tree/main/Google%20Script%20And%20Install%20Info)
+Some functions still work but the script has to be fixed. BROKEN: (Pluto)
+
 
 # ⭐ FAST Service M3U Playlist Generator
+
+![Build Status](https://github.com/BuddyChewChew/app-m3u-generator/actions/workflows/generate_playlists.yml/badge.svg)
 
 This repository automatically generates M3U playlist files for various free ad-supported streaming television (FAST) services using a Python script and GitHub Actions. The playlists include embedded EPG (Electronic Program Guide) information via the `url-tvg` tag in the M3U header.
 
