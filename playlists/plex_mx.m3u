@@ -129,6 +129,8 @@ https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-66842aa2cd6f1d3940941159.m3u8
 https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-66ea196ac24d95b51b7cd18b.m3u8
 #EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-685f195f6c220c4e9e333a04" tvg-id="608049aefa2b8ae93c2c3a63-685f195f6c220c4e9e333a04" tvg-chno="" tvg-name="Todo Drama" tvg-logo="https://provider-static.plex.tv/epg/cms/production/d4daa26d-847b-4c35-a59e-436a273448ce/TodoDrama_WHITERDX.png" group-title="Plex",Todo Drama
 https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-685f195f6c220c4e9e333a04.m3u8
+#EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-666e236ace73ed6023b55a17" tvg-id="608049aefa2b8ae93c2c3a63-666e236ace73ed6023b55a17" tvg-chno="" tvg-name="Todo Crimen" tvg-logo="https://provider-static.plex.tv/epg/cms/production/1861c959-0e05-4dd7-83c2-91966163cc95/TODO_CRIMEN_white__1_.png" group-title="Plex",Todo Crimen
+https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-666e236ace73ed6023b55a17.m3u8
 #EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-68b9f0bdd60e5dd29263c7a1" tvg-id="608049aefa2b8ae93c2c3a63-68b9f0bdd60e5dd29263c7a1" tvg-chno="" tvg-name="Pánico TV Español" tvg-logo="https://provider-static.plex.tv/epg/cms/production/fe6756ce-6904-4b6b-b86b-e17b5ee1dfab/panicLight_Logo__2_.png" group-title="Plex",Pánico TV Español
 https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-68b9f0bdd60e5dd29263c7a1.m3u8
 #EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-656237c55dbccec83a87b649" tvg-id="608049aefa2b8ae93c2c3a63-656237c55dbccec83a87b649" tvg-chno="" tvg-name="Mutant X" tvg-logo="https://provider-static.plex.tv/epg/cms/production/e7c42702-89d4-42c0-a093-4c604ab39a34/FilmRise_MutantX_Color_Logo.png" group-title="Plex",Mutant X
@@ -157,8 +159,6 @@ https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-666e192cd91d13cb4c8cbb6b.m3u8
 https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-67c24d5a45ae99120c07158c.m3u8
 #EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-6685abbe59703916799193a7" tvg-id="608049aefa2b8ae93c2c3a63-6685abbe59703916799193a7" tvg-chno="" tvg-name="Cindie TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5620421b-a237-4877-8e66-fab487246259/Cindie_TV_Horizontal_3840x2160-DarkRDX.png" group-title="Plex",Cindie TV
 https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-6685abbe59703916799193a7.m3u8
-#EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-666e236ace73ed6023b55a17" tvg-id="608049aefa2b8ae93c2c3a63-666e236ace73ed6023b55a17" tvg-chno="" tvg-name="Todo Crimen" tvg-logo="https://provider-static.plex.tv/epg/cms/production/1861c959-0e05-4dd7-83c2-91966163cc95/TODO_CRIMEN_white__1_.png" group-title="Plex",Todo Crimen
-https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-666e236ace73ed6023b55a17.m3u8
 #EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-6880001d015fe7e375a1a0a8" tvg-id="608049aefa2b8ae93c2c3a63-6880001d015fe7e375a1a0a8" tvg-chno="" tvg-name="Wedotv Amor Piel Salvaje" tvg-logo="https://provider-static.plex.tv/epg/cms/production/7aa34d17-de26-4b64-b4cc-628d572de91f/PielLight_Logo__1_.png" group-title="Plex",Wedotv Amor Piel Salvaje
 https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-6880001d015fe7e375a1a0a8.m3u8
 #EXTINF:-1 channel-id="608049aefa2b8ae93c2c3a63-666e1c83d91d13cb4c8cbb71" tvg-id="608049aefa2b8ae93c2c3a63-666e1c83d91d13cb4c8cbb71" tvg-chno="" tvg-name="Mi Casa" tvg-logo="https://provider-static.plex.tv/epg/cms/production/fba2f51d-9bc8-418d-ae07-14e84f6e7fc8/channel_logo_1500x1000_light.png.png" group-title="Plex",Mi Casa
