@@ -125,7 +125,9 @@ def generate_stirr_m3u():
     if not data: return
     output = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz"\n']
     for cid, ch in data['channels'].items():
-        group = ", ".join(ch.get('groups', [])) if ch.get('groups') else "Unsorted"
+        # SAFETY FIX: Ensure group isn't empty
+        grps = ch.get('groups', [])
+        group = ", ".join(grps) if grps else "Unsorted"
         output.append(format_extinf(cid, cid, ch.get('chno'), ch['name'], ch['logo'], group))
         output.append(f"https://jmp2.uk/str-{cid}.m3u8\n")
     with open(os.path.join(OUTPUT_DIR, "stirr_all.m3u"), 'w', encoding='utf-8') as f: f.write("".join(output))
@@ -135,7 +137,9 @@ def generate_roku_m3u():
     if not data: return
     output = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz"\n']
     for cid, ch in data['channels'].items():
-        group = ch.get('groups', ['Unsorted'])[0]
+        # SAFETY FIX: Prevent IndexError if groups list is empty
+        grps = ch.get('groups', [])
+        group = grps[0] if grps else "Unsorted"
         output.append(format_extinf(cid, cid, ch.get('chno'), ch['name'], ch['logo'], group))
         output.append(f"https://jmp2.uk/rok-{cid}.m3u8\n")
     with open(os.path.join(OUTPUT_DIR, "roku_all.m3u"), 'w', encoding='utf-8') as f: f.write("".join(output))
@@ -144,19 +148,13 @@ def generate_tubi_m3u():
     content = fetch_url('https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u', is_json=False)
     if not content: return
     output = ['#EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"\n']
-    
     current_line = ""
     for line in content.strip().split('\n'):
         if line.startswith('#EXTINF'):
             try:
-                # 1. Isolate the name (after the last comma)
                 parts = line.rsplit(',', 1)
                 name = parts[1].strip() if len(parts) > 1 else "Tubi Channel"
-                
-                # 2. Get the new category
                 group = get_smart_category(name)
-                
-                # 3. Modify group-title without using re.sub (safer for special characters)
                 tags_part = parts[0]
                 if 'group-title="' in tags_part:
                     pre_group = tags_part.split('group-title="', 1)[0]
@@ -164,14 +162,11 @@ def generate_tubi_m3u():
                     tags_part = f'{pre_group}group-title="{group}"{post_group}'
                 else:
                     tags_part += f' group-title="{group}"'
-                
                 current_line = f"{tags_part},{name}"
             except:
-                # FALLBACK: If anything fails, use the original line so the channel isn't skipped
                 current_line = line
         elif line.startswith('http'):
             output.append(f"{current_line}\n{line}\n")
-            
     with open(os.path.join(OUTPUT_DIR, "tubi_all.m3u"), 'w', encoding='utf-8') as f: f.write("".join(output))
 
 if __name__ == "__main__":
