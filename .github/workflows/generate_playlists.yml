@@ -46,7 +46,7 @@ jobs:
             echo "No changes in playlists detected. Skipping commit."
             exit 0
           fi
-          git commit -m "Update Pluto TV regional playlists with genre tags [skip ci]"
+          git commit -m "Add genres to Pluto regional playlists; maintain 'all' grouping [skip ci]"
           n=0
           until [ $n -ge 5 ]
           do
