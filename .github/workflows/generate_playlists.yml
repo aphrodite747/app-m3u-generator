@@ -46,7 +46,7 @@ jobs:
             echo "No changes in playlists detected. Skipping commit."
             exit 0
           fi
-          git commit -m "Update Pluto: Category grouping for regions, Countries for all [skip ci]"
+          git commit -m "Update Pluto: Regional playlists grouped by Category [skip ci]"
           n=0
           until [ $n -ge 5 ]
           do
