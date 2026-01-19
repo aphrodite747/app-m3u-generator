@@ -218,7 +218,7 @@ def generate_tubi_m3u():
         group_mapping = create_group_mapping(json_data)
         m3u_playlist = create_m3u_playlist(epg_data, group_mapping)
         epg_tree = create_epg_xml(epg_data)
-        write_m3u_file("tubi_playlist.m3u", m3u_playlist)
+        write_m3u_file("tubi_all.m3u", m3u_playlist)
         epg_tree.write(os.path.join(OUTPUT_DIR, "tubi_epg.xml"), encoding='utf-8', xml_declaration=True)
 
 # --- Standard Services ---
@@ -298,7 +298,7 @@ def generate_samsungtvplus_m3u():
         write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
 
 def generate_stirr_m3u():
-    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz', is_json=True, is_gzipped=True)
+    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data: return
     output_lines = ['#EXTM3U url-tvg=\"https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz\"\n']
     for c_id, ch in data['channels'].items():
