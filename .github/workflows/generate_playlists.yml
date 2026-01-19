@@ -52,7 +52,7 @@ jobs:
           fi
           
           echo "Changes detected, committing updates..."
-          git commit -m "Update Pluto TV with tvg-genre [skip ci]"
+          git commit -m "Update Pluto TV regional playlists with genres [skip ci]"
           
           # Retry loop to handle temporary GitHub congestion
           n=0
