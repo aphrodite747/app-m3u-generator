@@ -78,7 +78,7 @@ def write_m3u_file(filename, content):
         f.write(content)
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name, genre=""):
-    """Includes optional tvg-genre support for Pluto TV while remaining safe for other services."""
+    """Updated to include optional tvg-genre support without breaking other service functions."""
     chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
     genre_tag = f' tvg-genre="{genre}"' if genre else ""
     return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
@@ -127,7 +127,7 @@ def get_anonymous_token(region: str = 'us') -> str | None:
 # --- Service Generators ---
 
 def generate_pluto_m3u():
-    """Extracts 'category' from data to populate the 'tvg-genre' tag."""
+    """Generates Pluto TV playlists. Regional playlists now include 'tvg-genre'."""
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
     
@@ -139,15 +139,14 @@ def generate_pluto_m3u():
         channels = {}
         
         if is_all:
-            # Logic for 'all' playlist remains exactly as it was
+            # Preservation: The 'all' playlist logic remains exactly the same as requested
             for r_code, r_data in data['regions'].items():
                 display_group = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_data.get('channels', {}).items():
                     channels[f"{c_id}-{r_code}"] = {
                         **c_info, 
                         'original_id': c_id, 
-                        'group': display_group,
-                        'genre': c_info.get('category', '')
+                        'group': display_group
                     }
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
@@ -157,7 +156,7 @@ def generate_pluto_m3u():
                     **c_info, 
                     'original_id': c_id, 
                     'group': display_group,
-                    'genre': c_info.get('category', '')
+                    'genre': c_info.get('category', '') # Specific to regional Pluto lists
                 }
         
         if channels:
@@ -166,7 +165,8 @@ def generate_pluto_m3u():
                 key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', ''))
             )
             for c_id, ch in sorted_channels:
-                extinf = format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name'], genre=ch.get('genre', ''))
+                genre_val = ch.get('genre', '') if not is_all else ""
+                extinf = format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name'], genre=genre_val)
                 url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n'
                 output_lines.extend([extinf, url])
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
