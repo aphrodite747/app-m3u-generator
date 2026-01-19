@@ -76,7 +76,7 @@ def write_m3u_file(filename, content):
         f.write(content)
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
-    """Standardizes the #EXTINF line based on the user's preferred layout (Tubi-style)."""
+    """Standardizes the #EXTINF line based on the user's preferred layout."""
     chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
     return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
             f'tvg-name="{tvg_name.replace(chr(34), chr(39))}" tvg-logo="{tvg_logo}" '
@@ -135,7 +135,7 @@ def generate_pluto_m3u():
         channels = {}
         
         if is_all:
-            # For the 'all' playlist, we use the Region/Country name (e.g., United States)
+            # Group by Country/Region for the ALL playlist
             for r_code, r_data in data['regions'].items():
                 display_group = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_data.get('channels', {}).items():
@@ -145,10 +145,9 @@ def generate_pluto_m3u():
                         'final_group': display_group 
                     }
         else:
-            # For regional playlists, we use the Category name (e.g., Comedy, Movies, Drama)
+            # Group by 'category' (Movies, Comedy, etc.) for regional playlists
             region_data = data['regions'].get(region, {}).get('channels', {})
             for c_id, c_info in region_data.items():
-                # We extract the 'category' directly from the Pluto data
                 category_name = c_info.get('category', 'Pluto TV')
                 channels[c_id] = {
                     **c_info, 
@@ -157,7 +156,6 @@ def generate_pluto_m3u():
                 }
         
         if channels:
-            # Sort by group name, then by channel name
             sorted_channels = sorted(
                 channels.items(), 
                 key=lambda x: (x[1]['final_group'], x[1].get('name', ''))
