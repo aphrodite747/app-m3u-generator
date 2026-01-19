@@ -13,7 +13,7 @@ from io import BytesIO
 OUTPUT_DIR = "playlists"
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 REQUEST_TIMEOUT = 30 
-FALLBACK_GROUP = "Uncategorised"
+FALLBACK_GENRE = "Uncategorised"
 
 REGION_MAP = {
     'us': 'United States', 'gb': 'United Kingdom', 'ca': 'Canada',
@@ -24,8 +24,6 @@ REGION_MAP = {
     'in': 'India', 'jp': 'Japan', 'kr': 'South Korea', 'au': 'Australia'
 }
 
-TOP_REGIONS = ['United States', 'Canada', 'United Kingdom']
-
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -33,7 +31,6 @@ logger = logging.getLogger(__name__)
 
 def cleanup_output_dir():
     if os.path.exists(OUTPUT_DIR):
-        logger.info(f"Cleaning up old playlists in {OUTPUT_DIR}...")
         for filename in os.listdir(OUTPUT_DIR):
             file_path = os.path.join(OUTPUT_DIR, filename)
             try:
@@ -46,41 +43,28 @@ def cleanup_output_dir():
     else:
         os.makedirs(OUTPUT_DIR)
 
-def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, retries=3):
-    headers = headers or {'User-Agent': USER_AGENT}
+def fetch_url(url, is_json=True, is_gzipped=False, retries=3):
+    headers = {'User-Agent': USER_AGENT}
     for i in range(retries):
         try:
-            response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT, stream=stream)
-            if response.status_code == 429:
-                time.sleep((i + 1) * 10 + random.uniform(0, 5))
-                continue
+            response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
             response.raise_for_status()
             content = response.content
             if is_gzipped:
-                try:
-                    with gzip.GzipFile(fileobj=BytesIO(content), mode='rb') as f:
-                        content = f.read()
-                    content = content.decode('utf-8')
-                except:
-                    content = content.decode('utf-8')
-            else:
-                content = content.decode('utf-8')
+                with gzip.GzipFile(fileobj=BytesIO(content), mode='rb') as f:
+                    content = f.read()
+            content = content.decode('utf-8')
             return json.loads(content) if is_json else content
         except Exception as e:
-            logger.warning(f"Fetch failed (attempt {i+1}): {e}")
-            if i < retries - 1: time.sleep(5)
+            logger.warning(f"Fetch failed: {e}")
+            time.sleep(5)
     return None
-
-def write_m3u_file(filename, content):
-    filepath = os.path.join(OUTPUT_DIR, filename)
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(content)
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
     chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
     return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
-            f'tvg-name="{tvg_name.replace(chr(34), chr(39))}" tvg-logo="{tvg_logo}" '
-            f'group-title="{group_title.replace(chr(34), chr(39))}",{display_name.replace(",", "")}\n')
+            f'tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" '
+            f'group-title="{group_title}",{display_name}\n')
 
 # --- Service Generators ---
 
@@ -88,115 +72,46 @@ def generate_pluto_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
     
-    available_regions = list(data['regions'].keys()) + ['all']
-    for region in available_regions:
-        is_all = region == 'all'
+    for region in list(data['regions'].keys()) + ['all']:
         epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/{region}.xml.gz'
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
-        channels = {}
+        processed_channels = []
         
-        if is_all:
+        if region == 'all':
             for r_code, r_data in data['regions'].items():
-                display_group = REGION_MAP.get(r_code.lower(), FALLBACK_GROUP)
                 for c_id, c_info in r_data.get('channels', {}).items():
-                    channels[f"{c_id}-{r_code}"] = {
-                        **c_info, 
-                        'original_id': c_id, 
-                        'final_group': display_group 
-                    }
+                    # FIX: Prioritize 'category' from JSON, fallback to 'Uncategorised'
+                    genre = c_info.get('category', FALLBACK_GENRE)
+                    processed_channels.append({
+                        'id': f"{c_id}-{r_code}", 'original_id': c_id,
+                        'name': c_info['name'], 'logo': c_info['logo'],
+                        'chno': c_info.get('chno'), 'group': genre
+                    })
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
-            display_group = REGION_MAP.get(region.lower(), FALLBACK_GROUP)
             for c_id, c_info in region_data.items():
-                channels[c_id] = {
-                    **c_info, 
-                    'original_id': c_id, 
-                    'final_group': display_group
-                }
+                # FIX: Prioritize 'category' from JSON, fallback to 'Uncategorised'
+                genre = c_info.get('category', FALLBACK_GENRE)
+                processed_channels.append({
+                    'id': c_id, 'original_id': c_id,
+                    'name': c_info['name'], 'logo': c_info['logo'],
+                    'chno': c_info.get('chno'), 'group': genre
+                })
         
-        if channels:
-            sorted_channels = sorted(
-                channels.items(), 
-                key=lambda x: (x[1]['final_group'], x[1].get('name', ''))
-            )
-            for c_id, ch in sorted_channels:
-                extinf = format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['final_group'], ch['name'])
+        if processed_channels:
+            processed_channels.sort(key=lambda x: (x['group'], x['name']))
+            for ch in processed_channels:
+                extinf = format_extinf(ch['id'], ch['original_id'], ch['chno'], ch['name'], ch['logo'], ch['group'], ch['name'])
                 url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n'
                 output_lines.extend([extinf, url])
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
-def generate_plex_m3u():
-    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True)
-    if not data or 'channels' not in data: return
-    found_regions = set()
-    for ch in data['channels'].values():
-        found_regions.update(ch.get('regions', []))
-    for region in list(found_regions) + ['all']:
-        epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
-        output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
-        channel_list = []
-        for c_id, ch in data['channels'].items():
-            if region == 'all' or region in ch.get('regions', []):
-                group_title = REGION_MAP.get(region.lower(), FALLBACK_GROUP) if region != 'all' else 'Plex'
-                extinf = format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch.get('logo', ''), group_title, ch['name'])
-                stream_url = f"https://epg.provider.plex.tv/library/parts/{c_id}/"
-                channel_list.append((group_title, ch['name'].lower(), extinf, stream_url))
-        if channel_list:
-            channel_list.sort(key=lambda x: (0 if x[0] in TOP_REGIONS else 1, x[1]))
-            for _, _, extinf, url in channel_list:
-                output_lines.extend([extinf, url + "\n"])
-            write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
-
-def generate_samsungtvplus_m3u():
-    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz', is_json=True, is_gzipped=True)
-    if not data or 'regions' not in data: return
-    slug_template = data.get('slug', '{id}.m3u8')
-    for region in list(data['regions'].keys()) + ['all']:
-        epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz'
-        output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
-        channels = {}
-        if region == 'all':
-            for r_code, r_info in data['regions'].items():
-                display_group = REGION_MAP.get(r_code.lower(), FALLBACK_GROUP)
-                for c_id, c_info in r_info.get('channels', {}).items():
-                    channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': display_group}
-        else:
-            region_info = data['regions'].get(region, {})
-            display_group = REGION_MAP.get(region.lower(), FALLBACK_GROUP)
-            for c_id, c_info in region_info.get('channels', {}).items():
-                channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
-        if channels:
-            sorted_channels = sorted(channels.items(), key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', '').lower()))
-            for c_id, ch in sorted_channels:
-                output_lines.extend([format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name']), f"https://jmp2.uk/{slug_template.replace('{id}', ch['original_id'])}\n"])
-            write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
-
-def generate_stirr_m3u():
-    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz', is_json=True, is_gzipped=True)
-    if not data: return
-    output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz"\n']
-    for c_id, ch in data['channels'].items():
-        output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Stirr", ch['name']), f"https://jmp2.uk/str-{c_id}.m3u8\n"])
-    write_m3u_file("stirr_all.m3u", "".join(output_lines))
-
-def generate_tubi_m3u():
-    content = fetch_url('https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u', is_json=False)
-    if content: write_m3u_file("tubi_all.m3u", content.strip() + "\n")
-
-def generate_roku_m3u():
-    data = fetch_url('https://i.mjh.nz/Roku/.channels.json', is_json=True)
-    if not data: return
-    output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz"\n']
-    for c_id, ch in data['channels'].items():
-        output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Roku", ch['name']), f"https://jmp2.uk/rok-{c_id}.m3u8\n"])
-    write_m3u_file("roku_all.m3u", "".join(output_lines))
+def write_m3u_file(filename, content):
+    filepath = os.path.join(OUTPUT_DIR, filename)
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(content)
 
 if __name__ == "__main__":
     cleanup_output_dir()
     generate_pluto_m3u()
-    generate_plex_m3u()
-    generate_samsungtvplus_m3u()
-    generate_stirr_m3u()
-    generate_tubi_m3u()
-    generate_roku_m3u()
     logger.info("Playlist generation complete.")
