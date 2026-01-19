@@ -244,20 +244,58 @@ def get_anonymous_token(region: str = 'us') -> str | None:
 def generate_pluto_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
+
     for region in list(data['regions'].keys()) + ['all']:
         is_all = region == 'all'
         output_lines = [f'#EXTM3U url-tvg=\"https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/{region}.xml.gz\"\n']
         channels = {}
+
         if is_all:
             for r_code, r_data in data['regions'].items():
+                country_name = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_data.get('channels', {}).items():
-                    channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': REGION_MAP.get(r_code.lower(), r_code.upper())}
+                    channels[f"{c_id}-{r_code}"] = {
+                        **c_info,
+                        'original_id': c_id,
+                        'country_group': country_name,          # used for all playlist
+                        'pluto_group': c_info.get('group', 'Other')  # real Pluto genre/category
+                    }
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
+            country_name = REGION_MAP.get(region.lower(), region.upper())
             for c_id, c_info in region_data.items():
-                channels[c_id] = {**c_info, 'original_id': c_id, 'group': REGION_MAP.get(region.lower(), region.upper())}
-        for c_id, ch in sorted(channels.items(), key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', ''))):
-            output_lines.extend([format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name']), f"https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch['original_id']}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n"])
+                channels[c_id] = {
+                    **c_info,
+                    'original_id': c_id,
+                    'country_group': country_name,
+                    'pluto_group': c_info.get('group', 'Other')
+                }
+
+        # Sort: prioritize top regions, then name
+        sorted_channels = sorted(
+            channels.items(),
+            key=lambda x: (0 if x[1]['country_group'] in TOP_REGIONS else 1, x[1].get('name', ''))
+        )
+
+        for c_id, ch in sorted_channels:
+            if is_all:
+                group_title = ch['country_group']           # keep countries for all.m3u
+            else:
+                group_title = ch['pluto_group']             # use Pluto categories/genres for per-country files
+
+            output_lines.extend([
+                format_extinf(
+                    c_id,
+                    ch['original_id'],
+                    ch.get('chno'),
+                    ch['name'],
+                    ch['logo'],
+                    group_title,
+                    ch['name']
+                ),
+                f"https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch['original_id']}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n"
+            ])
+
         write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
 def generate_plex_m3u():
