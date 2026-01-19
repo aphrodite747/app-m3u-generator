@@ -2,8 +2,8 @@ name: Generate M3U Playlists
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # Runs at 3 AM UTC
-  workflow_dispatch:     # Allows you to run it manually from the Actions tab
+    - cron: '0 3 * * *' 
+  workflow_dispatch:     
   push:
     branches:
       - main
@@ -15,14 +15,14 @@ jobs:
   build-playlists:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Required to push the new .m3u files back to your repo
+      contents: write 
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0            # Fetches full history for stable pushing
-          persist-credentials: true # Ensures the auth token remains available for the retry loop
+          fetch-depth: 0            
+          persist-credentials: true 
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,19 +42,12 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Stage EVERYTHING (This handles New, Modified, and DELETED files)
           git add -A playlists/
           
-          # Check if there are actually changes to commit
-          if git diff --cached --quiet; then
-            echo "No changes detected in playlists. Skipping commit."
-            exit 0
-          fi
-          
-          echo "Changes detected, committing updates..."
+          # Force commit even if there are no major data changes (timestamp changed in script)
+          echo "Committing updates..."
           git commit -m "Update M3U playlists [skip ci]"
           
-          # Retry loop to handle temporary GitHub congestion
           n=0
           until [ $n -ge 5 ]
           do
