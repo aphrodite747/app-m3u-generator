@@ -257,8 +257,8 @@ def generate_pluto_m3u():
                     channels[f"{c_id}-{r_code}"] = {
                         **c_info,
                         'original_id': c_id,
-                        'country_group': country_name,          # used for all playlist
-                        'pluto_group': c_info.get('group', 'Other')  # real Pluto genre/category
+                        'country_group': country_name,
+                        'service_group': c_info.get('group', 'Other')  # renamed for consistency across services
                     }
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
@@ -268,20 +268,16 @@ def generate_pluto_m3u():
                     **c_info,
                     'original_id': c_id,
                     'country_group': country_name,
-                    'pluto_group': c_info.get('group', 'Other')
+                    'service_group': c_info.get('group', 'Other')
                 }
 
-        # Sort: prioritize top regions, then name
         sorted_channels = sorted(
             channels.items(),
             key=lambda x: (0 if x[1]['country_group'] in TOP_REGIONS else 1, x[1].get('name', ''))
         )
 
         for c_id, ch in sorted_channels:
-            if is_all:
-                group_title = ch['country_group']           # keep countries for all.m3u
-            else:
-                group_title = ch['pluto_group']             # use Pluto categories/genres for per-country files
+            group_title = ch['country_group'] if is_all else ch['service_group']
 
             output_lines.extend([
                 format_extinf(
@@ -321,18 +317,54 @@ def generate_samsungtvplus_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
     slug_template = data.get('slug', '{id}.m3u8')
+
     for region in list(data['regions'].keys()) + ['all']:
+        is_all = region == 'all'
         output_lines = [f'#EXTM3U url-tvg=\"https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz\"\n']
         channels = {}
-        if region == 'all':
+
+        if is_all:
             for r_code, r_info in data['regions'].items():
+                country_name = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_info.get('channels', {}).items():
-                    channels[f"{c_id}-{r_code}"] = {**c_info, 'original_id': c_id, 'group': REGION_MAP.get(r_code.lower(), r_code.upper())}
+                    channels[f"{c_id}-{r_code}"] = {
+                        **c_info,
+                        'original_id': c_id,
+                        'country_group': country_name,
+                        'service_group': c_info.get('group', 'Other')  # Samsung category/genre
+                    }
         else:
-            for c_id, c_info in data['regions'].get(region, {}).get('channels', {}).items():
-                channels[c_id] = {**c_info, 'original_id': c_id, 'group': REGION_MAP.get(region.lower(), region.upper())}
-        for c_id, ch in sorted(channels.items(), key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', '').lower())):
-            output_lines.extend([format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name']), f"https://jmp2.uk/{slug_template.replace('{id}', ch['original_id'])}\n"])
+            region_data = data['regions'].get(region, {}).get('channels', {})
+            country_name = REGION_MAP.get(region.lower(), region.upper())
+            for c_id, c_info in region_data.items():
+                channels[c_id] = {
+                    **c_info,
+                    'original_id': c_id,
+                    'country_group': country_name,
+                    'service_group': c_info.get('group', 'Other')
+                }
+
+        sorted_channels = sorted(
+            channels.items(),
+            key=lambda x: (0 if x[1]['country_group'] in TOP_REGIONS else 1, x[1].get('name', '').lower())
+        )
+
+        for c_id, ch in sorted_channels:
+            group_title = ch['country_group'] if is_all else ch['service_group']
+
+            output_lines.extend([
+                format_extinf(
+                    c_id,
+                    ch['original_id'],
+                    ch.get('chno'),
+                    ch['name'],
+                    ch['logo'],
+                    group_title,
+                    ch['name']
+                ),
+                f"https://jmp2.uk/{slug_template.replace('{id}', ch['original_id'])}\n"
+            ])
+
         write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
 
 def generate_stirr_m3u():
