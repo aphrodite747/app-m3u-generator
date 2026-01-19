@@ -377,34 +377,42 @@ def generate_stirr_m3u():
 
 def generate_roku_m3u():
     data = fetch_url('https://i.mjh.nz/Roku/.channels.json', is_json=True)
-    if not data: return
+    if not data or not isinstance(data, dict):
+        logger.error("Roku data fetch failed or invalid format")
+        return
 
     output_lines = ['#EXTM3U url-tvg=\"https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz\"\n']
 
-    # Collect channels with sorting key
     channel_list = []
     for c_id, ch in data.items():
-        # Roku provides 'groups' as array of categories/genres
-        groups = ch.get('groups', ['Other'])
-        # Use first group as primary (most players handle single group-title best)
-        group_title = groups[0] if groups else 'Other'
+        if not isinstance(ch, dict):
+            continue
 
-        # Alternative: join all groups if you prefer multi-tag style
-        # group_title = ' / '.join(groups) if groups else 'Other'
+        # Safe access to all fields
+        name = ch.get('name', 'Unknown Channel')
+        logo = ch.get('logo', '')
+        chno = ch.get('chno')
+        groups = ch.get('groups', ['Other'])
+
+        # Skip entries without a meaningful name
+        if name == 'Unknown Channel' or not name.strip():
+            continue
+
+        # Use first group as primary category
+        group_title = groups[0] if groups else 'Other'
 
         extinf = format_extinf(
             c_id,
             c_id,
-            ch.get('chno'),
-            ch['name'],
-            ch['logo'],
+            chno,
+            name,
+            logo,
             group_title,
-            ch['name']
+            name
         )
         url = f"https://jmp2.uk/rok-{c_id}.m3u8\n"
 
-        # For sorting: group first (alphabetical), then name
-        channel_list.append((group_title.lower(), ch['name'].lower(), extinf, url))
+        channel_list.append((group_title.lower(), name.lower(), extinf, url))
 
     if channel_list:
         channel_list.sort(key=lambda x: (x[0], x[1]))  # group -> name
