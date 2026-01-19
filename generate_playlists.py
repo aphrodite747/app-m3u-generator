@@ -8,6 +8,7 @@ import time
 import shutil
 import random
 from io import BytesIO
+from datetime import datetime
 
 # --- Configuration ---
 OUTPUT_DIR = "playlists"
@@ -23,7 +24,6 @@ REGION_MAP = {
     'in': 'India', 'jp': 'Japan', 'kr': 'South Korea', 'au': 'Australia'
 }
 
-# The groups you want at the top
 TOP_REGIONS = ['United States', 'Canada', 'United Kingdom']
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -32,7 +32,6 @@ logger = logging.getLogger(__name__)
 # --- Helper Functions ---
 
 def cleanup_output_dir():
-    """Wipes the output directory so removed regions don't stay in the repo."""
     if os.path.exists(OUTPUT_DIR):
         logger.info(f"Cleaning up old playlists in {OUTPUT_DIR}...")
         for filename in os.listdir(OUTPUT_DIR):
@@ -74,16 +73,16 @@ def fetch_url(url, is_json=True, is_gzipped=False, headers=None, stream=False, r
 
 def write_m3u_file(filename, content):
     filepath = os.path.join(OUTPUT_DIR, filename)
+    # Added timestamp comment to force file change for GitHub detection
+    timestamp_comment = f"\n# Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
     with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(content)
+        f.write(content + timestamp_comment)
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name):
     chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
     return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
             f'tvg-name="{tvg_name.replace(chr(34), chr(39))}" tvg-logo="{tvg_logo}" '
             f'group-title="{group_title.replace(chr(34), chr(39))}",{display_name.replace(",", "")}\n')
-
-# --- Plex Anonymous Token Fetch (NEW / IMPROVED) ---
 
 def get_anonymous_token(region: str = 'us') -> str | None:
     headers = {
@@ -94,47 +93,28 @@ def get_anonymous_token(region: str = 'us') -> str | None:
         'X-Plex-Client-Identifier': str(uuid.uuid4()).replace('-', ''),
         'X-Plex-Platform': 'Web',
     }
-    # Optional geo bias for better channel availability
-    x_forward_ips = {'us': '76.81.9.69'}  # example US IP; add/rotate more if needed
+    x_forward_ips = {'us': '76.81.9.69'} 
     if region in x_forward_ips and x_forward_ips[region]:
         headers['X-Forwarded-For'] = x_forward_ips[region]
-
-    params = {
-        'X-Plex-Product': 'Plex Web',
-        'X-Plex-Client-Identifier': headers['X-Plex-Client-Identifier'],
-    }
+    params = {'X-Plex-Product': 'Plex Web', 'X-Plex-Client-Identifier': headers['X-Plex-Client-Identifier']}
 
     for attempt in range(4):
         try:
-            resp = requests.post(
-                'https://clients.plex.tv/api/v2/users/anonymous',
-                headers=headers,
-                params=params,
-                timeout=15
-            )
+            resp = requests.post('https://clients.plex.tv/api/v2/users/anonymous', headers=headers, params=params, timeout=15)
             if resp.status_code == 429:
-                wait = (2 ** attempt) * 10 + random.uniform(0, 5)
-                logger.warning(f"429 on Plex anon token - sleeping {wait:.1f}s")
-                time.sleep(wait)
+                time.sleep((2 ** attempt) * 10 + random.uniform(0, 5))
                 continue
             resp.raise_for_status()
             data = resp.json()
             token = data.get('authToken')
-            if token:
-                logger.info(f"Got Plex anonymous token for {region}")
-                return token
+            if token: return token
         except Exception as e:
-            logger.warning(f"Plex anon token attempt {attempt+1} failed: {e}")
             time.sleep(5)
-    logger.error(f"Failed to get Plex anonymous token for {region}")
     return None
-
-# --- Service Generators ---
 
 def generate_pluto_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/PlutoTV/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
-    
     available_regions = list(data['regions'].keys()) + ['all']
     for region in available_regions:
         is_all = region == 'all'
@@ -151,12 +131,8 @@ def generate_pluto_m3u():
             display_group = REGION_MAP.get(region.lower(), region.upper())
             for c_id, c_info in region_data.items():
                 channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
-        
         if channels:
-            sorted_channels = sorted(
-                channels.items(), 
-                key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', ''))
-            )
+            sorted_channels = sorted(channels.items(), key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', '')))
             for c_id, ch in sorted_channels:
                 extinf = format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name'])
                 url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n'
@@ -164,72 +140,39 @@ def generate_pluto_m3u():
             write_m3u_file(f"plutotv_{region}.m3u", "".join(output_lines))
 
 def generate_plex_m3u():
-    # --- UPDATED / FIXED Plex generator ---
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'channels' not in data: return
-    
     found_regions = set()
-    for ch in data['channels'].values():
-        found_regions.update(ch.get('regions', []))
-    
-    regions = list(found_regions) + ['all']  # no sort needed, but you can sort(list(found_regions))
-    
+    for ch in data['channels'].values(): found_regions.update(ch.get('regions', []))
+    regions = list(found_regions) + ['all']
     for region in regions:
         token_region = region if region != 'all' else 'us'
         token = get_anonymous_token(token_region)
-        if not token:
-            logger.warning(f"Skipping Plex {region} - no token")
-            continue
-        
+        if not token: continue
         epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
-        count = 0
-        
         channel_list = []
         for c_id, ch in data['channels'].items():
             ch_regions = ch.get('regions', [])
             if region == 'all' or region in ch_regions:
-                # Group title logic
-                if region != 'all':
-                    group_title = REGION_MAP.get(region.lower(), region.upper())
-                else:
-                    primary = ch_regions[0] if ch_regions else 'other'
-                    group_title = REGION_MAP.get(primary.lower(), primary.upper())
-                
-                extinf = format_extinf(
-                    c_id, c_id, ch.get('chno'), ch['name'], ch.get('logo', ''),
-                    group_title, ch['name']
-                )
+                group_title = REGION_MAP.get(region.lower(), region.upper()) if region != 'all' else REGION_MAP.get(ch_regions[0].lower() if ch_regions else 'other', 'OTHER')
+                extinf = format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch.get('logo', ''), group_title, ch['name'])
                 stream_url = f"https://epg.provider.plex.tv/library/parts/{c_id}/?X-Plex-Token={token}"
-                # Alternative if needed: f"https://epg.provider.plex.tv/hls/{c_id}/master.m3u8?X-Plex-Token={token}"
-                
                 channel_list.append((group_title, ch['name'].lower(), extinf, stream_url))
-                count += 1
-        
-        if count == 0:
-            continue
-        
-        # Sort: TOP_REGIONS first, then alpha by name
-        channel_list.sort(key=lambda x: (0 if x[0] in TOP_REGIONS else 1, x[1]))
-        
-        for _, _, extinf, url in channel_list:
-            output_lines.extend([extinf, url + "\n"])
-        
-        write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
-        logger.info(f"Plex {region}: {count} channels written")
+        if channel_list:
+            channel_list.sort(key=lambda x: (0 if x[0] in TOP_REGIONS else 1, x[1]))
+            for _, _, extinf, url in channel_list: output_lines.extend([extinf, url + "\n"])
+            write_m3u_file(f"plex_{region}.m3u", "".join(output_lines))
 
 def generate_samsungtvplus_m3u():
     data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/SamsungTVPlus/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data or 'regions' not in data: return
-    
     slug_template = data.get('slug', '{id}.m3u8')
-    
     for region in list(data['regions'].keys()) + ['all']:
         is_all = region == 'all'
         epg_url = f'https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/{region}.xml.gz'
         output_lines = [f'#EXTM3U url-tvg="{epg_url}"\n']
         channels = {}
-        
         if is_all:
             for r_code, r_info in data['regions'].items():
                 display_group = REGION_MAP.get(r_code.lower(), r_code.upper())
@@ -240,26 +183,14 @@ def generate_samsungtvplus_m3u():
             display_group = REGION_MAP.get(region.lower(), region.upper())
             for c_id, c_info in region_info.get('channels', {}).items():
                 channels[c_id] = {**c_info, 'original_id': c_id, 'group': display_group}
-        
         if channels:
-            sorted_channels = sorted(
-                channels.items(), 
-                key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', '').lower())
-            )
-            
+            sorted_channels = sorted(channels.items(), key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', '').lower()))
             for c_id, ch in sorted_channels:
-                orig_id = ch['original_id']
-                formatted_slug = slug_template.replace('{id}', orig_id)
-                stream_url = f"https://jmp2.uk/{formatted_slug}"
-                
-                output_lines.extend([
-                    format_extinf(c_id, orig_id, ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name']), 
-                    stream_url + "\n"
-                ])
+                output_lines.extend([format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name']), f"https://jmp2.uk/{slug_template.replace('{id}', ch['original_id'])}\n"])
             write_m3u_file(f"samsungtvplus_{region}.m3u", "".join(output_lines))
 
 def generate_stirr_m3u():
-    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz', is_json=True, is_gzipped=True)
+    data = fetch_url('https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/.channels.json.gz', is_json=True, is_gzipped=True)
     if not data: return
     output_lines = ['#EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz"\n']
     for c_id, ch in data['channels'].items():
@@ -281,7 +212,7 @@ def generate_roku_m3u():
 if __name__ == "__main__":
     cleanup_output_dir()
     generate_pluto_m3u()
-    generate_plex_m3u()          # ← now fixed/improved
+    generate_plex_m3u()
     generate_samsungtvplus_m3u()
     generate_stirr_m3u()
     generate_tubi_m3u()
