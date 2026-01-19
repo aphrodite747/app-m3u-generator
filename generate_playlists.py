@@ -258,7 +258,7 @@ def generate_pluto_m3u():
                         **c_info,
                         'original_id': c_id,
                         'country_group': country_name,
-                        'service_group': c_info.get('group', 'Other')  # renamed for consistency across services
+                        'service_group': c_info.get('group', 'Other')
                     }
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
@@ -331,7 +331,7 @@ def generate_samsungtvplus_m3u():
                         **c_info,
                         'original_id': c_id,
                         'country_group': country_name,
-                        'service_group': c_info.get('group', 'Other')  # Samsung category/genre
+                        'service_group': c_info.get('group', 'Other')
                     }
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
@@ -378,9 +378,39 @@ def generate_stirr_m3u():
 def generate_roku_m3u():
     data = fetch_url('https://i.mjh.nz/Roku/.channels.json', is_json=True)
     if not data: return
+
     output_lines = ['#EXTM3U url-tvg=\"https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz\"\n']
-    for c_id, ch in data['channels'].items():
-        output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Roku", ch['name']), f"https://jmp2.uk/rok-{c_id}.m3u8\n"])
+
+    # Collect channels with sorting key
+    channel_list = []
+    for c_id, ch in data.items():
+        # Roku provides 'groups' as array of categories/genres
+        groups = ch.get('groups', ['Other'])
+        # Use first group as primary (most players handle single group-title best)
+        group_title = groups[0] if groups else 'Other'
+
+        # Alternative: join all groups if you prefer multi-tag style
+        # group_title = ' / '.join(groups) if groups else 'Other'
+
+        extinf = format_extinf(
+            c_id,
+            c_id,
+            ch.get('chno'),
+            ch['name'],
+            ch['logo'],
+            group_title,
+            ch['name']
+        )
+        url = f"https://jmp2.uk/rok-{c_id}.m3u8\n"
+
+        # For sorting: group first (alphabetical), then name
+        channel_list.append((group_title.lower(), ch['name'].lower(), extinf, url))
+
+    if channel_list:
+        channel_list.sort(key=lambda x: (x[0], x[1]))  # group -> name
+        for _, _, extinf, url in channel_list:
+            output_lines.extend([extinf, url])
+
     write_m3u_file("roku_all.m3u", "".join(output_lines))
 
 if __name__ == "__main__":
