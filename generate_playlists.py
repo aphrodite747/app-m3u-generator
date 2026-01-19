@@ -258,7 +258,7 @@ def generate_pluto_m3u():
                         **c_info,
                         'original_id': c_id,
                         'country_group': country_name,
-                        'service_group': c_info.get('group', 'Other')  # renamed for consistency across services
+                        'service_group': c_info.get('group', 'Other')
                     }
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
@@ -331,7 +331,7 @@ def generate_samsungtvplus_m3u():
                         **c_info,
                         'original_id': c_id,
                         'country_group': country_name,
-                        'service_group': c_info.get('group', 'Other')  # Samsung category/genre
+                        'service_group': c_info.get('group', 'Other')
                     }
         else:
             region_data = data['regions'].get(region, {}).get('channels', {})
@@ -377,10 +377,48 @@ def generate_stirr_m3u():
 
 def generate_roku_m3u():
     data = fetch_url('https://i.mjh.nz/Roku/.channels.json', is_json=True)
-    if not data: return
+    if not data or not isinstance(data, dict):
+        logger.error("Roku data fetch failed or invalid format")
+        return
+
     output_lines = ['#EXTM3U url-tvg=\"https://github.com/matthuisman/i.mjh.nz/raw/master/Roku/all.xml.gz\"\n']
-    for c_id, ch in data['channels'].items():
-        output_lines.extend([format_extinf(c_id, c_id, ch.get('chno'), ch['name'], ch['logo'], "Roku", ch['name']), f"https://jmp2.uk/rok-{c_id}.m3u8\n"])
+
+    channel_list = []
+    for c_id, ch in data.items():
+        if not isinstance(ch, dict):
+            continue
+
+        # Safe access to all fields
+        name = ch.get('name', 'Unknown Channel')
+        logo = ch.get('logo', '')
+        chno = ch.get('chno')
+        groups = ch.get('groups', ['Other'])
+
+        # Skip entries without a meaningful name
+        if name == 'Unknown Channel' or not name.strip():
+            continue
+
+        # Use first group as primary category
+        group_title = groups[0] if groups else 'Other'
+
+        extinf = format_extinf(
+            c_id,
+            c_id,
+            chno,
+            name,
+            logo,
+            group_title,
+            name
+        )
+        url = f"https://jmp2.uk/rok-{c_id}.m3u8\n"
+
+        channel_list.append((group_title.lower(), name.lower(), extinf, url))
+
+    if channel_list:
+        channel_list.sort(key=lambda x: (x[0], x[1]))  # group -> name
+        for _, _, extinf, url in channel_list:
+            output_lines.extend([extinf, url])
+
     write_m3u_file("roku_all.m3u", "".join(output_lines))
 
 if __name__ == "__main__":
