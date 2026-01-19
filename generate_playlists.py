@@ -76,10 +76,6 @@ def write_m3u_file(filename, content):
         f.write(content)
 
 def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title, display_name, genre=""):
-    """
-    Standardizes the #EXTINF line.
-    The genre parameter is now explicitly used to add 'tvg-genre'.
-    """
     chno_str = str(tvg_chno) if tvg_chno and str(tvg_chno).isdigit() else ""
     genre_tag = f' tvg-genre="{genre}"' if genre else ""
     return (f'#EXTINF:-1 channel-id="{channel_id}" tvg-id="{tvg_id}" tvg-chno="{chno_str}" '
@@ -139,7 +135,7 @@ def generate_pluto_m3u():
         channels = {}
         
         if is_all:
-            # Preservation: The 'all' playlist logic remains exactly the same.
+            # Maintain: "all" playlist stays grouped by Region Name
             for r_code, r_data in data['regions'].items():
                 display_group = REGION_MAP.get(r_code.lower(), r_code.upper())
                 for c_id, c_info in r_data.get('channels', {}).items():
@@ -147,9 +143,10 @@ def generate_pluto_m3u():
                         **c_info, 
                         'original_id': c_id, 
                         'group': display_group,
-                        'genre': "" 
+                        'genre': "" # No genre for "all" to keep it clean
                     }
         else:
+            # Update: Regional playlists now include categories as genres
             region_data = data['regions'].get(region, {}).get('channels', {})
             display_group = REGION_MAP.get(region.lower(), region.upper())
             for c_id, c_info in region_data.items():
@@ -157,7 +154,7 @@ def generate_pluto_m3u():
                     **c_info, 
                     'original_id': c_id, 
                     'group': display_group,
-                    'genre': c_info.get('category', '') # This adds "Movies", "Comedy", etc.
+                    'genre': c_info.get('category', '')
                 }
         
         if channels:
@@ -166,7 +163,6 @@ def generate_pluto_m3u():
                 key=lambda x: (0 if x[1]['group'] in TOP_REGIONS else 1, x[1].get('name', ''))
             )
             for c_id, ch in sorted_channels:
-                # genre=ch['genre'] ensures the genre is actually written to the file
                 extinf = format_extinf(c_id, ch['original_id'], ch.get('chno'), ch['name'], ch['logo'], ch['group'], ch['name'], genre=ch['genre'])
                 url = f'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/{ch["original_id"]}/master.m3u8?advertisingId=&appName=web&appVersion=9.1.2&deviceDNT=0&deviceId={uuid.uuid4()}&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=126.0.0&sid={uuid.uuid4()}&userId=&serverSideAds=true\n'
                 output_lines.extend([extinf, url])
