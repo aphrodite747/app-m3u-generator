@@ -46,7 +46,7 @@ jobs:
             echo "No changes in playlists detected. Skipping commit."
             exit 0
           fi
-          git commit -m "Include tvg-genre in regional Pluto playlists [skip ci]"
+          git commit -m "Split Pluto grouping: Categories for regions, Countries for 'all' [skip ci]"
           n=0
           until [ $n -ge 5 ]
           do
