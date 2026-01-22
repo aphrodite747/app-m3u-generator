@@ -101,8 +101,6 @@ https://jmp2.uk/stvp-CHAJ0500456A
 https://jmp2.uk/stvp-CHBD200003G1
 #EXTINF:-1 channel-id="CH800001RT" tvg-id="CH800001RT" tvg-chno="4214" tvg-name="H2O & Friends" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH800001RT_20251125T102225SQUARE.png" group-title="Entertainment",H2O & Friends
 https://jmp2.uk/stvp-CH800001RT
-#EXTINF:-1 channel-id="CH3700002YI" tvg-id="CH3700002YI" tvg-chno="4232" tvg-name="Heartland" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH3700002YI_20260120T031224SQUARE.png" group-title="Serien",Heartland
-https://jmp2.uk/stvp-CH3700002YI
 #EXTINF:-1 channel-id="CHBD26000017A" tvg-id="CHBD26000017A" tvg-chno="4073" tvg-name="Hell's Kitchen" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBD26000017A_20250107T025519SQUARE.png" group-title="Entertainment",Hell's Kitchen
 https://jmp2.uk/stvp-CHBD26000017A
 #EXTINF:-1 channel-id="CH2300002MI" tvg-id="CH2300002MI" tvg-chno="4941" tvg-name="Himmlisches Kino" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH2300002MI_20250107T025522SQUARE.png" group-title="Filme",Himmlisches Kino
@@ -135,6 +133,8 @@ https://jmp2.uk/stvp-CH3900001DB
 https://jmp2.uk/stvp-CHBC14000022X
 #EXTINF:-1 channel-id="CHBD200004J8" tvg-id="CHBD200004J8" tvg-chno="4259" tvg-name="Les filles d'à côté [FR]" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBD200004J8_20250107T031513SQUARE.png" group-title="Serien",Les filles d'à côté [FR]
 https://jmp2.uk/stvp-CHBD200004J8
+#EXTINF:-1 channel-id="CH41000023N" tvg-id="CH41000023N" tvg-chno="4808" tvg-name="Les Lapins Crétins" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH41000023N_20260120T031218SQUARE.png" group-title="Kids",Les Lapins Crétins
+https://jmp2.uk/stvp-CH41000023N
 #EXTINF:-1 channel-id="CH4600001X9" tvg-id="CH4600001X9" tvg-chno="4263" tvg-name="Lindenstraße" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH4600001X9_20250805T005009SQUARE.png" group-title="Serien",Lindenstraße
 https://jmp2.uk/stvp-CH4600001X9
 #EXTINF:-1 channel-id="CHBD4700001DY" tvg-id="CHBD4700001DY" tvg-chno="4775" tvg-name="LooLoo Kids" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBD4700001DY_20250107T025532SQUARE.png" group-title="Kids",LooLoo Kids
@@ -161,8 +161,6 @@ https://jmp2.uk/stvp-CHAJ700010NR
 https://jmp2.uk/stvp-CHBC800001N2
 #EXTINF:-1 channel-id="CHBC4000005PW" tvg-id="CHBC4000005PW" tvg-chno="4190" tvg-name="Naruto" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBC4000005PW_20250107T025544SQUARE.png" group-title="Anime",Naruto
 https://jmp2.uk/stvp-CHBC4000005PW
-#EXTINF:-1 channel-id="CH4600002VO" tvg-id="CH4600002VO" tvg-chno="4233" tvg-name="Nashville" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH4600002VO_20260120T031212SQUARE.png" group-title="Serien",Nashville
-https://jmp2.uk/stvp-CH4600002VO
 #EXTINF:-1 channel-id="CHBC80000437" tvg-id="CHBC80000437" tvg-chno="4506" tvg-name="NatureTime [FR]" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBC80000437_20250107T031518SQUARE.png" group-title="Dokus & Wissen",NatureTime [FR]
 https://jmp2.uk/stvp-CHBC80000437
 #EXTINF:-1 channel-id="CHAJ0500422A" tvg-id="CHAJ0500422A" tvg-chno="4881" tvg-name="Netzkino" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHAJ0500422A_20250722T005236SQUARE.png" group-title="Filme",Netzkino
@@ -193,8 +191,8 @@ https://jmp2.uk/stvp-CHAK3504503A
 https://jmp2.uk/stvp-CHAJ700007XE
 #EXTINF:-1 channel-id="CHAK3504505A" tvg-id="CHAK3504505A" tvg-chno="4257" tvg-name="Pluto TV Sitcoms" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHAK3504505A_20250916T003153SQUARE.png" group-title="Serien",Pluto TV Sitcoms
 https://jmp2.uk/stvp-CHAK3504505A
-#EXTINF:-1 channel-id="CH1600005SG" tvg-id="CH1600005SG" tvg-chno="4003" tvg-name="Rally.TV FAST+" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH1600005SG_20260120T031215SQUARE.png" group-title="Sport",Rally.TV FAST+
-https://jmp2.uk/stvp-CH1600005SG
+#EXTINF:-1 channel-id="CH5100001XI" tvg-id="CH5100001XI" tvg-chno="4003" tvg-name="Rally.TV FAST+" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH5100001XI_20260120T031221SQUARE.png" group-title="Sport",Rally.TV FAST+
+https://jmp2.uk/stvp-CH5100001XI
 #EXTINF:-1 channel-id="CH500003EH" tvg-id="CH500003EH" tvg-chno="4041" tvg-name="RMC Découverte" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH500003EH_20251209T125750SQUARE.png" group-title="Entertainment",RMC Découverte
 https://jmp2.uk/stvp-CH500003EH
 #EXTINF:-1 channel-id="CH40000020D" tvg-id="CH40000020D" tvg-chno="4043" tvg-name="RMC Life" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH40000020D_20251202T002454SQUARE.png" group-title="Entertainment",RMC Life
